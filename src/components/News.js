@@ -25,7 +25,7 @@ const UnstyledNewsPiece = ({ date, heading, description, className }) => (
 );
 
 const NewsPiece = styled(UnstyledNewsPiece)`
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   &:last-of-type {
     margin-bottom: 0;
   }

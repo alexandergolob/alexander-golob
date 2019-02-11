@@ -19,7 +19,7 @@ const SocialIcons = styled.div`
   }
 `;
 
-const UnstyledSocialIcon = ({ icon, href, ...rest }) => (
+const UnstyledSocialIcon = ({ icon, href, hoverColor, ...rest }) => (
   <a href={href} target='_blank' rel='noopener noreferrer' {...rest}>
     <FontAwesomeIcon icon={icon} size='lg' />
   </a>

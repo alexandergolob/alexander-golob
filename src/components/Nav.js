@@ -1,21 +1,60 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link } from 'gatsby';
 
-const NavList = styled.ul`
-  list-style-type: none;
+import SocialIcons from './SocialIcons';
+
+import logo from '../images/logo.png';
+
+const Nav = styled.nav`
+  padding: 40px 80px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
   display: flex;
-  background: #ccc;
+  justify-content: space-between;
+  align-items: center;
 `;
 
-const NavListItem = styled.ul`
-  margin-right: 5px;
+const HomeButton = styled(Link)`
+  display: flex;
+  align-items: center;
+  font-family: 'Domine', serif;
+  font-weight: 700;
+  font-size: 2rem;
+  color: inherit;
+  text-decoration: none;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  transition: opacity 300ms ease-in-out;
+`;
+
+const Logo = styled.img`
+  margin-right: 10px;
+`;
+
+const NavList = styled.ul`
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  font-family: 'Special Elite', cursive;
+  font-size: 1.125rem;
+`;
+
+const NavListItem = styled.li`
+  margin-right: 25px;
   &:last-of-type {
     margin-right: 0;
   }
 `;
 
 export default () => (
-  <nav>
+  <Nav>
+    <HomeButton to='/'>
+      <Logo src={logo} />
+      Golob Art
+    </HomeButton>
     <NavList>
       <NavListItem>Art</NavListItem>
       <NavListItem>Services</NavListItem>
@@ -23,5 +62,6 @@ export default () => (
       <NavListItem>Press</NavListItem>
       <NavListItem>About</NavListItem>
     </NavList>
-  </nav>
+    <SocialIcons />
+  </Nav>
 );

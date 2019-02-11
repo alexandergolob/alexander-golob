@@ -1,0 +1,2 @@
+- choose google fonts
+- provide svgs/pngs of logo

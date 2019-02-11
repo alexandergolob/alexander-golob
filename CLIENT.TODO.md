@@ -1,2 +1,3 @@
 - choose google fonts
 - provide svgs/pngs of logo
+- get approval to add dev credit

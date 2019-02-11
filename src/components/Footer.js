@@ -7,8 +7,7 @@ const Footer = styled.footer`
   padding: 15px 0;
   position: absolute;
   bottom: 0;
-  left: 0;
-  right: 0;
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -16,9 +15,14 @@ const Footer = styled.footer`
   color: #fff;
 `;
 
+const Copyright = styled.div`
+  margin-top: 10px;
+  font-size: 0.8rem;
+`;
+
 export default () => (
   <Footer>
     <SocialIcons />
-    &copy; {new Date().getFullYear()} Alexander Golob
+    <Copyright>&copy; {new Date().getFullYear()} Alexander Golob</Copyright>
   </Footer>
 );

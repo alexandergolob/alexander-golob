@@ -1,6 +1,7 @@
 backend:
-  name: github
-  repo: kbaig/alexander-golob
+  # name: github
+  # repo: kbaig/alexander-golob
+  name: test-repo
 
 media_folder: static/assets
 public_folder: assets
@@ -22,3 +23,4 @@ collections:
     create: true
     fields:
       - { name: text, label: text to display }
+      - { name: body, label: body }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { graphql } from 'gatsby';
 import styled from 'styled-components';
 
 import HeaderImageCarousel from '../components/HeaderImageCarousel';
@@ -20,13 +19,11 @@ const HeroStatement = styled.h1`
   background: #000;
 `;
 
-export default ({ data }) => (
+export default () => (
   <Layout>
     <HeaderImageCarousel />
     <HeroStatementContainer>
-      <HeroStatement>
-        {data.allMarkdownRemark.edges[0].node.frontmatter.hero}
-      </HeroStatement>
+      <HeroStatement>We create art for community</HeroStatement>
     </HeroStatementContainer>
 
     <h2>Art</h2>
@@ -41,17 +38,3 @@ export default ({ data }) => (
     <News />
   </Layout>
 );
-
-export const query = graphql`
-  query {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            hero
-          }
-        }
-      }
-    }
-  }
-`;

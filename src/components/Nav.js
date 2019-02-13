@@ -47,6 +47,11 @@ const NavListItem = styled.li`
   &:last-of-type {
     margin-right: 0;
   }
+  /* temporary while the other nav links are not actually links */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 `;
 
 export default () => (
@@ -61,6 +66,9 @@ export default () => (
       <NavListItem>Post-Cubicle Gallery</NavListItem>
       <NavListItem>Press</NavListItem>
       <NavListItem>About</NavListItem>
+      <NavListItem>
+        <Link to='/contact'>Contact</Link>
+      </NavListItem>
     </NavList>
     <SocialIcons />
   </Nav>

@@ -12,7 +12,7 @@ const Container = styled.div`
 `;
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=Special+Elite|Domine:400,700');
+  @import url('https://fonts.googleapis.com/css?family=Special+Elite|Domine:400,700|Lato');
 
   * {
     margin: 0;

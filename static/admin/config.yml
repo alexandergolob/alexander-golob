@@ -15,3 +15,10 @@ collections:
       - { name: date, label: Date, widget: date }
       - { name: title, label: Title }
       - { name: body, label: Body, widget: markdown }
+
+  - name: hero
+    label: Hero
+    folder: hero
+    create: true
+    fields:
+      - { name: text, label: text to display }

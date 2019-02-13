@@ -39,6 +39,7 @@ const NewsPiece = styled(UnstyledNewsPiece)`
     '. Description';
 `;
 
+// wrapping in span to achieve highlighted text effect since grid children can't be inline
 const UnstyledNewsPieceHeading = ({ children, ...rest }) => (
   <span {...rest}>
     <h3>{children}</h3>

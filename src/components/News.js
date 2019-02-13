@@ -25,7 +25,7 @@ const UnstyledNewsPiece = ({ date, heading, description, className }) => (
 );
 
 const NewsPiece = styled(UnstyledNewsPiece)`
-  margin-bottom: 10px;
+  margin-bottom: 15px;
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -39,6 +39,7 @@ const NewsPiece = styled(UnstyledNewsPiece)`
     '. Description';
 `;
 
+// wrapping in span to achieve highlighted text effect since grid children can't be inline
 const UnstyledNewsPieceHeading = ({ children, ...rest }) => (
   <span {...rest}>
     <h3>{children}</h3>

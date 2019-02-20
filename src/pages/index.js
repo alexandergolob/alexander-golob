@@ -19,22 +19,4 @@ const HeroStatement = styled.h1`
   background: #000;
 `;
 
-export default () => (
-  <Layout>
-    <HeaderImageCarousel />
-    <HeroStatementContainer>
-      <HeroStatement>We create art for community</HeroStatement>
-    </HeroStatementContainer>
-
-    <h2>Art</h2>
-    <h2>Murals</h2>
-    <h2>Call for Fair Art</h2>
-    <h2>Bio</h2>
-    <h2>Press</h2>
-    <h2>For sale</h2>
-    <h2>Commissioning</h2>
-    <h2>Subscribe</h2>
-
-    <News />
-  </Layout>
-);
+export default () => <Layout>home page</Layout>;

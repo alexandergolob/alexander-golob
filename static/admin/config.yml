@@ -12,6 +12,7 @@ collections:
     folder: src/pages/artwork
     create: true
     fields:
+      - { name: title, label: Title, widget: string }
       - { name: image, label: Image, widget: image }
       - { name: creation_date, label: Created in, widget: number }
       - { name: body, label: Description, widget: markdown }

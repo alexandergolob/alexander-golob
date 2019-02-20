@@ -9,7 +9,7 @@ public_folder: assets
 collections:
   - name: artwork
     label: Artwork
-    folder: src/artwork
+    folder: src/pages/artwork
     create: true
     fields:
       - { name: image, label: Image, widget: image }

@@ -31,7 +31,7 @@ const LeftNav = styled(UnstyledLeftNav)`
 `;
 
 const LogoImg = styled.img`
-  height: 100px;
+  height: 130px;
 `;
 
 const UnstyledRightHomeLogo = props => (
@@ -69,16 +69,19 @@ const Banner = styled.div`
   grid-area: Banner;
   background: hsl(0, 0%, 50%);
   height: 100%;
-  width: 100%;
+  border: 5px solid hsl(30, 51%, 10%);
 `;
 
 const Hero = styled(FrameBox)`
   grid-area: Hero;
   margin: 30px 0;
-  padding: 20px 25px;
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
+  padding: 10px 15px;
+  font-family: 'PT Mono', monospace;
+  font-size: 2rem;
+  color: hsl(0, 0%, 93%);
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+  font-style: italic;
 `;
 
 const CTA = styled(FrameBox)`
@@ -107,8 +110,8 @@ export default () => (
     <MainContainer>
       <Banner />
       <Hero>We create art for community.</Hero>
-      <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
-      <PatreonCTA>Support our work with Patreon</PatreonCTA>
+      {/* <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
+      <PatreonCTA>Support our work with Patreon</PatreonCTA> */}
     </MainContainer>
   </Layout>
 );

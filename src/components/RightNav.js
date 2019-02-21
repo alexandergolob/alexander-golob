@@ -5,7 +5,7 @@ import FrameBox from './FrameBox';
 import SocialIcons from './SocialIcons';
 
 const NavList = styled.ul`
-  display: inline-flex;
+  display: flex;
   flex-direction: column;
 `;
 
@@ -14,9 +14,10 @@ const UnstyledNavListItem = props => <FrameBox as='li' {...props} />;
 const NavListItem = styled(UnstyledNavListItem)`
   padding: 10px;
   text-align: center;
+  font-family: 'Enriqueta', serif;
+  font-weight: 700;
 
   margin-bottom: 20px;
-
   &:last-of-type {
     margin-bottom: 0;
   }

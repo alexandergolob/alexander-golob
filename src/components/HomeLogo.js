@@ -12,11 +12,12 @@ const Container = styled(FrameBox)`
 `;
 
 const LogoImg = styled.img`
-  height: 100px;
+  height: 130px;
 `;
 
 const HomeLogoText = styled.div`
   margin-top: -10px;
+  font-family: 'Enriqueta';
   font-size: 1.75rem;
   text-align: center;
 `;

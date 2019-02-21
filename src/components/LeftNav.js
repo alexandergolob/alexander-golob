@@ -12,10 +12,12 @@ const Nav = styled(UnstyledNav)`
 const NavList = styled.ul`
   list-style-type: none;
   padding: 0;
+  font-family: 'Enriqueta', serif;
 `;
 
 const NavItemTitle = styled.div`
   margin-bottom: 5px;
+  font-weight: 700;
 `;
 
 const SubList = styled.ul`
@@ -24,7 +26,7 @@ const SubList = styled.ul`
 `;
 
 const SubListItem = styled.li`
-  margin-bottom: 5px;
+  margin-bottom: 2px;
 
   &:last-of-type {
     margin-bottom: 0;

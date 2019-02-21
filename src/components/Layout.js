@@ -9,7 +9,11 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
+    min-height: 100vh;
     padding: 10px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 `;
 
@@ -30,5 +34,3 @@ export default ({ children, ...rest }) => (
     {children}
   </div>
 );
-
-// meaningless comment

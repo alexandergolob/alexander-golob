@@ -5,13 +5,14 @@ import UnstyledLayout from '../components/Layout';
 import UnstyledHomeLogo from '../components/HomeLogo';
 import UnstyledLeftNav from '../components/LeftNav';
 import UnstyledRightNav from '../components/RightNav';
+import UnstyledHomeCarousel from '../components/HomeCarousel';
 import FrameBox from '../components/FrameBox';
 
 const Layout = styled(UnstyledLayout)`
   display: grid;
   /* background: red; */
   grid-template-columns: min-content 1fr auto;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-rows: auto auto auto auto auto auto;
   grid-column-gap: 30px;
   grid-row-gap: 30px;
   grid-template-areas:
@@ -19,7 +20,8 @@ const Layout = styled(UnstyledLayout)`
     'HomeLogo MainContainer RightHomeLogo'
     'LeftNav MainContainer RightNav'
     'LeftNav MainContainer EmptyMarbleSquare'
-    '. MainContainer EmptyMarbleSquare';
+    '. MainContainer EmptyMarbleSquare'
+    '. MainContainer .';
 `;
 
 const HomeLogo = styled(UnstyledHomeLogo)`
@@ -58,23 +60,19 @@ const MainContainer = styled.div`
   grid-area: MainContainer;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 1fr auto auto;
+  grid-template-rows: auto auto 1fr;
   grid-template-areas:
     'Banner Banner Banner'
     '. Hero .'
     'ForSaleCTA . PatreonCTA';
 `;
 
-const Banner = styled.div`
+const HomeCarousel = styled(UnstyledHomeCarousel)`
   grid-area: Banner;
-  background: hsl(0, 0%, 50%);
-  height: 100%;
-  border: 5px solid hsl(30, 51%, 10%);
 `;
 
 const Hero = styled(FrameBox)`
   grid-area: Hero;
-  margin: 30px 0;
   padding: 10px 15px;
   font-family: 'PT Mono', monospace;
   font-size: 2rem;
@@ -84,21 +82,21 @@ const Hero = styled(FrameBox)`
   font-style: italic;
 `;
 
-const CTA = styled(FrameBox)`
-  margin-top: 20px;
-  padding: 20px 25px;
-  font-family: sans-serif;
-  font-weight: 700;
-  font-size: 1.5rem;
-`;
+// const CTA = styled(FrameBox)`
+//   margin-top: 20px;
+//   padding: 20px 25px;
+//   font-family: sans-serif;
+//   font-weight: 700;
+//   font-size: 1.5rem;
+// `;
 
-const ForSaleCTA = styled(CTA)`
-  grid-area: ForSaleCTA;
-`;
+// const ForSaleCTA = styled(CTA)`
+//   grid-area: ForSaleCTA;
+// `;
 
-const PatreonCTA = styled(CTA)`
-  grid-area: PatreonCTA;
-`;
+// const PatreonCTA = styled(CTA)`
+//   grid-area: PatreonCTA;
+// `;
 
 export default () => (
   <Layout>
@@ -108,7 +106,7 @@ export default () => (
     <RightHomeLogo />
     <EmptyMarbleSquare />
     <MainContainer>
-      <Banner />
+      <HomeCarousel />
       <Hero>We create art for community.</Hero>
       {/* <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
       <PatreonCTA>Support our work with Patreon</PatreonCTA> */}

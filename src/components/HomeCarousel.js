@@ -31,7 +31,7 @@ const ImgDescriptionContainer = styled.div`
   color: #fff;
 `;
 
-const Description = styled.caption``;
+const Description = styled.div``;
 
 const Count = styled.div``;
 

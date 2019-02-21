@@ -58,16 +58,23 @@ const MainContainer = styled.div`
   grid-area: MainContainer;
   display: grid;
   grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 50px 1fr auto auto;
+  grid-template-rows: 1fr auto auto;
   grid-template-areas:
-    '. . .'
-    '. . .'
+    'Banner Banner Banner'
     '. Hero .'
     'ForSaleCTA . PatreonCTA';
 `;
 
+const Banner = styled.div`
+  grid-area: Banner;
+  background: hsl(0, 0%, 50%);
+  height: 100%;
+  width: 100%;
+`;
+
 const Hero = styled(FrameBox)`
   grid-area: Hero;
+  margin: 30px 0;
   padding: 20px 25px;
   font-family: sans-serif;
   font-weight: 700;
@@ -98,6 +105,7 @@ export default () => (
     <RightHomeLogo />
     <EmptyMarbleSquare />
     <MainContainer>
+      <Banner />
       <Hero>We create art for community.</Hero>
       <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
       <PatreonCTA>Support our work with Patreon</PatreonCTA>

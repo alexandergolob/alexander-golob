@@ -10,6 +10,18 @@ const GlobalStyle = createGlobalStyle`
 
   body {
     padding: 10px 20px;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+  }
+
+  #___gatsby {
+    width: 100%;
+
+    & > div {
+      width: 100%;
+    }
   }
 `;
 
@@ -27,6 +39,7 @@ export default ({ children, ...rest }) => (
   <div {...rest}>
     <GlobalStyle />
     <Background />
+
     {children}
   </div>
 );

@@ -9,7 +9,6 @@ import FrameBox from '../components/FrameBox';
 
 const Layout = styled(UnstyledLayout)`
   display: grid;
-  /* background: red; */
   grid-template-columns: min-content 1fr auto;
   grid-template-rows: auto auto auto auto auto;
   grid-column-gap: 30px;
@@ -57,17 +56,24 @@ const EmptyMarbleSquare = styled(FrameBox)`
 const MainContainer = styled.div`
   grid-area: MainContainer;
   display: grid;
-  grid-template-columns: 1fr auto 1fr;
-  grid-template-rows: 50px 1fr auto auto;
+  grid-template-columns: auto auto min-content max-content min-content auto auto;
+  grid-template-rows: 1fr auto auto 35px auto;
   grid-template-areas:
-    '. . .'
-    '. . .'
-    '. Hero .'
-    'ForSaleCTA . PatreonCTA';
+    'Banner Banner Banner Banner Banner Banner Banner'
+    '. . Hero Hero Hero . .'
+    'ForSaleCTA ForSaleCTA ForSaleCTA . . . .'
+    'ForSaleCTA ForSaleCTA ForSaleCTA . PatreonCTA PatreonCTA PatreonCTA'
+    '. . . . PatreonCTA PatreonCTA PatreonCTA';
+`;
+
+const Banner = styled.div`
+  grid-area: Banner;
+  background: hsl(0, 54%, 52%);
 `;
 
 const Hero = styled(FrameBox)`
   grid-area: Hero;
+  margin: 30px 0;
   padding: 20px 25px;
   font-family: sans-serif;
   font-weight: 700;
@@ -75,11 +81,10 @@ const Hero = styled(FrameBox)`
 `;
 
 const CTA = styled(FrameBox)`
-  margin-top: 20px;
   padding: 20px 25px;
   font-family: sans-serif;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1rem;
 `;
 
 const ForSaleCTA = styled(CTA)`
@@ -98,6 +103,7 @@ export default () => (
     <RightHomeLogo />
     <EmptyMarbleSquare />
     <MainContainer>
+      <Banner />
       <Hero>We create art for community.</Hero>
       <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
       <PatreonCTA>Support our work with Patreon</PatreonCTA>

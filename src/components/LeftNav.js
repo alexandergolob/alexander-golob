@@ -50,8 +50,8 @@ const NavItem = styled(UnstyledNavItem)`
   }
 `;
 
-export default () => (
-  <Nav>
+export default props => (
+  <Nav {...props}>
     <NavList>
       <NavItem
         title='Art'

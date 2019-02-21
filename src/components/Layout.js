@@ -1,5 +1,5 @@
 import React from 'react';
-import { createGlobalStyle } from 'styled-components';
+import styled, { createGlobalStyle } from 'styled-components';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -9,13 +9,24 @@ const GlobalStyle = createGlobalStyle`
   }
 
   body {
-    padding: 10px;
+    padding: 10px 20px;
   }
 `;
 
-export default ({ children }) => (
-  <>
+const Background = styled.div`
+  background: lightblue;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 80px;
+  right: 80px;
+  bottom: 0;
+`;
+
+export default ({ children, ...rest }) => (
+  <div {...rest}>
     <GlobalStyle />
+    <Background />
     {children}
-  </>
+  </div>
 );

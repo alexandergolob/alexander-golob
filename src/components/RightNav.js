@@ -14,6 +14,18 @@ const UnstyledNavListItem = props => <FrameBox as='li' {...props} />;
 const NavListItem = styled(UnstyledNavListItem)`
   padding: 10px;
   text-align: center;
+
+  margin-bottom: 20px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
+const Contact = styled(NavListItem)`
+  margin-top: 20px;
+  padding: 20px 10px;
+  background: hsl(120, 54%, 52%);
 `;
 
 export default props => (
@@ -25,7 +37,7 @@ export default props => (
       <NavListItem>Portfolio</NavListItem>
       <NavListItem>About</NavListItem>
       <NavListItem>Press</NavListItem>
-      <NavListItem>Contact</NavListItem>
+      <Contact>Contact</Contact>
     </NavList>
   </nav>
 );

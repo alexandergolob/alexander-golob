@@ -21,8 +21,8 @@ const HomeLogoText = styled.div`
   text-align: center;
 `;
 
-export default () => (
-  <Container>
+export default props => (
+  <Container {...props}>
     <LogoImg src='/assets/logo.svg' alt='logo' />
     <HomeLogoText>Golob Art</HomeLogoText>
   </Container>

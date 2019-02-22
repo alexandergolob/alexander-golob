@@ -57,21 +57,12 @@ const RightCycleButton = styled(CycleButton)`
   right: 10px;
 `;
 
-const images = [
-  {
-    src: 'kaleidoscope.webp',
-    description: 'Kaleidoscope, Boston, MA'
-  },
-  { src: 'pokecity.webp', description: 'PokeCity Mural, Cambridge' },
-  { src: 'the-snap-gallery.webp', description: '#theSnapGallery at the PEM' }
-];
-
-export default ({ ...props }) => {
+export default ({ images, ...rest }) => {
   const [index, setIndex] = useState(0);
 
   return (
-    <Container {...props}>
-      <Img src={`./assets/${images[index].src}`} alt='' />
+    <Container {...rest}>
+      <Img src={images[index].image} alt='' />
       <ImgDescriptionContainer>
         <Description>{images[index].description}</Description>
         <Count>

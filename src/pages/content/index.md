@@ -10,7 +10,7 @@ carousel-images:
     image: /assets/pokecity.webp
   - description: '#theSnapGallery at the PEM 3'
     image: /assets/the-snap-gallery.webp
-hero-statement: We build art for community.
+hero-statement: We create art for community.
 left-cta:
   content: Art and Merchandise for Sale
   path: /for-sale
@@ -18,4 +18,3 @@ right-cta:
   content: Support our work with Patreon
   path: /patreon
 ---
-

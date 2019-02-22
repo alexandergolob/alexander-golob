@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import UnstyledLayout from '../components/Layout';
 import UnstyledHomeLogo from '../components/HomeLogo';
@@ -36,9 +37,9 @@ const LogoImg = styled.img`
   height: 130px;
 `;
 
-const UnstyledRightHomeLogo = props => (
-  <FrameBox {...props}>
-    <LogoImg src='/assets/logo.svg' alt='logo' />
+const UnstyledRightHomeLogo = ({ src, ...rest }) => (
+  <FrameBox {...rest}>
+    <LogoImg src={src} alt='logo' />
   </FrameBox>
 );
 
@@ -89,10 +90,10 @@ const CTAContainer = styled.div`
   grid-template-columns: 40px auto 1fr auto 40px;
   grid-template-rows: auto 20px auto auto 1fr;
   grid-template-areas:
-    '. ForSaleCTA . . .'
-    '. ForSaleCTA . PatreonCTA .'
-    '. ForSaleCTA . PatreonCTA .'
-    '. . . PatreonCTA .'
+    '. LeftCTA . . .'
+    '. LeftCTA . RightCTA .'
+    '. LeftCTA . RightCTA .'
+    '. . . RightCTA .'
     '. . . . .';
 `;
 
@@ -104,28 +105,71 @@ const CTA = styled(FrameBox)`
   font-size: 1.2rem;
 `;
 
-const ForSaleCTA = styled(CTA)`
-  grid-area: ForSaleCTA;
+const LeftCTA = styled(CTA)`
+  grid-area: LeftCTA;
 `;
 
-const PatreonCTA = styled(CTA)`
-  grid-area: PatreonCTA;
+const RightCTA = styled(CTA)`
+  grid-area: RightCTA;
 `;
 
-export default () => (
-  <Layout>
-    <HomeLogo />
-    <LeftNav />
-    <RightNav />
-    <RightHomeLogo />
-    <EmptyMarbleSquare />
-    <MainContainer>
-      <HomeCarousel />
-      <Hero>We create art for community.</Hero>
-      <CTAContainer>
-        <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
-        <PatreonCTA>Support our work with Patreon</PatreonCTA>
-      </CTAContainer>
-    </MainContainer>
-  </Layout>
-);
+export default ({ data }) => {
+  const postData = data.allMarkdownRemark.edges[0].node.frontmatter;
+  const {
+    logo,
+    secondary_nav_logo,
+    carousel_images,
+    hero_statement,
+    left_cta,
+    right_cta
+  } = postData;
+
+  return (
+    <Layout>
+      <HomeLogo src={logo.image} text={logo.text} />
+      <LeftNav />
+      <RightNav />
+      <RightHomeLogo src={secondary_nav_logo} />
+      <EmptyMarbleSquare />
+      <MainContainer>
+        <HomeCarousel images={carousel_images} />
+        <Hero>{hero_statement}</Hero>
+        <CTAContainer>
+          <LeftCTA>{left_cta.content}</LeftCTA>
+          <RightCTA>{right_cta.content}</RightCTA>
+        </CTAContainer>
+      </MainContainer>
+    </Layout>
+  );
+};
+
+export const query = graphql`
+  query {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            logo {
+              image
+              text
+            }
+            secondary_nav_logo
+            carousel_images {
+              description
+              image
+            }
+            hero_statement
+            left_cta {
+              content
+              path
+            }
+            right_cta {
+              content
+              path
+            }
+          }
+        }
+      }
+    }
+  }
+`;

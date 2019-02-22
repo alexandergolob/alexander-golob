@@ -61,10 +61,11 @@ const MainContainer = styled.div`
   display: grid;
   grid-template-columns: 1fr auto 1fr;
   grid-template-rows: auto auto 1fr;
+  grid-row-gap: 25px;
   grid-template-areas:
     'Banner Banner Banner'
-    '. Hero .'
-    'ForSaleCTA . PatreonCTA';
+    '. Hero . '
+    'CTAContainer CTAContainer CTAContainer ';
 `;
 
 const HomeCarousel = styled(UnstyledHomeCarousel)`
@@ -82,21 +83,34 @@ const Hero = styled(FrameBox)`
   font-style: italic;
 `;
 
-// const CTA = styled(FrameBox)`
-//   margin-top: 20px;
-//   padding: 20px 25px;
-//   font-family: sans-serif;
-//   font-weight: 700;
-//   font-size: 1.5rem;
-// `;
+const CTAContainer = styled.div`
+  grid-area: CTAContainer;
+  display: grid;
+  grid-template-columns: 40px auto 1fr auto 40px;
+  grid-template-rows: auto 20px auto auto 1fr;
+  grid-template-areas:
+    '. ForSaleCTA . . .'
+    '. ForSaleCTA . PatreonCTA .'
+    '. ForSaleCTA . PatreonCTA .'
+    '. . . PatreonCTA .'
+    '. . . . .';
+`;
 
-// const ForSaleCTA = styled(CTA)`
-//   grid-area: ForSaleCTA;
-// `;
+const CTA = styled(FrameBox)`
+  margin-top: 20px;
+  padding: 15px 25px;
+  font-family: 'Enriqueta', serif;
+  font-weight: 700;
+  font-size: 1.2rem;
+`;
 
-// const PatreonCTA = styled(CTA)`
-//   grid-area: PatreonCTA;
-// `;
+const ForSaleCTA = styled(CTA)`
+  grid-area: ForSaleCTA;
+`;
+
+const PatreonCTA = styled(CTA)`
+  grid-area: PatreonCTA;
+`;
 
 export default () => (
   <Layout>
@@ -108,8 +122,10 @@ export default () => (
     <MainContainer>
       <HomeCarousel />
       <Hero>We create art for community.</Hero>
-      {/* <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
-      <PatreonCTA>Support our work with Patreon</PatreonCTA> */}
+      <CTAContainer>
+        <ForSaleCTA>Art and Merchandise for Sale</ForSaleCTA>
+        <PatreonCTA>Support our work with Patreon</PatreonCTA>
+      </CTAContainer>
     </MainContainer>
   </Layout>
 );

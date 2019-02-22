@@ -7,6 +7,27 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
+  - name: pages
+    label: Pages
+    files:
+      - label: Home Page
+        name: home-page
+        file: src/pages/content/index.md
+        fields:
+          - { name: hero-statement, label: Hero Statement, widget: string }
+          - name: left-cta
+            label: Left CTA
+            widget: object
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - name: right-cta
+            label: Right CTA
+            widget: object
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+
   - name: artwork
     label: Artwork
     folder: src/pages/artwork

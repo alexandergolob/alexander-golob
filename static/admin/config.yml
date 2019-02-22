@@ -20,6 +20,21 @@ collections:
             fields:
               - { name: image, label: Image, widget: image }
               - { name: text, label: Text, widget: string }
+          - {
+              name: secondary-nav-logo,
+              label: Secondary Nav Logo,
+              widget: image,
+            }
+          - name: carousel-images
+            label: Carousel Image
+            widget: list
+            fields:
+              # - name: carousel-image
+              #   label: Carousel Image,
+              #   widget: object
+              #   fields:
+              - { name: image, label: Image, widget: image }
+              - { name: description, label: Description, widget: string }
           - { name: hero-statement, label: Hero Statement, widget: string }
           - name: left-cta
             label: Left CTA

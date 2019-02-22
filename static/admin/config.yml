@@ -14,6 +14,12 @@ collections:
         name: home-page
         file: src/pages/content/index.md
         fields:
+          - name: logo
+            label: Logo
+            widget: object
+            fields:
+              - { name: image, label: Image, widget: image }
+              - { name: text, label: Text, widget: string }
           - { name: hero-statement, label: Hero Statement, widget: string }
           - name: left-cta
             label: Left CTA

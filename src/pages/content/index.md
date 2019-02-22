@@ -1,4 +1,7 @@
 ---
+logo:
+  image: /assets/logo.svg
+  text: Golob Art
 hero-statement: We build art for community.
 left-cta:
   content: Art and Merchandise for Sale

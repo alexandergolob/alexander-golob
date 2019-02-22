@@ -7,4 +7,3 @@ right-cta:
   content: Support our work with Patreon
   path: /patreon
 ---
-

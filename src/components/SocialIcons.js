@@ -10,6 +10,7 @@ import {
 
 const SocialIcon = styled(FontAwesomeIcon)`
   margin-right: 10px;
+
   &:last-of-type {
     margin-right: 0;
   }

@@ -3,12 +3,12 @@ logo:
   image: /assets/logo.svg
   text: Golob Art
 secondary-nav-logo: /assets/logo.svg
-carousel:
+carousel-images:
   - description: 'Kaleidoscope, Boston, MA'
     image: /assets/kaleidoscope.webp
   - description: 'PokeCity Mural, Cambridge'
     image: /assets/pokecity.webp
-  - description: '#theSnapGallery at the PEM'
+  - description: '#theSnapGallery at the PEM 3'
     image: /assets/the-snap-gallery.webp
 hero-statement: We build art for community.
 left-cta:

@@ -2,6 +2,14 @@
 logo:
   image: /assets/logo.svg
   text: Golob Art
+secondary-nav-logo: /assets/logo.svg
+carousel:
+  - description: 'Kaleidoscope, Boston, MA'
+    image: /assets/kaleidoscope.webp
+  - description: 'PokeCity Mural, Cambridge'
+    image: /assets/pokecity.webp
+  - description: '#theSnapGallery at the PEM'
+    image: /assets/the-snap-gallery.webp
 hero-statement: We build art for community.
 left-cta:
   content: Art and Merchandise for Sale
@@ -10,3 +18,4 @@ right-cta:
   content: Support our work with Patreon
   path: /patreon
 ---
+

@@ -10,6 +10,8 @@ carousel-images:
     image: /assets/pokecity.webp
   - description: '#theSnapGallery at the PEM 3'
     image: /assets/the-snap-gallery.webp
+  - description: Starry Night
+    image: /assets/starry-night.jpg
 hero-statement: We build art for community.
 left-cta:
   content: Art and Merchandise for Sale

@@ -128,7 +128,7 @@ export const IndexPageTemplate = ({
     <RightHomeLogo src={secondary_nav_logo} />
     <EmptyMarbleSquare />
     <MainContainer>
-      {/* <HomeCarousel images={carousel_images} /> */}
+      <HomeCarousel images={carousel_images} />
       <Hero>{hero_statement}</Hero>
       <CTAContainer>
         <LeftCTA>{left_cta.content}</LeftCTA>
@@ -140,32 +140,8 @@ export const IndexPageTemplate = ({
 
 export default ({ data }) => {
   const postData = data.allMarkdownRemark.edges[0].node.frontmatter;
-  const {
-    logo,
-    secondary_nav_logo,
-    carousel_images,
-    hero_statement,
-    left_cta,
-    right_cta
-  } = postData;
 
-  return (
-    <Layout>
-      <HomeLogo src={logo.image} text={logo.text} />
-      <LeftNav />
-      <RightNav />
-      <RightHomeLogo src={secondary_nav_logo} />
-      <EmptyMarbleSquare />
-      <MainContainer>
-        <HomeCarousel images={carousel_images} />
-        <Hero>{hero_statement}</Hero>
-        <CTAContainer>
-          <LeftCTA>{left_cta.content}</LeftCTA>
-          <RightCTA>{right_cta.content}</RightCTA>
-        </CTAContainer>
-      </MainContainer>
-    </Layout>
-  );
+  return <IndexPageTemplate {...postData} />;
 };
 
 export const query = graphql`

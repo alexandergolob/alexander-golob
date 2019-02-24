@@ -51,7 +51,7 @@ export default ({ entry, widgetFor }) => {
     // right_cta: ,
   };
 
-  console.log(entries);
+  // console.log(entries);
 
   return <IndexPageTemplate {...entries} />;
   // return <div>hello</div>;

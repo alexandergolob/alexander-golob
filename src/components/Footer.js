@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import SocialIcons from './SocialIcons';
 
 const Footer = styled.footer`
-  padding: 20px 25px 7px;
+  padding: 20px 30px 7px;
   background: hsl(22, 100%, 58%);
 
   display: grid;

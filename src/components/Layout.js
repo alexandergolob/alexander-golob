@@ -28,12 +28,15 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Background = styled.div`
-  background: lightblue;
+  background: url('./assets/brick-wall-bg.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   position: absolute;
   z-index: -1;
   top: 0;
-  left: 80px;
-  right: 80px;
+  left: 5%;
+  right: 5%;
   bottom: 0;
 `;
 

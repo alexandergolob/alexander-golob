@@ -26,7 +26,11 @@ const NavListItem = styled(UnstyledNavListItem)`
 const Contact = styled(NavListItem)`
   margin-top: 20px;
   padding: 20px 10px;
-  background: hsl(120, 54%, 52%);
+
+  background: url('./assets/contact-button-bg.png');
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center center;
 `;
 
 export default props => (

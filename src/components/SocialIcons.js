@@ -8,19 +8,13 @@ import {
   faTwitter
 } from '@fortawesome/free-brands-svg-icons';
 
-const SocialIcon = styled(FontAwesomeIcon)`
-  margin-right: 10px;
+const SocialIcon = styled(FontAwesomeIcon)``;
 
-  &:last-of-type {
-    margin-right: 0;
-  }
-`;
-
-export default () => (
+export default props => (
   <>
-    <SocialIcon icon={faFacebookF} />
-    <SocialIcon icon={faInstagram} />
-    <SocialIcon icon={faLinkedinIn} />
-    <SocialIcon icon={faTwitter} />
+    <SocialIcon icon={faFacebookF} {...props} />
+    <SocialIcon icon={faInstagram} {...props} />
+    <SocialIcon icon={faLinkedinIn} {...props} />
+    <SocialIcon icon={faTwitter} {...props} />
   </>
 );

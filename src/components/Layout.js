@@ -1,7 +1,29 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import UnstyledLeftNav from './LeftNav';
+import UnstyledRightNav from './RightNav';
 import UnstyledFooter from './Footer';
+
+const LeftNav = styled(UnstyledLeftNav)`
+  position: fixed;
+  z-index: 1;
+  width: 150px;
+  top: 11vh;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const RightNav = styled(UnstyledRightNav)`
+  position: fixed;
+  z-index: 1;
+  width: 150px;
+  top: 17vh;
+  right: 20px;
+  display: flex;
+  flex-direction: column;
+`;
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700|PT+Mono');
@@ -26,36 +48,48 @@ const GlobalStyle = createGlobalStyle`
 
   #___gatsby {
     display: block;
-    min-height: 100%;
+    min-height: 100vh;
     position: relative;
+
+    & > * {
+      min-height: 100vh;
+    }
   }
 `;
 
-const Background = styled.div`
+const Wrapper = styled.div`
   background: url('./assets/brick-wall-bg.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 5%;
-  right: 5%;
-  bottom: 0;
+  background-size: contain;
+  min-height: 100vh;
+  width: 87.5%;
+  margin: auto;
+  position: relative;
+`;
+
+const Container = styled.div`
+  width: 80%;
+  margin: auto;
+  padding-top: 15vh;
 `;
 
 const Footer = styled(UnstyledFooter)`
   position: absolute;
   bottom: 0;
-  left: 5%;
-  right: 5%;
+  left: 0;
+  right: 0;
 `;
 
 export default ({ children, ...rest }) => (
-  <div {...rest}>
+  <>
     <GlobalStyle />
-    <Background />
-    {children}
-    <Footer />
-  </div>
+    <LeftNav />
+    <RightNav />
+    <Wrapper>
+      <Container {...rest}>
+        {children}
+        <div style={{ height: '100vh' }} />
+      </Container>
+      <Footer />
+    </Wrapper>
+  </>
 );

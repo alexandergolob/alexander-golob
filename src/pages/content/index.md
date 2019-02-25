@@ -12,7 +12,7 @@ carousel-images:
     image: /assets/the-snap-gallery.webp
   - description: Starry Night
     image: /assets/starry-night.jpg
-hero-statement: We build art for community.
+hero-statement: We create art for community.
 left-cta:
   content: Art and Merchandise for Sale
   path: /for-sale

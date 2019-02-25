@@ -1,7 +1,12 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import UnstyledHomeLogo from './HomeLogo';
 import FrameBox from './FrameBox';
+
+const HomeLogo = styled(UnstyledHomeLogo)`
+  margin-bottom: 10px;
+`;
 
 const UnstyledNav = props => <FrameBox as='nav' {...props} />;
 
@@ -52,23 +57,27 @@ const NavItem = styled(UnstyledNavItem)`
   }
 `;
 
-export default props => (
-  <Nav {...props}>
-    <NavList>
-      <NavItem
-        title='Art'
-        subitems={['personal', 'commissioned', 'public art']}
-      />
-      <NavItem title='Engagements' subitems={['speaking', 'events']} />
-      <NavItem title='Consulting' subitems={['government', 'private']} />
-      <NavItem
-        title='Special Projects'
-        subitems={[
-          'post-cubicle gallery',
-          'through the looking glass',
-          'venezia'
-        ]}
-      />
-    </NavList>
-  </Nav>
+export default ({ logo, ...rest }) => (
+  <div {...rest}>
+    {/* <HomeLogo src={logo.image} text={logo.text} /> */}
+    <HomeLogo src='./assets/logo.svg' text='Golob Art' />
+    <Nav>
+      <NavList>
+        <NavItem
+          title='Art'
+          subitems={['personal', 'commissioned', 'public art']}
+        />
+        <NavItem title='Engagements' subitems={['speaking', 'events']} />
+        <NavItem title='Consulting' subitems={['government', 'private']} />
+        <NavItem
+          title='Special Projects'
+          subitems={[
+            'post-cubicle gallery',
+            'through the looking glass',
+            'venezia'
+          ]}
+        />
+      </NavList>
+    </Nav>
+  </div>
 );

@@ -16,7 +16,7 @@ const BorderContainer = styled.div`
   right: -3px;
   bottom: -3px;
   left: -3px;
-  z-index: -1;
+  z-index: 1;
 `;
 
 const Border = styled.div`

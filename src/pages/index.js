@@ -53,7 +53,6 @@ const RightNav = styled(UnstyledRightNav)`
 
 const EmptyMarbleSquare = styled(FrameBox)`
   grid-area: EmptyMarbleSquare;
-  background: hsl(120, 54%, 52%);
   background: url('./assets/empty-square-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;

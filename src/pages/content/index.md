@@ -2,7 +2,7 @@
 logo:
   image: /assets/logo.svg
   text: Golob
-secondary-nav-logo: /assets/secondary-logo.svg
+secondary-nav-logo: /assets/logo.svg
 carousel-images:
   - description: 'Kaleidoscope, Boston, MA'
     image: /assets/kaleidoscope.webp
@@ -20,4 +20,3 @@ right-cta:
   content: Support our work with Patreon
   path: /patreon
 ---
-

@@ -58,7 +58,7 @@ const Contact = styled(NavListItem)`
 `;
 
 const EmptyMarbleSquare = styled(FrameBox)`
-  margin-top: 15px;
+  margin-top: 25px;
   background: url('./assets/empty-square-bg.png'), hsl(148, 93%, 5%);
   background-repeat: no-repeat;
   background-size: 100% 100%;

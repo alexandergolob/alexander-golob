@@ -1,6 +1,8 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
+import UnstyledFooter from './Footer';
+
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=Enriqueta:400,700|PT+Mono');
 
@@ -10,20 +12,22 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  html, body {
+    height: 100%;
+  }
+
   html {
     font-size: 16px;
   }
 
-  body {
-    min-height: 100vh;
-    padding: 10px 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  body {    
+    background: hsl(0,0%,95%);
   }
 
   #___gatsby {
-    width: 100%;
+    display: block;
+    min-height: 100%;
+    position: relative;
   }
 `;
 
@@ -40,10 +44,18 @@ const Background = styled.div`
   bottom: 0;
 `;
 
+const Footer = styled(UnstyledFooter)`
+  position: absolute;
+  bottom: 0;
+  left: 5%;
+  right: 5%;
+`;
+
 export default ({ children, ...rest }) => (
   <div {...rest}>
     <GlobalStyle />
     <Background />
     {children}
+    <Footer />
   </div>
 );

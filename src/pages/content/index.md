@@ -1,7 +1,7 @@
 ---
 logo:
   image: /assets/logo.svg
-  text: Golob
+  text: Golob Art
 secondary-nav-logo: /assets/logo.svg
 carousel-images:
   - description: 'Kaleidoscope, Boston, MA'

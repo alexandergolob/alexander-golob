@@ -62,6 +62,7 @@ const Wrapper = styled.div`
   background-size: contain;
   min-height: 100vh;
   width: 87.5%;
+  max-width: 1600px;
   margin: auto;
   position: relative;
 `;

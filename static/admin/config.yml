@@ -45,12 +45,18 @@ collections:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
 
-  - name: artwork
-    label: Artwork
-    folder: src/pages/artwork
+  - name: projects
+    label: Projects
+    folder: src/pages/projects
     create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
     fields:
       - { name: title, label: Title, widget: string }
-      - { name: image, label: Image, widget: image }
-      - { name: creation_date, label: Created in, widget: number }
-      - { name: body, label: Description, widget: markdown }
+      - {
+          name: type,
+          label: Type,
+          widget: select,
+          options: ['Art', 'Engagement', 'Consulting', 'Special Project'],
+        }
+      - { name: description, label: Description, widget: markdown }

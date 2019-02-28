@@ -60,3 +60,51 @@ collections:
           options: ['Art', 'Engagement', 'Consulting', 'Special Project'],
         }
       - { name: description, label: Description, widget: markdown }
+
+  - name: art-project
+    label: Art Project
+    folder: src/pages/projects
+    filter: { field: type, value: Art }
+    create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: type, label: Type, widget: hidden, default: Art }
+      - { name: description, label: Description, widget: markdown }
+
+  - name: engagement-project
+    label: Engagement
+    folder: src/pages/projects
+    filter: { field: type, value: Engagement }
+    create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: type, label: Type, widget: hidden, default: Engagement }
+      - { name: description, label: Description, widget: markdown }
+
+  - name: consulting-project
+    label: Consulting Project
+    folder: src/pages/projects
+    filter: { field: type, value: Consulting }
+    create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: type, label: Type, widget: hidden, default: Consulting }
+      - { name: description, label: Description, widget: markdown }
+
+  - name: special-project
+    label: Special Project
+    folder: src/pages/projects
+    filter: { field: type, value: Special Project }
+    create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: type, label: Type, widget: hidden, default: Special Project }
+      - { name: description, label: Description, widget: markdown }

@@ -8,8 +8,14 @@ import {
 
 const Container = styled.div`
   position: relative;
-  height: 100%;
   border: 5px solid hsl(30, 51%, 10%);
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: calc(0.48 * (0.8 * 87.5vw));
+  max-height: 600px;
 `;
 
 const Img = styled.img`

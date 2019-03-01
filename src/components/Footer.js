@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import SocialIcons from './SocialIcons';
+import UnstyledSocialIcons from './SocialIcons';
 
 const Footer = styled.footer`
   padding: 20px 30px 7px;
@@ -44,7 +44,7 @@ const LogoImg = styled.img`
   margin-right: -10px;
 `;
 
-const SocialIconsContainer = styled.div`
+const SocialIcons = styled(UnstyledSocialIcons)`
   grid-area: SocialIconsContainer;
   display: flex;
   justify-content: flex-end;
@@ -74,9 +74,7 @@ export default props => (
       <LogoImg src='./assets/logo.svg' alt='' />
       Golob Art
     </Logo>
-    <SocialIconsContainer>
-      <SocialIcons size='2x' />
-    </SocialIconsContainer>
+    <SocialIcons size='2x' />
     <Copyright>&copy; {new Date().getFullYear()}</Copyright>
   </Footer>
 );

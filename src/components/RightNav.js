@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FrameBox from './FrameBox';
-import SocialIcons from './SocialIcons';
+import UnstyledSocialIcons from './SocialIcons';
 
 const LogoImg = styled.img`
   height: 130px;
@@ -40,7 +40,7 @@ const NavListItem = styled(UnstyledNavListItem)`
   }
 `;
 
-const SocialIconsContainer = styled(NavListItem)`
+const SocialIcons = styled(UnstyledSocialIcons)`
   display: flex;
   justify-content: space-around;
 `;
@@ -72,9 +72,9 @@ export default ({ secondary_nav_logo, ...rest }) => (
     <SecondaryLogo src={'./assets/logo.svg'} />
     <nav>
       <NavList>
-        <SocialIconsContainer>
-          <SocialIcons size='lg' style={{}} />
-        </SocialIconsContainer>
+        <NavListItem>
+          <SocialIcons size='lg' />
+        </NavListItem>
         <NavListItem>Portfolio</NavListItem>
         <NavListItem>About</NavListItem>
         <NavListItem>Press</NavListItem>

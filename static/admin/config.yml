@@ -49,7 +49,7 @@ collections:
     label: Site Settings
     files:
       - name: left-nav
-        label: Left Navivigation Bar
+        label: Left Navigation Bar
         file: src/settings/left-nav.md
         fields:
           - name: items
@@ -67,7 +67,7 @@ collections:
                     { name: path, label: Path, widget: string },
                   ]
       - name: right-nav
-        label: Right Navivigation Bar
+        label: Right Navigation Bar
         file: src/settings/right-nav.md
         fields:
           - name: items

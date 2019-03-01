@@ -52,6 +52,10 @@ collections:
         label: Left Navigation Bar
         file: src/settings/left-nav.md
         fields:
+          - name: key
+            label: key
+            widget: hidden
+            default: left-nav
           - name: items
             label: Items
             widget: list
@@ -70,6 +74,10 @@ collections:
         label: Right Navigation Bar
         file: src/settings/right-nav.md
         fields:
+          - name: key
+            label: key
+            widget: hidden
+            default: right-nav
           - name: items
             label: Items
             widget: list

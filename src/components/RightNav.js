@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link as UnstyledLink, StaticQuery, graphql } from 'gatsby';
 
 import FrameBox from './FrameBox';
 import UnstyledSocialIcons from './SocialIcons';
@@ -66,21 +67,71 @@ const EmptyMarbleSquare = styled(FrameBox)`
   height: 120px;
 `;
 
-export default ({ secondary_nav_logo, ...rest }) => (
+const Link = styled(UnstyledLink)`
+  color: inherit;
+  text-decoration: none;
+`;
+
+// export default ({ secondary_nav_logo, ...rest }) => (
+//   <div {...rest}>
+//     {/* <SecondaryLogo src={secondary_nav_logo} /> */}
+//     <SecondaryLogo src={'./assets/logo.svg'} />
+//     <nav>
+//       <NavList>
+//         <NavListItem>
+//           <SocialIcons size='lg' />
+//         </NavListItem>
+//         <NavListItem>Portfolio</NavListItem>
+//         <NavListItem>About</NavListItem>
+//         <NavListItem>Press</NavListItem>
+//         <Contact>Contact</Contact>
+//       </NavList>
+//     </nav>
+//     <EmptyMarbleSquare />
+//   </div>
+// );
+
+const RightNav = ({ data, ...rest }) => (
   <div {...rest}>
-    {/* <SecondaryLogo src={secondary_nav_logo} /> */}
     <SecondaryLogo src={'./assets/logo.svg'} />
     <nav>
       <NavList>
         <NavListItem>
           <SocialIcons size='lg' />
         </NavListItem>
-        <NavListItem>Portfolio</NavListItem>
+        {data.markdownRemark.frontmatter.items.map(({ category, path }) => (
+          <NavListItem key={category}>
+            <Link to={path}>{category}</Link>
+          </NavListItem>
+        ))}
+        {/* <NavListItem>Portfolio</NavListItem>
         <NavListItem>About</NavListItem>
-        <NavListItem>Press</NavListItem>
+        <NavListItem>Press</NavListItem> */}
         <Contact>Contact</Contact>
       </NavList>
     </nav>
     <EmptyMarbleSquare />
   </div>
+);
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(frontmatter: { key: { eq: "right-nav" } }) {
+          frontmatter {
+            items {
+              category
+              path
+              subitems {
+                path
+                subitem
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => <RightNav data={data} {...props} />}
+  />
 );

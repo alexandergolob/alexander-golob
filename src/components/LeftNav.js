@@ -69,7 +69,6 @@ const NavItem = styled(UnstyledNavItem)`
 
 const LeftNav = ({ data, ...rest }) => (
   <div {...rest}>
-    {/* <HomeLogo src={logo.image} text={logo.text} /> */}
     <HomeLogo src='./assets/logo.svg' text='Golob Art' />
     <Nav>
       <NavList>

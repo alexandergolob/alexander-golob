@@ -1,4 +1,5 @@
 ---
+key: right-nav
 items:
   - category: Portfolio
     path: /portfolio
@@ -7,4 +8,3 @@ items:
   - category: Press
     path: /press
 ---
-

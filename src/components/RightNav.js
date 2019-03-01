@@ -40,7 +40,7 @@ const NavListItem = styled(UnstyledNavListItem)`
   }
 `;
 
-const SocialIconsContainer = styled(NavListItem)`
+const SocialIconsContainer = styled.div`
   display: flex;
   justify-content: space-around;
 `;
@@ -72,9 +72,12 @@ export default ({ secondary_nav_logo, ...rest }) => (
     <SecondaryLogo src={'./assets/logo.svg'} />
     <nav>
       <NavList>
-        <SocialIconsContainer>
-          <SocialIcons size='lg' style={{}} />
-        </SocialIconsContainer>
+        <NavListItem>
+          <SocialIconsContainer>
+            <SocialIcons size='lg' />
+          </SocialIconsContainer>
+        </NavListItem>
+
         <NavListItem>Portfolio</NavListItem>
         <NavListItem>About</NavListItem>
         <NavListItem>Press</NavListItem>

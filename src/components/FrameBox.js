@@ -10,6 +10,11 @@ const Container = styled.div`
   background: hsl(0, 0%, 93%);
 `;
 
+const ContentContainer = styled.div`
+  position: relative;
+  z-index: 2;
+`;
+
 const BorderContainer = styled.div`
   position: absolute;
   top: -3px;
@@ -99,7 +104,6 @@ export default ({ children, ...rest }) => (
       <TopRightSeparator />
       <BottomLeftSeparator />
     </BorderContainer>
-
-    {children}
+    <ContentContainer>{children}</ContentContainer>
   </Container>
 );

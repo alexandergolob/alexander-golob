@@ -1,4 +1,5 @@
 ---
+key: left-nav
 items:
   - category: Art
     path: /art
@@ -33,4 +34,3 @@ items:
       - path: /venezia
         subitem: venezia
 ---
-

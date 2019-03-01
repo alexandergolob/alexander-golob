@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { Link as UnstyledLink, StaticQuery, graphql } from 'gatsby';
 
 import UnstyledHomeLogo from './HomeLogo';
 import FrameBox from './FrameBox';
@@ -38,12 +39,21 @@ const SubListItem = styled.li`
   }
 `;
 
-const UnstyledNavItem = ({ title, subitems, ...rest }) => (
+const Link = styled(UnstyledLink)`
+  color: inherit;
+  text-decoration: none;
+`;
+
+const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (
   <li {...rest}>
-    <NavItemTitle>{title}</NavItemTitle>
+    <NavItemTitle>
+      <Link to={path}>{category}</Link>
+    </NavItemTitle>
     <SubList>
-      {subitems.map(subitem => (
-        <SubListItem key={subitem}>{subitem}</SubListItem>
+      {subitems.map(({ subitem, path }) => (
+        <SubListItem key={subitem}>
+          <Link to={path}>{subitem}</Link>
+        </SubListItem>
       ))}
     </SubList>
   </li>
@@ -57,27 +67,38 @@ const NavItem = styled(UnstyledNavItem)`
   }
 `;
 
-export default ({ logo, ...rest }) => (
+const LeftNav = ({ data, ...rest }) => (
   <div {...rest}>
     {/* <HomeLogo src={logo.image} text={logo.text} /> */}
     <HomeLogo src='./assets/logo.svg' text='Golob Art' />
     <Nav>
       <NavList>
-        <NavItem
-          title='Art'
-          subitems={['personal', 'commissioned', 'public art']}
-        />
-        <NavItem title='Engagements' subitems={['speaking', 'events']} />
-        <NavItem title='Consulting' subitems={['government', 'private']} />
-        <NavItem
-          title='Special Projects'
-          subitems={[
-            'post-cubicle gallery',
-            'through the looking glass',
-            'venezia'
-          ]}
-        />
+        {data.markdownRemark.frontmatter.items.map(item => (
+          <NavItem key={item.category} {...item} />
+        ))}
       </NavList>
     </Nav>
   </div>
+);
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(frontmatter: { key: { eq: "left-nav" } }) {
+          frontmatter {
+            items {
+              category
+              path
+              subitems {
+                path
+                subitem
+              }
+            }
+          }
+        }
+      }
+    `}
+    render={data => <LeftNav data={data} {...props} />}
+  />
 );

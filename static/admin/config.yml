@@ -50,7 +50,7 @@ collections:
     files:
       - name: left-nav
         label: Left Navivigation Bar
-        file: src/pages/content/settings.md
+        file: src/settings/left-nav.md
         fields:
           - name: items
             label: Items

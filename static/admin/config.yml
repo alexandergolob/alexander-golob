@@ -108,3 +108,17 @@ collections:
       - { name: title, label: Title, widget: string }
       - { name: type, label: Type, widget: hidden, default: Special Project }
       - { name: description, label: Description, widget: markdown }
+
+  - name: test-project
+    label: Test Project
+    folder: src/pages/projects
+    filter:
+      - { field: type, value: Engagement }
+      - { field: type, value: Consulting }
+    create: true
+    delete: true
+    slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
+    fields:
+      - { name: title, label: Title, widget: string }
+      - { name: type, label: Type, widget: hidden, default: Special Project }
+      - { name: description, label: Description, widget: markdown }

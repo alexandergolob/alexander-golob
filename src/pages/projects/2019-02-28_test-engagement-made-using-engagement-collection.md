@@ -1,6 +1,5 @@
 ---
 title: test engagement made using engagement collection
-type: Engagement
+type: [Engagement, Consulting]
 description: lorem ipsum
 ---
-

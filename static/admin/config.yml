@@ -47,15 +47,14 @@ collections:
 
   - name: settings
     label: Site Settings
-    file: src/pages/content/settings.md
-    fields:
+    files:
       - name: left-nav
-        label: Left Navigation Bar
-        widget: list
-        field:
-          - name: item
-            label: Item
-            widget: object
+        label: Left Navivigation Bar
+        file: src/pages/content/settings.md
+        fields:
+          - name: items
+            label: Items
+            widget: list
             fields:
               - { name: category, label: Category, widget: string }
               - { name: path, label: Path, widget: string }
@@ -67,6 +66,7 @@ collections:
                     { name: subitem, label: SubItem, widget: string },
                     { name: path, label: Path, widget: string },
                   ]
+
   - name: projects
     label: Projects
     folder: src/pages/projects

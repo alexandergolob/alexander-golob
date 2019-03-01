@@ -123,10 +123,6 @@ export default props => (
             items {
               category
               path
-              subitems {
-                path
-                subitem
-              }
             }
           }
         }

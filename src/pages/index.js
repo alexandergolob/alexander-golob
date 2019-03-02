@@ -63,7 +63,7 @@ export const IndexPageTemplate = ({
 );
 
 export default ({ data }) => {
-  const postData = data.allMarkdownRemark.edges[0].node.frontmatter;
+  const postData = data.markdownRemark.frontmatter;
   return <IndexPageTemplate {...postData} />;
 };
 

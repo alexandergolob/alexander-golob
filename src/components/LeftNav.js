@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as UnstyledLink, StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
 import UnstyledHomeLogo from './HomeLogo';
 import FrameBox from './FrameBox';
+import Link from './Link';
 
 const HomeLogo = styled(UnstyledHomeLogo)`
   margin-bottom: 10px;
@@ -37,11 +38,6 @@ const SubListItem = styled.li`
   &:last-of-type {
     margin-bottom: 0;
   }
-`;
-
-const Link = styled(UnstyledLink)`
-  color: inherit;
-  text-decoration: none;
 `;
 
 const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (

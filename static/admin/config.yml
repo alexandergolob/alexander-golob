@@ -85,6 +85,26 @@ collections:
               - { name: category, label: Category, widget: string }
               - { name: path, label: Path, widget: string }
 
+      - name: social-links
+        label: Social Links
+        file: src/settings/social-links.md
+        fields:
+          - name: key
+            label: key
+            widget: hidden
+            default: social-links
+          - name: social-links
+            label: Social Links
+            widget: list
+            fields:
+              - {
+                  name: icon,
+                  label: Icon,
+                  widget: select,
+                  options: [Facebook, Instagram, LinkedIn, Twitter],
+                }
+              - { name: link, label: Link, widget: string }
+
   - name: projects
     label: Projects
     folder: src/pages/projects

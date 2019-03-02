@@ -26,15 +26,42 @@ const SocialIcon = styled(UnstyledSocialIcon)`
   transition: all 300ms ease-in-out;
 `;
 
+const Anchor = styled.a`
+  color: inherit;
+  text-decoration: none;
+`;
+
+const SocialLink = ({ href, ...rest }) => (
+  <Anchor href={href} target='_blank' rel='noopener noreferrer'>
+    <SocialIcon {...rest} />
+  </Anchor>
+);
+
 export default ({ className, ...rest }) => (
   <Container className={className}>
-    <SocialIcon icon={faFacebookF} hoverColor='hsl(221, 44%, 41%)' {...rest} />
-    <SocialIcon icon={faInstagram} hoverColor='hsl(326, 57%, 48%)' {...rest} />
-    <SocialIcon
+    <SocialLink
+      href='https://www.facebook.com/AlexanderGolobArt/'
+      icon={faFacebookF}
+      hoverColor='hsl(221, 44%, 41%)'
+      {...rest}
+    />
+    <SocialLink
+      href='https://www.instagram.com/alexandergolobart/'
+      icon={faInstagram}
+      hoverColor='hsl(326, 57%, 48%)'
+      {...rest}
+    />
+    <SocialLink
+      href='https://www.linkedin.com/in/alexander-golob/'
       icon={faLinkedinIn}
       hoverColor='hsl(201, 100%, 35%)'
       {...rest}
     />
-    <SocialIcon icon={faTwitter} hoverColor='hsl(196, 100%, 46%)' {...rest} />
+    <SocialLink
+      href='https://twitter.com/GolobArtBoston'
+      icon={faTwitter}
+      hoverColor='hsl(196, 100%, 46%)'
+      {...rest}
+    />
   </Container>
 );

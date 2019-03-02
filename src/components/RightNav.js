@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as UnstyledLink, StaticQuery, graphql } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 
 import FrameBox from './FrameBox';
 import UnstyledSocialIcons from './SocialIcons';
+import Link from './Link';
 
 const LogoImg = styled.img`
   height: 130px;
@@ -67,30 +68,6 @@ const EmptyMarbleSquare = styled(FrameBox)`
   height: 120px;
 `;
 
-const Link = styled(UnstyledLink)`
-  color: inherit;
-  text-decoration: none;
-`;
-
-// export default ({ secondary_nav_logo, ...rest }) => (
-//   <div {...rest}>
-//     {/* <SecondaryLogo src={secondary_nav_logo} /> */}
-//     <SecondaryLogo src={'./assets/logo.svg'} />
-//     <nav>
-//       <NavList>
-//         <NavListItem>
-//           <SocialIcons size='lg' />
-//         </NavListItem>
-//         <NavListItem>Portfolio</NavListItem>
-//         <NavListItem>About</NavListItem>
-//         <NavListItem>Press</NavListItem>
-//         <Contact>Contact</Contact>
-//       </NavList>
-//     </nav>
-//     <EmptyMarbleSquare />
-//   </div>
-// );
-
 const RightNav = ({ data, ...rest }) => (
   <div {...rest}>
     <SecondaryLogo src={'./assets/logo.svg'} />
@@ -104,10 +81,9 @@ const RightNav = ({ data, ...rest }) => (
             <Link to={path}>{category}</Link>
           </NavListItem>
         ))}
-        {/* <NavListItem>Portfolio</NavListItem>
-        <NavListItem>About</NavListItem>
-        <NavListItem>Press</NavListItem> */}
-        <Contact>Contact</Contact>
+        <Contact>
+          <Link to='/contact'>Contact</Link>
+        </Contact>
       </NavList>
     </nav>
     <EmptyMarbleSquare />

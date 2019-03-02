@@ -1,4 +1,5 @@
 ---
+key: index
 logo:
   image: /assets/logo.svg
   text: Golob Art

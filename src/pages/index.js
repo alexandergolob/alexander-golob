@@ -69,29 +69,25 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allMarkdownRemark {
-      edges {
-        node {
-          frontmatter {
-            logo {
-              image
-              text
-            }
-            secondary_nav_logo
-            carousel_images {
-              description
-              image
-            }
-            hero_statement
-            left_cta {
-              content
-              path
-            }
-            right_cta {
-              content
-              path
-            }
-          }
+    markdownRemark(frontmatter: { key: { eq: "index" } }) {
+      frontmatter {
+        logo {
+          image
+          text
+        }
+        secondary_nav_logo
+        carousel_images {
+          description
+          image
+        }
+        hero_statement
+        left_cta {
+          content
+          path
+        }
+        right_cta {
+          content
+          path
         }
       }
     }

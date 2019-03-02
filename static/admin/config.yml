@@ -84,7 +84,6 @@ collections:
             fields:
               - { name: category, label: Category, widget: string }
               - { name: path, label: Path, widget: string }
-
       - name: social-links
         label: Social Links
         file: src/settings/social-links.md
@@ -104,6 +103,23 @@ collections:
                   options: [Facebook, Instagram, LinkedIn, Twitter],
                 }
               - { name: link, label: Link, widget: string }
+      - name: footer
+        label: Footer
+        file: src/settings/footer.md
+        fields:
+          - name: key
+            label: key
+            widget: hidden
+            default: footer
+          - { name: bold_left_statement, label: Bold Left Statement, widget: string }
+          - { 
+              name: middle_statement,
+              label: Middle Statement,
+              widget: object,
+              fields:
+                - { name: img, label: Image, widget: image }
+                - { name: text, label: Text, widget: string }
+            }
 
   - name: projects
     label: Projects

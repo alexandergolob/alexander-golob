@@ -1,9 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { StaticQuery, graphql } from 'gatsby';
 
 import UnstyledSocialIcons from './SocialIcons';
 
-const Footer = styled.footer`
+const Container = styled.footer`
   padding: 20px 30px 7px;
   background: hsl(22, 100%, 58%);
 
@@ -66,15 +67,34 @@ const Copyright = styled.div`
   font-size: 0.85rem;
 `;
 
-export default props => (
-  <Footer {...props}>
-    <SupportUs>Support our work with Patreon</SupportUs>
+const Footer = ({ bold_left_statement, middle_statement, ...rest }) => (
+  <Container {...rest}>
+    <SupportUs>{bold_left_statement}</SupportUs>
     <DevCredit>website created by kbaig</DevCredit>
     <Logo>
-      <LogoImg src='./assets/logo.svg' alt='' />
-      Golob Art
+      <LogoImg src={middle_statement.img} alt='' />
+      {middle_statement.text}
     </Logo>
     <SocialIcons size='2x' />
     <Copyright>&copy; {new Date().getFullYear()}</Copyright>
-  </Footer>
+  </Container>
+);
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(frontmatter: { key: { eq: "footer" } }) {
+          frontmatter {
+            bold_left_statement
+            middle_statement {
+              img
+              text
+            }
+          }
+        }
+      }
+    `}
+    render={data => <Footer {...data.markdownRemark.frontmatter} {...props} />}
+  />
 );

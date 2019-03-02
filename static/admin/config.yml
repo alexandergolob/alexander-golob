@@ -116,9 +116,9 @@ collections:
               label: Bold Left Statement,
               widget: string,
             }
-          - name: middle_statement,
-            label: Middle Statement,
-            widget: object,
+          - name: middle_statement
+            label: Middle Statement
+            widget: object
             fields:
               - { name: img, label: Image, widget: image }
               - { name: text, label: Text, widget: string }

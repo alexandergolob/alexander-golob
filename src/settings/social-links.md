@@ -1,5 +1,6 @@
 ---
-social-links:
+key: social-links
+links:
   - icon: Facebook
     link: 'https://www.facebook.com/AlexanderGolobArt/'
   - icon: Instagram
@@ -9,4 +10,3 @@ social-links:
   - icon: Twitter
     link: 'https://twitter.com/GolobArtBoston'
 ---
-

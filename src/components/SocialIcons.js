@@ -7,6 +7,7 @@ import {
   faLinkedinIn,
   faTwitter
 } from '@fortawesome/free-brands-svg-icons';
+import { StaticQuery, graphql } from 'gatsby';
 
 const Container = styled.div``;
 
@@ -37,31 +38,54 @@ const SocialLink = ({ href, ...rest }) => (
   </Anchor>
 );
 
-export default ({ className, ...rest }) => (
-  <Container className={className}>
-    <SocialLink
-      href='https://www.facebook.com/AlexanderGolobArt/'
-      icon={faFacebookF}
-      hoverColor='hsl(221, 44%, 41%)'
-      {...rest}
-    />
-    <SocialLink
-      href='https://www.instagram.com/alexandergolobart/'
-      icon={faInstagram}
-      hoverColor='hsl(326, 57%, 48%)'
-      {...rest}
-    />
-    <SocialLink
-      href='https://www.linkedin.com/in/alexander-golob/'
-      icon={faLinkedinIn}
-      hoverColor='hsl(201, 100%, 35%)'
-      {...rest}
-    />
-    <SocialLink
-      href='https://twitter.com/GolobArtBoston'
-      icon={faTwitter}
-      hoverColor='hsl(196, 100%, 46%)'
-      {...rest}
-    />
-  </Container>
+const getIcon = social =>
+  ({
+    Facebook: faFacebookF,
+    Instagram: faInstagram,
+    LinkedIn: faLinkedinIn,
+    Twitter: faTwitter
+  }[social]);
+
+const getHoverColor = social =>
+  ({
+    Facebook: 'hsl(221, 44%, 41%)',
+    Instagram: 'hsl(326, 57%, 48%)',
+    LinkedIn: 'hsl(201, 100%, 35%)',
+    Twitter: 'hsl(196, 100%, 46%)'
+  }[social]);
+
+const SocialLinks = ({ className, links, ...rest }) => {
+  return (
+    <Container className={className}>
+      {links.map(({ icon, link }, i) => (
+        <SocialLink
+          key={i}
+          href={link}
+          icon={getIcon(icon)}
+          hoverColor={getHoverColor(icon)}
+          {...rest}
+        />
+      ))}
+    </Container>
+  );
+};
+
+export default props => (
+  <StaticQuery
+    query={graphql`
+      query {
+        markdownRemark(frontmatter: { key: { eq: "social-links" } }) {
+          frontmatter {
+            links {
+              icon
+              link
+            }
+          }
+        }
+      }
+    `}
+    render={data => (
+      <SocialLinks links={data.markdownRemark.frontmatter.links} {...props} />
+    )}
+  />
 );

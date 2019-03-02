@@ -93,7 +93,7 @@ collections:
             label: key
             widget: hidden
             default: social-links
-          - name: social-links
+          - name: links
             label: Social Links
             widget: list
             fields:

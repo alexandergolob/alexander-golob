@@ -68,7 +68,7 @@ const EmptyMarbleSquare = styled(FrameBox)`
   height: 120px;
 `;
 
-const RightNav = ({ data, ...rest }) => (
+const RightNav = ({ items, ...rest }) => (
   <div {...rest}>
     <SecondaryLogo src={'./assets/logo.svg'} />
     <nav>
@@ -76,7 +76,7 @@ const RightNav = ({ data, ...rest }) => (
         <NavListItem>
           <SocialIcons size='lg' />
         </NavListItem>
-        {data.markdownRemark.frontmatter.items.map(({ category, path }) => (
+        {items.map(({ category, path }) => (
           <NavListItem key={category}>
             <Link to={path}>{category}</Link>
           </NavListItem>
@@ -104,6 +104,8 @@ export default props => (
         }
       }
     `}
-    render={data => <RightNav data={data} {...props} />}
+    render={data => (
+      <RightNav items={data.markdownRemark.frontmatter.items} {...props} />
+    )}
   />
 );

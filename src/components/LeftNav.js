@@ -63,12 +63,12 @@ const NavItem = styled(UnstyledNavItem)`
   }
 `;
 
-const LeftNav = ({ data, ...rest }) => (
+const LeftNav = ({ items, ...rest }) => (
   <div {...rest}>
     <HomeLogo src='./assets/logo.svg' text='Golob Art' />
     <Nav>
       <NavList>
-        {data.markdownRemark.frontmatter.items.map(item => (
+        {items.map(item => (
           <NavItem key={item.category} {...item} />
         ))}
       </NavList>
@@ -94,6 +94,8 @@ export default props => (
         }
       }
     `}
-    render={data => <LeftNav data={data} {...props} />}
+    render={data => (
+      <LeftNav items={data.markdownRemark.frontmatter.items} {...props} />
+    )}
   />
 );

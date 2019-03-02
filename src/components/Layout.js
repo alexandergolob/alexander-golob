@@ -71,6 +71,12 @@ const Container = styled.div`
   width: 80%;
   margin: auto;
   padding-top: 15vh;
+  padding-bottom: 120px;
+`;
+
+const Graffiti = styled.img`
+  height: 150px;
+  transform: translateX(-50%);
 `;
 
 const Footer = styled(UnstyledFooter)`
@@ -89,6 +95,7 @@ export default ({ children, ...rest }) => (
       <Container {...rest}>
         {children}
         <div style={{ height: '100vh' }} />
+        <Graffiti alt='' src='assets/logo.svg' />
       </Container>
       <Footer />
     </Wrapper>

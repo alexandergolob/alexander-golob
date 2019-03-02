@@ -4,6 +4,7 @@ import styled from 'styled-components';
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
 import Link from '../components/Link';
+import Project from '../components/Project';
 
 const HeadingContainer = styled.h1`
   display: flex;
@@ -82,27 +83,6 @@ const CTALink = styled(Link)`
   border-radius: 2px;
   background: hsl(0, 0%, 90%);
   padding: 4px 50px;
-`;
-
-const UnstyledProject = props => (
-  <div {...props}>
-    <ProjectCaption>Kaleidoscope</ProjectCaption>
-  </div>
-);
-
-const Project = styled(UnstyledProject)`
-  background: darkgreen;
-  position: relative;
-`;
-
-const ProjectCaption = styled.div`
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: hsl(0, 0%, 93%);
-  padding: 5px 10px;
-  text-align: center;
 `;
 
 export default () => (

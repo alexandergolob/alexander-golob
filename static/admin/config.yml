@@ -45,6 +45,22 @@ collections:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
 
+        - label: Engagements
+          name: engagements
+          file: src/pages/content/engagements.md
+          fields:
+            - { name: description-heading, label: Description Heading, widget: string }
+            - { name: body, label: Description Body, widget: markdown }
+            - name: cta
+              label: CTA
+              widget: object
+              fields:
+                - { name: statement-above, label: Statement Above CTA, widget: string }
+                - { name: statement, label: CTA Statement, widget: string }
+                - { name: path, label: Path, widget: string }
+              
+            
+
   - name: settings
     label: Site Settings
     files:

@@ -44,7 +44,6 @@ collections:
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
-
         - label: Engagements
           name: engagements
           file: src/pages/content/engagements.md

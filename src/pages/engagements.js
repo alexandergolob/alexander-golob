@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
@@ -85,53 +86,63 @@ const CTALink = styled(Link)`
   padding: 4px 50px;
 `;
 
-export default () => (
-  <Layout>
-    <HeadingContainer>
-      <Heading>Engagements</Heading>
-    </HeadingContainer>
-    <ContentContainer>
-      <Spacer />
-      <YearsContainer>
-        <Years>
-          {Array.from(Array(8), (_, i) => (
-            <div key={i}>{new Date().getFullYear() - (8 - (i + 1))}</div>
-          ))}
-        </Years>
-      </YearsContainer>
+export default ({ data }) => {
+  const description = data.markdownRemark.html;
+  const { description_heading, cta } = data.markdownRemark.frontmatter;
 
-      <Description>
-        <DescriptionHeading>Speaking</DescriptionHeading>
-        <p>
-          Alexander Golob has experience engaging with communities, conducting
-          research, and developing and implementing art and placemaking policy,
-          strategy, and integration. His studio has worked with city governments
-          on policy and implementation, non-profits embarking upon art
-          initiative, and early stage start-ups looking for guidance.
-        </p>
-        <br />
-        <p>
-          Art provides benefits for sense of community, business, marketing, and
-          health. Sometimes, it helps to have an artist to integrate that
-          perspective into a community, business, or project.
-        </p>
-        <CTAContainer>
-          <CTAStatement>Interested? Have questions?</CTAStatement>
-          <CTALink to='/contact'>Get in touch</CTALink>
-        </CTAContainer>
-      </Description>
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-    </ContentContainer>
-  </Layout>
-);
+  return (
+    <Layout>
+      <HeadingContainer>
+        <Heading>Engagements</Heading>
+      </HeadingContainer>
+      <ContentContainer>
+        <Spacer />
+        <YearsContainer>
+          <Years>
+            {Array.from(Array(8), (_, i) => (
+              <div key={i}>{new Date().getFullYear() - (8 - (i + 1))}</div>
+            ))}
+          </Years>
+        </YearsContainer>
+
+        <Description>
+          <DescriptionHeading>{description_heading}</DescriptionHeading>
+          <div dangerouslySetInnerHTML={{ __html: description }} />
+          <CTAContainer>
+            <CTAStatement>{cta.statement_above}</CTAStatement>
+            <CTALink to={cta.path}>{cta.statement}</CTALink>
+          </CTAContainer>
+        </Description>
+
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+      </ContentContainer>
+    </Layout>
+  );
+};
+
+export const query = graphql`
+  query {
+    markdownRemark(frontmatter: { key: { eq: "engagements" } }) {
+      html
+      frontmatter {
+        description_heading
+        cta {
+          statement_above
+          statement
+          path
+        }
+      }
+    }
+  }
+`;

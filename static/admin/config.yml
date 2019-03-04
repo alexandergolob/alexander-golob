@@ -105,13 +105,6 @@ collections:
                   - { name: heading, label: Heading, widget: string }
                   - { name: content, label: Content, widget: markdown }
                   - { name: image, label: Image, widget: image }
-              - name: description-4
-                label: Description 4
-                widget: object
-                fields:
-                  - { name: heading, label: Heading, widget: string }
-                  - { name: content, label: Content, widget: markdown }
-                  - { name: image, label: Image, widget: image }
 
   - name: settings
     label: Site Settings

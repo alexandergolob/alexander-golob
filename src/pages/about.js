@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
@@ -119,97 +120,88 @@ const Project = styled(UnstyledProject)`
   font-size: 1rem;
 `;
 
-export default () => (
-  <Layout>
-    <HeadingContainer>
-      <Heading>
-        Golob Art offers a wide array of fine art and creative services to help
-        lift people up, provoke thought, and transform spaces.
-      </Heading>
-    </HeadingContainer>
-    <SubheadingContainer>
-      <Subheading>Community Engagement</Subheading>
-      <Subheading>Community Engagement</Subheading>
-      <Subheading>Community Engagement</Subheading>
-      <Subheading>Community Engagement</Subheading>
-    </SubheadingContainer>
-    <DescriptionsContainer>
-      <Description>
-        <DescriptionHeading>Community Engagement</DescriptionHeading>
-        <DescriptionBody>
-          <p>
-            Alexander Golob has experience engaging with communities, conducting
-            research, and developing and implementing art and placemaking
-            policy, strategy, and integration. His studio has worked with city
-            governments on policy and implementation, non-profits embarking upon
-            art initiative, and early stage start-ups looking for guidance.
-          </p>
-          <br />
-          <p>
-            Art provides benefits for sense of community, business, marketing,
-            and health. Sometimes, it helps to have an artist to integrate that
-            perspective into a community, business, or project.
-          </p>
-        </DescriptionBody>
-      </Description>
-      <DescriptionImage
-        alt='Artwork titled "Kaleidoscope"'
-        src='/assets/kaleidoscope.webp'
-      />
-      <DescriptionImage
-        alt='Artwork titled "Kaleidoscope"'
-        src='/assets/kaleidoscope.webp'
-      />
-      <DisplacedDescription>
-        <DescriptionHeading>Community Engagement</DescriptionHeading>
-        <DescriptionBody>
-          <p>
-            Alexander Golob has experience engaging with communities, conducting
-            research, and developing and implementing art and placemaking
-            policy, strategy, and integration. His studio has worked with city
-            governments on policy and implementation, non-profits embarking upon
-            art initiative, and early stage start-ups looking for guidance.
-          </p>
-          <br />
-          <p>
-            Art provides benefits for sense of community, business, marketing,
-            and health. Sometimes, it helps to have an artist to integrate that
-            perspective into a community, business, or project.
-          </p>
-        </DescriptionBody>
-      </DisplacedDescription>
-      <Description>
-        <DescriptionHeading>Community Engagement</DescriptionHeading>
-        <DescriptionBody>
-          <p>
-            Alexander Golob has experience engaging with communities, conducting
-            research, and developing and implementing art and placemaking
-            policy, strategy, and integration. His studio has worked with city
-            governments on policy and implementation, non-profits embarking upon
-            art initiative, and early stage start-ups looking for guidance.
-          </p>
-          <br />
-          <p>
-            Art provides benefits for sense of community, business, marketing,
-            and health. Sometimes, it helps to have an artist to integrate that
-            perspective into a community, business, or project.
-          </p>
-        </DescriptionBody>
-      </Description>
-      <DescriptionImage
-        alt='Artwork titled "Kaleidoscope"'
-        src='/assets/kaleidoscope.webp'
-      />
-    </DescriptionsContainer>
-    <ProjectsContainer>
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-      <Project />
-    </ProjectsContainer>
-  </Layout>
-);
+export default ({ data }) => {
+  const { frontmatter } = data.markdownRemark;
+  const { heading, subheadings, descriptions } = frontmatter;
+  const {
+    subheading_1,
+    subheading_2,
+    subheading_3,
+    subheading_4
+  } = subheadings;
+  const { description_1, description_2, description_3 } = descriptions;
+
+  return (
+    <Layout>
+      <HeadingContainer>
+        <Heading>{heading}</Heading>
+      </HeadingContainer>
+      <SubheadingContainer>
+        <Subheading>{subheading_1}</Subheading>
+        <Subheading>{subheading_2}</Subheading>
+        <Subheading>{subheading_3}</Subheading>
+        <Subheading>{subheading_4}</Subheading>
+      </SubheadingContainer>
+      <DescriptionsContainer>
+        <Description>
+          <DescriptionHeading>{description_1.heading}</DescriptionHeading>
+          <DescriptionBody>{description_1.content}</DescriptionBody>
+        </Description>
+        <DescriptionImage alt='' src={description_1.image} />
+        <DescriptionImage alt='' src={description_2.image} />
+        <DisplacedDescription>
+          <DescriptionHeading>{description_2.heading}</DescriptionHeading>
+          <DescriptionBody>{description_2.content}</DescriptionBody>
+        </DisplacedDescription>
+        <Description>
+          <DescriptionHeading>{description_3.heading}</DescriptionHeading>
+          <DescriptionBody>{description_3.content}</DescriptionBody>
+        </Description>
+        <DescriptionImage alt='' src={description_3.image} />
+      </DescriptionsContainer>
+      <ProjectsContainer>
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+        <Project />
+      </ProjectsContainer>
+    </Layout>
+  );
+};
+
+export const query = graphql`
+  query {
+    markdownRemark(frontmatter: { key: { eq: "about" } }) {
+      frontmatter {
+        heading
+        subheadings {
+          subheading_1
+          subheading_2
+          subheading_3
+          subheading_4
+        }
+        descriptions {
+          description_1 {
+            heading
+            content
+            image
+          }
+          description_2 {
+            heading
+            content
+            image
+          }
+          description_3 {
+            heading
+            content
+            image
+          }
+        }
+      }
+    }
+  }
+`;

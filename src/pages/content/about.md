@@ -1,4 +1,5 @@
 ---
+key: about
 heading: >-
   Golob Art offers a wide array of fine art and creative services to help lift
   people up, provoke thought, and transform spaces.
@@ -25,4 +26,3 @@ descriptions:
     heading: Community Engagement
     image: /assets/kaleidoscope.webp
 ---
-

@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
-import Layout from '../components/Layout';
-import UnstyledHomeCarousel from '../components/HomeCarousel';
-import FrameBox from '../components/FrameBox';
+import Layout from '../../components/Layout';
+import UnstyledHomeCarousel from '../../components/HomeCarousel';
+import FrameBox from '../../components/FrameBox';
 
 const HomeCarousel = styled(UnstyledHomeCarousel)`
   margin-bottom: 40px;

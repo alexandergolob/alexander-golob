@@ -56,10 +56,13 @@ exports.createPages = ({ actions, graphql }) => {
     }));
 
     pages.forEach(({ id, slug, templateKey }) => {
-      console.log(`src/templates/${String(templateKey)}.js`);
+      const templateFilename =
+        templateKey || `${slug.replace(/\//g, '') || 'index'}-page`;
+
+      console.log(templateFilename);
       createPage({
         path: slug,
-        component: path.resolve(`src/templates/${String(templateKey)}.js`),
+        component: path.resolve(`src/templates/${String(templateFilename)}.js`),
         // additional data can be passed via context
         context: {
           id

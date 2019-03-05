@@ -1,10 +1,5 @@
 ---
-templateKey: index-page
-logo:
-  image: /assets/logo.svg
-  text: Golob Art
-secondary-nav-logo: /assets/logo.svg
-carousel-images:
+carouselImages:
   - description: 'Kaleidoscope, Boston, MA'
     image: /assets/kaleidoscope.webp
   - description: 'PokeCity Mural, Cambridge'
@@ -13,11 +8,11 @@ carousel-images:
     image: /assets/the-snap-gallery.webp
   - description: Starry Night
     image: /assets/starry-night.jpg
-hero-statement: We create art for community.
-left-cta:
+heroStatement: We create art for community.
+leftCta:
   content: Art and Merchandise for Sale
   path: /for-sale
-right-cta:
+rightCta:
   content: Support our work with Patreon
   path: /patreon
 ---

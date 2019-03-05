@@ -7,38 +7,28 @@ media_folder: static/assets
 public_folder: assets
 
 collections:
-  - name: pages
-    label: Pages
+  - name: unique-pages
+    label: Unique Pages
+    delete: false
     files:
-      - label: Home Page
-        name: home-page
+      - label: Home
+        name: home
         file: src/pages/index.md
         fields:
-          - name: logo
-            label: Logo
-            widget: object
-            fields:
-              - { name: image, label: Image, widget: image }
-              - { name: text, label: Text, widget: string }
-          - {
-              name: secondary-nav-logo,
-              label: Secondary Nav Logo,
-              widget: image,
-            }
-          - name: carousel-images
+          - name: carouselImages
             label: Carousel Image
             widget: list
             fields:
               - { name: image, label: Image, widget: image }
               - { name: description, label: Description, widget: string }
-          - { name: hero-statement, label: Hero Statement, widget: string }
-          - name: left-cta
+          - { name: heroStatement, label: Hero Statement, widget: string }
+          - name: leftCta
             label: Left CTA
             widget: object
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
-          - name: right-cta
+          - name: rightCta
             label: Right CTA
             widget: object
             fields:

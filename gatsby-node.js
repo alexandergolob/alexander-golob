@@ -20,3 +20,51 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     });
   }
 };
+
+exports.createPages = ({ actions, graphql }) => {
+  const { createPage } = actions;
+  return graphql(`
+    {
+      allFile(
+        filter: { sourceInstanceName: { eq: "pages" }, extension: { eq: "md" } }
+      ) {
+        edges {
+          node {
+            childMarkdownRemark {
+              id
+              fields {
+                slug
+              }
+              frontmatter {
+                templateKey
+              }
+            }
+          }
+        }
+      }
+    }
+  `).then(result => {
+    if (result.errors) {
+      result.errors.forEach(e => console.error(e.toString()));
+      return Promise.reject(result.errors);
+    }
+
+    const pages = result.data.allFile.edges.map(({ node }) => ({
+      id: node.childMarkdownRemark.id,
+      slug: node.childMarkdownRemark.fields.slug,
+      templateKey: node.childMarkdownRemark.frontmatter.templateKey
+    }));
+
+    pages.forEach(({ id, slug, templateKey }) => {
+      console.log(`src/templates/${String(templateKey)}.js`);
+      createPage({
+        path: slug,
+        component: path.resolve(`src/templates/${String(templateKey)}.js`),
+        // additional data can be passed via context
+        context: {
+          id
+        }
+      });
+    });
+  });
+};

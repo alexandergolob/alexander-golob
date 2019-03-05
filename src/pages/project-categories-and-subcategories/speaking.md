@@ -1,5 +1,5 @@
 ---
-key: speaking
+templateKey: subcategory-page
 description-heading: Speaking
 cta:
   path: /contact

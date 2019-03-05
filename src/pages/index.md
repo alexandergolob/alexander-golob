@@ -1,5 +1,5 @@
 ---
-key: index
+templateKey: index-page
 logo:
   image: /assets/logo.svg
   text: Golob Art

@@ -2,9 +2,9 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
-import Layout from '../../components/Layout';
-import FrameBox from '../../components/FrameBox';
-import UnstyledProject from '../../components/Project';
+import Layout from '../components/Layout';
+import FrameBox from '../components/FrameBox';
+import UnstyledProject from '../components/Project';
 
 const HeadingContainer = styled.h1`
   display: flex;
@@ -175,7 +175,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    markdownRemark(frontmatter: { key: { eq: "about" } }) {
+    markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
       frontmatter {
         heading
         subheadings {

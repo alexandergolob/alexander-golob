@@ -2,10 +2,10 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
-import Layout from '../../components/Layout';
-import FrameBox from '../../components/FrameBox';
-import Link from '../../components/Link';
-import Project from '../../components/Project';
+import Layout from '../components/Layout';
+import FrameBox from '../components/FrameBox';
+import Link from '../components/Link';
+import Project from '../components/Project';
 
 const HeadingContainer = styled.h1`
   display: flex;
@@ -132,8 +132,8 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query {
-    markdownRemark(frontmatter: { key: { eq: "speaking" } }) {
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
         description_heading

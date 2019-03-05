@@ -45,19 +45,19 @@ const RightCTA = styled(CTA)`
 `;
 
 export const IndexPageTemplate = ({
-  carousel_images,
-  hero_statement,
-  left_cta,
-  right_cta
+  carouselImages,
+  heroStatement,
+  leftCta,
+  rightCta
 }) => (
   <Layout>
-    <HomeCarousel images={carousel_images} />
+    <HomeCarousel images={carouselImages} />
     <HeroWrapper>
-      <Hero>{hero_statement}</Hero>
+      <Hero>{heroStatement}</Hero>
     </HeroWrapper>
     <CTAContainer>
-      <LeftCTA>{left_cta.content}</LeftCTA>
-      <RightCTA>{right_cta.content}</RightCTA>
+      <LeftCTA>{leftCta.content}</LeftCTA>
+      <RightCTA>{rightCta.content}</RightCTA>
     </CTAContainer>
   </Layout>
 );
@@ -68,24 +68,19 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query {
-    markdownRemark(frontmatter: { templateKey: { eq: "index-page" } }) {
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
-        logo {
-          image
-          text
-        }
-        secondary_nav_logo
-        carousel_images {
+        carouselImages {
           description
           image
         }
-        hero_statement
-        left_cta {
+        heroStatement
+        leftCta {
           content
           path
         }
-        right_cta {
+        rightCta {
           content
           path
         }

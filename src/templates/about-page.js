@@ -174,8 +174,8 @@ export default ({ data }) => {
 };
 
 export const query = graphql`
-  query {
-    markdownRemark(frontmatter: { templateKey: { eq: "about-page" } }) {
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
         subheadings {

@@ -8,10 +8,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
     node.internal.type === 'MarkdownRemark' &&
     node.fileAbsolutePath.includes('/pages/')
   ) {
-    const value = createFilePath({ node, getNode }).replace(
-      /\/project-categories|\/project-subcategories/,
-      ''
-    );
+    const value = createFilePath({ node, getNode })
+      .replace(/\/project-categories|\/project-subcategories/, '')
+      .toLowerCase()
+      .replace(/ /g, '-');
 
     createNodeField({
       name: `slug`,

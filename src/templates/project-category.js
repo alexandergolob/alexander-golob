@@ -122,14 +122,14 @@ const Project = styled(UnstyledProject)`
 
 export default ({ data }) => {
   const { frontmatter } = data.markdownRemark;
-  const { heading, subheadings, descriptions } = frontmatter;
+  const { title, subheadings, descriptions } = frontmatter;
   const { subheading1, subheading2, subheading3, subheading4 } = subheadings;
   const { description1, description2, description3 } = descriptions;
 
   return (
     <Layout>
       <HeadingContainer>
-        <Heading>{heading}</Heading>
+        <Heading>{title}</Heading>
       </HeadingContainer>
       <SubheadingContainer>
         <Subheading>{subheading1}</Subheading>
@@ -172,7 +172,7 @@ export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
-        heading
+        title
         subheadings {
           subheading1
           subheading2

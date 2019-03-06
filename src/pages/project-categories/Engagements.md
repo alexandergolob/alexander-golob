@@ -1,7 +1,6 @@
 ---
-heading: >-
-  Golob Art offers a wide array of fine art and creative services to help lift
-  people up, provoke thought, and transform spaces.
+templateKey: project-category
+title: Engagements
 subheadings:
   subheading1: Community Engagement
   subheading2: Community Engagement

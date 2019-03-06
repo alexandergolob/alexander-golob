@@ -36,9 +36,10 @@ collections:
               - { name: path, label: Path, widget: string }
       - name: about
         label: About
-        file: src/pages/about/index.md
+        folder: src/pages/project-categories
         fields:
-          - { name: heading, label: Heading, widget: string }
+          - { name: templateKey, widget: hidden, default: project-category }
+          - { name: title, label: Title, widget: string }
           - name: subheadings
             label: Subheading
             widget: object

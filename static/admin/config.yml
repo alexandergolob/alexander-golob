@@ -9,7 +9,6 @@ public_folder: assets
 collections:
   - name: unique-pages
     label: Unique Pages
-    create: false
     delete: false
     files:
       - label: Home

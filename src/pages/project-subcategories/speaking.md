@@ -1,6 +1,7 @@
 ---
 templateKey: project-subcategory-page
 title: Speaking
+category: engagements
 cta:
   path: /contact
   statement: Get in touch

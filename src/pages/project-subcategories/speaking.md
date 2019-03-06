@@ -1,11 +1,10 @@
 ---
-title: speaking
 templateKey: project-subcategory-page
-description-heading: Speaking
+title: Speaking
 cta:
   path: /contact
   statement: Get in touch
-  statement-above: Interested? Have questions?
+  statementAbove: Interested? Have questions?
 ---
 
 Alexander Golob has experience engaging with communities, conducting research, and developing and implementing art and placemaking policy, strategy, and integration. His studio has worked with city governments on policy and implementation, non-profits embarking upon art initiative, and early stage start-ups looking for guidance.

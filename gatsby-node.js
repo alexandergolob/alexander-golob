@@ -6,10 +6,10 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
 
   if (
     node.internal.type === 'MarkdownRemark' &&
-    !node.fileAbsolutePath.includes('/site-settings/')
+    node.fileAbsolutePath.includes('/pages/')
   ) {
     const value = createFilePath({ node, getNode }).replace(
-      '/project-categories-and-subcategories',
+      /\/project-categories|\/project-subcategories/,
       ''
     );
 
@@ -63,7 +63,6 @@ exports.createPages = ({ actions, graphql }) => {
       createPage({
         path: slug,
         component: path.resolve(`src/templates/${String(templateFilename)}.js`),
-        // additional data can be passed via context
         context: {
           id
         }

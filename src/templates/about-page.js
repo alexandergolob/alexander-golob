@@ -123,13 +123,8 @@ const Project = styled(UnstyledProject)`
 export default ({ data }) => {
   const { frontmatter } = data.markdownRemark;
   const { heading, subheadings, descriptions } = frontmatter;
-  const {
-    subheading_1,
-    subheading_2,
-    subheading_3,
-    subheading_4
-  } = subheadings;
-  const { description_1, description_2, description_3 } = descriptions;
+  const { subheading1, subheading2, subheading3, subheading4 } = subheadings;
+  const { description1, description2, description3 } = descriptions;
 
   return (
     <Layout>
@@ -137,27 +132,27 @@ export default ({ data }) => {
         <Heading>{heading}</Heading>
       </HeadingContainer>
       <SubheadingContainer>
-        <Subheading>{subheading_1}</Subheading>
-        <Subheading>{subheading_2}</Subheading>
-        <Subheading>{subheading_3}</Subheading>
-        <Subheading>{subheading_4}</Subheading>
+        <Subheading>{subheading1}</Subheading>
+        <Subheading>{subheading2}</Subheading>
+        <Subheading>{subheading3}</Subheading>
+        <Subheading>{subheading4}</Subheading>
       </SubheadingContainer>
       <DescriptionsContainer>
         <Description>
-          <DescriptionHeading>{description_1.heading}</DescriptionHeading>
-          <DescriptionBody>{description_1.content}</DescriptionBody>
+          <DescriptionHeading>{description1.heading}</DescriptionHeading>
+          <DescriptionBody>{description1.content}</DescriptionBody>
         </Description>
-        <DescriptionImage alt='' src={description_1.image} />
-        <DescriptionImage alt='' src={description_2.image} />
+        <DescriptionImage alt='' src={description1.image} />
+        <DescriptionImage alt='' src={description2.image} />
         <DisplacedDescription>
-          <DescriptionHeading>{description_2.heading}</DescriptionHeading>
-          <DescriptionBody>{description_2.content}</DescriptionBody>
+          <DescriptionHeading>{description2.heading}</DescriptionHeading>
+          <DescriptionBody>{description2.content}</DescriptionBody>
         </DisplacedDescription>
         <Description>
-          <DescriptionHeading>{description_3.heading}</DescriptionHeading>
-          <DescriptionBody>{description_3.content}</DescriptionBody>
+          <DescriptionHeading>{description3.heading}</DescriptionHeading>
+          <DescriptionBody>{description3.content}</DescriptionBody>
         </Description>
-        <DescriptionImage alt='' src={description_3.image} />
+        <DescriptionImage alt='' src={description3.image} />
       </DescriptionsContainer>
       <ProjectsContainer>
         <Project />
@@ -179,23 +174,23 @@ export const query = graphql`
       frontmatter {
         heading
         subheadings {
-          subheading_1
-          subheading_2
-          subheading_3
-          subheading_4
+          subheading1
+          subheading2
+          subheading3
+          subheading4
         }
         descriptions {
-          description_1 {
+          description1 {
             heading
             content
             image
           }
-          description_2 {
+          description2 {
             heading
             content
             image
           }
-          description_3 {
+          description3 {
             heading
             content
             image

@@ -9,6 +9,7 @@ public_folder: assets
 collections:
   - name: unique-pages
     label: Unique Pages
+    create: false
     delete: false
     files:
       - label: Home
@@ -34,65 +35,75 @@ collections:
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
-  #     - label: Speaking
-  #       name: speaking
-  #       file: src/pages/content/speaking.md
-  #       fields:
-  #         - {
-  #             name: description-heading,
-  #             label: Description Heading,
-  #             widget: string,
-  #           }
-  #         - { name: body, label: Description Body, widget: markdown }
-  #         - name: cta
-  #           label: CTA
-  #           widget: object
-  #           fields:
-  #             - {
-  #                 name: statement-above,
-  #                 label: Statement Above CTA,
-  #                 widget: string,
-  #               }
-  #             - { name: statement, label: CTA Statement, widget: string }
-  #             - { name: path, label: Path, widget: string }
-  #     - label: About
-  #       name: about
-  #       file: src/pages/content/about.md
-  #       fields:
-  #         - { name: heading, label: Heading, widget: string }
-  #         - name: subheadings
-  #           label: Subheading
-  #           widget: object
-  #           fields:
-  #             - { name: subheading-1, label: Subheading 1, widget: string }
-  #             - { name: subheading-2, label: Subheading 2, widget: string }
-  #             - { name: subheading-3, label: Subheading 3, widget: string }
-  #             - { name: subheading-4, label: Subheading 4, widget: string }
-  #         - name: descriptions
-  #           label: Descriptions
-  #           widget: object
-  #           fields:
-  #             - name: description-1
-  #               label: Description 1
-  #               widget: object
-  #               fields:
-  #                 - { name: heading, label: Heading, widget: string }
-  #                 - { name: content, label: Content, widget: markdown }
-  #                 - { name: image, label: Image, widget: image }
-  #             - name: description-2
-  #               label: Description 2
-  #               widget: object
-  #               fields:
-  #                 - { name: heading, label: Heading, widget: string }
-  #                 - { name: content, label: Content, widget: markdown }
-  #                 - { name: image, label: Image, widget: image }
-  #             - name: description-3
-  #               label: Description 3
-  #               widget: object
-  #               fields:
-  #                 - { name: heading, label: Heading, widget: string }
-  #                 - { name: content, label: Content, widget: markdown }
-  #                 - { name: image, label: Image, widget: image }
+      - name: about
+        label: About
+        file: src/pages/about/index.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - name: subheadings
+            label: Subheading
+            widget: object
+            fields:
+              - { name: subheading1, label: Subheading 1, widget: string }
+              - { name: subheading2, label: Subheading 2, widget: string }
+              - { name: subheading3, label: Subheading 3, widget: string }
+              - { name: subheading4, label: Subheading 4, widget: string }
+          - name: descriptions
+            label: Descriptions
+            widget: object
+            fields:
+              - name: description1
+                label: Description 1
+                widget: object
+                fields:
+                  - { name: heading, label: Heading, widget: string }
+                  - { name: content, label: Content, widget: markdown }
+                  - { name: image, label: Image, widget: image }
+              - name: description2
+                label: Description 2
+                widget: object
+                fields:
+                  - { name: heading, label: Heading, widget: string }
+                  - { name: content, label: Content, widget: markdown }
+                  - { name: image, label: Image, widget: image }
+              - name: description3
+                label: Description 3
+                widget: object
+                fields:
+                  - { name: heading, label: Heading, widget: string }
+                  - { name: content, label: Content, widget: markdown }
+                  - { name: image, label: Image, widget: image }
+
+  - name: project-subcategories
+    label: Project Subcategories
+    folder: src/pages/project-categories-and-subcategories
+    filter: { field: templateKey, value: project-subcategory }
+    create: true
+    delete: true
+    fields:
+      - { name: templateKey, widget: hidden, default: project-subcategory }
+      - { name: title, label: Name, widget: string }
+      - name: category
+        label: Category
+        widget: select
+        options:
+          - { label: Art, value: art }
+          - { label: Engagements, value: engagements }
+          - { label: Consulting, value: consulting }
+          - { label: Special Projects, value: specialProjects }
+      - { name: descriptionHeading, label: Description Heading, widget: string }
+      - { name: body, label: Description Body, widget: markdown }
+      - name: cta
+        label: CTA
+        widget: object
+        fields:
+          - {
+              name: statementAboveCta,
+              label: Statement Above CTA,
+              widget: string,
+            }
+          - { name: statement, label: CTA Statement, widget: string }
+          - { name: path, label: Path, widget: string }
   # - name: settings
   #   label: Site Settings
   #   files:

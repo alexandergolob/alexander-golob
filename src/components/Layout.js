@@ -70,7 +70,7 @@ const Wrapper = styled.div`
 const Container = styled.div`
   width: 80%;
   margin: auto;
-  padding-top: 15vh;
+  padding-top: 12vh;
   padding-bottom: 120px;
 `;
 

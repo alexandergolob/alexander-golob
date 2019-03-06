@@ -88,7 +88,7 @@ const CTALink = styled(Link)`
 
 export default ({ data }) => {
   const description = data.markdownRemark.html;
-  const { description_heading, cta } = data.markdownRemark.frontmatter;
+  const { title, cta } = data.markdownRemark.frontmatter;
 
   return (
     <Layout>
@@ -106,10 +106,10 @@ export default ({ data }) => {
         </YearsContainer>
 
         <Description>
-          <DescriptionHeading>{description_heading}</DescriptionHeading>
+          <DescriptionHeading>{title}</DescriptionHeading>
           <div dangerouslySetInnerHTML={{ __html: description }} />
           <CTAContainer>
-            <CTAStatement>{cta.statement_above}</CTAStatement>
+            <CTAStatement>{cta.statementAbove}</CTAStatement>
             <CTALink to={cta.path}>{cta.statement}</CTALink>
           </CTAContainer>
         </Description>
@@ -136,9 +136,9 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
-        description_heading
+        title
         cta {
-          statement_above
+          statementAbove
           statement
           path
         }

@@ -34,45 +34,46 @@ collections:
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
-      - name: about
-        label: About
-        folder: src/pages/project-categories
+
+  - name: projectCategories
+    label: Project Categories
+    folder: src/pages/project-categories
+    fields:
+      - { name: templateKey, widget: hidden, default: project-category }
+      - { name: title, label: Title, widget: string }
+      - name: subheadings
+        label: Subheading
+        widget: object
         fields:
-          - { name: templateKey, widget: hidden, default: project-category }
-          - { name: title, label: Title, widget: string }
-          - name: subheadings
-            label: Subheading
+          - { name: subheading1, label: Subheading 1, widget: string }
+          - { name: subheading2, label: Subheading 2, widget: string }
+          - { name: subheading3, label: Subheading 3, widget: string }
+          - { name: subheading4, label: Subheading 4, widget: string }
+      - name: descriptions
+        label: Descriptions
+        widget: object
+        fields:
+          - name: description1
+            label: Description 1
             widget: object
             fields:
-              - { name: subheading1, label: Subheading 1, widget: string }
-              - { name: subheading2, label: Subheading 2, widget: string }
-              - { name: subheading3, label: Subheading 3, widget: string }
-              - { name: subheading4, label: Subheading 4, widget: string }
-          - name: descriptions
-            label: Descriptions
+              - { name: heading, label: Heading, widget: string }
+              - { name: content, label: Content, widget: markdown }
+              - { name: image, label: Image, widget: image }
+          - name: description2
+            label: Description 2
             widget: object
             fields:
-              - name: description1
-                label: Description 1
-                widget: object
-                fields:
-                  - { name: heading, label: Heading, widget: string }
-                  - { name: content, label: Content, widget: markdown }
-                  - { name: image, label: Image, widget: image }
-              - name: description2
-                label: Description 2
-                widget: object
-                fields:
-                  - { name: heading, label: Heading, widget: string }
-                  - { name: content, label: Content, widget: markdown }
-                  - { name: image, label: Image, widget: image }
-              - name: description3
-                label: Description 3
-                widget: object
-                fields:
-                  - { name: heading, label: Heading, widget: string }
-                  - { name: content, label: Content, widget: markdown }
-                  - { name: image, label: Image, widget: image }
+              - { name: heading, label: Heading, widget: string }
+              - { name: content, label: Content, widget: markdown }
+              - { name: image, label: Image, widget: image }
+          - name: description3
+            label: Description 3
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - { name: content, label: Content, widget: markdown }
+              - { name: image, label: Image, widget: image }
 
   - name: project-subcategories
     label: Project Subcategories

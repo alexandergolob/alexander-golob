@@ -97,11 +97,7 @@ collections:
         label: CTA
         widget: object
         fields:
-          - {
-              name: statementAboveCta,
-              label: Statement Above CTA,
-              widget: string,
-            }
+          - { name: statementAbove, label: Statement Above CTA, widget: string }
           - { name: statement, label: CTA Statement, widget: string }
           - { name: path, label: Path, widget: string }
   # - name: settings

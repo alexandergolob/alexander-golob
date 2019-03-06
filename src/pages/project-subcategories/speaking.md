@@ -1,4 +1,5 @@
 ---
+title: speaking
 templateKey: project-subcategory-page
 description-heading: Speaking
 cta:

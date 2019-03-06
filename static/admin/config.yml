@@ -77,7 +77,6 @@ collections:
   - name: project-subcategories
     label: Project Subcategories
     folder: src/pages/project-subcategories
-    filter: { field: templateKey, value: project-subcategory }
     create: true
     delete: true
     fields:

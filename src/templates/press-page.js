@@ -74,7 +74,7 @@ const posts = [
 
 export default () => (
   <Layout>
-    <PageTitle>Golob Art Blog</PageTitle>
+    <PageTitle>Golob Art Press</PageTitle>
     <BlogOrPressHeader
       title='Title Golob Art is Cool'
       subtitle='After long studies and many experiments, it has been determined that Golob Art, is, in face, cool'

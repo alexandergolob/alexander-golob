@@ -1,0 +1,3 @@
+---
+templateKey: press-post
+---

@@ -1,9 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 
 import Layout from '../components/Layout';
 import PageTitle from '../components/PageTitle';
 import BlogOrPressHeader from '../components/BlogOrPressHeader';
 import Posts from '../components/Posts';
+import FrameBox from '../components/FrameBox';
+
+const SubtitleButtons = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+`;
+
+const SubtitleButton = styled(FrameBox)`
+  margin-right: 20px;
+
+  &:last-of-type {
+    margin-right: 0;
+  }
+
+  padding: 5px 30px;
+`;
 
 const posts = [
   {
@@ -75,6 +94,11 @@ const posts = [
 export default () => (
   <Layout>
     <PageTitle>Golob Art Press</PageTitle>
+    <SubtitleButtons>
+      <SubtitleButton>All</SubtitleButton>
+      <SubtitleButton>Press</SubtitleButton>
+      <SubtitleButton>News</SubtitleButton>
+    </SubtitleButtons>
     <BlogOrPressHeader
       title='Title Golob Art is Cool'
       subtitle='After long studies and many experiments, it has been determined that Golob Art, is, in face, cool'

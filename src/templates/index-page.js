@@ -62,10 +62,9 @@ export const IndexPageTemplate = ({
   </Layout>
 );
 
-export default ({ data }) => {
-  const postData = data.markdownRemark.frontmatter;
-  return <IndexPageTemplate {...postData} />;
-};
+export default ({ data }) => (
+  <IndexPageTemplate {...data.markdownRemark.frontmatter} />
+);
 
 export const query = graphql`
   query($id: String!) {

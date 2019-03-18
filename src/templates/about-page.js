@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
+import Link from '../components/Link';
 
 const HeadingContainer = styled.h1`
   margin-bottom: 20px;
@@ -15,21 +17,24 @@ const Heading = styled(FrameBox)`
   font-size: 2.5rem;
 `;
 
-const SubheadingsContainer = styled.div`
+const LinksContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 `;
 
-const Subheading = styled(FrameBox)`
-  padding: 10px 0;
-  width: 200px;
-  text-align: center;
-  font-weight: 900;
+const LinkContainer = styled(Link)`
   margin-right: 25px;
   &:last-of-type {
     margin-right: 0;
   }
+`;
+
+const LinkBox = styled(FrameBox)`
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+  font-weight: 900;
 `;
 
 const SectionHeadingContainer = styled.h2`
@@ -84,17 +89,32 @@ const ThirdSection = styled(Section)`
   grid-area: ThirdSection;
 `;
 
-const Image = styled(FrameBox)`
-  height: 200px;
-  background: green;
+const ImageContainer = styled(FrameBox)`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
 `;
 
-const FirstImage = styled(Image)`
+const Image = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+`;
+
+const FirstImageContainer = styled(ImageContainer)`
   grid-area: FirstImage;
 `;
 
-const SecondImage = styled(Image)`
+const SecondImageContainer = styled(ImageContainer)`
   grid-area: SecondImage;
+`;
+
+const SectionHeadingCTALink = styled(Link)`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
 `;
 
 const SectionHeadingCTA = styled(FrameBox)`
@@ -102,42 +122,38 @@ const SectionHeadingCTA = styled(FrameBox)`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
   padding: 5px 20px;
   font-size: 0.9rem;
 `;
 
-export default () => (
+export const AboutPageTemplate = ({
+  heading,
+  links,
+  section1,
+  section2,
+  section3,
+  image1,
+  image2
+}) => (
   <Layout>
     <HeadingContainer>
-      <Heading>Subscribe</Heading>
+      <Heading>{heading}</Heading>
     </HeadingContainer>
-    <SubheadingsContainer>
-      <Subheading>ABOUT</Subheading>
-      <Subheading>CONTACT</Subheading>
-      <Subheading>CV</Subheading>
-    </SubheadingsContainer>
+
+    <LinksContainer>
+      {links.map(({ content, path }, i) => (
+        <LinkContainer key={i} to={path}>
+          <LinkBox>{content}</LinkBox>
+        </LinkContainer>
+      ))}
+    </LinksContainer>
+
     <FirstSection>
       <SectionHeadingContainer>
-        <SectionHeading>About Golob Art</SectionHeading>
+        <SectionHeading>{section1.heading}</SectionHeading>
       </SectionHeadingContainer>
       <FirstSectionContent>
-        <p>
-          Alexander Golob has experience engaging with communities, conducting
-          research, and developing and implementing art and placemaking policy,
-          strategy, and integration. His studio has worked with city governments
-          on policy and implementation, non-profits embarking upon art
-          initiatives, and early-stage start-ups looking for guidance.
-        </p>
-        <br />
-        <p>
-          Art provides benefits for sense of community, business, marketing, and
-          health. sometimes, it helps to have an artist to integrate that
-          perspective into a community, business, or project.
-        </p>
+        <div dangerouslySetInnerHTML={{ __html: section1.content }} />
       </FirstSectionContent>
     </FirstSection>
 
@@ -145,51 +161,82 @@ export default () => (
       <SecondSection>
         <SectionHeadingContainer>
           <SectionHeading>
-            About Alexander
-            <SectionHeadingCTA>CV</SectionHeadingCTA>
+            {section2.heading}
+            <SectionHeadingCTALink to={section2.headingCTA.path}>
+              <SectionHeadingCTA>
+                {section2.headingCTA.content}
+              </SectionHeadingCTA>
+            </SectionHeadingCTALink>
           </SectionHeading>
         </SectionHeadingContainer>
         <SectionContent>
-          <p>
-            Alexander Golob has experience engaging with communities, conducting
-            research, and developing and implementing art and placemaking
-            policy, strategy, and integration. His studio has worked with city
-            governments on policy and implementation, non-profits embarking upon
-            art initiatives, and early-stage start-ups looking for guidance.
-          </p>
-          <br />
-          <p>
-            Art provides benefits for sense of community, business, marketing,
-            and health. sometimes, it helps to have an artist to integrate that
-            perspective into a community, business, or project.
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: section2.content }} />
         </SectionContent>
       </SecondSection>
-      <FirstImage />
+
+      <FirstImageContainer>
+        <Image src={image1} alt='' />
+      </FirstImageContainer>
+
       <ThirdSection>
         <SectionHeadingContainer>
           <SectionHeading>
-            About Khizer
-            <SectionHeadingCTA>CV</SectionHeadingCTA>
+            {section3.heading}
+            <SectionHeadingCTALink to={section3.headingCTA.path}>
+              <SectionHeadingCTA>
+                {section3.headingCTA.content}
+              </SectionHeadingCTA>
+            </SectionHeadingCTALink>
           </SectionHeading>
         </SectionHeadingContainer>
         <SectionContent>
-          <p>
-            Alexander Golob has experience engaging with communities, conducting
-            research, and developing and implementing art and placemaking
-            policy, strategy, and integration. His studio has worked with city
-            governments on policy and implementation, non-profits embarking upon
-            art initiatives, and early-stage start-ups looking for guidance.
-          </p>
-          <br />
-          <p>
-            Art provides benefits for sense of community, business, marketing,
-            and health. sometimes, it helps to have an artist to integrate that
-            perspective into a community, business, or project.
-          </p>
+          <div dangerouslySetInnerHTML={{ __html: section3.content }} />
         </SectionContent>
       </ThirdSection>
-      <SecondImage />
+
+      <SecondImageContainer>
+        <Image src={image2} alt='' />
+      </SecondImageContainer>
     </SectionsAndImages>
   </Layout>
 );
+
+export default ({ data }) => (
+  <AboutPageTemplate {...data.markdownRemark.frontmatter} />
+);
+
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+        links {
+          content
+          path
+        }
+        section1 {
+          heading
+          content
+        }
+        section2 {
+          heading
+          headingCTA {
+            content
+            path
+          }
+          content
+        }
+        section3 {
+          heading
+          headingCTA {
+            content
+            path
+          }
+          content
+        }
+        image1
+        image2
+      }
+    }
+  }
+`;

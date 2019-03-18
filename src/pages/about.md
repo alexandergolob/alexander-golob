@@ -44,4 +44,3 @@ section3:
     path: /cv
 image1: /assets/kaleidoscope.webp
 ---
-

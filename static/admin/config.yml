@@ -35,6 +35,50 @@ collections:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
 
+      - label: About
+        name: about
+        file: src/pages/about.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - name: section1
+            label: Section 1
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - { name: content, label: Content, widget: markdown }
+          - name: section2
+            label: Section 2
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - name: headingCTA
+                label: Heading CTA
+                widget: object
+                fields:
+                  - { name: content, label: Content, widget: string }
+                  - { name: path, label: Path, widget: string }
+              - { name: content, label: Content, widget: markdown }
+          - name: section3
+            label: Section 3
+            widget: object
+            fields:
+              - { name: heading, label: Heading, widget: string }
+              - name: headingCTA
+                label: Heading CTA
+                widget: object
+                fields:
+                  - { name: content, label: Content, widget: string }
+                  - { name: path, label: Path, widget: string }
+              - { name: content, label: Content, widget: markdown }
+          - { name: image1, label: Image 1, widget: image }
+          - { name: image2, label: Image 2, widget: image }
+
   - name: projectCategories
     label: Project Categories
     folder: src/pages/project-categories

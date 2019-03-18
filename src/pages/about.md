@@ -43,5 +43,6 @@ section3:
     content: CV
     path: /cv
 image1: /assets/kaleidoscope.webp
+image2: /assets/pokecity.webp
 ---
 

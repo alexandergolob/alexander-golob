@@ -26,6 +26,7 @@ const SecondaryLogo = styled(UnstyledSecondaryLogo)`
 const NavList = styled.ul`
   display: flex;
   flex-direction: column;
+  list-style-type: none;
 `;
 
 const UnstyledNavListItem = props => <FrameBox as='li' {...props} />;
@@ -51,7 +52,7 @@ const Contact = styled(NavListItem)`
   margin-top: 15px;
   padding: 20px 10px;
 
-  background: url('./assets/contact-button-bg.png');
+  background: url('/assets/contact-button-bg.png');
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -61,7 +62,7 @@ const Contact = styled(NavListItem)`
 
 const EmptyMarbleSquare = styled(FrameBox)`
   margin-top: 25px;
-  background: url('./assets/empty-square-bg.png'), hsl(148, 93%, 5%);
+  background: url('/assets/empty-square-bg.png'), hsl(148, 93%, 5%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -70,7 +71,7 @@ const EmptyMarbleSquare = styled(FrameBox)`
 
 const RightNav = ({ items, ...rest }) => (
   <div {...rest}>
-    <SecondaryLogo src={'./assets/logo.svg'} />
+    <SecondaryLogo src={'/assets/logo.svg'} />
     <nav>
       <NavList>
         <NavListItem>

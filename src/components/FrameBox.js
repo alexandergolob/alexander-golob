@@ -4,7 +4,6 @@ import styled from 'styled-components';
 // const borderWidth = 1;
 
 const Container = styled.div`
-  display: inline-block;
   border: 1px solid #000;
   position: relative;
   background: hsl(0, 0%, 93%);

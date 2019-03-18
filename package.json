@@ -23,7 +23,7 @@
     "gatsby-transformer-remark": "^2.2.5",
     "gatsby-transformer-sharp": "^2.1.13",
     "i": "^0.3.6",
-    "netlify-cms": "^2.4.1",
+    "netlify-cms": "^2.6.1",
     "npm": "^6.7.0",
     "prop-types": "^15.6.2",
     "react": "^16.8.0",

@@ -65,7 +65,7 @@ const NavItem = styled(UnstyledNavItem)`
 
 const LeftNav = ({ items, ...rest }) => (
   <div {...rest}>
-    <HomeLogo src='./assets/logo.svg' text='Golob Art' />
+    <HomeLogo src='/assets/logo.svg' text='Golob Art' />
     <Nav>
       <NavList>
         {items.map(item => (

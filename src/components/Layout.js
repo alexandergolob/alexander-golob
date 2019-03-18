@@ -58,7 +58,7 @@ const GlobalStyle = createGlobalStyle`
 `;
 
 const Wrapper = styled.div`
-  background: url('./assets/brick-wall-bg.jpg');
+  background: url('/assets/brick-wall-bg.jpg');
   background-size: contain;
   min-height: 100vh;
   width: 87.5%;

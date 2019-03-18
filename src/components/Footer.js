@@ -6,7 +6,11 @@ import UnstyledSocialIcons from './SocialIcons';
 
 const Container = styled.footer`
   padding: 20px 30px 7px;
-  background: hsl(22, 100%, 58%);
+  background-image: url('/assets/light-marble.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-top: 2px solid #000;
 
   display: grid;
   grid-template-columns: 1fr 35% 1fr;

@@ -79,6 +79,19 @@ collections:
           - { name: image1, label: Image 1, widget: image }
           - { name: image2, label: Image 2, widget: image }
 
+      - label: Subscribe
+        name: subscribe
+        file: src/pages/subscribe.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - { name: image, label: Image, widget: image }
+
   - name: projectCategories
     label: Project Categories
     folder: src/pages/project-categories

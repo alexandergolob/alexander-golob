@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
+import Link from '../components/Link';
 
 const HeadingContainer = styled.h1`
   margin-bottom: 20px;
@@ -15,21 +17,24 @@ const Heading = styled(FrameBox)`
   font-size: 2.5rem;
 `;
 
-const SubheadingsContainer = styled.div`
+const LinksContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 `;
 
-const Subheading = styled(FrameBox)`
-  padding: 10px 0;
-  width: 200px;
-  text-align: center;
-  font-weight: 900;
+const LinkContainer = styled(Link)`
   margin-right: 25px;
   &:last-of-type {
     margin-right: 0;
   }
+`;
+
+const LinkBox = styled(FrameBox)`
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+  font-weight: 900;
 `;
 
 const Statement = styled(FrameBox)`
@@ -59,8 +64,18 @@ const Form = styled.form`
     '. Submit .';
 `;
 
-const Image = styled(FrameBox)`
+const ImageContainer = styled(FrameBox)`
   grid-area: Image;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+`;
+
+const Image = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
 `;
 
 const FieldsContainer = styled(FrameBox)`
@@ -128,19 +143,23 @@ const Submit = styled.button`
   font-size: 1.2rem;
 `;
 
-export default () => (
+export const SubscribePageTemplate = ({ heading, links, statement, image }) => (
   <Layout>
     <HeadingContainer>
-      <Heading>Subscribe</Heading>
+      <Heading>{heading}</Heading>
     </HeadingContainer>
-    <SubheadingsContainer>
-      <Subheading>ABOUT</Subheading>
-      <Subheading>CONTACT</Subheading>
-      <Subheading>CV</Subheading>
-    </SubheadingsContainer>
-    <Statement>Subscirbe To Stay Up To Date On What We're Doing!</Statement>
+    <LinksContainer>
+      {links.map(({ content, path }, i) => (
+        <LinkContainer key={i} to={path}>
+          <LinkBox>{content}</LinkBox>
+        </LinkContainer>
+      ))}
+    </LinksContainer>
+    <Statement>{statement}</Statement>
     <Form>
-      <Image />
+      <ImageContainer>
+        <Image src={image} alt='' />
+      </ImageContainer>
       <FieldsContainer>
         <Fields>
           <Email>
@@ -164,3 +183,23 @@ export default () => (
     </Form>
   </Layout>
 );
+
+export default ({ data }) => (
+  <SubscribePageTemplate {...data.markdownRemark.frontmatter} />
+);
+
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+        links {
+          content
+          path
+        }
+        statement
+        image
+      }
+    }
+  }
+`;

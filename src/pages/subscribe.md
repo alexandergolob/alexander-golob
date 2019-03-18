@@ -7,6 +7,6 @@ links:
     path: /contact
   - content: CV
     path: /cv
+statement: Subscribe To Stay Up To Date On What We're Doing!
 image: /assets/logo.svg
 ---
-

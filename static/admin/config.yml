@@ -90,6 +90,7 @@ collections:
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
+          - { name: statement, label: Statement, widget: string }
           - { name: image, label: Image, widget: image }
 
   - name: projectCategories

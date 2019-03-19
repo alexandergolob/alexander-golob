@@ -1,8 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
+import Link from '../components/Link';
 
 const HeadingContainer = styled.h1`
   margin-bottom: 20px;
@@ -15,21 +17,24 @@ const Heading = styled(FrameBox)`
   font-size: 2.5rem;
 `;
 
-const SubheadingsContainer = styled.div`
+const LinksContainer = styled.div`
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
 `;
 
-const Subheading = styled(FrameBox)`
-  padding: 10px 0;
-  width: 200px;
-  text-align: center;
-  font-weight: 900;
+const LinkContainer = styled(Link)`
   margin-right: 25px;
   &:last-of-type {
     margin-right: 0;
   }
+`;
+
+const LinkBox = styled(FrameBox)`
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+  font-weight: 900;
 `;
 
 const FormAndBanner = styled.div`
@@ -122,6 +127,10 @@ const Banner = styled.div`
   flex-grow: 1;
   background: green;
   border: 2px solid #000;
+  background-image: url(${({ image }) => image});
+  background-repeat: no-repeat;
+  background-size: canvas;
+  background-position: center center;
 `;
 
 const BannerText = styled(FrameBox)`
@@ -132,16 +141,18 @@ const BannerText = styled(FrameBox)`
   font-weight: 900;
 `;
 
-export default () => (
+export const ContactPageTemplate = ({ heading, links, statement, image }) => (
   <Layout>
     <HeadingContainer>
-      <Heading>Contact Us</Heading>
+      <Heading>{heading}</Heading>
     </HeadingContainer>
-    <SubheadingsContainer>
-      <Subheading>ABOUT</Subheading>
-      <Subheading>SUBSCRIBE</Subheading>
-      <Subheading>CV</Subheading>
-    </SubheadingsContainer>
+    <LinksContainer>
+      {links.map(({ content, path }, i) => (
+        <LinkContainer key={i} to={path}>
+          <LinkBox>{content}</LinkBox>
+        </LinkContainer>
+      ))}
+    </LinksContainer>
     <FormAndBanner>
       <FormContainer>
         <Form>
@@ -168,12 +179,29 @@ export default () => (
           <Submit>SUBMIT</Submit>
         </Form>
       </FormContainer>
-      <Banner>
-        <BannerText>
-          Questions? Comments? Interested in Comissioning or Collaborating? Get
-          in touch here.
-        </BannerText>
+      <Banner image={image}>
+        <BannerText>{statement}</BannerText>
       </Banner>
     </FormAndBanner>
   </Layout>
 );
+
+export default ({ data }) => (
+  <ContactPageTemplate {...data.markdownRemark.frontmatter} />
+);
+
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+        links {
+          content
+          path
+        }
+        statement
+        image
+      }
+    }
+  }
+`;

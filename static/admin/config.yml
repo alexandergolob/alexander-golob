@@ -133,6 +133,12 @@ collections:
           - { name: statement, label: statement, widget: string }
           - { name: image, label: Image, widget: image }
 
+      - label: Portfolio
+        name: portfolio
+        file: src/pages/portfolio.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+
   - name: projectCategories
     label: Project Categories
     folder: src/pages/project-categories

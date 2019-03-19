@@ -42,7 +42,7 @@ const FormAndBanner = styled.div`
 `;
 
 const FormContainer = styled(FrameBox)`
-  width: 45%;
+  width: 550px;
   margin-right: 10px;
 `;
 
@@ -50,7 +50,7 @@ const Form = styled.form`
   background: hsl(0, 0%, 93%);
   padding: 10px 15px;
   display: grid;
-  grid-template-columns: 50% auto 30px;
+  grid-template-columns: 50% auto 40px;
   grid-column-gap: 8px;
   grid-row-gap: 5px;
   grid-template-areas:

@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import FrameBox from '../components/FrameBox';
@@ -52,10 +53,10 @@ const ProjectTitle = styled.div`
   text-align: center;
 `;
 
-export default () => (
+export const PortfolioPageTemplate = ({ heading }) => (
   <Layout>
     <HeadingContainer>
-      <Heading>Featured Portfolio</Heading>
+      <Heading>{heading}</Heading>
     </HeadingContainer>
 
     <Carousel />
@@ -75,3 +76,17 @@ export default () => (
     </Projects>
   </Layout>
 );
+
+export default ({ data }) => (
+  <PortfolioPageTemplate {...data.markdownRemark.frontmatter} />
+);
+
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+      }
+    }
+  }
+`;

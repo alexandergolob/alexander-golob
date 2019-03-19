@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import Post from '../components/Post';
+import Post from './BlogOrPressPagePost';
 
 const PostsContainer = styled.div`
   display: grid;

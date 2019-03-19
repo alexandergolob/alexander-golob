@@ -5,6 +5,10 @@ import FrameBox from './FrameBox';
 
 const Title = styled(FrameBox)`
   display: block;
+  background-image: url('/assets/light-marble.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
   padding: 10px;
   text-align: center;
   margin-bottom: 10px;

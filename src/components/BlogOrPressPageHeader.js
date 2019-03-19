@@ -1,9 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import BlogOrPressDescription from './BlogOrPressDescription';
+import Description from './BlogOrPressPageDescription';
 
-const BannerAndPostContainer = styled.div`
+const ImageAndPostContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
@@ -13,21 +13,33 @@ const BannerAndPostContainer = styled.div`
   }
 `;
 
-const Banner = styled.div`
-  background: green;
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  overflow: hidden;
 `;
 
-export default ({ title, subtitle, author, date, content, ...rest }) => (
-  <BannerAndPostContainer {...rest}>
-    <Banner />
-    <BlogOrPressDescription
+const Image = styled.img`
+  display: block;
+  width: 100%;
+  /* height: 100%; */
+`;
+
+export default ({ image, title, subtitle, author, date, content, ...rest }) => (
+  <ImageAndPostContainer {...rest}>
+    <ImageContainer>
+      <Image src={image} alt='' />
+    </ImageContainer>
+
+    <Description
       title={title}
       subtitle={subtitle}
       author={author}
       date={date}
       content={content}
     />
-  </BannerAndPostContainer>
+  </ImageAndPostContainer>
 );
 
 /* <BlogOrPressDescription

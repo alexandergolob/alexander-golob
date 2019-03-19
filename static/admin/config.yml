@@ -106,6 +106,33 @@ collections:
               - { name: path, label: Path, widget: string }
           - { name: image, label: Image, widget: image }
 
+      - label: Blog
+        name: blog
+        file: src/pages/blog.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - { name: image, label: Image, widget: image }
+
+      - label: Contact
+        name: contact
+        file: src/pages/contact.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - { name: statement, label: statement, widget: string }
+          - { name: image, label: Image, widget: image }
+
   - name: projectCategories
     label: Project Categories
     folder: src/pages/project-categories

@@ -93,6 +93,19 @@ collections:
           - { name: statement, label: Statement, widget: string }
           - { name: image, label: Image, widget: image }
 
+      - label: Press
+        name: press
+        file: src/pages/press.md
+        fields:
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - { name: image, label: Image, widget: image }
+
   - name: projectCategories
     label: Project Categories
     folder: src/pages/project-categories

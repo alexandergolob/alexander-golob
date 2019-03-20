@@ -10,7 +10,6 @@ const Link = styled(UnstyledLink)`
 `;
 
 const Container = styled(FrameBox)`
-  width: 150px;
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
@@ -18,11 +17,12 @@ const Container = styled(FrameBox)`
 `;
 
 const LogoImg = styled.img`
-  height: 130px;
+  height: 8rem;
+  display: block;
 `;
 
 const HomeLogoText = styled.div`
-  margin-top: -10px;
+  /* margin-top: -10px; */
   font-family: 'Enriqueta';
   font-size: 1.75rem;
   text-align: center;

@@ -8,21 +8,41 @@ import UnstyledFooter from './Footer';
 const LeftNav = styled(UnstyledLeftNav)`
   position: fixed;
   z-index: 1;
-  width: 150px;
+  width: 10rem;
   top: 11vh;
-  left: 20px;
+  left: 9.25%;
+  @media (max-width: 2100px) {
+    left: 6.5%;
+  }
+  @media (max-width: 1950px) {
+    left: 0.75rem;
+  }
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;
 
 const RightNav = styled(UnstyledRightNav)`
   position: fixed;
   z-index: 1;
-  width: 150px;
+  width: 10rem;
   top: 17vh;
-  right: 20px;
+  right: 9.25%;
+  @media (max-width: 2100px) {
+    right: 6.5%;
+  }
+  @media (max-width: 1950px) {
+    right: 0.55rem;
+  }
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 850px) {
+    display: none;
+  }
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -40,6 +60,27 @@ const GlobalStyle = createGlobalStyle`
 
   html {
     font-size: 16px;
+  }
+
+  @media (max-width: 1200px) {
+    html {
+      font-size: 14px;
+    }
+  }
+  @media (max-width: 900px) {
+    html {
+      font-size: 12px;  
+    }
+  }
+  @media (max-width: 600px) {
+    html {
+      font-size: 10px;  
+    }
+  }
+  @media (max-width: 300px) {
+    html {
+      font-size: 8px;  
+    }
   }
 
   body {    
@@ -62,6 +103,9 @@ const Wrapper = styled.div`
   background-size: contain;
   min-height: 100vh;
   width: 87.5%;
+  @media (max-width: 1150px) {
+    width: 100%;
+  }
   max-width: 1600px;
   margin: auto;
   position: relative;
@@ -69,14 +113,27 @@ const Wrapper = styled.div`
 
 const Container = styled.div`
   width: 80%;
+  @media (max-width: 1150px) {
+    width: 65%;
+  }
+  @media (max-width: 850px) {
+    width: 90%;
+  }
   margin: auto;
   padding-top: 12vh;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 2;
 `;
 
 const Graffiti = styled.img`
-  height: 150px;
-  transform: translateX(-50%);
+  height: 10rem;
+  /* background: red; */
+  position: absolute;
+  bottom: 120px;
+  left: 2.5rem;
+  z-index: 1;
+  user-select: none;
 `;
 
 const Footer = styled(UnstyledFooter)`
@@ -84,6 +141,7 @@ const Footer = styled(UnstyledFooter)`
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 2;
 `;
 
 export default ({ children, ...rest }) => (
@@ -92,11 +150,8 @@ export default ({ children, ...rest }) => (
     <LeftNav />
     <RightNav />
     <Wrapper>
-      <Container {...rest}>
-        {children}
-        <div style={{ height: '100vh' }} />
-        <Graffiti alt='' src='assets/logo.svg' />
-      </Container>
+      <Container {...rest}>{children}</Container>
+      <Graffiti alt='' src='assets/logo.svg' />
       <Footer />
     </Wrapper>
   </>

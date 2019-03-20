@@ -40,12 +40,12 @@ const Logo = styled.div`
   justify-content: center;
   align-items: center;
   font-weight: 700;
-  font-size: 2.75rem;
+  font-size: 2.5rem;
 `;
 
 const LogoImg = styled.img`
   display: block;
-  height: 70px;
+  height: 4.5rem;
   margin-right: -10px;
 `;
 
@@ -56,7 +56,7 @@ const SocialIcons = styled(UnstyledSocialIcons)`
   align-items: center;
 
   & > * {
-    margin-right: 15px;
+    margin-right: 0.8rem;
 
     &:last-of-type {
       margin-right: 0;

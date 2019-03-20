@@ -7,7 +7,8 @@ import UnstyledSocialIcons from './SocialIcons';
 import Link from './Link';
 
 const LogoImg = styled.img`
-  height: 130px;
+  height: 8rem;
+  display: block;
 `;
 
 const UnstyledSecondaryLogo = ({ src, ...rest }) => (
@@ -50,9 +51,9 @@ const SocialIcons = styled(UnstyledSocialIcons)`
 
 const Contact = styled(NavListItem)`
   margin-top: 15px;
-  padding: 20px 10px;
+  padding: 1.25rem 0;
 
-  background: url('/assets/contact-button-bg.png');
+  background: url('/assets/contact-button-bg.png'), hsl(0, 0%, 93%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
@@ -66,7 +67,7 @@ const EmptyMarbleSquare = styled(FrameBox)`
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
-  height: 120px;
+  height: 7.5rem;
 `;
 
 const RightNav = ({ items, ...rest }) => (

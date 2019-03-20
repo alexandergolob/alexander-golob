@@ -39,10 +39,10 @@ const Icon = styled(FontAwesomeIcon)`
   }
 `;
 
-export default () => (
-  <Box>
+export default ({ children, ...rest }) => (
+  <Box {...rest}>
     <Container>
-      <Heading>Haverhill Art Project</Heading>
+      <Heading>{children}</Heading>
       <ShareIcons>
         <Icon icon={faEnvelope} size='lg' />
         <Icon icon={faLink} size='lg' />

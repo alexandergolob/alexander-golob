@@ -50,7 +50,7 @@ export default () => (
     <Header stories={stories} />
     <Tags tags={['Blog', 'Public Art', 'Mural']} />
     <BodyContainer>
-      <Title />
+      <Title>Haverhill Art Project</Title>
       <BodyTop {...topBody} />
       <CTAs />
       <BodyBottom {...botBody} />

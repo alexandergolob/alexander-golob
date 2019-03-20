@@ -151,7 +151,7 @@ export default ({ children, ...rest }) => (
     <RightNav />
     <Wrapper>
       <Container {...rest}>{children}</Container>
-      <Graffiti alt='' src='assets/logo.svg' />
+      <Graffiti alt='' src='assets/logo-white.svg' />
       <Footer />
     </Wrapper>
   </>

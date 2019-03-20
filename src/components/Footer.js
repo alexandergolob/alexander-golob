@@ -46,7 +46,6 @@ const Logo = styled.div`
 const LogoImg = styled.img`
   display: block;
   height: 4.5rem;
-  margin-right: -10px;
 `;
 
 const SocialIcons = styled(UnstyledSocialIcons)`

@@ -30,6 +30,13 @@ const NavList = styled.ul`
   list-style-type: none;
 `;
 
+const NavListItemLink = styled(Link)`
+  margin-bottom: 15px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
 const UnstyledNavListItem = props => <FrameBox as='li' {...props} />;
 
 const NavListItem = styled(UnstyledNavListItem)`
@@ -37,11 +44,6 @@ const NavListItem = styled(UnstyledNavListItem)`
   text-align: center;
   font-family: 'Enriqueta', serif;
   font-weight: 700;
-
-  margin-bottom: 15px;
-  &:last-of-type {
-    margin-bottom: 0;
-  }
 `;
 
 const SocialIcons = styled(UnstyledSocialIcons)`
@@ -49,15 +51,20 @@ const SocialIcons = styled(UnstyledSocialIcons)`
   justify-content: space-around;
 `;
 
-const Contact = styled(NavListItem)`
-  margin-top: 15px;
-  padding: 1.25rem 0;
+const SocialIconsBox = styled(NavListItem)`
+  margin-bottom: 15px;
+`;
 
+const ContactLink = styled(NavListItemLink)`
+  margin-top: 15px;
+`;
+
+const ContactItem = styled(NavListItem)`
+  padding: 1.25rem 0;
   background: url('/assets/contact-button-bg.png'), hsl(0, 0%, 93%);
   background-repeat: no-repeat;
   background-size: 100% 100%;
   background-position: center center;
-
   color: hsl(148, 93%, 5%);
 `;
 
@@ -72,20 +79,20 @@ const EmptyMarbleSquare = styled(FrameBox)`
 
 const RightNav = ({ items, ...rest }) => (
   <div {...rest}>
-    <SecondaryLogo src={'/assets/logo.svg'} />
+    <SecondaryLogo src={'/assets/secondary-logo.svg'} />
     <nav>
       <NavList>
-        <NavListItem>
+        <SocialIconsBox>
           <SocialIcons size='lg' />
-        </NavListItem>
-        {items.map(({ category, path }) => (
-          <NavListItem key={category}>
-            <Link to={path}>{category}</Link>
-          </NavListItem>
+        </SocialIconsBox>
+        {items.map(({ category, path }, i) => (
+          <NavListItemLink key={i} to={path}>
+            <NavListItem>{category}</NavListItem>
+          </NavListItemLink>
         ))}
-        <Contact>
-          <Link to='/contact'>Contact</Link>
-        </Contact>
+        <ContactLink to='/contact'>
+          <ContactItem>Contact</ContactItem>
+        </ContactLink>
       </NavList>
     </nav>
     <EmptyMarbleSquare />

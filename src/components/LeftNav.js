@@ -22,8 +22,12 @@ const NavList = styled.ul`
   font-family: 'Enriqueta', serif;
 `;
 
-const NavItemTitle = styled.div`
+const NavItemTitleLink = styled(Link)`
+  display: block;
   margin-bottom: 5px;
+`;
+
+const NavItemTitle = styled.div`
   font-weight: 700;
 `;
 
@@ -32,24 +36,31 @@ const SubList = styled.ul`
   padding-left: 10px;
 `;
 
-const SubListItem = styled.li`
+const SubListItemLink = styled(Link)`
+  display: block;
   margin-bottom: 2px;
-
   &:last-of-type {
     margin-bottom: 0;
   }
 `;
 
+const SubListItem = styled.li``;
+
 const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (
   <li {...rest}>
-    <NavItemTitle>
-      <Link to={path}>{category}</Link>
-    </NavItemTitle>
+    <NavItemTitleLink to={path}>
+      <NavItemTitle>{category}</NavItemTitle>
+    </NavItemTitleLink>
+
     <SubList>
-      {subitems.map(({ subitem, path }) => (
-        <SubListItem key={subitem}>
-          <Link to={path}>{subitem}</Link>
-        </SubListItem>
+      {subitems.map(({ subitem, path }, i) => (
+        // <SubListItem key={i}>
+        //   <Link to={path}>{subitem}</Link>
+        // </SubListItem>
+
+        <SubListItemLink to={path} key={i}>
+          <SubListItem>{subitem}</SubListItem>
+        </SubListItemLink>
       ))}
     </SubList>
   </li>

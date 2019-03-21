@@ -19,6 +19,7 @@ const UnstyledSecondaryLogo = ({ src, ...rest }) => (
 
 const SecondaryLogo = styled(UnstyledSecondaryLogo)`
   margin-bottom: 25px;
+  padding: 0.8rem 0;
   display: flex;
   justify-content: center;
   align-items: center;

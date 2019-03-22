@@ -106,6 +106,7 @@ const Wrapper = styled.div`
   @media (max-width: 1150px) {
     width: 100%;
   }
+  /* max-width: 1350px; */
   max-width: 1600px;
   margin: auto;
   position: relative;
@@ -120,14 +121,14 @@ const Container = styled.div`
     width: 90%;
   }
   margin: auto;
-  padding-top: 12vh;
+  padding-top: 5vh;
   padding-bottom: 200px;
   position: relative;
   z-index: 2;
 `;
 
 const Graffiti = styled.img`
-  height: 10rem;
+  height: 9rem;
   /* background: red; */
   position: absolute;
   bottom: 120px;

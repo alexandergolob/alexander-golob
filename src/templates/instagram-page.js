@@ -1,19 +1,18 @@
 import React from 'react';
 import { graphql } from 'gatsby';
+import Img from 'gatsby-image';
 
 export default ({ data }) => (
   <div>
-    {data.allInstaNode.edges
-      .map(edge => edge.node.thumbnails[0].src)
-      .map(src => (
-        <img src={src} alt='' />
-      ))}
+    {data.allInstaNode.edges.map(edge => (
+      <Img fixed={edge.node.localFile.childImageSharp.fixed} />
+    ))}
   </div>
 );
 
 export const query = graphql`
   query {
-    allInstaNode {
+    allInstaNode(limit: 6) {
       edges {
         node {
           id
@@ -24,6 +23,13 @@ export const query = graphql`
           original
           timestamp
           caption
+          localFile {
+            childImageSharp {
+              fixed(width: 150, height: 150) {
+                ...GatsbyImageSharpFixed
+              }
+            }
+          }
           # Only available with the public api scraper
           thumbnails {
             src

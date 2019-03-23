@@ -85,6 +85,8 @@ const GlobalStyle = createGlobalStyle`
 
   body {    
     background: hsl(0,0%,95%);
+    /* font-family: Arial, Enriqueta, sans-serif; */
+    font-family: Enriqueta, sans-serif;
   }
 
   #___gatsby {

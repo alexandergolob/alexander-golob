@@ -2,21 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 
 import FrameBox from './FrameBox';
-import LightMarbleCTA from './LightMarbleCTA';
 
-const Container = styled.div`
-  margin-bottom: 20px;
-  display: flex;
-`;
-
-const UpdatesBox = styled(FrameBox)`
+const Box = styled(FrameBox)`
   padding: 5px 15px;
   padding-right: 30px;
-  margin: 0 20px;
   display: inline-box;
 `;
 
-const UpdatesContainer = styled.div`
+const Container = styled.div`
   display: flex;
   align-items: center;
 
@@ -47,18 +40,12 @@ const UpdatesContainer = styled.div`
   }
 `;
 
-const PatreonCTA = styled(LightMarbleCTA)``;
-
 export default ({ ...rest }) => (
-  <Container {...rest}>
-    <UpdatesBox>
-      <UpdatesContainer>
-        <div>Get our updates</div>
-        <input placeholder='email' />
-        <button>Submit</button>
-      </UpdatesContainer>
-    </UpdatesBox>
-
-    <PatreonCTA />
-  </Container>
+  <Box {...rest}>
+    <Container>
+      <div>Get our updates</div>
+      <input placeholder='email' />
+      <button>Submit</button>
+    </Container>
+  </Box>
 );

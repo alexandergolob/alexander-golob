@@ -8,7 +8,7 @@ import UnstyledHomeCarousel from '../components/HomeCarousel';
 import FrameBox from '../components/FrameBox';
 import LightMarbleCTA from '../components/LightMarbleCTA';
 import UnstyledRecentStories from '../components/RecentStories';
-import MostRecentStory from '../components/MostRecentStory';
+import UnstyledMostRecentStory from '../components/MostRecentStory';
 import SubscriptionCTA from '../components/SubscriptionCTA';
 
 const HomeCarousel = styled(UnstyledHomeCarousel)`
@@ -67,7 +67,6 @@ const RightCTA = styled(CTA)`
 `;
 
 const InstagramAndRecentStoriesContainer = styled.div`
-  /* background: grey; */
   margin-bottom: 2.5rem;
   display: grid;
   grid-template-columns: auto 1fr auto;
@@ -102,7 +101,6 @@ const OffCenterCTA = styled(CTA)`
 `;
 
 const RecentStoriesAndCTAContainer = styled.div`
-  /* background: green; */
   grid-area: RecentStoriesAndCTAContainer;
 
   @media (max-width: 1400px) {
@@ -110,22 +108,48 @@ const RecentStoriesAndCTAContainer = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media (max-width: 550px) {
+    width: 100%;
+  }
 `;
 
 const RecentStoriesContainer = styled.div`
   display: flex;
   margin-bottom: 2.5rem;
 
-  @media (max-width: 1400px) {
-    display: none;
+  @media (max-width: 700px) {
+    flex-direction: column;
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
   }
 `;
 
 const RecentStories = styled(UnstyledRecentStories)`
   margin-right: 0.75rem;
-  /* flex-grow: 1; */
   width: 10rem;
-  /* background: red; */
+
+  @media (max-width: 700px) {
+    width: 450px;
+    margin-right: 0;
+    margin-bottom: 0.75rem;
+
+    & > * {
+      flex: 1;
+    }
+  }
+
+  @media (max-width: 550px) {
+    width: 100%;
+  }
+`;
+
+const MostRecentStory = styled(UnstyledMostRecentStory)`
+  @media (max-width: 550px) {
+    display: none;
+  }
 `;
 
 const InstagramContainer = styled.div`
@@ -198,13 +222,16 @@ const GreenMarbleCTA = styled(FrameBox)`
 
 const stories = [
   {
-    title: 'read more and speak for yourself now or ...'
+    title: 'read more and speak for yourself now or ...',
+    author: 'Khizer Baig'
   },
   {
-    title: 'read more and speak for yourself now or ...'
+    title: 'read more and speak for yourself now or ...',
+    author: 'Khizer Baig'
   },
   {
-    title: 'read more and speak for yourself now or ...'
+    title: 'read more and speak for yourself now or ...',
+    author: 'Khizer Baig'
   }
 ];
 

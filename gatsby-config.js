@@ -27,6 +27,12 @@ module.exports = {
       }
     },
     {
+      resolve: 'gatsby-source-instagram',
+      options: {
+        username: 'alexandergolobart'
+      }
+    },
+    {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
         modulePath: `${__dirname}/src/cms/cms.js`

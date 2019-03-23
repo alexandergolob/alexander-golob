@@ -115,6 +115,10 @@ const RecentStoriesAndCTAContainer = styled.div`
 const RecentStoriesContainer = styled.div`
   display: flex;
   margin-bottom: 2.5rem;
+
+  @media (max-width: 1400px) {
+    display: none;
+  }
 `;
 
 const RecentStories = styled(UnstyledRecentStories)`
@@ -138,7 +142,7 @@ const InstagramHeading = styled(FrameBox)`
   background-repeat: none;
   background-size: contain;
   background-position: center center;
-  padding: 0.8rem 2.5rem;
+  padding: 0.75rem 2rem;
   margin: auto;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -183,11 +187,13 @@ const GreenMarbleCTAContainer = styled.div`
 
 const GreenMarbleCTA = styled(FrameBox)`
   display: inline-block;
-  padding: 5px 10px;
+  padding: 0.33rem 1.5rem;
   background-image: url('/assets/empty-square-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  font-weight: 700;
+  font-size: 1.5rem;
 `;
 
 const stories = [

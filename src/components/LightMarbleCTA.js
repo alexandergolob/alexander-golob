@@ -4,7 +4,7 @@ import styled from 'styled-components';
 import FrameBox from './FrameBox';
 
 const Box = styled(FrameBox)`
-  padding: 5px 15px;
+  padding: 0.33rem 1rem;
   background-image: url('/assets/light-marble.svg');
   background-repeat: none;
   background-size: cover;
@@ -16,9 +16,8 @@ const Container = styled.div`
   align-items: center;
 
   & div {
-    margin-right: 5px;
-    font-size: 0.85rem;
-    font-weight: 900;
+    margin-right: 0.33rem;
+    font-weight: 700;
   }
 
   & button {
@@ -28,8 +27,9 @@ const Container = styled.div`
     background-repeat: none;
     background-size: cover;
     background-position: center center;
-    padding: 2px 10px;
-    color: #eee;
+    padding: 0.15rem 0.75rem;
+    font-size: inherit;
+    color: #fff;
   }
 `;
 

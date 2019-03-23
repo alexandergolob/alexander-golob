@@ -11,17 +11,18 @@ const Box = styled(FrameBox)`
 const Container = styled.div`
   display: flex;
   align-items: center;
+  font-size: 0.85rem;
 
   & div {
     margin-right: 1rem;
-    font-size: 0.85rem;
-    font-weight: 900;
+    font-weight: 700;
   }
 
   & input {
     padding: 0.15rem 0.5rem;
-    margin-right: 0.33rem;
+    margin-right: 0.5rem;
     border: 1px solid #999;
+    font-size: inherit;
 
     &::placeholder {
       text-align: right;
@@ -35,7 +36,10 @@ const Container = styled.div`
     background-repeat: none;
     background-size: cover;
     background-position: center center;
-    padding: 0.15rem 0.5rem;
+    height: 100%;
+    padding: 0.15rem 0.33rem;
+    font-size: inherit;
+    font-weight: 700;
   }
 `;
 

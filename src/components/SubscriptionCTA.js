@@ -4,9 +4,8 @@ import styled from 'styled-components';
 import FrameBox from './FrameBox';
 
 const Box = styled(FrameBox)`
-  padding: 5px 15px;
-  padding-right: 30px;
-  display: inline-box;
+  padding: 0.33rem 1rem;
+  display: inline-block;
 `;
 
 const Container = styled.div`
@@ -14,14 +13,14 @@ const Container = styled.div`
   align-items: center;
 
   & div {
-    margin-right: 15px;
+    margin-right: 1rem;
     font-size: 0.85rem;
     font-weight: 900;
   }
 
   & input {
-    padding: 2px 10px;
-    margin-right: 5px;
+    padding: 0.15rem 0.5rem;
+    margin-right: 0.33rem;
     border: 1px solid #999;
 
     &::placeholder {
@@ -36,7 +35,7 @@ const Container = styled.div`
     background-repeat: none;
     background-size: cover;
     background-position: center center;
-    padding: 2px 10px;
+    padding: 0.15rem 0.5rem;
   }
 `;
 

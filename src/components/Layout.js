@@ -20,7 +20,7 @@ const LeftNav = styled(UnstyledLeftNav)`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 850px) {
+  @media (max-width: 1150px) {
     display: none;
   }
 `;
@@ -40,7 +40,7 @@ const RightNav = styled(UnstyledRightNav)`
   display: flex;
   flex-direction: column;
 
-  @media (max-width: 850px) {
+  @media (max-width: 1150px) {
     display: none;
   }
 `;
@@ -116,9 +116,6 @@ const Wrapper = styled.div`
 const Container = styled.div`
   width: 80%;
   @media (max-width: 1150px) {
-    width: 65%;
-  }
-  @media (max-width: 850px) {
     width: 90%;
   }
   margin: auto;

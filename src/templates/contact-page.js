@@ -1,4 +1,4 @@
-// import React from 'react';
+import React from 'react';
 // import styled from 'styled-components';
 // import { graphql } from 'gatsby';
 
@@ -205,3 +205,5 @@
 //     }
 //   }
 // `;
+
+export default () => <div>contact</div>;

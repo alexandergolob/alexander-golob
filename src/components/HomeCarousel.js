@@ -11,6 +11,7 @@ const Container = styled.div`
   position: relative;
   border: 5px solid ${props => props.theme.colors.carouselBorder};
   height: 450px;
+  background: ${props => props.theme.colors.dark};
 `;
 
 const Img = styled(Image)`

@@ -5,268 +5,139 @@ import Image from 'gatsby-image';
 
 import Layout from '../components/Layout';
 import UnstyledHomeCarousel from '../components/HomeCarousel';
-import FrameBox from '../components/FrameBox';
+import Hero from '../components/Hero';
+import CTA from '../components/CTA';
 import LightMarbleCTA from '../components/LightMarbleCTA';
 import UnstyledRecentStories from '../components/RecentStories';
 import UnstyledMostRecentStory from '../components/MostRecentStory';
-import SubscriptionCTA from '../components/SubscriptionCTA';
+import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
 
-const HomeCarousel = styled(UnstyledHomeCarousel)`
-  margin-top: 5vh;
-  margin-bottom: 2.5rem;
-`;
-
-const HeroWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 3rem;
-`;
-
-const Hero = styled(FrameBox)`
-  padding: 0.5rem;
-  font-family: 'PT Mono', monospace;
-  font-size: 1.75rem;
-  text-align: center;
-  color: hsl(0, 0%, 93%);
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
-  font-style: italic;
-`;
-
-const MainCTAContainer = styled.div`
-  margin-bottom: 1.5rem;
-  display: flex;
-  justify-content: space-around;
-
-  @media (max-width: 450px) {
-    display: inline-flex;
-    flex-direction: column;
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-`;
-
-const CTA = styled(FrameBox)`
-  padding: 0.8rem 1.25rem;
-  font-family: 'Enriqueta', serif;
-  font-weight: 700;
-
-  @media (max-width: 450px) {
-    margin-bottom: 1.5rem;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
-`;
-
-const LeftCTA = styled(CTA)``;
-
-const RightCTA = styled(CTA)`
-  /* transform: translateY(30px); */
-`;
-
-const InstagramAndRecentStoriesContainer = styled.div`
-  margin-bottom: 2.5rem;
-  display: grid;
-  grid-template-columns: auto 1fr auto;
-  grid-template-rows: 0.33rem auto 1fr;
-  grid-template-areas:
-    'OffCenterCTAContainer . .'
-    'OffCenterCTAContainer . InstagramContainer'
-    'RecentStoriesAndCTAContainer . InstagramContainer';
-
-  @media (max-width: 1400px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    & > * {
-      margin-bottom: 2.5rem;
-      &:last-of-type {
-        margin-bottom: 0;
-      }
-    }
-  }
-`;
-
-const OffCenterCTAContainer = styled.div`
-  grid-area: OffCenterCTAContainer;
-  margin-bottom: 2rem;
-  display: flex;
-  justify-content: center;
-`;
-
-const OffCenterCTA = styled(CTA)`
-  display: inline-block;
-`;
-
-const RecentStoriesAndCTAContainer = styled.div`
-  grid-area: RecentStoriesAndCTAContainer;
-
-  @media (max-width: 1400px) {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  @media (max-width: 550px) {
-    width: 100%;
-  }
-`;
-
-const RecentStoriesContainer = styled.div`
-  display: flex;
-  margin-bottom: 2.5rem;
-
-  @media (max-width: 700px) {
-    flex-direction: column;
-  }
-
-  @media (max-width: 550px) {
-    width: 100%;
-  }
-`;
-
-const RecentStories = styled(UnstyledRecentStories)`
-  margin-right: 0.75rem;
-  width: 10rem;
-
-  @media (max-width: 700px) {
-    width: 450px;
-    margin-right: 0;
-    margin-bottom: 0.75rem;
-
-    & > * {
-      flex: 1;
-    }
-  }
-
-  @media (max-width: 550px) {
-    width: 100%;
-  }
-`;
-
-const MostRecentStory = styled(UnstyledMostRecentStory)`
-  @media (max-width: 550px) {
-    display: none;
-  }
-`;
-
-const InstagramContainer = styled.div`
-  grid-area: InstagramContainer;
-  width: 315px;
+const Header = styled.header`
   display: flex;
   flex-direction: column;
   align-items: center;
-  /* background: blue; */
 `;
 
-const InstagramHeading = styled(FrameBox)`
+const HomeCarousel = styled(UnstyledHomeCarousel)`
+  margin: 2em 0;
+  width: 100%;
+`;
+
+const MainCTAContainer = styled.div`
+  margin: 1.5em 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+`;
+
+const InstagramAndRecentStoriesSection = styled.section`
+  display: flex;
+`;
+
+const RecentStoriesAndCTAContainer = styled.div`
+  margin-right: 50px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+`;
+
+const RecentStoriesContainer = styled.div`
+  margin: 1.5em 0;
+  display: flex;
+`;
+
+const RecentStories = styled(UnstyledRecentStories)`
+  margin-right: 15px;
+  flex-shrink: 0;
+  width: 175px;
+`;
+
+const MostRecentStory = styled(UnstyledMostRecentStory)`
+  flex-grow: 1;
+`;
+
+const SubscriptionCTA = styled(UnstyledSubscriptionCTA)`
+  align-self: flex-start;
+`;
+
+const InstagramContainer = styled.div`
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+`;
+
+const InstagramHeading = styled.div`
+  margin: 20px auto 0;
+  border: ${props => props.theme.misc.frameBorder};
   background-image: url('/assets/light-marble.svg');
   background-repeat: none;
   background-size: contain;
   background-position: center center;
-  padding: 0.75rem 2rem;
-  margin: auto;
-  margin-bottom: 1.5rem;
+  padding: 0.75em 1.25em;
   text-align: center;
+  font-size: 1.1em;
   font-weight: 700;
 `;
 
 const InstagramThumbnailContainer = styled.div`
-  margin-bottom: 2.5rem;
+  margin: 1em 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: 150px;
-  grid-gap: 1rem;
-
-  @media (max-width: 1400px) {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  @media (max-width: 550px) {
-    grid-template-columns: 1fr 1fr;
-  }
-
-  @media (max-width: 350px) {
-    grid-template-columns: 1fr;
-  }
+  grid-gap: 15px;
 `;
 
 const InstagramThumbnail = styled(Image)`
-  /* background: white; */
-  border: 1px solid black;
-  /* height: 150px; */
-  /* width: 150px; */
+  border: ${props => props.theme.misc.frameBorder};
+  display: block;
 `;
 
 const MarbleCTA = styled(LightMarbleCTA)`
-  display: inline-block;
+  margin: 0 auto;
 `;
 
 const GreenMarbleCTAContainer = styled.div`
+  margin: 2em 0;
   display: flex;
   justify-content: center;
 `;
 
-const GreenMarbleCTA = styled(FrameBox)`
-  display: inline-block;
-  padding: 0.33rem 1.5rem;
+const FinalCTA = styled(CTA)`
+  padding: 8px 25px;
   background-image: url('/assets/empty-square-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  font-weight: 700;
-  font-size: 1.5rem;
 `;
-
-const stories = [
-  {
-    title: 'read more and speak for yourself now or ...',
-    author: 'Khizer Baig'
-  },
-  {
-    title: 'read more and speak for yourself now or ...',
-    author: 'Khizer Baig'
-  },
-  {
-    title: 'read more and speak for yourself now or ...',
-    author: 'Khizer Baig'
-  }
-];
 
 export const IndexPageTemplate = ({
   carouselImages,
   heroStatement,
-  leftCta,
-  rightCta,
+  CTAs,
+  posts,
   instagramImages
 }) => (
   <Layout>
-    <HomeCarousel images={carouselImages} />
-    <HeroWrapper>
+    <Header>
+      <HomeCarousel images={carouselImages} />
       <Hero>{heroStatement}</Hero>
-    </HeroWrapper>
-    <MainCTAContainer>
-      <LeftCTA>{leftCta.content}</LeftCTA>
-      <RightCTA>{rightCta.content}</RightCTA>
-    </MainCTAContainer>
-    <InstagramAndRecentStoriesContainer>
-      <OffCenterCTAContainer>
-        <OffCenterCTA>See Our Portfolio Here</OffCenterCTA>
-      </OffCenterCTAContainer>
+      <MainCTAContainer>
+        <CTA {...CTAs.leftCTA} />
+        <CTA {...CTAs.rightCTA} />
+      </MainCTAContainer>
+    </Header>
 
+    <InstagramAndRecentStoriesSection>
       <RecentStoriesAndCTAContainer>
+        <CTA {...CTAs.offCenterCTA} />
         <RecentStoriesContainer>
-          <RecentStories stories={stories} />
-          <MostRecentStory
-            title='How to design a website with an artist'
-            description='Take aways of patience, creativity, and inspiration after hours of work.'
-            author='Khizer Baig'
-          />
+          <RecentStories posts={posts.slice(1)} />
+          <MostRecentStory {...posts[0]} />
         </RecentStoriesContainer>
         <SubscriptionCTA />
       </RecentStoriesAndCTAContainer>
+
       <InstagramContainer>
         <InstagramHeading>From Instagram</InstagramHeading>
         <InstagramThumbnailContainer>
@@ -274,19 +145,23 @@ export const IndexPageTemplate = ({
             <InstagramThumbnail key={i} fixed={fixed} />
           ))}
         </InstagramThumbnailContainer>
-        <MarbleCTA>Support our work on Patreon here</MarbleCTA>
+        <MarbleCTA />
       </InstagramContainer>
-    </InstagramAndRecentStoriesContainer>
+    </InstagramAndRecentStoriesSection>
+
     <GreenMarbleCTAContainer>
-      <GreenMarbleCTA>Get in touch</GreenMarbleCTA>
+      <FinalCTA {...CTAs.finalCTA} />
     </GreenMarbleCTAContainer>
   </Layout>
 );
 
 export default ({ data }) => (
   <IndexPageTemplate
-    {...data.markdownRemark.frontmatter}
-    instagramImages={data.allInstaNode.edges.map(
+    {...data.index.frontmatter}
+    posts={[...data.postsLatest.edges, ...data.postsRest.edges].map(
+      edge => edge.node.frontmatter
+    )}
+    instagramImages={data.instagram.edges.map(
       edge => edge.node.localFile.childImageSharp.fixed
     )}
   />
@@ -294,7 +169,7 @@ export default ({ data }) => (
 
 export const query = graphql`
   query($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    index: markdownRemark(id: { eq: $id }) {
       frontmatter {
         carouselImages {
           description
@@ -307,17 +182,80 @@ export const query = graphql`
           }
         }
         heroStatement
-        leftCta {
-          content
-          path
-        }
-        rightCta {
-          content
-          path
+        CTAs {
+          leftCTA {
+            external
+            content
+            path
+          }
+          rightCTA {
+            external
+            content
+            path
+          }
+          offCenterCTA {
+            external
+            content
+            path
+          }
+          finalCTA {
+            external
+            content
+            path
+          }
         }
       }
     }
-    allInstaNode(sort: { fields: [timestamp], order: [DESC] }, limit: 6) {
+    postsLatest: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      limit: 1
+    ) {
+      edges {
+        node {
+          frontmatter {
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+            title
+            subtitle
+            author
+            path
+          }
+        }
+      }
+    }
+    postsRest: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      skip: 1
+      limit: 3
+    ) {
+      edges {
+        node {
+          frontmatter {
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 175) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+            title
+            author
+            path
+          }
+        }
+      }
+    }
+    instagram: allInstaNode(
+      sort: { fields: [timestamp], order: [DESC] }
+      limit: 6
+    ) {
       edges {
         node {
           id

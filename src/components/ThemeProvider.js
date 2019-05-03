@@ -6,11 +6,15 @@ const theme = {
   colors: {
     background: 'hsl(0,0%,95%)',
     carouselBorder: 'hsl(30, 51%, 10%)',
-    light: '#fff'
+    light: '#fff',
+    offLight: 'hsl(0, 0%, 92%)'
   },
   fonts: {
     monospace: `'PT Mono', monospace`,
     sansSerif: `'Arial', sans-serif`
+  },
+  misc: {
+    frameBorder: '4px ridge hsl(0,0%,60%)'
   }
 };
 

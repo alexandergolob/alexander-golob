@@ -9,10 +9,21 @@ carouselImages:
   - description: Starry Night
     image: /assets/starry-night.jpg
 heroStatement: We create art for community.
-leftCta:
-  content: Art and Merchandise for Sale
-  path: /for-sale
-rightCta:
-  content: Support our work with Patreon
-  path: /patreon
+CTAs:
+  leftCTA:
+    content: Art and Merchandise for Sale
+    external: false
+    path: /for-sale
+  rightCTA:
+    content: Support our work with Patreon
+    external: false
+    path: /patreon
+  offCenterCTA:
+    content: Support our work with Patreon
+    external: false
+    path: /patreon
+  finalCTA:
+    content: Get in touch
+    external: false
+    path: /contact
 ---

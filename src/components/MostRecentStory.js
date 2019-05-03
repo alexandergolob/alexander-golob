@@ -1,40 +1,43 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 
-const Container = styled.div`
-  /* background: blue; */
-  width: 450px;
+import InternalLink from './InternalLink';
+
+const Container = styled(InternalLink)`
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
   display: flex;
   flex-direction: column;
-  border: 1px solid #000;
 `;
 
-const Img = styled.div`
-  background: green;
+const Img = styled(Image)`
   height: 400px;
 `;
 
 const Text = styled.div`
-  background: hsl(0, 0%, 92%);
+  flex: 1;
   padding: 8px 10px;
+  display: flex;
+  flex-direction: column;
 `;
 
 const Title = styled.div`
-  margin-bottom: 5px;
+  font-size: 1.15em;
 `;
 
 const Description = styled.div`
-  margin-bottom: 5px;
+  margin: 0.4em 0;
 `;
 
 const Author = styled.div``;
 
-export default ({ title, description, author, ...rest }) => (
-  <Container {...rest}>
-    <Img />
+export default ({ path, headerImage, title, subtitle, author, ...rest }) => (
+  <Container to={`/blog${path}`} {...rest}>
+    <Img fluid={headerImage.childImageSharp.fluid} />
     <Text>
       <Title>{title}</Title>
-      <Description>{description}</Description>
+      <Description>{subtitle}</Description>
       <Author>- {author}</Author>
     </Text>
   </Container>

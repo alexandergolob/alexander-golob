@@ -38,15 +38,20 @@ const Description = styled.div``;
 
 const Count = styled.div``;
 
-const CycleButton = styled(FontAwesomeIcon)`
+const CycleButton = styled.button`
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
+
   cursor: pointer;
   opacity: 0.6;
   &:hover {
     opacity: 1;
   }
+
+  border: none;
+  background: none;
+
   color: ${props => props.theme.colors.light};
   font-size: 3em;
 
@@ -72,14 +77,16 @@ export default ({ images, ...rest }) => {
           {index + 1}/{images.length}
         </Count>
       </ImgDescriptionContainer>
+
       <LeftCycleButton
-        icon={faChevronLeft}
         onClick={() => setIndex((images.length + index - 1) % images.length)}
-      />
-      <RightCycleButton
-        icon={faChevronRight}
-        onClick={() => setIndex((index + 1) % images.length)}
-      />
+      >
+        <FontAwesomeIcon icon={faChevronLeft} />
+      </LeftCycleButton>
+
+      <RightCycleButton onClick={() => setIndex((index + 1) % images.length)}>
+        <FontAwesomeIcon icon={faChevronRight} />
+      </RightCycleButton>
     </Container>
   );
 };

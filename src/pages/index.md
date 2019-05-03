@@ -19,7 +19,7 @@ CTAs:
     external: false
     path: /patreon
   offCenterCTA:
-    content: Support our work with Patreon
+    content: See Our Portfolio Here
     external: false
     path: /patreon
   finalCTA:

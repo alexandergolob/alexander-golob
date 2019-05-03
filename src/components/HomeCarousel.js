@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
@@ -12,6 +12,7 @@ const Container = styled.div`
   border: 5px solid ${props => props.theme.colors.carouselBorder};
   height: 450px;
   background: ${props => props.theme.colors.dark};
+  overflow: hidden;
 `;
 
 const Img = styled(Image)`
@@ -65,26 +66,63 @@ const RightCycleButton = styled(CycleButton)`
   right: 10px;
 `;
 
+const Cards = styled.div.attrs(({ index }) => ({
+  style: { left: `${-index * 100}%` }
+}))`
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: ${props => props.cardCount * 100}%;
+  display: flex;
+
+  transition: left 300ms linear;
+`;
+
+const CardContainer = styled.div`
+  flex: 1;
+  position: relative;
+`;
+
+const Card = ({ image, description, count }) => (
+  <CardContainer>
+    <Img fluid={image.childImageSharp.fluid} alt='' />
+    <ImgDescriptionContainer>
+      <Description>{description}</Description>
+      <Count>{count}</Count>
+    </ImgDescriptionContainer>
+  </CardContainer>
+);
+
 export default ({ images, ...rest }) => {
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = React.useState(0);
+
+  const setPrevIndex = () =>
+    setIndex((images.length + index - 1) % images.length);
+  const setNextIndex = () => setIndex((index + 1) % images.length);
+
+  React.useEffect(() => {
+    const id = setTimeout(setNextIndex, 5000);
+    return () => clearTimeout(id);
+  }, [index]);
 
   return (
     <Container {...rest}>
-      <Img fluid={images[index].image.childImageSharp.fluid} alt='' />
-      <ImgDescriptionContainer>
-        <Description>{images[index].description}</Description>
-        <Count>
-          {index + 1}/{images.length}
-        </Count>
-      </ImgDescriptionContainer>
-
-      <LeftCycleButton
-        onClick={() => setIndex((images.length + index - 1) % images.length)}
-      >
+      <Cards cardCount={images.length} index={index}>
+        {images.map(({ image, description }, i) => (
+          <Card
+            key={i}
+            image={image}
+            description={description}
+            count={`${i + 1}/${images.length}`}
+          />
+        ))}
+      </Cards>
+      <LeftCycleButton onClick={setPrevIndex}>
         <FontAwesomeIcon icon={faChevronLeft} />
       </LeftCycleButton>
 
-      <RightCycleButton onClick={() => setIndex((index + 1) % images.length)}>
+      <RightCycleButton onClick={setNextIndex}>
         <FontAwesomeIcon icon={faChevronRight} />
       </RightCycleButton>
     </Container>

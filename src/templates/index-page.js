@@ -298,7 +298,13 @@ export const query = graphql`
       frontmatter {
         carouselImages {
           description
-          image
+          image {
+            childImageSharp {
+              fluid(maxWidth: 1440) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
         }
         heroStatement
         leftCta {
@@ -328,16 +334,6 @@ export const query = graphql`
                 ...GatsbyImageSharpFixed
               }
             }
-          }
-          # Only available with the public api scraper
-          thumbnails {
-            src
-            config_width
-            config_height
-          }
-          dimensions {
-            height
-            width
           }
         }
       }

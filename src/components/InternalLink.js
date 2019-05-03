@@ -1,7 +1,9 @@
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-export default styled(Link)`
+const InternalLink = styled(Link)`
   color: inherit;
   text-decoration: none;
 `;
+
+export default InternalLink;

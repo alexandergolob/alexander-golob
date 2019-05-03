@@ -1,22 +1,19 @@
 import React from 'react';
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 
-import FrameBox from './FrameBox';
+import InternalLink from './InternalLink';
 
-const RecentStories = styled(FrameBox)`
-  display: block;
-  display: flex;
-`;
-
-const Box = styled.div`
-  height: 100%;
-  padding: 10px;
+const Container = styled.div`
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
   display: flex;
   flex-direction: column;
+  padding: 10px;
 `;
 
-const RecentStoriesHeading = styled.div`
-  margin-bottom: 0.5rem;
+const Heading = styled.div`
+  margin-bottom: 1em;
   text-align: center;
   font-weight: 700;
 `;
@@ -26,65 +23,37 @@ const StoriesContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-
-  @media (max-width: 700px) {
-    flex-direction: row;
-  }
-
-  @media (max-width: 550px) {
-    flex-direction: column;
-  }
 `;
 
-const Story = styled.div`
-  font-size: 0.85rem;
-
-  @media (max-width: 700px) {
-    margin-bottom: 0;
-    margin-right: 1rem;
-    &:last-of-type {
-      margin-right: 0;
-    }
-  }
-
-  @media (max-width: 550px) {
-    margin-bottom: 1rem;
-    &:last-of-type {
-      margin-bottom: 0;
-    }
-  }
+const Story = styled(InternalLink)`
+  font-size: 0.85em;
+  margin: 0.2em 0;
 `;
 
-const StoryTitle = styled.div``;
+const StoryThumbnail = styled(Image)`
+  height: 85px;
+`;
 
-const StoryThumbnail = styled.div`
-  margin-bottom: 0.2rem;
-  background: green;
-  height: 80px;
+const StoryTitle = styled.div`
+  margin: 0.5em 0 0.25em;
 `;
 
 const Author = styled.div`
   font-style: italic;
-  font-size: 0.8rem;
-
-  /* @media (max-width: 700px) {
-    text-align: right;1
-  } */
+  font-size: 0.8em;
 `;
 
-export default ({ stories, ...rest }) => (
-  <RecentStories {...rest}>
-    <Box>
-      <RecentStoriesHeading>Recent Stories</RecentStoriesHeading>
-      <StoriesContainer>
-        {stories.map(({ title, author }, i) => (
-          <Story key={i}>
-            <StoryThumbnail />
-            <StoryTitle>{title}</StoryTitle>
-            <Author>{author}</Author>
-          </Story>
-        ))}
-      </StoriesContainer>
-    </Box>
-  </RecentStories>
+export default ({ posts, ...rest }) => (
+  <Container {...rest}>
+    <Heading>Recent Stories</Heading>
+    <StoriesContainer>
+      {posts.map(({ path, headerImage, title, author }, i) => (
+        <Story key={i} to={`/blog${path}`}>
+          <StoryThumbnail fluid={headerImage.childImageSharp.fluid} />
+          <StoryTitle>{title}</StoryTitle>
+          <Author>{author}</Author>
+        </Story>
+      ))}
+    </StoriesContainer>
+  </Container>
 );

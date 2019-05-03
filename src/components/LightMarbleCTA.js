@@ -1,43 +1,37 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import FrameBox from './FrameBox';
-
-const Box = styled(FrameBox)`
-  padding: 0.33rem 1rem;
+const Container = styled.div`
+  border: ${props => props.theme.misc.frameBorder};
+  padding: 10px 15px;
   background-image: url('/assets/light-marble.svg');
   background-repeat: none;
   background-size: cover;
   background-position: center center;
+  display: inline-flex;
+  align-items: center;
+  font-size: 14px;
 `;
 
-const Container = styled.div`
-  display: flex;
-  align-items: center;
+const Statement = styled.div`
+  margin-right: 5px;
+  font-weight: 700;
+`;
 
-  & div {
-    margin-right: 0.33rem;
-    font-weight: 700;
-  }
-
-  & button {
-    cursor: pointer;
-    border: 1px solid #999;
-    background-image: url('/assets/empty-square-bg.png');
-    background-repeat: none;
-    background-size: cover;
-    background-position: center center;
-    padding: 0.15rem 0.75rem;
-    font-size: inherit;
-    color: #fff;
-  }
+const Button = styled.button`
+  cursor: pointer;
+  background-image: url('/assets/empty-square-bg.png');
+  background-repeat: none;
+  background-size: cover;
+  background-position: center center;
+  padding: 2px 10px;
+  font-size: inherit;
+  color: ${props => props.theme.colors.light};
 `;
 
 export default ({ ...rest }) => (
-  <Box {...rest}>
-    <Container>
-      <div>Support our work on patreon</div>
-      <button>here</button>
-    </Container>
-  </Box>
+  <Container {...rest}>
+    <Statement>Support our work on patreon</Statement>
+    <Button>here</Button>
+  </Container>
 );

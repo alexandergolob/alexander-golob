@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import styled from 'styled-components';
+import Image from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faChevronLeft,
@@ -8,19 +9,14 @@ import {
 
 const Container = styled.div`
   position: relative;
-  border: 5px solid hsl(30, 51%, 10%);
-  overflow: hidden;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  height: calc(0.48 * (0.8 * 87.5vw));
-  max-height: 600px;
+  border: 5px solid ${props => props.theme.colors.carouselBorder};
+  height: 450px;
 `;
 
-const Img = styled.img`
+const Img = styled(Image)`
   display: block;
   width: 100%;
+  height: 100%;
 `;
 
 const ImgDescriptionContainer = styled.div`
@@ -32,9 +28,9 @@ const ImgDescriptionContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 10px;
-  font-family: 'PT Mono', monospace;
-  color: #fff;
+  padding: 10px;
+  font-family: ${props => props.theme.fonts.monospace};
+  color: ${props => props.theme.colors.light};
 `;
 
 const Description = styled.div``;
@@ -46,14 +42,14 @@ const CycleButton = styled(FontAwesomeIcon)`
   top: 50%;
   transform: translateY(-50%);
   cursor: pointer;
-
-  color: hsl(0, 0%, 90%);
   opacity: 0.6;
   &:hover {
     opacity: 1;
   }
+  color: ${props => props.theme.colors.light};
+  font-size: 3em;
+
   transition: opacity 300ms ease-in-out;
-  font-size: 3rem;
 `;
 
 const LeftCycleButton = styled(CycleButton)`
@@ -68,7 +64,7 @@ export default ({ images, ...rest }) => {
 
   return (
     <Container {...rest}>
-      <Img src={images[index].image} alt='' />
+      <Img fluid={images[index].image.childImageSharp.fluid} alt='' />
       <ImgDescriptionContainer>
         <Description>{images[index].description}</Description>
         <Count>

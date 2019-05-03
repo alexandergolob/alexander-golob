@@ -78,10 +78,10 @@ const GlobalStyle = createGlobalStyle`
 
 const BackgroundWrapper = styled.div`
   margin: auto;
-  max-width: ${props => props.theme.widths.laptop};
+  max-width: ${props => props.theme.widths.large};
   background: url('/assets/brick-wall-bg.jpg');
   background-size: contain;
-  min-height: 100vh;
+  padding: 80px;
 `;
 
 // const Graffiti = styled.img`

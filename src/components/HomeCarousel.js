@@ -38,9 +38,14 @@ const ImgDescriptionContainer = styled.div`
   padding: 10px;
   font-family: ${props => props.theme.fonts.monospace};
   color: ${props => props.theme.colors.light};
+
+  ${media.tablet`font-size: 0.85em;`}
+  ${media.mobileL`font-size: 0.70em;`}
 `;
 
-const Description = styled.div``;
+const Description = styled.div`
+  margin-right: 10px;
+`;
 
 const Count = styled.div``;
 

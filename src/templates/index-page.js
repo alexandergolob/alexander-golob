@@ -24,6 +24,8 @@ const HomeCarousel = styled(UnstyledHomeCarousel)`
   width: 100%;
 `;
 
+const GridWrapper = styled.div``;
+
 const MainCTAContainer = styled.div`
   margin: 1.5em 0;
   width: 100%;
@@ -89,7 +91,6 @@ const InstagramContainer = styled.div`
   flex-direction: column;
   align-items: center;
 
-  ${media.laptop`width: 480px;`}
   ${media.laptop`width: 315px;`}
   ${media.mobileL`width: 265px;`}
   ${media.mobileS`width: 100%;`}
@@ -164,32 +165,34 @@ export const IndexPageTemplate = ({
     <Header>
       <HomeCarousel images={carouselImages} />
       <Hero>{heroStatement}</Hero>
+    </Header>
+
+    <GridWrapper>
       <MainCTAContainer>
         <CTA {...CTAs.leftCTA} />
         <CTA {...CTAs.rightCTA} />
       </MainCTAContainer>
-    </Header>
+      <InstagramAndRecentStoriesSection>
+        <RecentStoriesAndCTAContainer>
+          <ThirdCTA {...CTAs.offCenterCTA} />
+          <RecentStoriesContainer>
+            <RecentStories posts={posts.slice(1)} />
+            <MostRecentStory {...posts[0]} />
+          </RecentStoriesContainer>
+          <SubscriptionCTA />
+        </RecentStoriesAndCTAContainer>
 
-    <InstagramAndRecentStoriesSection>
-      <RecentStoriesAndCTAContainer>
-        <ThirdCTA {...CTAs.offCenterCTA} />
-        <RecentStoriesContainer>
-          <RecentStories posts={posts.slice(1)} />
-          <MostRecentStory {...posts[0]} />
-        </RecentStoriesContainer>
-        <SubscriptionCTA />
-      </RecentStoriesAndCTAContainer>
-
-      <InstagramContainer>
-        <InstagramHeading>From Instagram</InstagramHeading>
-        <InstagramThumbnailContainer>
-          {instagramImages.map((fluid, i) => (
-            <InstagramThumbnail key={i} fluid={fluid} />
-          ))}
-        </InstagramThumbnailContainer>
-        <MarbleCTA />
-      </InstagramContainer>
-    </InstagramAndRecentStoriesSection>
+        <InstagramContainer>
+          <InstagramHeading>From Instagram</InstagramHeading>
+          <InstagramThumbnailContainer>
+            {instagramImages.map((fluid, i) => (
+              <InstagramThumbnail key={i} fluid={fluid} />
+            ))}
+          </InstagramThumbnailContainer>
+          <MarbleCTA />
+        </InstagramContainer>
+      </InstagramAndRecentStoriesSection>
+    </GridWrapper>
 
     <GreenMarbleCTAContainer>
       <FinalCTA {...CTAs.finalCTA} />

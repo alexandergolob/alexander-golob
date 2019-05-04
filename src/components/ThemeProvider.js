@@ -1,8 +1,18 @@
 import React from 'react';
-import { ThemeProvider } from 'styled-components';
+import { ThemeProvider, css } from 'styled-components';
+
+const sizes = {
+  large: '1200px',
+  laptop: '1024px',
+  tablet: '768px',
+  mobile: '500px',
+  mobileL: '425px',
+  mobileM: '375px',
+  mobileS: '320px'
+};
 
 const theme = {
-  widths: { large: '1200px' },
+  widths: sizes,
   colors: {
     background: 'hsl(0,0%,95%)',
     carouselBorder: 'hsl(30, 51%, 10%)',
@@ -20,3 +30,12 @@ const theme = {
 };
 
 export default props => <ThemeProvider theme={theme} {...props} />;
+
+export const media = Object.keys(sizes).reduce((acc, label) => {
+  acc[label] = (...args) => css`
+    @media (max-width: ${sizes[label]}) {
+      ${css(...args)}
+    }
+  `;
+  return acc;
+}, {});

@@ -7,12 +7,17 @@ import {
   faChevronRight
 } from '@fortawesome/free-solid-svg-icons';
 
+import { media } from '../components/ThemeProvider';
+
 const Container = styled.div`
   position: relative;
   border: 5px solid ${props => props.theme.colors.carouselBorder};
   height: 450px;
   background: ${props => props.theme.colors.dark};
   overflow: hidden;
+
+  ${media.tablet`height: 300px;`}
+  ${media.mobileL`height: 250px;`}
 `;
 
 const Img = styled(Image)`

@@ -9,6 +9,7 @@ const Container = styled.div`
   background-size: cover;
   background-position: center center;
   display: inline-flex;
+  justify-content: center;
   align-items: center;
   font-size: 14px;
 `;

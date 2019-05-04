@@ -1,7 +1,7 @@
 import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
-import ThemeProvider from './ThemeProvider';
+import ThemeProvider, { media } from './ThemeProvider';
 
 // import UnstyledLeftNav from './LeftNav';
 // import UnstyledRightNav from './RightNav';
@@ -82,6 +82,10 @@ const BackgroundWrapper = styled.div`
   background: url('/assets/brick-wall-bg.jpg');
   background-size: contain;
   padding: 80px;
+
+  ${media.large`
+    padding: 20px;
+  `}
 `;
 
 // const Graffiti = styled.img`

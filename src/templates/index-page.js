@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import Image from 'gatsby-image';
 
+import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import UnstyledHomeCarousel from '../components/HomeCarousel';
 import Hero from '../components/Hero';
@@ -28,10 +29,15 @@ const MainCTAContainer = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-around;
+
+  ${media.tablet`margin: 0; flex-direction: column; justify-content: auto;`}
 `;
 
 const InstagramAndRecentStoriesSection = styled.section`
   display: flex;
+  align-items: center;
+
+  ${media.laptop`flex-direction: column;`}
 `;
 
 const RecentStoriesAndCTAContainer = styled.div`
@@ -40,31 +46,53 @@ const RecentStoriesAndCTAContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  ${media.laptop`margin-right: 0; width: 100%;`}
+`;
+
+const ThirdCTA = styled(CTA)`
+  ${media.tablet`width: 100%;`}
 `;
 
 const RecentStoriesContainer = styled.div`
   margin: 1.5em 0;
+  width: 100%;
   display: flex;
+
+  ${media.tablet`flex-direction: column-reverse;`}
 `;
 
 const RecentStories = styled(UnstyledRecentStories)`
   margin-right: 15px;
   flex-shrink: 0;
   width: 175px;
+
+  ${media.tablet`margin: 0.5em 0; width: 100%;`}
 `;
 
 const MostRecentStory = styled(UnstyledMostRecentStory)`
   flex-grow: 1;
+
+  ${media.tablet`height: 400px;`}
+  ${media.mobileL`height: 350px;`}
 `;
 
 const SubscriptionCTA = styled(UnstyledSubscriptionCTA)`
   align-self: flex-start;
+
+  ${media.laptop`align-self: center;`}
 `;
 
 const InstagramContainer = styled.div`
   width: 315px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+
+  ${media.laptop`width: 480px;`}
+  ${media.laptop`width: 315px;`}
+  ${media.mobileL`width: 265px;`}
+  ${media.mobileS`width: 100%;`}
 `;
 
 const InstagramHeading = styled.div`
@@ -78,23 +106,35 @@ const InstagramHeading = styled.div`
   text-align: center;
   font-size: 1.1em;
   font-weight: 700;
+
+  ${media.tablet`font-size: 1em;`}
+  ${media.mobile`width: 100%;`}
 `;
 
 const InstagramThumbnailContainer = styled.div`
   margin: 1em 0;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-auto-rows: 150px;
   grid-gap: 15px;
+
+  ${media.laptop`grid-template-columns: 1fr 1fr 1fr;`}
+  ${media.tablet`grid-template-columns: 1fr 1fr;`}
+  ${media.mobileS`grid-template-columns: 1fr; width: 100%;`}
 `;
 
 const InstagramThumbnail = styled(Image)`
+  height: 150px;
+  width: 150px;
   border: ${props => props.theme.misc.frameBorder};
   display: block;
+
+  ${media.mobileL`height: 125px; width: 125px;`}
+  ${media.mobileS`height: 150px; width: 100%;`}
 `;
 
 const MarbleCTA = styled(LightMarbleCTA)`
   margin: 0 auto;
+  ${media.tablet`width: 100%;`}
 `;
 
 const GreenMarbleCTAContainer = styled.div`
@@ -109,6 +149,8 @@ const FinalCTA = styled(CTA)`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+
+  ${media.tablet`width: 100%;`}
 `;
 
 export const IndexPageTemplate = ({
@@ -130,7 +172,7 @@ export const IndexPageTemplate = ({
 
     <InstagramAndRecentStoriesSection>
       <RecentStoriesAndCTAContainer>
-        <CTA {...CTAs.offCenterCTA} />
+        <ThirdCTA {...CTAs.offCenterCTA} />
         <RecentStoriesContainer>
           <RecentStories posts={posts.slice(1)} />
           <MostRecentStory {...posts[0]} />
@@ -141,8 +183,8 @@ export const IndexPageTemplate = ({
       <InstagramContainer>
         <InstagramHeading>From Instagram</InstagramHeading>
         <InstagramThumbnailContainer>
-          {instagramImages.map((fixed, i) => (
-            <InstagramThumbnail key={i} fixed={fixed} />
+          {instagramImages.map((fluid, i) => (
+            <InstagramThumbnail key={i} fluid={fluid} />
           ))}
         </InstagramThumbnailContainer>
         <MarbleCTA />
@@ -162,7 +204,7 @@ export default ({ data }) => (
       edge => edge.node.frontmatter
     )}
     instagramImages={data.instagram.edges.map(
-      edge => edge.node.localFile.childImageSharp.fixed
+      edge => edge.node.localFile.childImageSharp.fluid
     )}
   />
 );
@@ -258,18 +300,10 @@ export const query = graphql`
     ) {
       edges {
         node {
-          id
-          likes
-          comments
-          mediaType
-          preview
-          original
-          timestamp
-          caption
           localFile {
             childImageSharp {
-              fixed(width: 150, height: 150) {
-                ...GatsbyImageSharpFixed
+              fluid(maxWidth: 400) {
+                ...GatsbyImageSharpFluid_noBase64
               }
             }
           }

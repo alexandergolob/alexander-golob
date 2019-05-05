@@ -52,8 +52,8 @@ const GridWrapper = styled.div`
     grid-template-areas:
       'SubscriptionCTA'
       'ThirdCTA' 
-      'MostRecentStory'
       'MainCTAs'
+      'MostRecentStory'
       'RecentStories'
       'Instagram';
   `}

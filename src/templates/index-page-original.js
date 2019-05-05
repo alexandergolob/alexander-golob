@@ -24,120 +24,84 @@ const HomeCarousel = styled(UnstyledHomeCarousel)`
   width: 100%;
 `;
 
-const GridWrapper = styled.div`
-  display: grid;
-  grid-template-rows: repeat(4, auto);
-  grid-template-columns: auto 1fr auto;
-  grid-template-areas:
-    'MainCTAs MainCTAs MainCTAs'
-    'ThirdCTA ThirdCTA Instagram'
-    'RecentStories MostRecentStory Instagram'
-    'SubscriptionCTA SubscriptionCTA Instagram';
-  grid-row-gap: 1.5em;
-
-  ${media.laptop`
-    grid-template-rows: repeat(5, auto);
-    grid-template-columns: 3fr 1fr;
-    grid-template-areas:
-      'SubscriptionCTA SubscriptionCTA'
-      'ThirdCTA ThirdCTA' 
-      'MostRecentStory MainCTAs'
-      'RecentStories RecentStories'
-      'Instagram Instagram';
-  `}
-
-  ${media.mobileL`
-    grid-template-rows: repeat(6, auto);
-    grid-template-columns: 1fr;
-    grid-template-areas:
-      'SubscriptionCTA'
-      'ThirdCTA' 
-      'MostRecentStory'
-      'MainCTAs'
-      'RecentStories'
-      'Instagram';
-  `}
-`;
+const GridWrapper = styled.div``;
 
 const MainCTAContainer = styled.div`
   grid-area: MainCTAs;
 
+  margin: 1.5em 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
 
-  ${media.laptop`
-    flex-direction: column;
-    align-self: start;
-
-    ${CTA} {
-      margin: 0;
-      margin-bottom: 1em;
-      :last-of-type {
-        margin-bottom: 0;
-      }
-    }
-  `}
-
-  ${media.mobile`font-size: 0.90em;`}
+  ${media.tablet`margin: 0; flex-direction: column; justify-content: auto;`}
 `;
 
-const ThirdCTA = styled(CTA)`
-  grid-area: ThirdCTA;
-  justify-self: center;
-  align-self: start;
-
-  ${media.tablet`width: 100%;`}
-`;
-
-const RecentStories = styled(UnstyledRecentStories)`
+const InstagramAndRecentStoriesSection = styled.section`
   grid-area: RecentStories;
+  display: flex;
+  align-items: center;
 
-  margin-right: 15px;
-  width: 175px;
-
-  ${media.laptop`
-    justify-self: center;
-    margin-right: 0;
-    width: auto;
-  `}
-  /* ${media.tablet`margin: 0.5em 0; width: 100%;`} */
+  ${media.laptop`flex-direction: column;`}
 `;
 
-const MostRecentStory = styled(UnstyledMostRecentStory)`
-  grid-area: MostRecentStory;
-
-  margin-right: 3em;
-
-  ${media.laptop`margin-right: 1em;`}
-  ${media.tablet`height: 300px;`}
-  ${media.mobile`height: 250px;`}
-  ${media.mobileL`margin-right: 0;`}
-  /* ${media.tablet`height: 400px;`}
-  ${media.mobileL`height: 350px;`} */
-`;
-
-const SubscriptionCTA = styled(UnstyledSubscriptionCTA)`
-  grid-area: SubscriptionCTA;
-  align-self: start;
-
-  ${media.laptop`justify-self: center;`}
-  ${media.tablet`width: 100%;`}
-`;
-
-const InstagramContainer = styled.div`
-  grid-area: Instagram;
-
-  margin-top: 1em;
+const RecentStoriesAndCTAContainer = styled.div`
+  margin-right: 50px;
+  flex-grow: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
 
-  ${media.laptop`margin-top: 0; justify-self: center;`}
+  ${media.laptop`margin-right: 0; width: 100%;`}
+`;
+
+const ThirdCTA = styled(CTA)`
+  grid-area: ThirdCTA;
+  ${media.tablet`width: 100%;`}
+`;
+
+const RecentStoriesContainer = styled.div`
+  margin: 1.5em 0;
+  width: 100%;
+  display: flex;
+
+  ${media.tablet`flex-direction: column-reverse;`}
+`;
+
+const RecentStories = styled(UnstyledRecentStories)`
+  margin-right: 15px;
+  flex-shrink: 0;
+  width: 175px;
+
+  ${media.tablet`margin: 0.5em 0; width: 100%;`}
+`;
+
+const MostRecentStory = styled(UnstyledMostRecentStory)`
+  flex-grow: 1;
+
+  ${media.tablet`height: 400px;`}
+  ${media.mobileL`height: 350px;`}
+`;
+
+const SubscriptionCTA = styled(UnstyledSubscriptionCTA)`
+  align-self: flex-start;
+
+  ${media.laptop`align-self: center;`}
+`;
+
+const InstagramContainer = styled.div`
+  width: 315px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  ${media.laptop`width: 315px;`}
+  ${media.mobileL`width: 265px;`}
   ${media.mobileS`width: 100%;`}
 `;
 
 const InstagramHeading = styled.div`
+  margin: 20px auto 0;
   border: ${props => props.theme.misc.frameBorder};
   background-image: url('/assets/light-marble.svg');
   background-repeat: none;
@@ -148,7 +112,8 @@ const InstagramHeading = styled.div`
   font-size: 1.1em;
   font-weight: 700;
 
-  ${media.tablet`font-size: 1em; width: 100%;`}
+  ${media.tablet`font-size: 1em;`}
+  ${media.mobile`width: 100%;`}
 `;
 
 const InstagramThumbnailContainer = styled.div`
@@ -158,7 +123,7 @@ const InstagramThumbnailContainer = styled.div`
   grid-gap: 15px;
 
   ${media.laptop`grid-template-columns: 1fr 1fr 1fr;`}
-  ${media.mobile`grid-template-columns: 1fr 1fr;`}
+  ${media.tablet`grid-template-columns: 1fr 1fr;`}
   ${media.mobileS`grid-template-columns: 1fr; width: 100%;`}
 `;
 
@@ -168,13 +133,12 @@ const InstagramThumbnail = styled(Image)`
   border: ${props => props.theme.misc.frameBorder};
   display: block;
 
-  ${media.tablet`height: 125px; width: 125px;`}
-  ${media.mobile`height: 150px; width: 150px;`}
-  ${media.mobileM`height: 125px; width: 125px;`}
+  ${media.mobileL`height: 125px; width: 125px;`}
   ${media.mobileS`height: 150px; width: 100%;`}
 `;
 
 const MarbleCTA = styled(LightMarbleCTA)`
+  margin: 0 auto;
   ${media.tablet`width: 100%;`}
 `;
 
@@ -212,23 +176,26 @@ export const IndexPageTemplate = ({
         <CTA {...CTAs.leftCTA} />
         <CTA {...CTAs.rightCTA} />
       </MainCTAContainer>
+      <InstagramAndRecentStoriesSection>
+        <RecentStoriesAndCTAContainer>
+          <ThirdCTA {...CTAs.offCenterCTA} />
+          <RecentStoriesContainer>
+            <RecentStories posts={posts.slice(1)} />
+            <MostRecentStory {...posts[0]} />
+          </RecentStoriesContainer>
+          <SubscriptionCTA />
+        </RecentStoriesAndCTAContainer>
 
-      <ThirdCTA {...CTAs.offCenterCTA} />
-
-      <RecentStories posts={posts.slice(1)} />
-      <MostRecentStory {...posts[0]} />
-
-      <SubscriptionCTA />
-
-      <InstagramContainer>
-        <InstagramHeading>From Instagram</InstagramHeading>
-        <InstagramThumbnailContainer>
-          {instagramImages.map((fluid, i) => (
-            <InstagramThumbnail key={i} fluid={fluid} />
-          ))}
-        </InstagramThumbnailContainer>
-        <MarbleCTA />
-      </InstagramContainer>
+        <InstagramContainer>
+          <InstagramHeading>From Instagram</InstagramHeading>
+          <InstagramThumbnailContainer>
+            {instagramImages.map((fluid, i) => (
+              <InstagramThumbnail key={i} fluid={fluid} />
+            ))}
+          </InstagramThumbnailContainer>
+          <MarbleCTA />
+        </InstagramContainer>
+      </InstagramAndRecentStoriesSection>
     </GridWrapper>
 
     <GreenMarbleCTAContainer>
@@ -322,7 +289,7 @@ export const query = graphql`
           frontmatter {
             headerImage {
               childImageSharp {
-                fluid(maxWidth: 400) {
+                fluid(maxWidth: 175) {
                   ...GatsbyImageSharpFluid_noBase64
                 }
               }

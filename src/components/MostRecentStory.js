@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
 
+import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
 const Container = styled(InternalLink)`
@@ -12,14 +13,19 @@ const Container = styled(InternalLink)`
 `;
 
 const Img = styled(Image)`
-  height: 400px;
+  /* height: 400px; */
+  flex: 1;
+
+  ${media.tablet`height: auto;`}
 `;
 
 const Text = styled.div`
-  flex: 1;
   padding: 8px 10px;
   display: flex;
   flex-direction: column;
+
+  ${media.tablet`font-size: 0.90em;`}
+  ${media.mobile`font-size: 0.75em;`}
 `;
 
 const Title = styled.div`

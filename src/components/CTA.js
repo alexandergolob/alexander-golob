@@ -34,4 +34,4 @@ const CTA = ({ external, path, content, ...rest }) =>
     </InternalLink>
   );
 
-export default CTA;
+export default styled(CTA)``;

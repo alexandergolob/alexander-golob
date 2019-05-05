@@ -25,22 +25,31 @@ const StoriesContainer = styled.div`
   flex-direction: column;
   justify-content: space-between;
 
-  ${media.tablet`flex-direction: row;`}
+  ${media.laptop`flex-direction: row;`}
   ${media.mobile`flex-direction: column;`}
+  /* ${media.tablet`flex-direction: row;`}
+  ${media.mobile`flex-direction: column;`} */
 `;
 
 const Story = styled(InternalLink)`
   font-size: 0.85em;
-  margin: 0.2em 0;
+  margin: 0.25em 0;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
 
-  ${media.tablet`margin: 0 0.5em;`}
-  ${media.mobile`margin: 0.5em 0;`}
+  ${media.laptop`margin: 0 0.5em;`}
+  ${media.mobile`margin: 0.25em 0;`}
+  /* ${media.tablet`margin: 0 0.5em;`}
+  ${media.mobile`margin: 0.5em 0;`} */
 `;
 
 const StoryThumbnail = styled(Image)`
-  height: 85px;
-  ${media.tablet`height: 100px;`}
-  ${media.mobile`height: 120px;`}
+  /* height: 85px; */
+  /* ${media.tablet`height: 100px;`}
+  ${media.mobile`height: 120px;`} */
+
+  ${media.laptop`height: 100px;`}
 `;
 
 const StoryTitle = styled.div`

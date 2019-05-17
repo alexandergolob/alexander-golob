@@ -1,195 +1,169 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
+import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import Header from '../components/PageHeader';
-import Link from '../components/InternalLink';
+import Link from '../components/Link';
+import ExpandableContent from '../components/ExpandableContent';
 
-const LinksContainer = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-bottom: 20px;
-`;
+const Section = styled.section``;
 
-const LinkContainer = styled(Link)`
-  margin-right: 25px;
-  &:last-of-type {
-    margin-right: 0;
-  }
-`;
-
-const LinkBox = styled.div`
-  padding: 10px 0;
-  width: 200px;
-  text-align: center;
-  font-weight: 900;
-`;
-
-const SectionHeadingContainer = styled.h2`
-  margin-bottom: 7px;
-`;
-
-const SectionHeading = styled.div`
-  position: relative;
+const Heading = styled.h2`
+  border: ${props => props.theme.misc.frameBorder};
   background-image: url('/assets/light-marble.svg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 10px 0;
+  padding: 8px 10px;
   text-align: center;
-  font-weight: 900;
-  font-size: 1.35rem;
+  font-family: ${props => props.theme.fonts.serif};
+  font-size: 1.5em;
+  font-weight: 700;
+
+  ${media.tablet`padding: 5px 10px; font-size: 1.25em;`}
+  ${media.mobile`font-size: 1.15em;`}
 `;
 
-const Section = styled.div``;
-
-const SectionContent = styled.div`
-  padding: 15px;
+const Content = styled.div`
+  *:first-of-type {
+    margin-top: 0;
+  }
+  *:last-of-type {
+    margin-bottom: 0;
+  }
+  p {
+    margin: 0.5em 0;
+  }
 `;
 
-const FirstSection = styled(Section)`
-  margin-bottom: 30px;
+const MainSection = styled(Section)`
+  margin: 1em 0;
 `;
 
-const FirstSectionContent = styled(SectionContent)`
-  margin: auto;
+const MainContent = styled(Content)`
+  margin: 0.25em auto 0;
   width: 95%;
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
+  padding: 15px;
   text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
+
+  ${media.tablet`width: 100%; text-align: left;`}
 `;
 
-const SectionsAndImages = styled.div`
-  display: grid;
-  grid-template-columns: auto 250px;
-  grid-template-rows: auto auto auto auto;
-  grid-gap: 15px;
-  grid-template-areas:
-    'SecondSection FirstImage'
-    'SecondSection .'
-    'ThirdSection SecondImage'
-    'ThirdSection .';
+const TeamSection = styled(Section)`
+  width: 97.5%;
+  margin: 0.5em 0;
+
+  ${media.tablet`width: 100%;`}
 `;
 
-const SecondSection = styled(Section)`
-  grid-area: SecondSection;
-`;
-
-const ThirdSection = styled(Section)`
-  grid-area: ThirdSection;
-`;
-
-const ImageContainer = styled.div`
+const TeamMember = styled.div`
   display: flex;
-  justify-content: center;
+  margin-bottom: 0.75em;
+
+  ${media.tablet`flex-direction: column-reverse;`}
+`;
+
+const TeamMemberDescription = styled.div`
+  margin-right: 0.75em;
+  flex: 1;
+
+  ${media.tablet`margin-right: 0;`}
+`;
+
+const TeamHeadingContainer = styled(Heading).attrs({ as: 'div' })`
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-  /* overflow: hidden; */
 `;
 
-const Image = styled.img`
-  display: block;
-  width: 100%;
-  height: 100%;
+const TeamHeading = styled.h2`
+  flex: 1;
+  text-align: center;
+  font-size: 1em;
 `;
 
-const FirstImageContainer = styled(ImageContainer)`
-  grid-area: FirstImage;
-`;
-
-const SecondImageContainer = styled(ImageContainer)`
-  grid-area: SecondImage;
-`;
-
-const SectionHeadingCTALink = styled(Link)`
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  transform: translateY(-50%);
-`;
-
-const SectionHeadingCTA = styled.div`
+const TeamLink = styled(Link)`
+  min-width: 75px;
+  border: ${props => props.theme.misc.frameBorder};
   background-image: url('/assets/empty-square-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  padding: 5px 20px;
-  font-size: 0.9rem;
+  padding: 2px 10px;
+  text-align: center;
+  font-size: 0.75em;
+`;
+
+const TeamContent = styled(ExpandableContent)`
+  margin-top: 0.25em;
+`;
+
+const TeamImage = styled(Image)`
+  display: block;
+  border: ${props => props.theme.misc.frameBorder};
+  width: 300px;
+  height: 300px;
+
+  ${media.tablet`margin: 0.25em 0; width: 100%;`}
 `;
 
 export const AboutPageTemplate = ({
   heading,
   links,
-  section1,
-  section2,
-  section3,
-  image1,
-  image2
+  companyDescription,
+  teamSection
 }) => (
   <Layout>
     <Header heading={heading} pageLinks={links} />
 
-    {/* <LinksContainer>
-      {links.map(({ content, path }, i) => (
-        <LinkContainer key={i} to={path}>
-          <LinkBox>{content}</LinkBox>
-        </LinkContainer>
-      ))}
-    </LinksContainer>
+    <MainSection>
+      <Heading>{companyDescription.heading}</Heading>
+      <MainContent
+        dangerouslySetInnerHTML={{ __html: companyDescription.content }}
+      />
+    </MainSection>
 
-    <FirstSection>
-      <SectionHeadingContainer>
-        <SectionHeading>{section1.heading}</SectionHeading>
-      </SectionHeadingContainer>
-      <FirstSectionContent>
-        <div dangerouslySetInnerHTML={{ __html: section1.content }} />
-      </FirstSectionContent>
-    </FirstSection>
-
-    <SectionsAndImages>
-      <SecondSection>
-        <SectionHeadingContainer>
-          <SectionHeading>
-            {section2.heading}
-            <SectionHeadingCTALink to={section2.headingCTA.path}>
-              <SectionHeadingCTA>
-                {section2.headingCTA.content}
-              </SectionHeadingCTA>
-            </SectionHeadingCTALink>
-          </SectionHeading>
-        </SectionHeadingContainer>
-        <SectionContent>
-          <div dangerouslySetInnerHTML={{ __html: section2.content }} />
-        </SectionContent>
-      </SecondSection>
-
-      <FirstImageContainer>
-        <Image src={image1} alt='' />
-      </FirstImageContainer>
-
-      <ThirdSection>
-        <SectionHeadingContainer>
-          <SectionHeading>
-            {section3.heading}
-            <SectionHeadingCTALink to={section3.headingCTA.path}>
-              <SectionHeadingCTA>
-                {section3.headingCTA.content}
-              </SectionHeadingCTA>
-            </SectionHeadingCTALink>
-          </SectionHeading>
-        </SectionHeadingContainer>
-        <SectionContent>
-          <div dangerouslySetInnerHTML={{ __html: section3.content }} />
-        </SectionContent>
-      </ThirdSection>
-
-      <SecondImageContainer>
-        <Image src={image2} alt='' />
-      </SecondImageContainer>
-    </SectionsAndImages> */}
+    <TeamSection>
+      {teamSection.map(
+        ({ heading, CVLink, image, contentHeading, content }, i) => (
+          <TeamMember key={i}>
+            <TeamMemberDescription>
+              <TeamHeadingContainer>
+                <TeamHeading>{heading}</TeamHeading>
+                <TeamLink external={CVLink.external} path={CVLink.path}>
+                  {CVLink.content}
+                </TeamLink>
+              </TeamHeadingContainer>
+              <TeamContent heading={contentHeading} content={content} />
+            </TeamMemberDescription>
+            <TeamImage alt='' fluid={image.childImageSharp.fluid} />
+          </TeamMember>
+        )
+      )}
+    </TeamSection>
   </Layout>
 );
 
 export default ({ data }) => (
-  <AboutPageTemplate {...data.markdownRemark.frontmatter} />
+  <AboutPageTemplate
+    {...data.markdownRemark.frontmatter}
+    companyDescription={{
+      ...data.markdownRemark.frontmatter.companyDescription,
+      content: data.markdownRemark.fields.companyDescription.content
+    }}
+    teamSection={data.markdownRemark.frontmatter.teamSection.map(
+      (section, i) => ({
+        ...section,
+        content: data.markdownRemark.fields.teamSection[i].content
+      })
+    )}
+  />
 );
 
 export const query = graphql`
@@ -201,24 +175,31 @@ export const query = graphql`
           content
           path
         }
-        section1 {
+        companyDescription {
           heading
-          content
         }
-        section2 {
+        teamSection {
           heading
-          headingCTA {
+          CVLink {
             content
+            external
             path
           }
+          image {
+            childImageSharp {
+              fluid(maxWidth: 700) {
+                ...GatsbyImageSharpFluid_noBase64
+              }
+            }
+          }
+          contentHeading
+        }
+      }
+      fields {
+        companyDescription {
           content
         }
-        section3 {
-          heading
-          headingCTA {
-            content
-            path
-          }
+        teamSection {
           content
         }
       }

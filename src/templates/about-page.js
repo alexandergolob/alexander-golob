@@ -1,244 +1,227 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
-// import Layout from '../components/Layout';
-// import FrameBox from '../components/FrameBox';
-// import Link from '../components/Link';
+import Layout from '../components/Layout';
+import Header from '../components/PageHeader';
+import Link from '../components/InternalLink';
 
-// const HeadingContainer = styled.h1`
-//   margin-bottom: 20px;
-//   text-align: center;
-// `;
+const LinksContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+`;
 
-// const Heading = styled(FrameBox)`
-//   display: inline-block;
-//   padding: 10px 100px;
-//   font-size: 2.5rem;
-// `;
+const LinkContainer = styled(Link)`
+  margin-right: 25px;
+  &:last-of-type {
+    margin-right: 0;
+  }
+`;
 
-// const LinksContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 20px;
-// `;
+const LinkBox = styled.div`
+  padding: 10px 0;
+  width: 200px;
+  text-align: center;
+  font-weight: 900;
+`;
 
-// const LinkContainer = styled(Link)`
-//   margin-right: 25px;
-//   &:last-of-type {
-//     margin-right: 0;
-//   }
-// `;
+const SectionHeadingContainer = styled.h2`
+  margin-bottom: 7px;
+`;
 
-// const LinkBox = styled(FrameBox)`
-//   padding: 10px 0;
-//   width: 200px;
-//   text-align: center;
-//   font-weight: 900;
-// `;
+const SectionHeading = styled.div`
+  position: relative;
+  background-image: url('/assets/light-marble.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 900;
+  font-size: 1.35rem;
+`;
 
-// const SectionHeadingContainer = styled.h2`
-//   margin-bottom: 7px;
-// `;
+const Section = styled.div``;
 
-// const SectionHeading = styled(FrameBox)`
-//   position: relative;
-//   background-image: url('/assets/light-marble.svg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
-//   padding: 10px 0;
-//   text-align: center;
-//   font-weight: 900;
-//   font-size: 1.35rem;
-// `;
+const SectionContent = styled.div`
+  padding: 15px;
+`;
 
-// const Section = styled.div``;
+const FirstSection = styled(Section)`
+  margin-bottom: 30px;
+`;
 
-// const SectionContent = styled(FrameBox)`
-//   padding: 15px;
-// `;
+const FirstSectionContent = styled(SectionContent)`
+  margin: auto;
+  width: 95%;
+  text-align: center;
+`;
 
-// const FirstSection = styled(Section)`
-//   margin-bottom: 30px;
-// `;
+const SectionsAndImages = styled.div`
+  display: grid;
+  grid-template-columns: auto 250px;
+  grid-template-rows: auto auto auto auto;
+  grid-gap: 15px;
+  grid-template-areas:
+    'SecondSection FirstImage'
+    'SecondSection .'
+    'ThirdSection SecondImage'
+    'ThirdSection .';
+`;
 
-// const FirstSectionContent = styled(SectionContent)`
-//   margin: auto;
-//   width: 95%;
-//   text-align: center;
-// `;
+const SecondSection = styled(Section)`
+  grid-area: SecondSection;
+`;
 
-// const SectionsAndImages = styled.div`
-//   display: grid;
-//   grid-template-columns: auto 250px;
-//   grid-template-rows: auto auto auto auto;
-//   grid-gap: 15px;
-//   grid-template-areas:
-//     'SecondSection FirstImage'
-//     'SecondSection .'
-//     'ThirdSection SecondImage'
-//     'ThirdSection .';
-// `;
+const ThirdSection = styled(Section)`
+  grid-area: ThirdSection;
+`;
 
-// const SecondSection = styled(Section)`
-//   grid-area: SecondSection;
-// `;
+const ImageContainer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* overflow: hidden; */
+`;
 
-// const ThirdSection = styled(Section)`
-//   grid-area: ThirdSection;
-// `;
+const Image = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+`;
 
-// const ImageContainer = styled(FrameBox)`
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   /* overflow: hidden; */
-// `;
+const FirstImageContainer = styled(ImageContainer)`
+  grid-area: FirstImage;
+`;
 
-// const Image = styled.img`
-//   display: block;
-//   width: 100%;
-//   height: 100%;
-// `;
+const SecondImageContainer = styled(ImageContainer)`
+  grid-area: SecondImage;
+`;
 
-// const FirstImageContainer = styled(ImageContainer)`
-//   grid-area: FirstImage;
-// `;
+const SectionHeadingCTALink = styled(Link)`
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+`;
 
-// const SecondImageContainer = styled(ImageContainer)`
-//   grid-area: SecondImage;
-// `;
+const SectionHeadingCTA = styled.div`
+  background-image: url('/assets/empty-square-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 5px 20px;
+  font-size: 0.9rem;
+`;
 
-// const SectionHeadingCTALink = styled(Link)`
-//   position: absolute;
-//   right: 10px;
-//   top: 50%;
-//   transform: translateY(-50%);
-// `;
+export const AboutPageTemplate = ({
+  heading,
+  links,
+  section1,
+  section2,
+  section3,
+  image1,
+  image2
+}) => (
+  <Layout>
+    <Header heading={heading} pageLinks={links} />
 
-// const SectionHeadingCTA = styled(FrameBox)`
-//   background-image: url('/assets/empty-square-bg.png');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
-//   padding: 5px 20px;
-//   font-size: 0.9rem;
-// `;
+    {/* <LinksContainer>
+      {links.map(({ content, path }, i) => (
+        <LinkContainer key={i} to={path}>
+          <LinkBox>{content}</LinkBox>
+        </LinkContainer>
+      ))}
+    </LinksContainer>
 
-// export const AboutPageTemplate = ({
-//   heading,
-//   links,
-//   section1,
-//   section2,
-//   section3,
-//   image1,
-//   image2
-// }) => (
-//   <Layout>
-//     <HeadingContainer>
-//       <Heading>{heading}</Heading>
-//     </HeadingContainer>
+    <FirstSection>
+      <SectionHeadingContainer>
+        <SectionHeading>{section1.heading}</SectionHeading>
+      </SectionHeadingContainer>
+      <FirstSectionContent>
+        <div dangerouslySetInnerHTML={{ __html: section1.content }} />
+      </FirstSectionContent>
+    </FirstSection>
 
-//     <LinksContainer>
-//       {links.map(({ content, path }, i) => (
-//         <LinkContainer key={i} to={path}>
-//           <LinkBox>{content}</LinkBox>
-//         </LinkContainer>
-//       ))}
-//     </LinksContainer>
+    <SectionsAndImages>
+      <SecondSection>
+        <SectionHeadingContainer>
+          <SectionHeading>
+            {section2.heading}
+            <SectionHeadingCTALink to={section2.headingCTA.path}>
+              <SectionHeadingCTA>
+                {section2.headingCTA.content}
+              </SectionHeadingCTA>
+            </SectionHeadingCTALink>
+          </SectionHeading>
+        </SectionHeadingContainer>
+        <SectionContent>
+          <div dangerouslySetInnerHTML={{ __html: section2.content }} />
+        </SectionContent>
+      </SecondSection>
 
-//     <FirstSection>
-//       <SectionHeadingContainer>
-//         <SectionHeading>{section1.heading}</SectionHeading>
-//       </SectionHeadingContainer>
-//       <FirstSectionContent>
-//         <div dangerouslySetInnerHTML={{ __html: section1.content }} />
-//       </FirstSectionContent>
-//     </FirstSection>
+      <FirstImageContainer>
+        <Image src={image1} alt='' />
+      </FirstImageContainer>
 
-//     <SectionsAndImages>
-//       <SecondSection>
-//         <SectionHeadingContainer>
-//           <SectionHeading>
-//             {section2.heading}
-//             <SectionHeadingCTALink to={section2.headingCTA.path}>
-//               <SectionHeadingCTA>
-//                 {section2.headingCTA.content}
-//               </SectionHeadingCTA>
-//             </SectionHeadingCTALink>
-//           </SectionHeading>
-//         </SectionHeadingContainer>
-//         <SectionContent>
-//           <div dangerouslySetInnerHTML={{ __html: section2.content }} />
-//         </SectionContent>
-//       </SecondSection>
+      <ThirdSection>
+        <SectionHeadingContainer>
+          <SectionHeading>
+            {section3.heading}
+            <SectionHeadingCTALink to={section3.headingCTA.path}>
+              <SectionHeadingCTA>
+                {section3.headingCTA.content}
+              </SectionHeadingCTA>
+            </SectionHeadingCTALink>
+          </SectionHeading>
+        </SectionHeadingContainer>
+        <SectionContent>
+          <div dangerouslySetInnerHTML={{ __html: section3.content }} />
+        </SectionContent>
+      </ThirdSection>
 
-//       <FirstImageContainer>
-//         <Image src={image1} alt='' />
-//       </FirstImageContainer>
+      <SecondImageContainer>
+        <Image src={image2} alt='' />
+      </SecondImageContainer>
+    </SectionsAndImages> */}
+  </Layout>
+);
 
-//       <ThirdSection>
-//         <SectionHeadingContainer>
-//           <SectionHeading>
-//             {section3.heading}
-//             <SectionHeadingCTALink to={section3.headingCTA.path}>
-//               <SectionHeadingCTA>
-//                 {section3.headingCTA.content}
-//               </SectionHeadingCTA>
-//             </SectionHeadingCTALink>
-//           </SectionHeading>
-//         </SectionHeadingContainer>
-//         <SectionContent>
-//           <div dangerouslySetInnerHTML={{ __html: section3.content }} />
-//         </SectionContent>
-//       </ThirdSection>
+export default ({ data }) => (
+  <AboutPageTemplate {...data.markdownRemark.frontmatter} />
+);
 
-//       <SecondImageContainer>
-//         <Image src={image2} alt='' />
-//       </SecondImageContainer>
-//     </SectionsAndImages>
-//   </Layout>
-// );
-
-// export default ({ data }) => (
-//   <AboutPageTemplate {...data.markdownRemark.frontmatter} />
-// );
-
-// export const query = graphql`
-//   query($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       frontmatter {
-//         heading
-//         links {
-//           content
-//           path
-//         }
-//         section1 {
-//           heading
-//           content
-//         }
-//         section2 {
-//           heading
-//           headingCTA {
-//             content
-//             path
-//           }
-//           content
-//         }
-//         section3 {
-//           heading
-//           headingCTA {
-//             content
-//             path
-//           }
-//           content
-//         }
-//         image1
-//         image2
-//       }
-//     }
-//   }
-// `;
-
-export default () => <div>about</div>;
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+        links {
+          content
+          path
+        }
+        section1 {
+          heading
+          content
+        }
+        section2 {
+          heading
+          headingCTA {
+            content
+            path
+          }
+          content
+        }
+        section3 {
+          heading
+          headingCTA {
+            content
+            path
+          }
+          content
+        }
+      }
+    }
+  }
+`;

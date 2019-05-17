@@ -22,7 +22,8 @@ const theme = {
   },
   fonts: {
     monospace: `'PT Mono', monospace`,
-    sansSerif: `'Arial', sans-serif`
+    sansSerif: `'Arial', sans-serif`,
+    serif: `'Enriqueta', serif`
   },
   misc: {
     frameBorder: '4px ridge hsl(0,0%,60%)'

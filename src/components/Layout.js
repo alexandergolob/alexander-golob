@@ -48,7 +48,7 @@ import ThemeProvider, { media } from './ThemeProvider';
 // `;
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://fonts.googleapis.com/css?family=PT+Mono');
+  @import url('https://fonts.googleapis.com/css?family=PT+Mono|Enriqueta:400,700');
 
   * {
     box-sizing: border-box;

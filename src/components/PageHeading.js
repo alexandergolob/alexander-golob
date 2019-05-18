@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import { media } from './ThemeProvider';
 
 export default styled.h1`
-  margin: 0.25em auto;
   min-width: 300px;
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
@@ -16,5 +15,5 @@ export default styled.h1`
 
   ${media.tablet`font-size: 1.5em;`}
   ${media.mobile`font-size: 1.25em;`}
-  ${media.mobileL`width: 90%;`}
+  ${media.mobileL`min-width: auto;`}
 `;

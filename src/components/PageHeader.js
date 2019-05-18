@@ -2,12 +2,17 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { media } from './ThemeProvider';
-import Heading from './PageHeading';
+import PageHeading from './PageHeading';
 import InternalLink from './InternalLink';
 
 const Header = styled.header`
   display: grid;
   grid-template-rows: auto auto;
+`;
+
+const Heading = styled(PageHeading)`
+  margin: 0.25em auto;
+  ${media.mobileL`width: 90%;`}
 `;
 
 const Links = styled.div`

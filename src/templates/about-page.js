@@ -114,6 +114,8 @@ const TeamImage = styled(Image)`
   ${media.mobile`height: 200px;`}
 `;
 
+// TODO: add a final CTA once client provides input on whether it needs to be
+// configurable once, or on a per-page basis.
 export const AboutPageTemplate = ({
   heading,
   links,

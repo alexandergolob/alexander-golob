@@ -20,7 +20,7 @@ CV:
         - year: 2016
           bulletPoints:
             - BFA, College of Fine Arts, Boston University, Boston, MA
-    - title: Group Educations
+    - title: Group Exhibitions
       items:
         - year: 2018
           bulletPoints:

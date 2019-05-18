@@ -6,6 +6,7 @@ import Image from 'gatsby-image';
 import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import PageHeading from '../components/PageHeading';
+import ExternalLink from '../components/ExternalLink';
 // import Header from '../components/PageHeader';
 
 const Header = styled.header`
@@ -32,7 +33,7 @@ const Heading = styled(PageHeading)`
 `;
 
 const CVDownloadButton = styled(PageHeading).attrs({
-  as: 'button'
+  as: ExternalLink
 })`
   font-size: 1.25em;
   min-width: auto;
@@ -121,6 +122,8 @@ const Item = styled.div`
 
 const ItemYear = styled.div`
   margin-right: 3.5em;
+
+  ${media.mobile`margin-right: 2em;`}
 `;
 
 const ItemContent = styled.ul`
@@ -140,7 +143,9 @@ export const CVPageTemplate = ({ heading, CVButton, CV }) => (
     {/* <Header heading={heading} pageLinks={links} /> */}
     <Header>
       <Heading>{heading}</Heading>
-      <CVDownloadButton>{CVButton.content}</CVDownloadButton>
+      <CVDownloadButton href={CVButton.file} download>
+        {CVButton.content}
+      </CVDownloadButton>
     </Header>
     <CVContainer>
       <CVHeader>

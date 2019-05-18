@@ -2,7 +2,7 @@
 heading: CV - Alexander Golob
 CVButton:
   content: DOWNLOAD C.V.
-  file: /assets/pokecity.webp
+  filename: test
 CV:
   title: Golob Art
   name: Alexander Golob

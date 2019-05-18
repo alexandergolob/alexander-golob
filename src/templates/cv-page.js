@@ -54,9 +54,7 @@ const CVContainer = styled.section`
     padding: 20px 30px;
     font-size: 0.9em;
   `}
-  ${media.mobile`
-    font-size: 0.75em;
-  `}
+  ${media.mobile`padding: 15px 20px; font-size: 0.75em;`}  
 `;
 
 const CVHeader = styled.div`
@@ -143,7 +141,7 @@ export const CVPageTemplate = ({ heading, CVButton, CV }) => (
     {/* <Header heading={heading} pageLinks={links} /> */}
     <Header>
       <Heading>{heading}</Heading>
-      <CVDownloadButton href={CVButton.file} download>
+      <CVDownloadButton href={CVButton.filename} download>
         {CVButton.content}
       </CVDownloadButton>
     </Header>
@@ -191,7 +189,7 @@ export const query = graphql`
         heading
         CVButton {
           content
-          file
+          filename
         }
         CV {
           title

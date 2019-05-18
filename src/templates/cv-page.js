@@ -38,7 +38,7 @@ const CVDownloadButton = styled(PageHeading).attrs({
   font-size: 1.25em;
   min-width: auto;
 
-  ${media.tablet`width: 100%; padding: 5px 30px;font-size: 1.25em;`}
+  ${media.tablet`width: 100%; padding: 5px 30px; font-size: 1.25em;`}
 `;
 
 const CVContainer = styled.section`
@@ -94,6 +94,7 @@ const Photo = styled(Image)`
 
   ${media.tablet`width: 150px; height: 150px;`}
   ${media.mobile`width: 125px; height: 125px;`}
+  ${media.mobileL`width: 100px; height: 100px;`}
 `;
 
 const CVSection = styled.div`

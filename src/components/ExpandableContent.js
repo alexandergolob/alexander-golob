@@ -28,11 +28,14 @@ const Heading = styled.h3`
 `;
 
 const ExpandButton = styled.button`
+  display: none;
   cursor: pointer;
   background: none;
   border: none;
   padding: 5px;
   font-size: 0.8em;
+
+  ${media.tablet`display: block;`}
 `;
 
 const ExpandIcon = styled(FontAwesomeIcon).attrs({
@@ -40,7 +43,7 @@ const ExpandIcon = styled(FontAwesomeIcon).attrs({
 })``;
 
 const Content = styled.div.attrs(({ expanded, maxHeight }) => ({
-  style: { maxHeight: `${expanded ? maxHeight : 0}px` }
+  maxHeight: `${expanded ? maxHeight : 0}px`
 }))`
   *:last-of-type {
     margin-bottom: 0;
@@ -48,13 +51,18 @@ const Content = styled.div.attrs(({ expanded, maxHeight }) => ({
   p {
     margin: 0.5em 0;
   }
-
   overflow: hidden;
+
   transition: all 300ms ease-in-out;
+
+  ${media.tablet`
+    font-size: 0.9em;
+    max-height: ${props => props.maxHeight};
+  `}
 `;
 
 export default ({ heading, content, ...rest }) => {
-  const [expanded, setExpanded] = React.useState(true);
+  const [expanded, setExpanded] = React.useState(false);
   const contentRef = React.useRef();
 
   return (

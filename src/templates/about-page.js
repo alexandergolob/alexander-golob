@@ -52,7 +52,7 @@ const MainContent = styled(Content)`
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
 
-  ${media.tablet`width: 100%; text-align: left;`}
+  ${media.tablet`width: 100%; text-align: left; font-size: 0.90em;`}
 `;
 
 const TeamSection = styled(Section)`
@@ -111,6 +111,7 @@ const TeamImage = styled(Image)`
   height: 300px;
 
   ${media.tablet`margin: 0.25em 0; width: 100%;`}
+  ${media.mobile`height: 200px;`}
 `;
 
 export const AboutPageTemplate = ({

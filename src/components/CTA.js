@@ -14,7 +14,7 @@ const linkStyles = css`
   font-size: 1.1em;
   font-weight: 700;
 
-  ${media.tablet`margin: 0.5em 0; font-size: 1em;`}
+  ${media.tablet`font-size: 1em;`}
 `;
 
 const InternalLink = styled(UnstyledInternalLink)`

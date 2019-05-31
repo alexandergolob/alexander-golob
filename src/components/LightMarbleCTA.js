@@ -15,14 +15,14 @@ const Container = styled.div`
   align-items: center;
   font-size: 14px;
 
-  ${media.tablet`flex-direction: column;`}
+  ${media.mobile`flex-direction: column;`}
 `;
 
 const Statement = styled.div`
   margin-right: 5px;
   text-align: center;
   font-weight: 700;
-  ${media.tablet`margin-right: 0;`}
+  ${media.mobile`margin-right: 0;`}
 `;
 
 const Button = styled.button`
@@ -35,7 +35,7 @@ const Button = styled.button`
   font-size: inherit;
   color: ${props => props.theme.colors.light};
 
-  ${media.tablet`margin-top: 0.5em; width: 100%;`}
+  ${media.mobile`margin-top: 0.5em; width: 100%;`}
 `;
 
 export default ({ ...rest }) => (

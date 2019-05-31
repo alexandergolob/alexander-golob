@@ -12,7 +12,7 @@ import LightMarbleCTA from '../components/LightMarbleCTA';
 import UnstyledRecentStories from '../components/RecentStories';
 import UnstyledMostRecentStory from '../components/MostRecentStory';
 import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
-import FinalCTA from '../components/FinalCTA';
+import UnstyledFinalCTA from '../components/FinalCTA';
 
 const Header = styled.header`
   display: flex;
@@ -23,6 +23,8 @@ const Header = styled.header`
 const HomeCarousel = styled(UnstyledHomeCarousel)`
   margin: 2em 0;
   width: 100%;
+
+  ${media.tablet`margin-bottom: 0;`}
 `;
 
 const GridWrapper = styled.div`
@@ -46,6 +48,8 @@ const GridWrapper = styled.div`
       'RecentStories RecentStories'
       'Instagram Instagram';
   `}
+
+  ${media.tablet`grid-row-gap: 2em;`}
 
   ${media.mobileL`
     grid-template-rows: repeat(6, auto);
@@ -73,17 +77,19 @@ const MainCTAContainer = styled.div`
 
     ${CTA} {
       margin: 0;
-      margin-bottom: 1em;
+      margin-bottom: 0.5em;
       :last-of-type {
         margin-bottom: 0;
       }
     }
   `}
-
-  ${media.mobile`font-size: 0.90em;`}
 `;
 
-const ThirdCTA = styled(CTA)`
+const IndexCTA = styled(CTA)`
+  ${media.mobileL`padding: 0.5em 1em;`}
+`;
+
+const ThirdCTA = styled(IndexCTA)`
   grid-area: ThirdCTA;
   justify-self: center;
   align-self: start;
@@ -102,7 +108,6 @@ const RecentStories = styled(UnstyledRecentStories)`
     margin-right: 0;
     width: auto;
   `}
-  /* ${media.tablet`margin: 0.5em 0; width: 100%;`} */
 `;
 
 const MostRecentStory = styled(UnstyledMostRecentStory)`
@@ -114,8 +119,7 @@ const MostRecentStory = styled(UnstyledMostRecentStory)`
   ${media.tablet`height: 300px;`}
   ${media.mobile`height: 250px;`}
   ${media.mobileL`margin-right: 0;`}
-  /* ${media.tablet`height: 400px;`}
-  ${media.mobileL`height: 350px;`} */
+
 `;
 
 const SubscriptionCTA = styled(UnstyledSubscriptionCTA)`
@@ -135,7 +139,7 @@ const InstagramContainer = styled.div`
   align-items: center;
 
   ${media.laptop`margin-top: 0; justify-self: center;`}
-  ${media.mobileS`width: 100%;`}
+  ${media.tablet`width: 100%;`}
 `;
 
 const InstagramHeading = styled.div`
@@ -149,7 +153,7 @@ const InstagramHeading = styled.div`
   font-size: 1.1em;
   font-weight: 700;
 
-  ${media.tablet`font-size: 1em; width: 100%;`}
+  ${media.mobile`font-size: 1em; width: 100%;`}
 `;
 
 const InstagramThumbnailContainer = styled.div`
@@ -158,9 +162,9 @@ const InstagramThumbnailContainer = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 15px;
 
-  ${media.laptop`grid-template-columns: 1fr 1fr 1fr;`}
+  ${media.laptop`margin-bottom: 2em; grid-template-columns: 1fr 1fr 1fr;`}
+  ${media.tablet`width: 100%;`}
   ${media.mobile`grid-template-columns: 1fr 1fr;`}
-  ${media.mobileS`grid-template-columns: 1fr; width: 100%;`}
 `;
 
 const InstagramThumbnail = styled(Image)`
@@ -169,20 +173,21 @@ const InstagramThumbnail = styled(Image)`
   border: ${props => props.theme.misc.frameBorder};
   display: block;
 
-  ${media.tablet`height: 125px; width: 125px;`}
-  ${media.mobile`height: 150px; width: 150px;`}
-  ${media.mobileM`height: 125px; width: 125px;`}
-  ${media.mobileS`height: 150px; width: 100%;`}
+  ${media.tablet`width: 100%; height: 100%;`}
 `;
 
 const MarbleCTA = styled(LightMarbleCTA)`
-  ${media.tablet`width: 100%;`}
+  ${media.mobile`width: 100%;`}
 `;
 
 const FinalCTAContainer = styled.div`
   margin: 2em 0;
   display: flex;
   justify-content: center;
+`;
+
+const FinalCTA = styled(UnstyledFinalCTA)`
+  ${media.mobile`width: 100%; padding: 0.25em 1em;`}
 `;
 
 export const IndexPageTemplate = ({
@@ -200,8 +205,8 @@ export const IndexPageTemplate = ({
 
     <GridWrapper>
       <MainCTAContainer>
-        <CTA {...CTAs.leftCTA} />
-        <CTA {...CTAs.rightCTA} />
+        <IndexCTA {...CTAs.leftCTA} />
+        <IndexCTA {...CTAs.rightCTA} />
       </MainCTAContainer>
 
       <ThirdCTA {...CTAs.offCenterCTA} />

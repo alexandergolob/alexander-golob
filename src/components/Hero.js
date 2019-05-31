@@ -17,6 +17,7 @@ const Hero = styled.div`
 
   ${media.laptop`font-size: 2.25em;`}
   ${media.tablet`
+    margin: 1em 0;
     width: 100%;
     font-size: 1.75em;
   `}

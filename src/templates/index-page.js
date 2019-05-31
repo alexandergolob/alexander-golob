@@ -8,7 +8,7 @@ import Layout from '../components/Layout';
 import UnstyledHomeCarousel from '../components/HomeCarousel';
 import Hero from '../components/Hero';
 import CTA from '../components/CTA';
-import LightMarbleCTA from '../components/LightMarbleCTA';
+import UnstyledSupportCTA from '../components/SupportCTA';
 import UnstyledRecentStories from '../components/RecentStories';
 import UnstyledMostRecentStory from '../components/MostRecentStory';
 import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
@@ -176,7 +176,7 @@ const InstagramThumbnail = styled(Image)`
   ${media.tablet`width: 100%; height: 100%;`}
 `;
 
-const MarbleCTA = styled(LightMarbleCTA)`
+const MarbleCTA = styled(UnstyledSupportCTA)`
   ${media.mobile`width: 100%;`}
 `;
 

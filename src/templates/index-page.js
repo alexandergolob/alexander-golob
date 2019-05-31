@@ -13,6 +13,7 @@ import UnstyledRecentStories from '../components/RecentStories';
 import UnstyledMostRecentStory from '../components/MostRecentStory';
 import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
 import UnstyledFinalCTA from '../components/FinalCTA';
+import ExternalLink from '../components/ExternalLink';
 
 const Header = styled.header`
   display: flex;
@@ -167,6 +168,10 @@ const InstagramThumbnailContainer = styled.div`
   ${media.mobile`grid-template-columns: 1fr 1fr;`}
 `;
 
+const InstagramThumbnailLink = styled(ExternalLink).attrs({
+  href: 'https://www.instagram.com/alexandergolobart/'
+})``;
+
 const InstagramThumbnail = styled(Image)`
   height: 150px;
   width: 150px;
@@ -220,7 +225,9 @@ export const IndexPageTemplate = ({
         <InstagramHeading>From Instagram</InstagramHeading>
         <InstagramThumbnailContainer>
           {instagramImages.map((fluid, i) => (
-            <InstagramThumbnail key={i} fluid={fluid} />
+            <InstagramThumbnailLink key={i}>
+              <InstagramThumbnail fluid={fluid} />
+            </InstagramThumbnailLink>
           ))}
         </InstagramThumbnailContainer>
         <MarbleCTA />

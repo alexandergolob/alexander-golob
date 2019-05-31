@@ -9,6 +9,9 @@ import {
 
 import { media } from '../components/ThemeProvider';
 
+import ExternalLink from './ExternalLink';
+import InternalLink from './InternalLink';
+
 const Container = styled.div`
   position: relative;
   border: 5px solid ${props => props.theme.colors.carouselBorder};
@@ -94,8 +97,11 @@ const CardContainer = styled.div`
   position: relative;
 `;
 
-const Card = ({ image, description, count }) => (
-  <CardContainer>
+const Card = ({ image, description, count, external, path }) => (
+  <CardContainer
+    as={external ? ExternalLink : InternalLink}
+    {...(external ? { href: path } : { to: path })}
+  >
     <Img fluid={image.childImageSharp.fluid} alt='' />
     <ImgDescriptionContainer>
       <Description>{description}</Description>
@@ -119,12 +125,14 @@ export default ({ images, ...rest }) => {
   return (
     <Container {...rest}>
       <Cards cardCount={images.length} index={index}>
-        {images.map(({ image, description }, i) => (
+        {images.map(({ image, description, link: { external, path } }, i) => (
           <Card
             key={i}
             image={image}
             description={description}
             count={`${i + 1}/${images.length}`}
+            external={external}
+            path={path}
           />
         ))}
       </Cards>

@@ -258,6 +258,10 @@ export const query = graphql`
               }
             }
           }
+          link {
+            external
+            path
+          }
         }
         heroStatement
         CTAs {

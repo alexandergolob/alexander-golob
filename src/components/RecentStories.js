@@ -11,6 +11,7 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   padding: 10px;
+  font-family: ${props => props.theme.fonts.serif};
 `;
 
 const Heading = styled.div`
@@ -27,8 +28,6 @@ const StoriesContainer = styled.div`
 
   ${media.laptop`flex-direction: row;`}
   ${media.mobile`flex-direction: column;`}
-  /* ${media.tablet`flex-direction: row;`}
-  ${media.mobile`flex-direction: column;`} */
 `;
 
 const Story = styled(InternalLink)`
@@ -40,20 +39,15 @@ const Story = styled(InternalLink)`
 
   ${media.laptop`margin: 0 0.5em;`}
   ${media.mobile`margin: 0.25em 0;`}
-  /* ${media.tablet`margin: 0 0.5em;`}
-  ${media.mobile`margin: 0.5em 0;`} */
 `;
 
 const StoryThumbnail = styled(Image)`
-  /* height: 85px; */
-  /* ${media.tablet`height: 100px;`}
-  ${media.mobile`height: 120px;`} */
-
   ${media.laptop`height: 100px;`}
 `;
 
 const StoryTitle = styled.div`
   margin: 0.5em 0 0.25em;
+  line-height: 1.2em;
 `;
 
 const Author = styled.div`

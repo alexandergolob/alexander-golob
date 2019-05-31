@@ -10,10 +10,10 @@ const Container = styled(InternalLink)`
   background: ${props => props.theme.colors.offLight};
   display: flex;
   flex-direction: column;
+  font-family: ${props => props.theme.fonts.serif};
 `;
 
 const Img = styled(Image)`
-  /* height: 400px; */
   flex: 1;
 
   ${media.tablet`height: auto;`}
@@ -30,10 +30,12 @@ const Text = styled.div`
 
 const Title = styled.div`
   font-size: 1.15em;
+  font-weight: 700;
 `;
 
 const Description = styled.div`
   margin: 0.4em 0;
+  line-height: 1.15em;
 `;
 
 const Author = styled.div``;

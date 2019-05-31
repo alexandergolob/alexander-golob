@@ -7,5 +7,4 @@ links:
     path: /blog
   - content: News
     path: /
-image: /assets/the-snap-gallery.webp
 ---

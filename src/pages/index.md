@@ -22,8 +22,4 @@ CTAs:
     content: See Our Portfolio Here
     external: false
     path: /patreon
-  finalCTA:
-    content: Get in touch
-    external: false
-    path: /contact
 ---

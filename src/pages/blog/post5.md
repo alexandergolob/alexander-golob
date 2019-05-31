@@ -7,3 +7,21 @@ subtitle: Take aways of patience, creativity, and inspiration after hours of wor
 author: Khizer Baig
 path: /post-5
 ---
+
+Alexander Golob has experience engaging with communities, conducting
+research, and developing and implementing art and placemaking policy,
+strategy, and integration. His studio has worked with city governments on
+policy and implementation, non-profits embarking upon art initiatives, and
+early-stage start-ups looking for guidance.
+
+Alexander Golob has experience engaging with communities, conducting
+research, and developing and implementing art and placemaking policy,
+strategy, and integration. His studio has worked with city governments on
+policy and implementation, non-profits embarking upon art initiatives, and
+early-stage start-ups looking for guidance.
+
+Alexander Golob has experience engaging with communities, conducting
+research, and developing and implementing art and placemaking policy,
+strategy, and integration. His studio has worked with city governments on
+policy and implementation, non-profits embarking upon art initiatives, and
+early-stage start-ups looking for guidance.

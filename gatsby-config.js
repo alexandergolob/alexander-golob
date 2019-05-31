@@ -28,6 +28,13 @@ module.exports = {
         path: `${__dirname}/src/site-settings`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'shared-components',
+        path: `${__dirname}/src/shared-components`
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

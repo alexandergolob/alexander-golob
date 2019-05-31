@@ -8,6 +8,7 @@ import Layout from '../components/Layout';
 import Header from '../components/PageHeader';
 import Link from '../components/Link';
 import ExpandableContent from '../components/ExpandableContent';
+import FinalCTA from '../components/FinalCTA';
 
 const Section = styled.section``;
 
@@ -114,8 +115,12 @@ const TeamImage = styled(Image)`
   ${media.mobile`height: 200px;`}
 `;
 
-// TODO: add a final CTA once client provides input on whether it needs to be
-// configurable once, or on a per-page basis.
+const FinalCTAContainer = styled.div`
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+`;
+
 export const AboutPageTemplate = ({
   heading,
   links,
@@ -150,6 +155,9 @@ export const AboutPageTemplate = ({
         )
       )}
     </TeamSection>
+    <FinalCTAContainer>
+      <FinalCTA />
+    </FinalCTAContainer>
   </Layout>
 );
 

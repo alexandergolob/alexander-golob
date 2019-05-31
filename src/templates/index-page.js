@@ -12,6 +12,7 @@ import LightMarbleCTA from '../components/LightMarbleCTA';
 import UnstyledRecentStories from '../components/RecentStories';
 import UnstyledMostRecentStory from '../components/MostRecentStory';
 import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
+import FinalCTA from '../components/FinalCTA';
 
 const Header = styled.header`
   display: flex;
@@ -178,20 +179,10 @@ const MarbleCTA = styled(LightMarbleCTA)`
   ${media.tablet`width: 100%;`}
 `;
 
-const GreenMarbleCTAContainer = styled.div`
+const FinalCTAContainer = styled.div`
   margin: 2em 0;
   display: flex;
   justify-content: center;
-`;
-
-const FinalCTA = styled(CTA)`
-  padding: 8px 25px;
-  background-image: url('/assets/empty-square-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-
-  ${media.tablet`width: 100%;`}
 `;
 
 export const IndexPageTemplate = ({
@@ -231,9 +222,9 @@ export const IndexPageTemplate = ({
       </InstagramContainer>
     </GridWrapper>
 
-    <GreenMarbleCTAContainer>
-      <FinalCTA {...CTAs.finalCTA} />
-    </GreenMarbleCTAContainer>
+    <FinalCTAContainer>
+      <FinalCTA />
+    </FinalCTAContainer>
   </Layout>
 );
 
@@ -276,11 +267,6 @@ export const query = graphql`
             path
           }
           offCenterCTA {
-            external
-            content
-            path
-          }
-          finalCTA {
             external
             content
             path

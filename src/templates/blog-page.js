@@ -1,12 +1,11 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
-// import Layout from '../components/Layout';
-// import Heading from '../components/BlogOrPressPageHeading';
-// import Header from '../components/BlogOrPressPageHeader';
+import Layout from '../components/Layout';
+import Header from '../components/PageHeader';
+import UnstyledFeaturedPost from '../components/FeaturedPost';
 // import Posts from '../components/BlogOrPressPagePosts';
-// import FrameBox from '../components/FrameBox';
 // import Link from '../components/Link';
 
 // const LinksContainer = styled.div`
@@ -29,113 +28,69 @@ import React from 'react';
 //   font-weight: 900;
 // `;
 
-// const posts = [
-//   {
-//     title: 'Public art needs to be in public spaces',
-//     author: 'Alexander Golob'
-//   },
-//   {
-//     title: 'How to design a website with an artist',
-//     subtitle:
-//       'Take aways of patience, creativity, and inspiration after hours of work',
-//     author: 'Khizer Baig'
-//   },
-//   {
-//     title: 'Our favorite public artworks in Boston',
-//     subtitle:
-//       'Although it has less public art than other cities, there are treasures in beantown',
-//     author: 'Alexander-Golob'
-//   },
-//   {
-//     title: 'Public art needs to be in public spaces',
-//     author: 'Alexander Golob'
-//   },
-//   {
-//     title: 'How to design a website with an artist',
-//     subtitle:
-//       'Take aways of patience, creativity, and inspiration after hours of work',
-//     author: 'Khizer Baig'
-//   },
-//   {
-//     title: 'Our favorite public artworks in Boston',
-//     subtitle:
-//       'Although it has less public art than other cities, there are treasures in beantown',
-//     author: 'Alexander-Golob'
-//   },
-//   {
-//     title: 'Public art needs to be in public spaces',
-//     author: 'Alexander Golob'
-//   },
-//   {
-//     title: 'How to design a website with an artist',
-//     subtitle:
-//       'Take aways of patience, creativity, and inspiration after hours of work',
-//     author: 'Khizer Baig'
-//   },
-//   {
-//     title: 'Our favorite public artworks in Boston',
-//     subtitle:
-//       'Although it has less public art than other cities, there are treasures in beantown',
-//     author: 'Alexander-Golob'
-//   },
-//   {
-//     title: 'Public art needs to be in public spaces',
-//     author: 'Alexander Golob'
-//   },
-//   {
-//     title: 'How to design a website with an artist',
-//     subtitle:
-//       'Take aways of patience, creativity, and inspiration after hours of work',
-//     author: 'Khizer Baig'
-//   },
-//   {
-//     title: 'Our favorite public artworks in Boston',
-//     subtitle:
-//       'Although it has less public art than other cities, there are treasures in beantown',
-//     author: 'Alexander-Golob'
-//   }
-// ];
+const FeaturedPost = styled(UnstyledFeaturedPost)`
+  margin: 1.5em 0;
+`;
 
-// export const BlogPageTemplate = ({ heading, links, image }) => (
-//   <Layout>
-//     <Heading>{heading}</Heading>
-//     <LinksContainer>
-//       {links.map(({ content, path }, i) => (
-//         <LinkContainer key={i} to={path}>
-//           <LinkBox>{content}</LinkBox>
-//         </LinkContainer>
-//       ))}
-//     </LinksContainer>
-//     <Header
-//       image={image}
-//       title='Title Golob Art is Cool'
-//       subtitle='After long studies and many experiments, it has been determined that Golob Art, is, in face, cool'
-//       author='Alexander Golob'
-//       date='March 4, 2019'
-//       content='Alexander Golob has experience engaging with communities, conducting research, and developing and implementing art and placemaking policy, strategy, and integration. His studio has worked with city governments on policy and implementation, non-profits embarking upon art initiative, and early stage start-ups looking for guidance. Art provides benefits for sense of community, business, marketing, and health. Sometimes, it helps to have an artist to integrate that perspective into a community, business, or project.'
-//     />
+export const BlogPageTemplate = ({ heading, links, latestPost }) => (
+  <Layout>
+    <Header heading={heading} pageLinks={links} />
+    <FeaturedPost
+      {...latestPost}
+      image={latestPost.headerImage.childImageSharp.fluid}
+      path={`/blog${latestPost.path}`}
+    />
 
-//     <Posts posts={posts} />
-//   </Layout>
-// );
+    {/* <Posts posts={posts} /> */}
+  </Layout>
+);
 
-// export default ({ data }) => (
-//   <BlogPageTemplate {...data.markdownRemark.frontmatter} />
-// );
+export default ({ data }) => (
+  <BlogPageTemplate
+    {...data.markdownRemark.frontmatter}
+    latestPost={{
+      ...data.latestPost.edges[0].node.frontmatter,
+      content: data.latestPost.edges[0].node.excerpt
+    }}
+  />
+);
 
-// export const query = graphql`
-//   query($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       frontmatter {
-//         heading
-//         links {
-//           content
-//           path
-//         }
-//         image
-//       }
-//     }
-//   }
-// `;
-
-export default () => <div>blog</div>;
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+        links {
+          content
+          path
+        }
+      }
+    }
+    latestPost: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      limit: 1
+    ) {
+      edges {
+        node {
+          excerpt(pruneLength: 400)
+          html
+          frontmatter {
+            date(formatString: "MMMM Do, YYYY")
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 550) {
+                  ...GatsbyImageSharpFluid_noBase64
+                }
+              }
+            }
+            title
+            subtitle
+            author
+            path
+          }
+        }
+      }
+    }
+  }
+`;

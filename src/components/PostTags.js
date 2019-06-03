@@ -26,22 +26,24 @@ const Separator = styled.span.attrs({ children: '//' })`
 export default ({ tags, ...rest }) => (
   <Container>
     <Tags {...rest}>
-      {tags
-        .map(({ path, content }, i) =>
-          i < tags.length - 1 ? (
-            [
-              <InternalLink key={i} to={path}>
-                {content}
-              </InternalLink>,
-              <Separator key={i + 0.5} />
-            ]
-          ) : (
+      {tags.reduce((acc, { path, content }, i) => {
+        if (i < tags.length - 1) {
+          return [
+            ...acc,
+            <InternalLink key={i} to={path}>
+              {content}
+            </InternalLink>,
+            <Separator key={i + 0.5} />
+          ];
+        } else {
+          return [
+            ...acc,
             <InternalLink key={i} to={path}>
               {content}
             </InternalLink>
-          )
-        )
-        .flat()}
+          ];
+        }
+      }, [])}
     </Tags>
   </Container>
 );

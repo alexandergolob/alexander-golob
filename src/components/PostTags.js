@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
+import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
 const Container = styled.div``;
@@ -17,6 +18,8 @@ const Tags = styled.div`
   font-family: ${props => props.theme.fonts.serif};
   font-weight: 600;
   font-size: 0.9em;
+
+  ${media.mobile`padding-right: 8px;`}
 `;
 
 const Separator = styled.span.attrs({ children: '//' })`

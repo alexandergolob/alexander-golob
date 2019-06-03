@@ -19,7 +19,7 @@ const Tags = styled.div`
   font-weight: 600;
   font-size: 0.9em;
 
-  ${media.mobile`padding-right: 8px;`}
+  ${media.mobile`width: 100%; padding-right: 8px;`}
 `;
 
 const Separator = styled.span.attrs({ children: '//' })`

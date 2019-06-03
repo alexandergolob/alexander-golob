@@ -1,63 +1,182 @@
 import React from 'react';
-// import styled from 'styled-components';
+import styled from 'styled-components';
+import Image from 'gatsby-image';
+import { graphql } from 'gatsby';
+import _ from 'lodash';
 
-// import Layout from '../components/Layout';
-// import Header from '../components/BlogOrPressPostHeader';
-// import Tags from '../components/BlogOrPressPostTags';
-// import Title from '../components/BlogOrPressPostTitle';
-// import BodyTop from '../components/BlogOrPressPostBodyTop';
-// import BodyBottom from '../components/BlogOrPressPostBodyBottom';
-// import CTAs from '../components/BlogOrPressPostCTAs';
-// import Pagination from '../components/BlogOrPressPostPagination';
+import { media } from '../components/ThemeProvider';
+import Layout from '../components/Layout';
+import RecentPosts from '../components/PostRecentPosts';
+import PostTags from '../components/PostTags';
+import PostTitle from '../components/PostTitle';
+import PostBody from '../components/PostBody';
+import PostCTAs from '../components/PostCTAs';
+import PostPagination from '../components/PostPagination';
 
-// const stories = [
-//   {
-//     title: 'read more and speak for yourself now or ...'
-//   },
-//   {
-//     title: 'read more and speak for yourself now or ...'
-//   },
-//   {
-//     title: 'read more and speak for yourself now or ...'
-//   }
-// ];
+const Wrapper = styled.div`
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-column-gap: 20px;
+  grid-template-areas:
+    'Header RecentStories'
+    'Tags Tags'
+    'WidthWrapper WidthWrapper';
 
-// const topBody = {
-//   subtitle:
-//     'After long studies and many experiments, it has been determined that Golob Art, is, in face, cool',
-//   author: 'Alexander Golob',
-//   date: 'March 4, 2019',
-//   content:
-//     'Alexander Golob has experience engaging with communities, conducting research, and developing and implementing art and placemaking policy, strategy, and integration. His studio has worked with city governments on policy and implementation, non-profits embarking upon art initiative, and early stage start-ups looking for guidance. Art provides benefits for sense of community, business, marketing, and health. Sometimes, it helps to have an artist to integrate that perspective into a community, business, or project.'
-// };
+  ${media.tablet`
+    grid-template-columns: 1fr;
+    grid-template-areas:
+     'Header'
+     'Tags'
+     'WidthWrapper'
+     'RecentStories';
+  `}
+`;
 
-// const botBody = {
-//   content:
-//     'Alexander Golob has experience engaging with communities, conducting research, and developing and implementing art and placemaking policy, strategy, and integration. His studio has worked with city governments on policy and implementation, non-profits embarking upon art initiative, and early stage start-ups looking for guidance. Art provides benefits for sense of community, business, marketing, and health. Sometimes, it helps to have an artist to integrate that perspective into a community, business, or project.'
-// };
+const Header = styled.header`
+  grid-area: Header;
 
-// const pagination = {
-//   prev: 'read more and speak for yourself now or never learn about the end...',
-//   next: 'Out favorite public artwork in Boston'
-// };
+  ${media.tablet`height: 350px;`}
+  ${media.mobile`height: 200px;`}
+`;
 
-// const BodyContainer = styled.div`
-//   width: 85%;
-// `;
+const HeaderImg = styled(Image)`
+  height: 100%;
 
-// export default () => (
-//   <Layout>
-//     <Header stories={stories} />
-//     <Tags tags={['Blog', 'Public Art', 'Mural']} />
-//     <BodyContainer>
-//       <Title />
-//       <BodyTop {...topBody} />
-//       <CTAs />
-//       <BodyBottom {...botBody} />
-//       <CTAs />
-//       <Pagination {...pagination} />
-//     </BodyContainer>
-//   </Layout>
-// );
+  /* override aspect ratio */
+  > div {
+    padding-bottom: 0 !important;
+  }
+`;
 
-export default () => <div>blog post</div>;
+const RecentStories = styled(RecentPosts)`
+  grid-area: RecentStories;
+  width: 200px;
+
+  ${media.tablet`width: 100%;`}
+`;
+
+const Tags = styled(PostTags)`
+  grid-area: Tags;
+  margin: 0.25em 0;
+
+  ${media.mobile`margin-bottom: 0.5em;`}
+`;
+
+const WidthWrapper = styled.div`
+  grid-area: WidthWrapper;
+  width: 85%;
+  ${media.laptop`width: 100%;`}
+`;
+
+const Title = styled(PostTitle)``;
+
+const Body = styled(PostBody)`
+  margin: 1em 0;
+
+  ${media.mobile`margin-top: 0.5em;`}
+`;
+
+const CTAs = styled(PostCTAs)`
+  margin-bottom: 1em;
+`;
+
+const Pagination = styled(PostPagination)`
+  ${media.tablet`margin-bottom: 1em;`}
+`;
+
+export const Template = ({
+  headerImage,
+  recentStories,
+  tags,
+  title,
+  subtitle,
+  date,
+  author,
+  body,
+  pagination
+}) => (
+  <Layout>
+    <Wrapper>
+      <Header>
+        <HeaderImg alt='' fluid={headerImage} />
+      </Header>
+      <RecentStories heading='Recent Stories' posts={recentStories} />
+      <Tags tags={tags} />
+      <WidthWrapper>
+        <Title>{title}</Title>
+        <Body subtitle={subtitle} date={date} author={author} content={body} />
+        <CTAs />
+        <Pagination {...pagination} />
+      </WidthWrapper>
+    </Wrapper>
+  </Layout>
+);
+
+export default ({ data, pageContext }) => (
+  <Template
+    body={data.currentPost.html}
+    {...data.currentPost.frontmatter}
+    headerImage={data.currentPost.frontmatter.headerImage.childImageSharp.fluid}
+    recentStories={data.recentStories.edges.map(
+      ({ node: { frontmatter } }) => ({
+        ...frontmatter,
+        headerImage: frontmatter.headerImage.childImageSharp.fluid,
+        path: `/blog${frontmatter.path}`
+      })
+    )}
+    tags={[
+      { path: '/blog', content: 'Blog' },
+      ...data.currentPost.frontmatter.tags.map(tag => ({
+        content: tag,
+        path: `/tags/${_.kebabCase(tag)}`
+      }))
+    ]}
+    pagination={pageContext.pagination}
+  />
+);
+
+export const query = graphql`
+  query($id: String!) {
+    currentPost: markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        date(formatString: "MMMM D, YYYY")
+        headerImage {
+          childImageSharp {
+            fluid(maxWidth: 1000) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+        title
+        subtitle
+        author
+        tags
+      }
+    }
+    recentStories: allMarkdownRemark(
+      filter: {
+        frontmatter: { templateKey: { eq: "blog-post" } }
+        id: { ne: $id }
+      }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      limit: 3
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            path
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 500) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;

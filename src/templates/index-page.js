@@ -9,7 +9,7 @@ import UnstyledHomeCarousel from '../components/HomeCarousel';
 import Hero from '../components/Hero';
 import CTA from '../components/CTA';
 import UnstyledSupportCTA from '../components/SupportCTA';
-import UnstyledRecentStories from '../components/RecentStories';
+import UnstyledRecentStories from '../components/HomeRecentStories';
 import UnstyledMostRecentStory from '../components/MostRecentStory';
 import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
 import UnstyledFinalCTA from '../components/FinalCTA';

@@ -6,6 +6,9 @@ title: How to design a website with an artist
 subtitle: Take aways of patience, creativity, and inspiration after hours of work.
 author: Khizer Baig
 path: /post-4
+tags:
+  - Public Art
+  - Mural
 ---
 
 Alexander Golob has experience engaging with communities, conducting

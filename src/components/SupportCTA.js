@@ -23,9 +23,9 @@ const Container = styled.div`
 
 const Statement = styled.div`
   margin-right: 5px;
-  text-align: center;
+
   font-weight: 700;
-  ${media.mobile`margin-right: 0;`}
+  ${media.mobile`margin-right: 0; text-align: center;`}
 `;
 
 const linkStyles = css`

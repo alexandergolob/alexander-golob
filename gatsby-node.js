@@ -65,11 +65,31 @@ exports.createPages = ({ actions, graphql }) => {
           }
         }
       }
+      blog: allMarkdownRemark(
+        filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+        sort: { fields: [frontmatter___date], order: [ASC] }
+      ) {
+        edges {
+          node {
+            id
+            frontmatter {
+              path
+              title
+            }
+          }
+        }
+      }
     }
   `).then(result => {
     if (result.errors) {
       return Promise.reject(result.errors);
     }
+
+    const blogPosts = result.data.blog.edges.map(({ node }) => ({
+      id: node.id,
+      path: node.frontmatter.path,
+      title: node.frontmatter.title
+    }));
 
     const pages = result.data.pages.edges.map(({ node }) => ({
       id: node.childMarkdownRemark.id,
@@ -81,12 +101,26 @@ exports.createPages = ({ actions, graphql }) => {
       const templateFilename =
         templateKey || `${slug.replace(/\//g, '') || 'index'}-page`;
 
+      let context = { id };
+
+      // add pagination if page is a blog post
+      if (templateKey === 'blog-post') {
+        context.pagination = {};
+        const index = blogPosts.findIndex(post => post.id === id);
+        if (index > 0) {
+          const { path, title } = blogPosts[index - 1];
+          context.pagination.prev = { path: `/blog${path}`, title };
+        }
+        if (index < blogPosts.length - 1) {
+          const { path, title } = blogPosts[index + 1];
+          context.pagination.next = { path: `/blog${path}`, title };
+        }
+      }
+
       createPage({
         path: slug,
         component: path.resolve(`src/templates/${String(templateFilename)}.js`),
-        context: {
-          id
-        }
+        context
       });
     });
 

@@ -6,6 +6,8 @@ title: How to design a
 subtitle: Take aways of patience, creativity, and inspiration after hours of work.
 author: Khizer Baig
 path: /post-2
+tags:
+  - Public Art
 ---
 
 Alexander Golob has experience engaging with communities, conducting

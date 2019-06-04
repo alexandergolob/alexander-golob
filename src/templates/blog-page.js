@@ -23,28 +23,25 @@ export const BlogPageTemplate = ({
   posts,
   currentPage,
   numPages
-}) => {
-  console.log(links);
-  return (
-    <Layout>
-      <Header heading={heading} pageLinks={links} />
-      {currentPage === 1 && (
-        <FeaturedPost
-          {...latestPost}
-          image={latestPost.headerImage.childImageSharp.fluid}
-          path={`/blog${latestPost.path}`}
-        />
-      )}
-      <Posts posts={posts} />
-      {/* <Pagination
-      // numPages={numPages}
-      currentPage={currentPage}
-      numPages={20}
-      prefix='blog'
-    /> */}
-    </Layout>
-  );
-};
+}) => (
+  <Layout>
+    <Header heading={heading} pageLinks={links} />
+    {currentPage === 1 && (
+      <FeaturedPost
+        {...latestPost}
+        image={latestPost.headerImage.childImageSharp.fluid}
+        path={`/blog${latestPost.path}`}
+      />
+    )}
+    <Posts posts={posts} />
+    {/* <Pagination
+    // numPages={numPages}
+    currentPage={currentPage}
+    numPages={20}
+    prefix='blog'
+  /> */}
+  </Layout>
+);
 
 export default ({ data, pageContext }) => (
   <BlogPageTemplate

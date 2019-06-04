@@ -97,31 +97,57 @@ exports.createPages = ({ actions, graphql }) => {
       templateKey: node.childMarkdownRemark.frontmatter.templateKey
     }));
 
+    // post limit on paginated collection-type pages
+    const postsPerPage = 6;
+
     pages.forEach(({ id, slug, templateKey }) => {
       const templateFilename =
         templateKey || `${slug.replace(/\//g, '') || 'index'}-page`;
 
       let context = { id };
 
-      // add pagination if page is a blog post
-      if (templateKey === 'blog-post') {
-        context.pagination = {};
-        const index = blogPosts.findIndex(post => post.id === id);
-        if (index > 0) {
-          const { path, title } = blogPosts[index - 1];
-          context.pagination.prev = { path: `/blog${path}`, title };
-        }
-        if (index < blogPosts.length - 1) {
-          const { path, title } = blogPosts[index + 1];
-          context.pagination.next = { path: `/blog${path}`, title };
-        }
-      }
+      const component = path.resolve(
+        `src/templates/${String(templateFilename)}.js`
+      );
 
-      createPage({
-        path: slug,
-        component: path.resolve(`src/templates/${String(templateFilename)}.js`),
-        context
-      });
+      // special handling of pagination-enabled collection pages
+      if (templateFilename === 'blog-page') {
+        const numPages = Math.ceil((blogPosts.length - 1) / postsPerPage);
+        Array.from({ length: numPages }).forEach((_, i) => {
+          createPage({
+            path: i === 0 ? '/blog' : `/blog/${i + 1}`,
+            component,
+            context: {
+              ...context,
+              limit: postsPerPage,
+              skip: i * postsPerPage + 1, // skip 1 extra for featured post
+              numPages,
+              currentPage: i + 1
+            }
+          });
+        });
+      } else {
+        // rest of page types
+        // add pagination for blog post
+        if (templateFilename === 'blog-post') {
+          context.pagination = {};
+          const index = blogPosts.findIndex(post => post.id === id);
+          if (index > 0) {
+            const { path, title } = blogPosts[index - 1];
+            context.pagination.prev = { path: `/blog${path}`, title };
+          }
+          if (index < blogPosts.length - 1) {
+            const { path, title } = blogPosts[index + 1];
+            context.pagination.next = { path: `/blog${path}`, title };
+          }
+        }
+
+        createPage({
+          path: slug,
+          component,
+          context
+        });
+      }
     });
 
     // find unique tags and create pages for them

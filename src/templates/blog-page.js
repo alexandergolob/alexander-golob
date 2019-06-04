@@ -5,58 +5,66 @@ import { graphql } from 'gatsby';
 import Layout from '../components/Layout';
 import Header from '../components/PageHeader';
 import UnstyledFeaturedPost from '../components/FeaturedPost';
-// import Posts from '../components/BlogOrPressPagePosts';
-// import Link from '../components/Link';
-
-// const LinksContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 20px;
-// `;
-
-// const LinkContainer = styled(Link)`
-//   margin-right: 25px;
-//   &:last-of-type {
-//     margin-right: 0;
-//   }
-// `;
-
-// const LinkBox = styled(FrameBox)`
-//   padding: 10px 0;
-//   width: 200px;
-//   text-align: center;
-//   font-weight: 900;
-// `;
+import UnstyledPosts from '../components/Posts';
+// import Pagination from '../components/Pagination';
 
 const FeaturedPost = styled(UnstyledFeaturedPost)`
-  margin: 1.5em 0;
+  margin-top: 1.5em;
 `;
 
-export const BlogPageTemplate = ({ heading, links, latestPost }) => (
-  <Layout>
-    <Header heading={heading} pageLinks={links} />
-    <FeaturedPost
-      {...latestPost}
-      image={latestPost.headerImage.childImageSharp.fluid}
-      path={`/blog${latestPost.path}`}
-    />
+const Posts = styled(UnstyledPosts)`
+  margin-top: 1.5em;
+`;
 
-    {/* <Posts posts={posts} /> */}
-  </Layout>
-);
+export const BlogPageTemplate = ({
+  heading,
+  links,
+  latestPost,
+  posts,
+  currentPage,
+  numPages
+}) => {
+  console.log(links);
+  return (
+    <Layout>
+      <Header heading={heading} pageLinks={links} />
+      {currentPage === 1 && (
+        <FeaturedPost
+          {...latestPost}
+          image={latestPost.headerImage.childImageSharp.fluid}
+          path={`/blog${latestPost.path}`}
+        />
+      )}
+      <Posts posts={posts} />
+      {/* <Pagination
+      // numPages={numPages}
+      currentPage={currentPage}
+      numPages={20}
+      prefix='blog'
+    /> */}
+    </Layout>
+  );
+};
 
-export default ({ data }) => (
+export default ({ data, pageContext }) => (
   <BlogPageTemplate
     {...data.markdownRemark.frontmatter}
     latestPost={{
       ...data.latestPost.edges[0].node.frontmatter,
       content: data.latestPost.edges[0].node.excerpt
     }}
+    posts={data.posts.edges.map(({ node: { frontmatter } }) => ({
+      ...frontmatter,
+      headerImage: frontmatter.headerImage.childImageSharp.fluid,
+      path: `/blog${frontmatter.path}`
+    }))}
+    currentPage={pageContext.currentPage}
+    numPages={pageContext.numPages}
   />
 );
 
 export const query = graphql`
-  query($id: String!) {
+  query($id: String!, $limit: Int!, $skip: Int!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
@@ -73,14 +81,37 @@ export const query = graphql`
     ) {
       edges {
         node {
-          excerpt(pruneLength: 400)
-          html
+          excerpt(pruneLength: 300)
           frontmatter {
             date(formatString: "MMMM Do, YYYY")
             headerImage {
               childImageSharp {
-                fluid(maxWidth: 550) {
-                  ...GatsbyImageSharpFluid_noBase64
+                fluid(maxWidth: 525) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
+            subtitle
+            author
+            path
+          }
+        }
+      }
+    }
+    posts: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      skip: $skip
+      limit: $limit
+    ) {
+      edges {
+        node {
+          frontmatter {
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 525) {
+                  ...GatsbyImageSharpFluid
                 }
               }
             }

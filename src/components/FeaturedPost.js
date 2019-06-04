@@ -2,17 +2,36 @@ import React from 'react';
 import styled from 'styled-components';
 import Image from 'gatsby-image';
 
+import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
 const Container = styled.section`
   display: flex;
   justify-content: space-between;
+
+  ${media.tablet`flex-direction: column;`}
 `;
 
 const PostImage = styled(Image)`
-  margin-right: 15px;
+  margin-right: 2em;
   flex: 1;
-  display: block;
+  border: 1px solid ${props => props.theme.colors.dark};
+
+  /* override aspect ratio */
+  > div {
+    padding-bottom: 0 !important;
+  }
+
+  ${media.tablet`
+    margin-right: 0;
+    margin-bottom: 0.25em;
+    flex: auto;
+    height: 300px;
+  `}
+
+  ${media.mobile`
+    height: 250px;
+  `}
 `;
 
 const TextContainer = styled.div`
@@ -29,11 +48,13 @@ const Title = styled.h2`
   padding: 10px;
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
-  font-weight: 700;
+  font-weight: 600;
   font-size: 1.25em;
+
+  ${media.mobile`font-size: 1.15em;`}
 `;
 
-const Description = styled.div`
+const Body = styled.div`
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
   padding: 15px;
@@ -41,22 +62,36 @@ const Description = styled.div`
 `;
 
 const Subtitle = styled.h3`
-  font-weight: 700;
+  margin-bottom: 1em;
+  font-weight: 600;
   font-size: 1em;
 `;
 
 const AuthorAndDate = styled.div`
+  margin-bottom: 1em;
   display: flex;
   justify-content: space-between;
-  margin: 1em 0;
+  flex-wrap: wrap;
 `;
 
 const Content = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 0.75em;
+
+  ${media.tablet`display: none;`}
 `;
 
 const ReadMoreLink = styled(InternalLink)`
-  text-decoration: underline;
+  position: relative;
+
+  ::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 100%;
+    bottom: 0;
+    height: 1px;
+    background: ${props => props.theme.colors.dark};
+  }
 `;
 
 export default ({
@@ -74,15 +109,15 @@ export default ({
 
     <TextContainer>
       <Title>{title}</Title>
-      <Description>
-        <Subtitle>{subtitle}</Subtitle>
+      <Body>
+        {subtitle && <Subtitle>{subtitle}</Subtitle>}
         <AuthorAndDate>
           <div>by: {author}</div>
           <time>{date}</time>
         </AuthorAndDate>
-        <Content dangerouslySetInnerHTML={{ __html: content }} />
-        <ReadMoreLink to={path}>read more >></ReadMoreLink>
-      </Description>
+        <Content>{content}</Content>
+        <ReadMoreLink to={path}>read more &gt;&gt;</ReadMoreLink>
+      </Body>
     </TextContainer>
   </Container>
 );

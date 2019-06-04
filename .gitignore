@@ -1,7 +1,6 @@
 package-lock.json
 yarn.lock
 .vscode/
-client-questions.md
 
 # Logs
 logs

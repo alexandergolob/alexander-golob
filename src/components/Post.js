@@ -1,13 +1,28 @@
 import React from 'react';
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import Image from 'gatsby-image';
 
 import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
-const Container = styled(InternalLink)`
+const withStrippedUseListView = Component => ({ useListView, ...rest }) => (
+  <Component {...rest} />
+);
+
+const Link = withStrippedUseListView(InternalLink);
+
+const Container = styled(Link)`
   display: block;
   font-family: ${props => props.theme.fonts.serif};
+
+  ${media.mobile`
+    ${props =>
+      props.useListView &&
+      css`
+        display: flex;
+        align-items: center;
+      `}
+  `}
 `;
 
 const PostImage = styled(Image)`
@@ -15,7 +30,18 @@ const PostImage = styled(Image)`
   border: 1px solid ${props => props.theme.colors.dark};
   border-bottom: none;
 
-  ${media.mobile`height: 200px;`}
+  ${media.mobile`
+    height: 200px;
+
+    ${props =>
+      props.useListView &&
+      css`
+        margin-right: 0.5em;
+        height: 70px;
+        width: 70px;
+        border-bottom: 1px solid ${props => props.theme.colors.dark};
+      `}
+  `}
 `;
 
 const Description = styled.div`
@@ -23,6 +49,17 @@ const Description = styled.div`
   border-top: none;
   background: ${props => props.theme.colors.offLight};
   padding: 10px 15px;
+
+  ${media.mobile`
+    ${props =>
+      props.useListView &&
+      css`
+        flex: 1;
+        border-top: 1px solid ${props => props.theme.colors.dark};
+        padding: 5px 10px;
+        font-size: 0.95em;
+      `}
+  `}
 `;
 
 const Title = styled.h4`
@@ -43,12 +80,20 @@ const Author = styled.div`
   ${media.mobile`font-size: 0.9em;`}
 `;
 
-export default ({ path, headerImage, title, subtitle, author, ...rest }) => (
-  <Container to={path} {...rest}>
-    <PostImage fluid={headerImage} />
-    <Description>
+export default ({
+  path,
+  headerImage,
+  title,
+  subtitle,
+  author,
+  useListView,
+  ...rest
+}) => (
+  <Container to={path} {...rest} useListView={useListView}>
+    <PostImage fluid={headerImage} useListView={useListView} />
+    <Description useListView={useListView}>
       <Title>{title}</Title>
-      {subtitle && <Subtitle>{subtitle}</Subtitle>}
+      {subtitle && !useListView && <Subtitle>{subtitle}</Subtitle>}
       <Author>- {author}</Author>
     </Description>
   </Container>

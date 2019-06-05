@@ -65,6 +65,8 @@ const Subtitle = styled.h3`
   margin-bottom: 1em;
   font-weight: 600;
   font-size: 1em;
+
+  ${media.mobile`margin-bottom: 0.5em;`}
 `;
 
 const AuthorAndDate = styled.div`
@@ -72,6 +74,8 @@ const AuthorAndDate = styled.div`
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
+
+  ${media.mobile`margin-bottom: 0.5em;`}
 `;
 
 const Content = styled.div`

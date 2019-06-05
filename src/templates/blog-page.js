@@ -2,11 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
+import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import Header from '../components/PageHeader';
 import UnstyledFeaturedPost from '../components/FeaturedPost';
 import UnstyledPosts from '../components/Posts';
-// import Pagination from '../components/Pagination';
+import UnstyledPagination from '../components/Pagination';
 
 const FeaturedPost = styled(UnstyledFeaturedPost)`
   margin-top: 1.5em;
@@ -14,6 +15,17 @@ const FeaturedPost = styled(UnstyledFeaturedPost)`
 
 const Posts = styled(UnstyledPosts)`
   margin-top: 1.5em;
+`;
+
+const Pagination = styled(UnstyledPagination)`
+  margin: 1em 0;
+  display: flex;
+  justify-content: flex-end;
+
+  ${media.mobile`
+    font-size: 1em;
+    justify-content: center;
+  `}
 `;
 
 export const BlogPageTemplate = ({
@@ -33,13 +45,8 @@ export const BlogPageTemplate = ({
         path={`/blog${latestPost.path}`}
       />
     )}
-    <Posts posts={posts} />
-    {/* <Pagination
-    // numPages={numPages}
-    currentPage={currentPage}
-    numPages={20}
-    prefix='blog'
-  /> */}
+    <Posts posts={posts} isFirstPage={currentPage === 1} />
+    <Pagination numPages={numPages} currentPage={currentPage} prefix='blog' />
   </Layout>
 );
 

@@ -14,10 +14,10 @@ const PostsContainer = styled.div`
   ${media.mobile`grid-template-columns: 1fr;`}
 `;
 
-export default ({ posts, ...rest }) => (
+export default ({ posts, isFirstPage, ...rest }) => (
   <PostsContainer {...rest}>
-    {posts.map((post, i) => (
-      <Post key={i} {...post} />
-    ))}
+    {isFirstPage
+      ? posts.map((post, i) => <Post key={i} useListView={i > 2} {...post} />)
+      : posts.map((post, i) => <Post key={i} useListView {...post} />)}
   </PostsContainer>
 );

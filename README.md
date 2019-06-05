@@ -37,3 +37,8 @@ Need option for either
 ## Should the final CTA be a shared component??
 
 Yes
+
+# Client todo
+
+- Create mailchimp account and share subscription form info
+- google analytics (?)

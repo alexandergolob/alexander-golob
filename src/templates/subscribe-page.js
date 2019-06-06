@@ -1,55 +1,26 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
-// import Layout from '../components/Layout';
-// import FrameBox from '../components/FrameBox';
-// import Link from '../components/Link';
+import { media } from '../components/ThemeProvider';
+import Layout from '../components/Layout';
+import Header from '../components/PageHeader';
 
-// const HeadingContainer = styled.h1`
-//   margin-bottom: 20px;
-//   text-align: center;
-// `;
+const Statement = styled.div`
+  margin: 1em auto;
+  border: ${props => props.theme.misc.frameBorder};
+  background-image: url('/assets/light-marble.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 10px;
+  text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
+  font-weight: 600;
+  font-size: 1.35rem;
 
-// const Heading = styled(FrameBox)`
-//   display: inline-block;
-//   padding: 10px 100px;
-//   font-size: 2.5rem;
-// `;
-
-// const LinksContainer = styled.div`
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 20px;
-// `;
-
-// const LinkContainer = styled(Link)`
-//   margin-right: 25px;
-//   &:last-of-type {
-//     margin-right: 0;
-//   }
-// `;
-
-// const LinkBox = styled(FrameBox)`
-//   padding: 10px 0;
-//   width: 200px;
-//   text-align: center;
-//   font-weight: 900;
-// `;
-
-// const Statement = styled(FrameBox)`
-//   margin: auto;
-//   margin-bottom: 20px;
-//   width: 90%;
-//   background-image: url('/assets/light-marble.svg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
-//   padding: 10px 0;
-//   text-align: center;
-//   font-weight: 900;
-//   font-size: 1.35rem;
-// `;
+  ${media.mobile`font-size: 1.15em;`}
+`;
 
 // const Form = styled.form`
 //   margin: auto;
@@ -143,65 +114,64 @@ import React from 'react';
 //   font-size: 1.2rem;
 // `;
 
-// export const SubscribePageTemplate = ({ heading, links, statement, image }) => (
-//   <Layout>
-//     <HeadingContainer>
-//       <Heading>{heading}</Heading>
-//     </HeadingContainer>
-//     <LinksContainer>
-//       {links.map(({ content, path }, i) => (
-//         <LinkContainer key={i} to={path}>
-//           <LinkBox>{content}</LinkBox>
-//         </LinkContainer>
-//       ))}
-//     </LinksContainer>
-//     <Statement>{statement}</Statement>
-//     <Form>
-//       <ImageContainer>
-//         <Image src={image} alt='' />
-//       </ImageContainer>
-//       <FieldsContainer>
-//         <Fields>
-//           <Email>
-//             <Label>EMAIL</Label>
-//             <Input />
-//           </Email>
-//           <FName>
-//             <Label>FIRST NAME</Label>
-//             <Input />
-//           </FName>
-//           <LName>
-//             <Label>LAST NAME</Label>
-//             <Input />
-//           </LName>
-//         </Fields>
-//       </FieldsContainer>
+export const SubscribePageTemplate = ({ heading, links, statement, image }) => (
+  <Layout>
+    <Header heading={heading} pageLinks={links} />
 
-//       <SubmitContainer>
-//         <Submit type='button'>SUBMIT</Submit>
-//       </SubmitContainer>
-//     </Form>
-//   </Layout>
-// );
+    <Statement>{statement}</Statement>
+    {/* <Form>
+      <ImageContainer>
+        <Image src={image} alt='' />
+      </ImageContainer>
+      <FieldsContainer>
+        <Fields>
+          <Email>
+            <Label>EMAIL</Label>
+            <Input />
+          </Email>
+          <FName>
+            <Label>FIRST NAME</Label>
+            <Input />
+          </FName>
+          <LName>
+            <Label>LAST NAME</Label>
+            <Input />
+          </LName>
+        </Fields>
+      </FieldsContainer>
 
-// export default ({ data }) => (
-//   <SubscribePageTemplate {...data.markdownRemark.frontmatter} />
-// );
+      <SubmitContainer>
+        <Submit type='button'>SUBMIT</Submit>
+      </SubmitContainer>
+    </Form> */}
+  </Layout>
+);
 
-// export const query = graphql`
-//   query($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       frontmatter {
-//         heading
-//         links {
-//           content
-//           path
-//         }
-//         statement
-//         image
-//       }
-//     }
-//   }
-// `;
+export default ({ data }) => (
+  <SubscribePageTemplate
+    {...data.markdownRemark.frontmatter}
+    image={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
+  />
+);
 
-export default () => <div>subscribe</div>;
+export const query = graphql`
+  query($id: String!) {
+    markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        heading
+        links {
+          content
+          path
+        }
+        statement
+        image {
+          childImageSharp {
+            fluid(maxWidth: 500) {
+              ...GatsbyImageSharpFluid
+            }
+          }
+        }
+      }
+    }
+  }
+`;

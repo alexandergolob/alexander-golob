@@ -7,7 +7,7 @@
 - post collection
   - blog
 - post
-  - blog DONE
+  - blog
 - contact
 - subscribe
 - project
@@ -34,9 +34,15 @@ Yes
 
 Need option for either
 
-## Should the final CTA be a shared component??
+## Should the final CTA be a shared component?
 
 Yes
+
+## How many images can there be for projects?
+
+## Is the header image in projects special, or just the first?
+
+## What determines the height of the header?
 
 # Client todo
 

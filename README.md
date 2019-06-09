@@ -2,12 +2,12 @@
 
 # Page Types
 
-- index DONE
-- about DONE
+- [x] index 
+- [x] about 
 - post collection
-  - blog
+  - [x] blog
 - post
-  - blog
+  - blog - create list view for recent stories on mobile
 - contact
 - subscribe
 - project
@@ -39,10 +39,13 @@ Need option for either
 Yes
 
 ## How many images can there be for projects?
+Unlimited
 
 ## Is the header image in projects special, or just the first?
+Just the first
 
 ## What determines the height of the header?
+
 
 # Client todo
 

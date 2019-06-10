@@ -1,11 +1,11 @@
-import React from "react";
-import styled from "styled-components";
-import { graphql } from "gatsby";
-import Image from "gatsby-image";
+import React from 'react';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
+import Image from 'gatsby-image';
 
-import { media } from "../components/ThemeProvider";
-import Layout from "../components/Layout";
-import Header from "../components/PageHeader";
+import { media } from '../components/ThemeProvider';
+import Layout from '../components/Layout';
+import Header from '../components/PageHeader';
 
 const FormAndBanner = styled.section`
   margin-top: 2em;
@@ -33,11 +33,11 @@ const Form = styled.form`
   grid-column-gap: 1em;
   grid-row-gap: 0.5em;
   grid-template-areas:
-    "Email Email"
-    "FName LName"
-    "Subject Subject"
-    "Message Message"
-    "Submit Submit";
+    'Email Email'
+    'FName LName'
+    'Subject Subject'
+    'Message Message'
+    'Submit Submit';
 
   ${media.laptop`
     margin-right: 0;
@@ -61,14 +61,14 @@ const Label = styled.div`
 const Input = styled.input`
   display: block;
   width: 100%;
-  background: hsl(0, 0%, 85%);
+  background: ${props => props.theme.colors.inputBackground};
   border: none;
   border-radius: 4px;
   padding: 6px 8px;
   font-size: 1em;
 `;
 
-const Textarea = styled(Input).attrs({ as: "textarea" })`
+const Textarea = styled(Input).attrs({ as: 'textarea' })`
   resize: vertical;
   min-height: 150px;
   font-size: 1em;
@@ -102,7 +102,7 @@ const Submit = styled.button`
   cursor: pointer;
   padding: 4px 8px;
   border: 1px solid #000;
-  background-image: url("/assets/empty-square-bg.png");
+  background-image: url('/assets/empty-square-bg.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;

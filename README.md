@@ -45,7 +45,4 @@ Unlimited
 ## Is the header image in projects special, or just the first?
 Just the first
 
-## What determines the height of the header?
-
-
 # Client todo

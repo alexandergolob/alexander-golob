@@ -7,7 +7,7 @@
 - post collection
   - [x] blog
 - post
-  - blog - create list view for recent stories on mobile
+  - blog - pending review
 - contact
 - subscribe - pending review
 - project

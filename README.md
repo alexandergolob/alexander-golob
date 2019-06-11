@@ -9,7 +9,7 @@
 - post
   - blog - create list view for recent stories on mobile
 - contact
-- subscribe
+- subscribe - pending review
 - project
 - project subcategory
 - project category

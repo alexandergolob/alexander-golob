@@ -1,3 +1,7 @@
+require('dotenv').config({
+  path: `.env.${process.env.NODE_ENV}`
+});
+
 module.exports = {
   plugins: [
     {
@@ -56,6 +60,12 @@ module.exports = {
       resolve: 'gatsby-source-instagram',
       options: {
         username: 'alexandergolobart'
+      }
+    },
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: process.env.MAILCHIMP_ENDPOINT
       }
     }
   ]

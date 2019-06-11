@@ -18,7 +18,8 @@ const theme = {
     carouselBorder: 'hsl(30, 51%, 10%)',
     light: '#fff',
     offLight: 'hsl(0, 0%, 92%)',
-    dark: 'hsl(0,0%, 20%)'
+    dark: 'hsl(0,0%, 20%)',
+    inputBackground: 'hsl(0, 0%, 85%)'
   },
   fonts: {
     monospace: `'PT Mono', monospace`,

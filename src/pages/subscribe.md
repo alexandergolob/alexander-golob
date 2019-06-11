@@ -8,5 +8,5 @@ links:
   - content: CV
     path: /cv
 statement: Subscribe To Stay Up To Date On What We're Doing!
-image: /assets/starry-night.jpg
+image: /assets/pokecity.webp
 ---

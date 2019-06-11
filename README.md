@@ -18,6 +18,7 @@
 
 # Broad tasks outside of main component development
 
+- Google Analytics
 - Head/SEO module
 - Partitioning images that don't need to be in assets folder
 - CMS interface
@@ -48,6 +49,3 @@ Just the first
 
 
 # Client todo
-
-- Create mailchimp account and share subscription form info
-- google analytics (?)

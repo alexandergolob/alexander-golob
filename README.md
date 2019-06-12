@@ -7,14 +7,21 @@
 - post collection
   - [x] blog
 - post
-  - blog - pending review
+  - [x] blog
 - contact
 - subscribe - pending review
+  - too many subscription requests error is too long
+  - slightly increase grid row to account for 2-line errors
+  - (AFTER DONE) remove default entry
 - project
 - project subcategory
 - project category
 - portfolio
+- tags
+- tag
+- 404
 - cv
+- special (?)
 
 # Broad tasks outside of main component development
 
@@ -24,6 +31,8 @@
 - CMS interface
 - CMS previews
 - PWA functionality
+- Ensure correct alt tags for images
+- role tags where appropriate
 
 # Questions
 

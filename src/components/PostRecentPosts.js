@@ -20,6 +20,8 @@ const Heading = styled.div`
   margin-bottom: 0.5em;
   text-align: center;
   font-weight: 700;
+
+  ${media.mobile`display: none;`}
 `;
 
 const Posts = styled.div`

@@ -137,6 +137,7 @@ const Submit = styled.button.attrs({ type: 'submit' })`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  font-family: ${props => props.theme.fonts.serif};
   font-weight: 600;
   font-size: 1.2rem;
 

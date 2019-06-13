@@ -7,32 +7,42 @@
 - post collection
   - [x] blog
 - post
-  - [x] blog
+  - blog
+    - social icons - do after nav
 - contact
-- subscribe - pending review
+- subscribe
   - too many subscription requests error is too long
   - slightly increase grid row to account for 2-line errors
   - (AFTER DONE) remove default entry
-- project
-- project subcategory
+  - make subscribe widget functional
 - project category
-- portfolio
-- tags
-- tag
-- 404
+- [x] project subcategory
+- portfolio - pending questions
+- tags - pending review / designs
+- tag - pending review / designs
+- 404 - pending review / designs
+- project
 - cv
 - special (?)
+  
+# Components
+   
+- Navs
+- Footer
+- Subscription widget
 
 # Broad tasks outside of main component development
 
-- Google Analytics
 - Head/SEO module
 - Partitioning images that don't need to be in assets folder
+- Ensure correct alt tags for images
+- role tags where appropriate
 - CMS interface
 - CMS previews
 - PWA functionality
-- Ensure correct alt tags for images
-- role tags where appropriate
+
+# Aspirational features
+- Lightbox-like component
 
 # Questions
 
@@ -53,5 +63,12 @@ Unlimited
 
 ## Is the header image in projects special, or just the first?
 Just the first
+
+## Where do the carousel images on the portfolio page come from?
+first image from each featured project
+
+## Where does one set the featured projects to show on the portfolio? In the portfolio settings or the project settings?
+
+cheeckbox on project page
 
 # Client todo

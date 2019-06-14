@@ -7,6 +7,7 @@ category: Engagements
 subcategories:
   - Speaking
   - Public
+isFeatured: false
 details:
   - attribute: Date
     value: September - December 2018

@@ -17,7 +17,7 @@
   - make subscribe widget functional
 - project category - pending review
 - [x] project subcategory
-- portfolio - pending questions
+- portfolio - pending review
 - tags - pending review / designs
 - tag - pending review / designs
 - 404 - pending review / designs

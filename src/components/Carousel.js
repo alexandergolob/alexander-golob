@@ -17,7 +17,6 @@ const Container = styled.div`
   overflow: hidden;
 
   ${media.tablet`height: 300px;`}
-  ${media.mobileL`height: 250px;`}
 `;
 
 const Img = styled(Image)`
@@ -40,7 +39,6 @@ const ImgDescriptionContainer = styled.div`
   color: ${props => props.theme.colors.light};
 
   ${media.tablet`font-size: 0.85em;`}
-  ${media.mobileL`font-size: 0.70em;`}
 `;
 
 const Description = styled.div`

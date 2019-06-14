@@ -1,5 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
 import Layout from '../components/Layout';
 import InternalLink from '../components/InternalLink';
@@ -31,8 +32,8 @@ export const Template = ({ tag, posts }) => (
   <Layout>
     <Tag>{tag}:</Tag>
     <Posts>
-      {posts.map(({ title, path }) => (
-        <Post>
+      {posts.map(({ title, path }, i) => (
+        <Post key={i}>
           <PostLink to={path}>{title}</PostLink>
         </Post>
       ))}

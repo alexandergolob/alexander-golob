@@ -1,8 +1,10 @@
 ---
 templateKey: project-subcategory
+path: /speaking
 title: Speaking
-category: engagements
-cta:
+hero: Alexander Golob is a dude
+category: Engagements
+CTA:
   path: /contact
   statement: Get in touch
   statementAbove: Interested? Have questions?

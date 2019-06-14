@@ -1,150 +1,158 @@
 import React from 'react';
-// import styled from 'styled-components';
-// import { graphql } from 'gatsby';
+import styled from 'styled-components';
+import { graphql } from 'gatsby';
 
-// import Layout from '../components/Layout';
-// import FrameBox from '../components/FrameBox';
-// import Link from '../components/Link';
-// import Project from '../components/Project';
+import { media } from '../components/ThemeProvider';
+import Layout from '../components/Layout';
+import PageHeading from '../components/PageHeading';
+import Projects from '../components/Projects';
+import InternalLink from '../components/InternalLink';
 
-// const HeadingContainer = styled.h1`
-//   display: flex;
-//   justify-content: center;
-//   margin-bottom: 20px;
-// `;
+const Heading = styled(PageHeading)`
+  margin-bottom: 1.5em;
 
-// const Heading = styled(FrameBox)`
-//   padding: 10px 60px;
-//   font-family: 'Enriqueta', serif;
-//   font-size: 2.25rem;
-// `;
+  ${media.tablet`margin-bottom: 1em;`}
+`;
 
-// const ContentContainer = styled.div`
-//   display: grid;
-//   grid-template-columns: repeat(4, 1fr);
-//   grid-template-rows: auto;
-//   grid-auto-rows: 200px;
-//   grid-column-gap: 20px;
-//   grid-row-gap: 20px;
-//   font-family: 'Enriqueta', serif;
-// `;
+const ProjectsContainer = styled.div`
+  margin-top: 1.5em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(225px, 1fr));
+  grid-auto-rows: 225px;
+  grid-gap: 2em;
 
-// const Spacer = styled.div`
-//   grid-row: 1 / span 1;
-//   grid-column: 1 / span 2;
-// `;
+  ${media.tablet`grid-template-rows: auto;`}
+  ${media.mobile`grid-template-columns: 1fr; grid-auto-rows: auto; grid-gap: 1em;`}
+`;
 
-// const YearsContainer = styled(FrameBox)`
-//   grid-row: 1 / span 1;
-//   grid-column: 3 / span 2;
-//   padding: 5px 20px;
-// `;
+const DescriptionContainer = styled.div`
+  grid-column: -1 / -3;
+  grid-row: 1 / span 2;
 
-// const Years = styled.div`
-//   display: flex;
-//   justify-content: space-between;
-// `;
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
+  display: flex;
+  flex-direction: column;
+  padding: 15px 25px;
 
-// const descriptionVerticalPadding = '15px';
+  ${media.tablet`grid-area: 1 / 1 / span 1 / -1;`}
+`;
 
-// const Description = styled.div`
-//   grid-row: 2 / span 2;
-//   grid-column: 3 / span 2;
-//   position: relative;
-//   background: hsl(0, 0%, 93%);
-//   padding: ${descriptionVerticalPadding} 30px;
-//   text-align: justify;
-// `;
+const Hero = styled.div`
+  margin-bottom: 0.5em;
+  font-family: ${props => props.theme.fonts.serif};
+  font-weight: 600;
+  font-size: 1.5em;
 
-// const DescriptionHeading = styled.h2`
-//   text-align: right;
-//   margin-bottom: 15px;
-//   font-size: 1.75rem;
-//   letter-spacing: 0.04rem;
-// `;
+  ${media.tablet`font-size: 1.15em;`}
+`;
 
-// const CTAContainer = styled.div`
-//   margin-top: 40px;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-//   align-items: center;
-//   position: absolute;
-//   bottom: ${descriptionVerticalPadding};
-//   left: 0;
-//   right: 0;
-// `;
+const Description = styled.div`
+  flex: 1;
+  line-height: 1.25em;
+  p {
+    margin-bottom: 1em;
+    :last-of-type {
+      margin-bottom: 0;
+    }
+  }
+`;
 
-// const CTAStatement = styled.div`
-//   margin-bottom: 5px;
-// `;
+const CTAContainer = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
-// const CTALink = styled(Link)`
-//   border: 1px solid black;
-//   border-radius: 2px;
-//   background: hsl(0, 0%, 90%);
-//   padding: 4px 50px;
-// `;
+  ${media.tablet`margin-top: 1em;`}
+`;
 
-// export default ({ data }) => {
-//   const description = data.markdownRemark.html;
-//   const { title, cta } = data.markdownRemark.frontmatter;
+const CTAStatementAbove = styled.div`
+  margin-bottom: 0.5em;
+  font-size: 1.15em;
+`;
 
-//   return (
-//     <Layout>
-//       <HeadingContainer>
-//         <Heading>Engagements</Heading>
-//       </HeadingContainer>
-//       <ContentContainer>
-//         <Spacer />
-//         <YearsContainer>
-//           <Years>
-//             {Array.from(Array(8), (_, i) => (
-//               <div key={i}>{new Date().getFullYear() - (8 - (i + 1))}</div>
-//             ))}
-//           </Years>
-//         </YearsContainer>
+const CTALink = styled(InternalLink)`
+  min-width: 200px;
+  border: 1px solid ${props => props.theme.colors.dark};
+  background: ${props => props.theme.colors.inputBackground};
+  padding: 6px 12px;
+  text-align: center;
 
-//         <Description>
-//           <DescriptionHeading>{title}</DescriptionHeading>
-//           <div dangerouslySetInnerHTML={{ __html: description }} />
-//           <CTAContainer>
-//             <CTAStatement>{cta.statementAbove}</CTAStatement>
-//             <CTALink to={cta.path}>{cta.statement}</CTALink>
-//           </CTAContainer>
-//         </Description>
+  ${media.mobile`min-width: auto; width: 100%;`}
+`;
 
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//         <Project />
-//       </ContentContainer>
-//     </Layout>
-//   );
-// };
+export const Template = ({ title, hero, CTA, description, projects }) => {
+  return (
+    <Layout>
+      <Heading>{title}</Heading>
+      <ProjectsContainer>
+        <Projects projects={projects} />
+        <DescriptionContainer>
+          <Hero>{hero}</Hero>
+          <Description dangerouslySetInnerHTML={{ __html: description }} />
+          <CTAContainer>
+            <CTAStatementAbove>{CTA.statementAbove}</CTAStatementAbove>
+            <CTALink to={CTA.path}>{CTA.statement}</CTALink>
+          </CTAContainer>
+        </DescriptionContainer>
+      </ProjectsContainer>
+    </Layout>
+  );
+};
 
-// export const query = graphql`
-//   query($id: String!) {
-//     markdownRemark(id: { eq: $id }) {
-//       html
-//       frontmatter {
-//         title
-//         cta {
-//           statementAbove
-//           statement
-//           path
-//         }
-//       }
-//     }
-//   }
-// `;
+export default ({ data: { subcategory, projects } }) => (
+  <Template
+    {...subcategory.frontmatter}
+    description={subcategory.html}
+    projects={projects.edges.map(({ node }) => ({
+      ...node.frontmatter,
+      image: node.frontmatter.images[0].childImageSharp.fluid,
+      path: node.fields.slug
+    }))}
+  />
+);
 
-export default () => <div>project subcategory</div>;
+export const query = graphql`
+  query($id: String!, $subcategory: String!) {
+    subcategory: markdownRemark(id: { eq: $id }) {
+      html
+      frontmatter {
+        title
+        hero
+        CTA {
+          statementAbove
+          statement
+          path
+        }
+      }
+    }
+    projects: allMarkdownRemark(
+      filter: {
+        frontmatter: {
+          templateKey: { eq: "project-page" }
+          subcategories: { in: [$subcategory] }
+        }
+      }
+      sort: { fields: [frontmatter___date], order: DESC }
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            date
+            images {
+              childImageSharp {
+                fluid(maxWidth: 225) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`;

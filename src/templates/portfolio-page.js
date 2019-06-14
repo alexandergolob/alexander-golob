@@ -30,7 +30,8 @@ const ProjectsContainer = styled.div`
   grid-auto-rows: 300px;
   grid-gap: 2em;
 
-  ${media.mobile`grid-template-columns: 1fr; grid-auto-rows: auto; grid-gap: 1em;`}
+  ${media.tablet`grid-gap: 1em;`}
+  ${media.mobile`grid-template-columns: 1fr; grid-auto-rows: auto; `}
 `;
 
 const Project = styled(InternalLink)`

@@ -15,7 +15,7 @@
   - slightly increase grid row to account for 2-line errors
   - (AFTER DONE) remove default entry
   - make subscribe widget functional
-- project category
+- project category - pending review
 - [x] project subcategory
 - portfolio - pending questions
 - tags - pending review / designs

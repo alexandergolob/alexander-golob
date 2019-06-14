@@ -8,8 +8,14 @@ import PageHeading from '../components/PageHeading';
 import Projects from '../components/Projects';
 import InternalLink from '../components/InternalLink';
 
+const HeadingContainer = styled.div`
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+`;
+
 const Heading = styled(PageHeading)`
-  margin-bottom: 1.5em;
+  min-width: 250px;
 
   ${media.tablet`margin-bottom: 1em;`}
 `;
@@ -84,7 +90,9 @@ const CTALink = styled(InternalLink)`
 export const Template = ({ title, hero, CTA, description, projects }) => {
   return (
     <Layout>
-      <Heading>{title}</Heading>
+      <HeadingContainer>
+        <Heading>{title}</Heading>
+      </HeadingContainer>
       <ProjectsContainer>
         <Projects projects={projects} />
         <DescriptionContainer>

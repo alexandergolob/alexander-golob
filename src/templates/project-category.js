@@ -5,8 +5,20 @@ import Image from 'gatsby-image';
 
 import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
-import Heading from '../components/PageHeading';
+import PageHeading from '../components/PageHeading';
 import Projects from '../components/Projects';
+
+const HeadingContainer = styled.div`
+  margin-bottom: 2em;
+  display: flex;
+  justify-content: center;
+`;
+
+const Heading = styled(PageHeading)`
+  min-width: 250px;
+
+  ${media.tablet`margin-bottom: 1em;`}
+`;
 
 const Hero = styled(Heading).attrs({ as: 'div' })`
   margin: 1em 0 1.5em;
@@ -22,7 +34,7 @@ const Hero = styled(Heading).attrs({ as: 'div' })`
 const Subcategories = styled.div`
   display: grid;
   grid-template-columns: 1fr 100px 1fr;
-  grid-template-rows: repeat(auto-fill, 200px minmax(20px, auto) 200px);
+  grid-template-rows: repeat(auto-fill, 200px 20px 200px);
   grid-gap: 1em;
 
   ${media.mobile`
@@ -85,7 +97,9 @@ const ProjectsContainer = styled.div`
 
 export const Template = ({ title, hero, subcategorySections, projects }) => (
   <Layout>
-    <Heading>{title}</Heading>
+    <HeadingContainer>
+      <Heading>{title}</Heading>
+    </HeadingContainer>
     <Hero>{hero}</Hero>
     <Subcategories>
       {subcategorySections.map(

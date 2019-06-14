@@ -22,7 +22,7 @@ const Heading = styled.h2`
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
   font-size: 1.5em;
-  font-weight: 700;
+  font-weight: 600;
 
   ${media.tablet`padding: 5px 10px; font-size: 1.25em;`}
   ${media.mobile`font-size: 1.15em;`}

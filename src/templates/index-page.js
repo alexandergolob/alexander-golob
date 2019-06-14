@@ -240,13 +240,17 @@ export const IndexPageTemplate = ({
   </Layout>
 );
 
-export default ({ data }) => (
+export default ({ data: { index, postsLatest, postsRest, instagram } }) => (
   <IndexPageTemplate
-    {...data.index.frontmatter}
-    posts={[...data.postsLatest.edges, ...data.postsRest.edges].map(
+    {...index.frontmatter}
+    carouselImages={index.frontmatter.carouselImages.map(carouselImage => ({
+      ...carouselImage,
+      image: carouselImage.image.childImageSharp.fluid
+    }))}
+    posts={[...postsLatest.edges, ...postsRest.edges].map(
       edge => edge.node.frontmatter
     )}
-    instagramImages={data.instagram.edges.map(
+    instagramImages={instagram.edges.map(
       edge => edge.node.localFile.childImageSharp.fluid
     )}
   />

@@ -16,7 +16,7 @@
 - portfolio - pending review
 - tags
 - tag
-- 404
+- 404 - pending review
 - project
 - cv
 - special (?) - pending designs

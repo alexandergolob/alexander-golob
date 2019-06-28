@@ -7,6 +7,8 @@ author: Khizer Baig
 path: /post-2
 tags:
   - Public Art
+  - Arthur
+  - Anderson
 ---
 
 Alexander Golob has experience engaging with communities, conducting

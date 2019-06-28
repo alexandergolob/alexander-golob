@@ -14,7 +14,7 @@
 - project category - pending review
 - [x] project subcategory
 - portfolio - pending review
-- tags
+- tags - pending review
 - tag
 - 404 - pending review
 - project

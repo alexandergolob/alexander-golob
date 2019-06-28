@@ -2,31 +2,27 @@
 
 # Page Types
 
-- [x] index 
-- [x] about 
+- [x] index
+- [x] about
 - post collection
   - [x] blog
 - post
   - blog
     - social icons - do after nav
 - contact
-- subscribe
-  - too many subscription requests error is too long
-  - slightly increase grid row to account for 2-line errors
-  - (AFTER DONE) remove default entry
-  - make subscribe widget functional
+- subscribe - pending review
 - project category - pending review
 - [x] project subcategory
 - portfolio - pending review
-- tags - pending review / designs
-- tag - pending review / designs
-- 404 - pending review / designs
+- tags
+- tag
+- 404
 - project
 - cv
-- special (?)
-  
+- special (?) - pending designs
+
 # Components
-   
+
 - Navs
 - Footer
 - Subscription widget
@@ -42,6 +38,7 @@
 - PWA functionality
 
 # Aspirational features
+
 - Lightbox-like component
 
 # Questions
@@ -59,12 +56,15 @@ Need option for either
 Yes
 
 ## How many images can there be for projects?
+
 Unlimited
 
 ## Is the header image in projects special, or just the first?
+
 Just the first
 
 ## Where do the carousel images on the portfolio page come from?
+
 first image from each featured project
 
 ## Where does one set the featured projects to show on the portfolio? In the portfolio settings or the project settings?

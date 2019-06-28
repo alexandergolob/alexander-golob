@@ -64,7 +64,7 @@ const Fields = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 0.5em;
-  grid-row-gap: 1.75em;
+  grid-row-gap: 2.15em;
   grid-template-areas:
     'Email Email .'
     'FName LName .';
@@ -155,9 +155,9 @@ const Submit = styled.button.attrs({ type: 'submit' })`
 `;
 
 const initialValues = {
-  email: 'khizermbaig@gmail.com',
-  FNAME: 'kaz',
-  LNAME: 'baig'
+  email: '',
+  FNAME: '',
+  LNAME: ''
 };
 
 const validationSchema = Yup.object().shape({
@@ -179,8 +179,6 @@ const onSubmit = async (
   try {
     const response = await addToMailchimp(email, fields);
 
-    console.log({ response });
-
     setSubmitting(false);
     setStatus({ success: response.result === 'success' });
 
@@ -198,6 +196,8 @@ const onSubmit = async (
         )
       ) {
         setFieldError('email', 'Something went wrong. Please try again.');
+      } else if (response.msg.includes('Too many subscribe attempts')) {
+        setFieldError('email', `Too many subscription requests!`);
       } else {
         setFieldError('email', response.msg);
       }

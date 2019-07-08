@@ -2,10 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
+import { kebabCase } from 'lodash';
 
 import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import InternalLink from '../components/InternalLink';
+import PostCTAs from '../components/PostCTAs';
+import Post from '../components/Post';
 
 const Heading = styled.h1`
   margin: 0 auto 1em;
@@ -14,6 +17,7 @@ const Heading = styled.h1`
   background: ${props => props.theme.colors.offLight};
   padding: 10px;
   text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
   font-size: 1.5em;
 
   ${media.tablet`font-size: 1.25em;`}
@@ -25,11 +29,11 @@ const Container = styled.div`
   grid-template-columns: 1fr 1fr;
   grid-gap: 1em;
 
-  ${media.tablet`display: block;`}
+  ${media.tablet`grid-template-columns: 1fr;`}
 `;
 
 const Categories = styled.div`
-  grid-area: 1 / 1 / span 1 / span 1;
+  grid-area: 1 / 1 / span 1 / -1;
 
   justify-self: start;
   border: ${props => props.theme.misc.frameBorder};
@@ -40,8 +44,7 @@ const Categories = styled.div`
 
   font-size: 0.9em;
 
-  ${media.tablet`
-    margin-bottom: 1em;
+  ${media.tablet`  
     width: 100%;
     text-align: center;
     font-size: 1em;
@@ -52,20 +55,27 @@ const Category = styled(InternalLink)`
   font-weight: 600;
 `;
 
+const FirstImage = styled(GatsbyImage)`
+  grid-area: 2 / 1 / span 1 / -1;
+  height: 400px;
+
+  ${media.tablet`height: 325px;`}
+  ${media.mobile`height: 250px;`}
+`;
+
 const Details = styled.div`
-  grid-area: 1 / 2 / span 2 / span 1;
-
-  order: 1;
-
-  /* align-self: start; */
-  /* align-self: end; */
+  grid-area: 3 / 2 / span 1 / -1;
 
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
-  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  padding: 15px 25px;
   font-family: ${props => props.theme.fonts.serif};
 
-  ${media.tablet`margin-bottom: 1em;`}
+  ${media.tablet`grid-column-start: 1;`}
 `;
 
 const Detail = styled.div`
@@ -81,10 +91,15 @@ const Value = styled.div`
   flex: 1;
 `;
 
+const Image = styled(GatsbyImage)`
+  height: 250px;
+  ${media.mobile`height: 200px;`}
+`;
+
+// starting row === 1 -> grid-row-start === 4 (+1 on tablet)
 const Description = styled.div`
-  grid-column: 2 / span 1;
-  grid-row-start: 3;
-  grid-row-end: span 1;
+  grid-row-start: ${props => props.startingRow + 3};
+  grid-column: 1 / -1;
 
   align-self: start;
 
@@ -92,7 +107,7 @@ const Description = styled.div`
   background: ${props => props.theme.colors.offLight};
   padding: 10px 20px;
 
-  ${media.tablet`margin-bottom: 1em;`}
+  ${media.tablet`grid-row-start: ${props => props.startingRow + 4};`}
 `;
 
 const DescriptionHeading = styled.h2`
@@ -111,82 +126,76 @@ const DescriptionContent = styled.div`
   }
 `;
 
-const firstImageHeight = 450;
+const CTAs = styled(PostCTAs)`
+  margin-top: 2em;
 
-const FirstImage = styled(GatsbyImage)`
-  grid-area: 2 / 1 / span 2 / span 1;
-
-  /* height: ${firstImageHeight}px; */
-  max-height: ${firstImageHeight}px;
-
-  ${media.tablet`margin-bottom: 1em;`}
-  ${media.mobile`height: 250px;`}
+  ${media.tablet`margin: 1em 0;`}
 `;
 
-const imageHeight = 350;
+const SectionHeading = styled.h2`
+  margin: 1em auto;
+  width: 75%;
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
+  padding: 10px;
+  text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
+  font-size: 1.25em;
 
-const Image = styled(GatsbyImage)`
-  height: ${imageHeight}px;
+  ${media.tablet`font-size: 1.15em;`}
+  ${media.mobile`width: 100%; font-size: 1.05em;`}
+`;
 
-  ${media.tablet`margin-bottom: 1em; :last-of-type { margin-bottom: 0; }`}
-  ${media.mobile`height: 200px;`}
+const RecentProjects = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-auto-rows: max-content;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 1em;
+
+  ${media.mobile`grid-template-columns: 1fr;`}
+`;
+
+const BlogPosts = styled.div`
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-auto-rows: max-content;
+  grid-column-gap: 0.5em;
+  grid-row-gap: 1em;
+
+  ${media.mobile`grid-template-columns: 1fr;`}
 `;
 
 export const Template = ({
   title,
   details,
-  description,
+  descriptions,
   category,
   subcategories,
   firstImage,
-  images
+  images,
+  recentProjects,
+  blogPosts
 }) => {
-  const containerRef = React.useRef();
-  const categoriesRef = React.useRef();
-  const detailsRef = React.useRef();
-  const descriptionRef = React.useRef();
-
-  React.useLayoutEffect(() => {
-    const rowGap = Number(
-      getComputedStyle(containerRef.current).gridRowGap.slice(0, -2)
-    );
-
-    const detailsHeight = detailsRef.current.offsetHeight;
-    const descriptionHeight = descriptionRef.current.offsetHeight;
-    const categoriesHeight = categoriesRef.current.offsetHeight;
-
-    const availableSpace =
-      detailsHeight +
-      rowGap +
-      descriptionHeight -
-      (categoriesHeight + rowGap + firstImageHeight);
-
-    const imagesToSpan = Math.ceil(availableSpace / (imageHeight + rowGap));
-
-    console.log({ imagesToSpan, availableSpace, firstImageHeight });
-
-    // containerRef.current.style.gridTemplateRows = `auto ${detailsRef.current
-    //   .offsetHeight -
-    //   (categoriesRef.current.offsetHeight + rowGap)}px`;
-
-    // descriptionRef.current.style.gridRowEnd = `span ${imagesToSpan + 1}`;
-  });
-
   return (
     <Layout>
       <Heading>{title}</Heading>
-      <Container ref={containerRef}>
-        <Categories ref={categoriesRef}>
-          <Category>{category}</Category>
+      <Container>
+        <Categories>
+          <Category to={`/projects/${kebabCase(category)}`}>
+            {category}
+          </Category>
           {subcategories.map((subcategory, i) => (
             <>
               {' - '}
-              <InternalLink key={i}>{subcategory}</InternalLink>
+              <InternalLink key={i} to={`/projects/${kebabCase(subcategory)}`}>
+                {subcategory}
+              </InternalLink>
             </>
           ))}
         </Categories>
         <FirstImage fluid={firstImage} alt='' />
-        <Details ref={detailsRef}>
+        <Details>
           {details.map(({ attribute, value }, i) => (
             <Detail key={i}>
               <Attribute>{attribute}</Attribute>
@@ -195,39 +204,71 @@ export const Template = ({
           ))}
         </Details>
 
-        <Description ref={descriptionRef}>
-          <DescriptionHeading>About: </DescriptionHeading>
-          <DescriptionContent
-            dangerouslySetInnerHTML={{ __html: description }}
-          />
-        </Description>
         {images.map((image, i) => (
           <Image key={i} fluid={image} alt='' />
         ))}
+
+        {descriptions.map(({ startingRow, content }, i) => (
+          <Description key={i} startingRow={startingRow}>
+            <DescriptionHeading>About: </DescriptionHeading>
+            <DescriptionContent dangerouslySetInnerHTML={{ __html: content }} />
+          </Description>
+        ))}
       </Container>
+      <CTAs />
+
+      <SectionHeading>Recent Projects</SectionHeading>
+      <RecentProjects>
+        {recentProjects.map((post, i) => (
+          <Post key={i} useListView={false} {...post} />
+        ))}
+      </RecentProjects>
+
+      <SectionHeading>Recent Posts</SectionHeading>
+      <BlogPosts>
+        {blogPosts.map((post, i) => (
+          <Post key={i} useListView={false} {...post} />
+        ))}
+      </BlogPosts>
     </Layout>
   );
 };
 
-export default ({ data }) => (
+export default ({ data: { project, projects, blog } }) => (
   <Template
-    {...data.markdownRemark.frontmatter}
-    {...data.markdownRemark.fields}
-    firstImage={data.markdownRemark.frontmatter.images[0].childImageSharp.fluid}
-    images={data.markdownRemark.frontmatter.images
+    {...project.frontmatter}
+    firstImage={project.frontmatter.images[0].childImageSharp.fluid}
+    images={project.frontmatter.images
       .slice(1)
       .map(image => image.childImageSharp.fluid)}
+    descriptions={project.frontmatter.descriptions.map((description, i) => ({
+      ...description,
+      content: project.fields.descriptions[i].content
+    }))}
+    recentProjects={projects.edges.map(({ node: { frontmatter } }) => ({
+      ...frontmatter,
+      headerImage: frontmatter.images[0].childImageSharp.fluid,
+      path: `/projects${frontmatter.path}`
+    }))}
+    blogPosts={blog.edges.map(({ node: { frontmatter } }) => ({
+      ...frontmatter,
+      headerImage: frontmatter.headerImage.childImageSharp.fluid,
+      path: `/blog${frontmatter.path}`
+    }))}
   />
 );
 
 export const query = graphql`
   query($id: String!) {
-    markdownRemark(id: { eq: $id }) {
+    project: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
         details {
           attribute
           value
+        }
+        descriptions {
+          startingRow
         }
         category
         subcategories
@@ -240,7 +281,53 @@ export const query = graphql`
         }
       }
       fields {
-        description
+        descriptions {
+          content
+        }
+      }
+    }
+    projects: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "project-page" } } }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      limit: 6
+    ) {
+      edges {
+        node {
+          frontmatter {
+            images {
+              childImageSharp {
+                fluid(maxWidth: 525) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
+            path
+          }
+        }
+      }
+    }
+    blog: allMarkdownRemark(
+      filter: { frontmatter: { templateKey: { eq: "blog-post" } } }
+      sort: { fields: [frontmatter___date], order: [DESC] }
+      limit: 6
+    ) {
+      edges {
+        node {
+          frontmatter {
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 525) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+            title
+            subtitle
+            author
+            path
+          }
+        }
       }
     }
   }

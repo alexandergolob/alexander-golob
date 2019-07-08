@@ -94,7 +94,7 @@ export default ({
     <Description useListView={useListView}>
       <Title>{title}</Title>
       {subtitle && !useListView && <Subtitle>{subtitle}</Subtitle>}
-      <Author>- {author}</Author>
+      {author && <Author>- {author}</Author>}
     </Description>
   </Container>
 );

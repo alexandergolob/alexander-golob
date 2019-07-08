@@ -10,15 +10,15 @@
   - blog
     - social icons - do after nav
 - contact
-- subscribe - pending review
-- project category - pending review
+- [x] subscribe
+- [x] project category
 - [x] project subcategory
-- portfolio - pending review
-- tags - pending review
+- [x] portfolio
+- [x] tags
 - tag
-- 404 - pending review
+- [x] 404
 - project
-- cv
+- cv - pending designs
 - special (?) - pending designs
 
 # Components

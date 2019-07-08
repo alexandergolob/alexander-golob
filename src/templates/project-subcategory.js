@@ -12,12 +12,12 @@ const HeadingContainer = styled.div`
   margin-bottom: 2em;
   display: flex;
   justify-content: center;
+
+  ${media.tablet`margin-bottom: 0;`}
 `;
 
 const Heading = styled(PageHeading)`
   min-width: 250px;
-
-  ${media.tablet`margin-bottom: 1em;`}
 `;
 
 const ProjectsContainer = styled.div`

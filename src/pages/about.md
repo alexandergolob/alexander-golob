@@ -25,6 +25,7 @@ companyDescription:
 teamSection:
   - heading: About Alexander
     CVLink:
+      show: false
       content: CV
       external: false
       path: /cv
@@ -52,6 +53,7 @@ teamSection:
       early-stage start-ups looking for guidance.
   - heading: About Khizer
     CVLink:
+      show: true
       content: CV
       external: true
       path: https://linkedin.com/in/kmbaig

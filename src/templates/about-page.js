@@ -144,9 +144,11 @@ export const AboutPageTemplate = ({
             <TeamMemberDescription>
               <TeamHeadingContainer>
                 <TeamHeading>{heading}</TeamHeading>
-                <TeamLink external={CVLink.external} path={CVLink.path}>
-                  {CVLink.content}
-                </TeamLink>
+                {CVLink.show && (
+                  <TeamLink external={CVLink.external} path={CVLink.path}>
+                    {CVLink.content}
+                  </TeamLink>
+                )}
               </TeamHeadingContainer>
               <TeamContent heading={contentHeading} content={content} />
             </TeamMemberDescription>
@@ -192,6 +194,7 @@ export const query = graphql`
         teamSection {
           heading
           CVLink {
+            show
             content
             external
             path

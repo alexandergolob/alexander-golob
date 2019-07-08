@@ -3,7 +3,7 @@
 # Page Types
 
 - [x] index
-- [x] about
+- about - pending review
 - [x] post collection
   - blog
 - post
@@ -18,7 +18,7 @@
 - tag
 - [x] 404
 - project - pending review
-- cv
+- cv - pending review
 - special (?) - pending designs
 
 # Components

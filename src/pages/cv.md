@@ -1,8 +1,15 @@
 ---
 heading: CV - Alexander Golob
+links:
+  - content: SUBSCRIBE
+    path: /subscribe
+  - content: CONTACT
+    path: /contact
+  - content: CV
+    path: /cv
 CVButton:
   content: DOWNLOAD C.V.
-  filename: test
+  filename: /kaz-baig-resume.pdf
 CV:
   title: Golob Art
   name: Alexander Golob

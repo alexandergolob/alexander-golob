@@ -4,8 +4,8 @@
 
 - [x] index
 - [x] about
-- post collection
-  - [x] blog
+- [x] post collection
+  - blog
 - post
   - blog
     - social icons - do after nav
@@ -17,8 +17,8 @@
 - [x] tags
 - tag
 - [x] 404
-- project
-- cv - pending designs
+- project - pending review
+- cv
 - special (?) - pending designs
 
 # Components

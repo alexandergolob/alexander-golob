@@ -5,44 +5,33 @@ import Image from 'gatsby-image';
 
 import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
+import Header from '../components/PageHeader';
 import PageHeading from '../components/PageHeading';
 import ExternalLink from '../components/ExternalLink';
-// import Header from '../components/PageHeader';
+import UnstyledFinalCTA from '../components/FinalCTA';
 
-const Header = styled.header`
-  margin-bottom: 2em;
+const CVDownloadContainer = styled.div`
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  ${media.tablet`flex-direction: column;`}
-`;
-
-const Heading = styled(PageHeading)`
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  font-size: 1.5em;
-
-  ${media.tablet`
-    margin-bottom: 0.5em;
-    width: 100%;
-    padding: 15px 30px;
-  `}
+  justify-content: center;
 `;
 
 const CVDownloadButton = styled(PageHeading).attrs({
   as: ExternalLink
 })`
-  font-size: 1.25em;
+  margin: 1em 0;
   min-width: auto;
+  background-image: url('/assets/light-marble.svg');
+  background-repeat: none;
+  background-size: contain;
+  background-position: center center;
+  display: inline-block;
+  font-size: 1.25em;
 
   ${media.tablet`width: 100%; padding: 5px 30px; font-size: 1.25em;`}
 `;
 
 const CVContainer = styled.section`
-  margin: auto;
+  margin: 0 auto 1em;
   width: 80%;
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
@@ -137,15 +126,26 @@ const ItemContentLine = styled.li`
   }
 `;
 
-export const CVPageTemplate = ({ heading, CVButton, CV }) => (
+const FinalCTAContainer = styled.div`
+  margin: 2em 0;
+  display: flex;
+  justify-content: center;
+`;
+
+const FinalCTA = styled(UnstyledFinalCTA)`
+  ${media.mobile`width: 100%; padding: 0.25em 1em;`}
+`;
+
+export const CVPageTemplate = ({ heading, links, CVButton, CV }) => (
   <Layout>
-    {/* <Header heading={heading} pageLinks={links} /> */}
-    <Header>
-      <Heading>{heading}</Heading>
-      <CVDownloadButton href={CVButton.filename} download>
+    <Header heading={heading} pageLinks={links} />
+
+    <CVDownloadContainer>
+      <CVDownloadButton href={`${CVButton.filename.publicURL}`}>
         {CVButton.content}
       </CVDownloadButton>
-    </Header>
+    </CVDownloadContainer>
+
     <CVContainer>
       <CVHeader>
         <div>
@@ -176,6 +176,10 @@ export const CVPageTemplate = ({ heading, CVButton, CV }) => (
         </CVSection>
       ))}
     </CVContainer>
+
+    <FinalCTAContainer>
+      <FinalCTA />
+    </FinalCTAContainer>
   </Layout>
 );
 
@@ -188,9 +192,15 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         heading
+        links {
+          content
+          path
+        }
         CVButton {
           content
-          filename
+          filename {
+            publicURL
+          }
         }
         CV {
           title

@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import { media } from './ThemeProvider';
 
 export default styled.h1`
+  min-width: 300px;
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
   padding: 5px 20px;

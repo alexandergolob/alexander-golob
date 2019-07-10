@@ -97,7 +97,6 @@ export const Template = ({ tags }) => {
     groupBy(filteredTags, ({ fieldValue }) => fieldValue[0].toLowerCase()),
     tags => ({ beginningLetter: tags[0].fieldValue[0].toUpperCase(), tags })
   );
-  console.log(tagsByBeginningLetter);
 
   return (
     <Layout>

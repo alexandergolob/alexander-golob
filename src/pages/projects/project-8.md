@@ -44,7 +44,7 @@ images:
   - /assets/kaleidoscope.webp
   - /assets/starry-night.jpg
   - /assets/starry-night.jpg
-  - /assets/kaleidoscope.webpe
+  - /assets/kaleidoscope.webp
   - /assets/starry-night.jpg
   - /assets/starry-night.jpg
   - /assets/kaleidoscope.webp

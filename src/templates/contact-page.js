@@ -162,26 +162,26 @@ export const ContactPageTemplate = ({ heading, links, statement, image }) => (
   <Layout>
     <Header heading={heading} pageLinks={links} />
     <FormAndBanner>
-      <Form data-netlify='true' name='Contact Form'>
+      <Form name='contact' data-netlify='true' method='POST'>
         <Email>
           <Label>EMAIL</Label>
-          <Input />
+          <Input name='email' />
         </Email>
         <FName>
           <Label>FIRST NAME</Label>
-          <Input />
+          <Input name='fname' />
         </FName>
         <LName>
           <Label>LAST NAME</Label>
-          <Input />
+          <Input name='lname' />
         </LName>
         <Subject>
           <Label>SUBJECT</Label>
-          <Input />
+          <Input name='subject' />
         </Subject>
         <Message>
           <Label>MESSAGE</Label>
-          <Textarea />
+          <Textarea name='message' />
         </Message>
         <Submit>SUBMIT</Submit>
       </Form>

@@ -163,6 +163,8 @@ export const ContactPageTemplate = ({ heading, links, statement, image }) => (
     <Header heading={heading} pageLinks={links} />
     <FormAndBanner>
       <Form name='contact' data-netlify='true' method='POST'>
+        {/* reqyuired for Netlify integration - name and value must match form name */}
+        <input type='hidden' name='contact' value='contact' />
         <Email>
           <Label>EMAIL</Label>
           <Input name='email' />

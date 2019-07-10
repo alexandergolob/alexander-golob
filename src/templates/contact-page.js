@@ -162,7 +162,7 @@ export const ContactPageTemplate = ({ heading, links, statement, image }) => (
   <Layout>
     <Header heading={heading} pageLinks={links} />
     <FormAndBanner>
-      <Form>
+      <Form data-netlify='true' name='Contact Form'>
         <Email>
           <Label>EMAIL</Label>
           <Input />

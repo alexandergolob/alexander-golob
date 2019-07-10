@@ -2,51 +2,62 @@ import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
 
+import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import InternalLink from '../components/InternalLink';
+import UnstyledPosts from '../components/Posts';
 
-const Tag = styled.h1`
-  margin-bottom: 1em;
-  font-size: ${props => props.theme.fonts.serif};
-  font-size: 2em;
+const Heading = styled.h1`
+  margin: 0 auto 1em;
+  width: 90%;
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
+  padding: 10px;
+  text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
+  font-size: 1.5em;
+
+  ${media.tablet`font-size: 1.25em;`}
+  ${media.mobile`width: 100%; font-size: 1.15em;`}
 `;
 
-const Posts = styled.ul`
-  list-style-type: none;
+const LinkContainer = styled.div`
+  margin: 1em 0;
+  display: flex;
+  justify-content: flex-end;
 `;
 
-const Post = styled.li`
-  margin-bottom: 0.5em;
-  :last-of-type {
-    margin-bottom: 0;
-  }
+const TagsLink = styled(InternalLink)`
+  min-width: 200px;
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.offLight};
+  padding: 5px 10px;
+  text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
+  font-weight: 600;
+
+  ${media.mobile`min-width: auto; width: 100%;`}
 `;
 
-const PostLink = styled(InternalLink)`
-  :hover {
-    text-decoration: underline;
-  }
-`;
+const Posts = styled(UnstyledPosts)``;
 
 export const Template = ({ tag, posts }) => (
   <Layout>
-    <Tag>{tag}:</Tag>
-    <Posts>
-      {posts.map(({ title, path }, i) => (
-        <Post key={i}>
-          <PostLink to={path}>{title}</PostLink>
-        </Post>
-      ))}
-    </Posts>
+    <Heading>Tags - {tag}</Heading>
+    <LinkContainer>
+      <TagsLink to='/tags'>All tags</TagsLink>
+    </LinkContainer>
+    <Posts posts={posts} isFirstPage={false} />
   </Layout>
 );
 
 export default ({ pageContext: { tag }, data: { posts } }) => (
   <Template
     tag={tag}
-    posts={posts.edges.map(({ node }) => ({
-      ...node.frontmatter,
-      path: node.fields.slug
+    posts={posts.edges.map(({ node: { fields, frontmatter } }) => ({
+      ...frontmatter,
+      path: fields.slug,
+      headerImage: frontmatter.headerImage.childImageSharp.fluid
     }))}
   />
 );
@@ -66,7 +77,16 @@ export const query = graphql`
             slug
           }
           frontmatter {
+            headerImage {
+              childImageSharp {
+                fluid(maxWidth: 525) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             title
+            subtitle
+            author
           }
         }
       }

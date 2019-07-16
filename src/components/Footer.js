@@ -13,7 +13,7 @@ const Container = styled.footer`
   background-size: cover;
   background-position: center center;
   border-top: 2px solid #000;
-  padding: 20px 30px 7px;
+  padding: 20px 60px 7px;
 
   display: grid;
   grid-template-columns: 1fr auto 1fr;

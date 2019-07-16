@@ -3,22 +3,20 @@
 # Page Types
 
 - [x] index
-- about - pending review
-- [x] post collection
-  - blog
-- post
-  - blog
-    - social icons - do after nav
-- contact
+- [x] about
+- [x] blog
+- blog post
+  - social icons - do after nav
+- [x] contact
 - [x] subscribe
 - [x] project category
 - [x] project subcategory
 - [x] portfolio
 - [x] tags
-- tag - pending review
+- [x] tag
 - [x] 404
-- project - pending review
-- cv - pending review
+- [x] project
+- [x] cv
 - special (?) - pending designs
 
 # Components
@@ -26,6 +24,8 @@
 - Navs
 - Footer
 - Subscription widget
+- Social icons
+- Graffiti
 
 # Broad tasks outside of main component development
 
@@ -35,6 +35,8 @@
 - role tags where appropriate
 - CMS interface
 - CMS previews
+- sitemap
+- robots.txt
 - PWA functionality
 
 # Aspirational features

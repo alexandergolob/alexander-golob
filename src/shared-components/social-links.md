@@ -1,5 +1,4 @@
 ---
-key: social-links
 links:
   - icon: Facebook
     link: 'https://www.facebook.com/AlexanderGolobArt/'

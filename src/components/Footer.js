@@ -1,103 +1,176 @@
-// import React from 'react';
-// import styled from 'styled-components';
-// import { StaticQuery, graphql } from 'gatsby';
+import React from 'react';
+import styled from 'styled-components';
+import GatsbyImage from 'gatsby-image';
+import { useStaticQuery, graphql } from 'gatsby';
 
-// import UnstyledSocialIcons from './SocialIcons';
+import { media } from './ThemeProvider';
+import UnstyledSocialIcons from './SocialIcons';
+import Link from './Link';
 
-// const Container = styled.footer`
-//   padding: 20px 30px 7px;
-//   background-image: url('/assets/light-marble.svg');
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   background-position: center center;
-//   border-top: 2px solid #000;
+const Container = styled.footer`
+  background-image: url('/assets/light-marble.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  border-top: 2px solid #000;
+  padding: 20px 30px 7px;
 
-//   display: grid;
-//   grid-template-columns: 1fr 35% 1fr;
-//   grid-template-rows: auto auto auto;
-//   grid-template-areas:
-//     'SupportUs Logo SocialIconsContainer'
-//     'DevCredit Logo SocialIconsContainer'
-//     'Copyright Copyright Copyright';
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  grid-template-areas:
+    'SupportUs Logo SocialIconsContainer'
+    'DevCredit Logo SocialIconsContainer'
+    'Copyright Copyright Copyright';
 
-//   font-family: 'Enriqueta', serif;
-// `;
+  font-family: ${props => props.theme.fonts.serif};
 
-// const SupportUs = styled.div`
-//   grid-area: SupportUs;
-//   font-weight: 700;
-//   align-self: end;
-//   margin-bottom: 5px;
-// `;
+  ${media.tablet`
+    padding-left: 20px;
+    padding-right: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      'Logo SocialIconsContainer'
+      'Copyright Copyright';
+    grid-row-gap: 0.5em;
+  `}
+`;
 
-// const DevCredit = styled.div`
-//   grid-area: DevCredit;
-// `;
+const SupportUs = styled.div`
+  margin-bottom: 5px;
+  grid-area: SupportUs;
+  font-weight: 600;
+  align-self: end;
 
-// const Logo = styled.div`
-//   grid-area: Logo;
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   font-weight: 700;
-//   font-size: 2.5rem;
-// `;
+  ${media.tablet`display: none;`}
+`;
 
-// const LogoImg = styled.img`
-//   display: block;
-//   height: 4.5rem;
-// `;
+const DevCredit = styled.div`
+  grid-area: DevCredit;
 
-// const SocialIcons = styled(UnstyledSocialIcons)`
-//   grid-area: SocialIconsContainer;
-//   display: flex;
-//   justify-content: flex-end;
-//   align-items: center;
+  ${media.tablet`display: none;`}
+`;
 
-//   & > * {
-//     margin-right: 0.8rem;
+const DevLink = styled(Link)`
+  color: inherit;
+  text-decoration: none;
+  font-weight: 600;
+`;
 
-//     &:last-of-type {
-//       margin-right: 0;
-//     }
-//   }
-// `;
+const Logo = styled.div`
+  grid-area: Logo;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 600;
+  font-size: 2.5em;
 
-// const Copyright = styled.div`
-//   grid-area: Copyright;
-//   text-align: center;
-//   font-family: sans-serif;
-//   font-size: 0.85rem;
-// `;
+  ${media.tablet`
+    justify-content: flex-start;
+    font-size: 1.75em;
+  `}
+  ${media.mobile`font-size: 1.25em;`}
+`;
 
-// const Footer = ({ bold_left_statement, middle_statement, ...rest }) => (
-//   <Container {...rest}>
-//     <SupportUs>{bold_left_statement}</SupportUs>
-//     <DevCredit>website created by kbaig</DevCredit>
-//     <Logo>
-//       <LogoImg src={middle_statement.img} alt='' />
-//       {middle_statement.text}
-//     </Logo>
-//     <SocialIcons size='2x' />
-//     <Copyright>&copy; {new Date().getFullYear()}</Copyright>
-//   </Container>
-// );
+const LogoImg = styled(GatsbyImage)`
+  margin-right: 10px;
+  width: 30px;
 
-// export default props => (
-//   <StaticQuery
-//     query={graphql`
-//       query {
-//         markdownRemark(frontmatter: { key: { eq: "footer" } }) {
-//           frontmatter {
-//             bold_left_statement
-//             middle_statement {
-//               img
-//               text
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render={data => <Footer {...data.markdownRemark.frontmatter} {...props} />}
-//   />
-// );
+  ${media.tablet`
+    margin-right: 5px;
+    width: 20px;
+  `}
+`;
+
+const SocialIcons = styled(UnstyledSocialIcons)`
+  grid-area: SocialIconsContainer;
+  justify-self: end;
+  font-size: 1.5em;
+
+  > * {
+    margin-right: 10px;
+    :last-of-type {
+      margin-right: 0;
+    }
+  }
+
+  ${media.mobile`font-size: 1.25em;`}
+`;
+
+const Copyright = styled.div`
+  grid-area: Copyright;
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 0.85em;
+`;
+
+const DesktopCopyright = styled.span`
+  ${media.tablet`display: none;`}
+`;
+
+const ResponsiveCopyright = styled.span`
+  display: none;
+  ${media.tablet`display: inline-block;`}
+`;
+
+const Footer = ({ boldLeftStatement, middleStatement, ...rest }) => (
+  <Container {...rest}>
+    <SupportUs>{boldLeftStatement}</SupportUs>
+    <DevCredit>
+      developed by <DevLink href='https://kbaig.me'>Kaz Baig</DevLink>
+    </DevCredit>
+    <Logo>
+      <LogoImg fluid={middleStatement.img} alt='' />
+      {middleStatement.text}
+    </Logo>
+    <SocialIcons />
+    <Copyright>
+      <DesktopCopyright>&copy; {new Date().getFullYear()}</DesktopCopyright>
+      <ResponsiveCopyright>
+        &copy; {new Date().getFullYear()} developed by{' '}
+        <DevLink href='https://kbaig.me'>Kaz Baig</DevLink>, designed by{' '}
+        <DevLink to='/'>Golob Art</DevLink>
+      </ResponsiveCopyright>
+    </Copyright>
+  </Container>
+);
+
+const query = graphql`
+  {
+    file(
+      sourceInstanceName: { eq: "shared-components" }
+      relativePath: { eq: "footer.md" }
+    ) {
+      childMarkdownRemark {
+        frontmatter {
+          boldLeftStatement
+          middleStatement {
+            text
+            img {
+              childImageSharp {
+                fluid(maxWidth: 300) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+`;
+
+export default props => {
+  const data = useStaticQuery(query);
+  const { frontmatter } = data.file.childMarkdownRemark;
+
+  return (
+    <Footer
+      {...frontmatter}
+      middleStatement={{
+        ...frontmatter.middleStatement,
+        img: frontmatter.middleStatement.img.childImageSharp.fluid
+      }}
+      {...props}
+    />
+  );
+};

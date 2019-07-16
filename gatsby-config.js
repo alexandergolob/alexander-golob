@@ -28,13 +28,6 @@ module.exports = {
     {
       resolve: 'gatsby-source-filesystem',
       options: {
-        name: 'site-settings',
-        path: `${__dirname}/src/site-settings`
-      }
-    },
-    {
-      resolve: 'gatsby-source-filesystem',
-      options: {
         name: 'shared-components',
         path: `${__dirname}/src/shared-components`
       }

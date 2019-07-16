@@ -1,5 +1,4 @@
 ---
-key: right-nav
 items:
   - category: Portfolio
     path: /portfolio

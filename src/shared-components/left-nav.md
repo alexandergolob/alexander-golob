@@ -1,5 +1,4 @@
 ---
-key: left-nav
 items:
   - category: Art
     path: /art

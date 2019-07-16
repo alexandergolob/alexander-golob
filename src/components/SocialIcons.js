@@ -7,7 +7,7 @@ import {
   faLinkedinIn,
   faTwitter
 } from '@fortawesome/free-brands-svg-icons';
-import { StaticQuery, graphql } from 'gatsby';
+import { useStaticQuery, graphql } from 'gatsby';
 
 const Container = styled.div``;
 
@@ -18,10 +18,6 @@ const UnstyledSocialIcon = ({ hoverColor, ...rest }) => (
 const SocialIcon = styled(UnstyledSocialIcon)`
   ${Container}:hover &:not(:hover) {
     opacity: 0.75;
-  }
-
-  &:hover {
-    color: ${({ hoverColor }) => hoverColor};
   }
 
   transition: all 300ms ease-in-out;
@@ -46,46 +42,35 @@ const getIcon = social =>
     Twitter: faTwitter
   }[social]);
 
-const getHoverColor = social =>
-  ({
-    Facebook: 'hsl(221, 44%, 41%)',
-    Instagram: 'hsl(326, 57%, 48%)',
-    LinkedIn: 'hsl(201, 100%, 35%)',
-    Twitter: 'hsl(196, 100%, 46%)'
-  }[social]);
+const SocialLinks = ({ className, links, ...rest }) => (
+  <Container className={className}>
+    {links.map(({ icon, link }, i) => (
+      <SocialLink key={i} href={link} icon={getIcon(icon)} {...rest} />
+    ))}
+  </Container>
+);
 
-const SocialLinks = ({ className, links, ...rest }) => {
-  return (
-    <Container className={className}>
-      {links.map(({ icon, link }, i) => (
-        <SocialLink
-          key={i}
-          href={link}
-          icon={getIcon(icon)}
-          hoverColor={getHoverColor(icon)}
-          {...rest}
-        />
-      ))}
-    </Container>
-  );
-};
-
-export default props => (
-  <StaticQuery
-    query={graphql`
-      query {
-        markdownRemark(frontmatter: { key: { eq: "social-links" } }) {
-          frontmatter {
-            links {
-              icon
-              link
-            }
+const query = graphql`
+  {
+    file(
+      sourceInstanceName: { eq: "shared-components" }
+      relativePath: { eq: "social-links.md" }
+    ) {
+      childMarkdownRemark {
+        frontmatter {
+          links {
+            icon
+            link
           }
         }
       }
-    `}
-    render={data => (
-      <SocialLinks links={data.markdownRemark.frontmatter.links} {...props} />
-    )}
-  />
-);
+    }
+  }
+`;
+
+export default props => {
+  const data = useStaticQuery(query);
+  const { frontmatter } = data.file.childMarkdownRemark;
+
+  return <SocialLinks {...frontmatter} {...props} />;
+};

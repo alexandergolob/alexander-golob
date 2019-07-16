@@ -5,7 +5,7 @@ import ThemeProvider, { media } from './ThemeProvider';
 
 // import UnstyledLeftNav from './LeftNav';
 // import UnstyledRightNav from './RightNav';
-// import UnstyledFooter from './Footer';
+import Footer from './Footer';
 
 // const LeftNav = styled(UnstyledLeftNav)`
 //   position: fixed;
@@ -98,14 +98,6 @@ const BackgroundWrapper = styled.div`
 //   user-select: none;
 // `;
 
-// const Footer = styled(UnstyledFooter)`
-//   position: absolute;
-//   bottom: 0;
-//   left: 0;
-//   right: 0;
-//   z-index: 2;
-// `;
-
 export default ({ children }) => (
   <ThemeProvider>
     <>
@@ -115,8 +107,8 @@ export default ({ children }) => (
       <BackgroundWrapper>
         {children}
         {/* <Graffiti alt='' src='assets/logo-white.svg' /> */}
-        {/* <Footer /> */}
       </BackgroundWrapper>
+      <Footer />
     </>
   </ThemeProvider>
 );

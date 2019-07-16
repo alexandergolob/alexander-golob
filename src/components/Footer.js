@@ -116,7 +116,10 @@ const Footer = ({ boldLeftStatement, middleStatement, ...rest }) => (
   <Container {...rest}>
     <SupportUs>{boldLeftStatement}</SupportUs>
     <DevCredit>
-      developed by <DevLink href='https://kbaig.me'>Kaz Baig</DevLink>
+      developed by{' '}
+      <DevLink external path='https://kbaig.me'>
+        Kaz Baig
+      </DevLink>
     </DevCredit>
     <Logo>
       <LogoImg fluid={middleStatement.img} alt='' />
@@ -127,8 +130,10 @@ const Footer = ({ boldLeftStatement, middleStatement, ...rest }) => (
       <DesktopCopyright>&copy; {new Date().getFullYear()}</DesktopCopyright>
       <ResponsiveCopyright>
         &copy; {new Date().getFullYear()} developed by{' '}
-        <DevLink href='https://kbaig.me'>Kaz Baig</DevLink>, designed by{' '}
-        <DevLink to='/'>Golob Art</DevLink>
+        <DevLink external path='https://kbaig.me'>
+          Kaz Baig
+        </DevLink>
+        , designed by <DevLink path='/'>Golob Art</DevLink>
       </ResponsiveCopyright>
     </Copyright>
   </Container>

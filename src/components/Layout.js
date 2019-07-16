@@ -3,49 +3,29 @@ import styled, { createGlobalStyle } from 'styled-components';
 
 import ThemeProvider, { media } from './ThemeProvider';
 
-// import UnstyledLeftNav from './LeftNav';
-// import UnstyledRightNav from './RightNav';
+import UnstyledLeftNav from './LeftNav';
+import UnstyledRightNav from './RightNav';
 import UnstyledFooter from './Footer';
 
-// const LeftNav = styled(UnstyledLeftNav)`
-//   position: fixed;
-//   z-index: 1;
-//   width: 10rem;
-//   top: 11vh;
-//   left: 9.25%;
-//   @media (max-width: 2100px) {
-//     left: 6.5%;
-//   }
-//   @media (max-width: 1950px) {
-//     left: 0.75rem;
-//   }
-//   display: flex;
-//   flex-direction: column;
+const LeftNav = styled(UnstyledLeftNav)`
+  position: fixed;
+  z-index: 1;
+  width: 150px;
+  top: 14vh;
+  left: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
 
-//   @media (max-width: 1150px) {
-//     display: none;
-//   }
-// `;
+  ${media.extraLarge`display: none;`}
+`;
 
-// const RightNav = styled(UnstyledRightNav)`
-//   position: fixed;
-//   z-index: 1;
-//   width: 10rem;
-//   top: 17vh;
-//   right: 9.25%;
-//   @media (max-width: 2100px) {
-//     right: 6.5%;
-//   }
-//   @media (max-width: 1950px) {
-//     right: 0.55rem;
-//   }
-//   display: flex;
-//   flex-direction: column;
+const RightNav = styled(UnstyledRightNav)`
+  position: fixed;
+  z-index: 1;
+  width: 150px;
+  top: 17vh;
+  right: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
 
-//   @media (max-width: 1150px) {
-//     display: none;
-//   }
-// `;
+  ${media.extraLarge`display: none;`}
+`;
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css?family=PT+Mono|Enriqueta:400,700');
@@ -102,8 +82,8 @@ export default ({ children }) => (
   <ThemeProvider>
     <>
       <GlobalStyle />
-      {/* <LeftNav />
-    <RightNav /> */}
+      <LeftNav />
+      <RightNav />
       <BackgroundWrapper>
         {children}
         {/* <Graffiti alt='' src='assets/logo-white.svg' /> */}

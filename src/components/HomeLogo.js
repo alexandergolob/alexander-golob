@@ -1,15 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
-import { Link as UnstyledLink } from 'gatsby';
+import GatsbyImage from 'gatsby-image';
 
-import FrameBox from './FrameBox';
+import InternalLink from './InternalLink';
 
-const Link = styled(UnstyledLink)`
-  color: inherit;
-  text-decoration: none;
-`;
-
-const Container = styled(FrameBox)`
+const Link = styled(InternalLink)`
+  border: ${props => props.theme.misc.frameBorder};
   padding: 10px 5px;
   display: flex;
   flex-direction: column;
@@ -18,21 +14,17 @@ const Container = styled(FrameBox)`
   text-align: center;
 `;
 
-const LogoImg = styled.img`
-  height: 8rem;
-`;
+const LogoImg = styled(GatsbyImage)``;
 
 const HomeLogoText = styled.div`
-  font-family: 'Enriqueta';
-  font-size: 1.75rem;
+  font-family: ${props => props.theme.fonts.serif};
+  font-size: 1.75em;
   text-align: center;
 `;
 
-export default ({ src, text, ...rest }) => (
+export default ({ logo, text, ...rest }) => (
   <Link to='/' {...rest}>
-    <Container>
-      <LogoImg src={src} alt='logo' />
-      <HomeLogoText>{text}</HomeLogoText>
-    </Container>
+    <LogoImg fixed={logo} alt='logo' />
+    <HomeLogoText>{text}</HomeLogoText>
   </Link>
 );

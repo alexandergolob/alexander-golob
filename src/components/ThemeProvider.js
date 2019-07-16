@@ -2,6 +2,7 @@ import React from 'react';
 import { ThemeProvider, css } from 'styled-components';
 
 const sizes = {
+  extraLarge: '1450px',
   large: '1200px',
   laptop: '1024px',
   tablet: '768px',

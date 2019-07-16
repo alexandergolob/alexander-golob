@@ -1,114 +1,132 @@
 import React from 'react';
+import styled from 'styled-components';
+import { useStaticQuery, graphql } from 'gatsby';
 
-export default () => <div>Left nav</div>;
-// import styled from 'styled-components';
-// import { StaticQuery, graphql } from 'gatsby';
+import UnstyledHomeLogo from './HomeLogo';
+import Link from './InternalLink';
 
-// import UnstyledHomeLogo from './HomeLogo';
-// import FrameBox from './FrameBox';
-// import Link from './Link';
+const HomeLogo = styled(UnstyledHomeLogo)`
+  margin-bottom: 0.5em;
+  background: ${props => props.theme.colors.background};
+`;
 
-// const HomeLogo = styled(UnstyledHomeLogo)`
-//   margin-bottom: 10px;
-// `;
+const Nav = styled.nav`
+  border: ${props => props.theme.misc.frameBorder};
+  background: ${props => props.theme.colors.background};
+  padding: 15px;
+`;
 
-// const UnstyledNav = props => <FrameBox as='nav' {...props} />;
+const NavList = styled.ul`
+  list-style-type: none;
+  padding: 0;
+  font-family: ${props => props.theme.fonts.serif};
+`;
 
-// const Nav = styled(UnstyledNav)`
-//   padding: 15px;
-// `;
+const NavItemTitleLink = styled(Link)`
+  margin-bottom: 5px;
+  display: block;
+`;
 
-// const NavList = styled.ul`
-//   list-style-type: none;
-//   padding: 0;
-//   font-family: 'Enriqueta', serif;
-// `;
+const NavItemTitle = styled.div`
+  font-weight: 600;
+`;
 
-// const NavItemTitleLink = styled(Link)`
-//   display: block;
-//   margin-bottom: 5px;
-// `;
+const SubList = styled.ul`
+  list-style-type: none;
+  padding-left: 10px;
+`;
 
-// const NavItemTitle = styled.div`
-//   font-weight: 700;
-// `;
+const SubListItemLink = styled(Link)`
+  margin-bottom: 2px;
+  &:last-of-type {
+    margin-bottom: 0;
+  }
 
-// const SubList = styled.ul`
-//   list-style-type: none;
-//   padding-left: 10px;
-// `;
+  display: block;
+`;
 
-// const SubListItemLink = styled(Link)`
-//   display: block;
-//   margin-bottom: 2px;
-//   &:last-of-type {
-//     margin-bottom: 0;
-//   }
-// `;
+const SubListItem = styled.li``;
 
-// const SubListItem = styled.li``;
+const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (
+  <li {...rest}>
+    <NavItemTitleLink to={path}>
+      <NavItemTitle>{category}</NavItemTitle>
+    </NavItemTitleLink>
 
-// const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (
-//   <li {...rest}>
-//     <NavItemTitleLink to={path}>
-//       <NavItemTitle>{category}</NavItemTitle>
-//     </NavItemTitleLink>
+    <SubList>
+      {subitems.map(({ subitem, path }, i) => (
+        <SubListItemLink to={path} key={i}>
+          <SubListItem>{subitem}</SubListItem>
+        </SubListItemLink>
+      ))}
+    </SubList>
+  </li>
+);
 
-//     <SubList>
-//       {subitems.map(({ subitem, path }, i) => (
-//         // <SubListItem key={i}>
-//         //   <Link to={path}>{subitem}</Link>
-//         // </SubListItem>
+const NavItem = styled(UnstyledNavItem)`
+  margin-bottom: 1.5em;
 
-//         <SubListItemLink to={path} key={i}>
-//           <SubListItem>{subitem}</SubListItem>
-//         </SubListItemLink>
-//       ))}
-//     </SubList>
-//   </li>
-// );
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+`;
 
-// const NavItem = styled(UnstyledNavItem)`
-//   margin-bottom: 20px;
+const LeftNav = ({ homeLogo, items, ...rest }) => (
+  <div {...rest}>
+    <HomeLogo {...homeLogo} />
+    <Nav>
+      <NavList>
+        {items.map(item => (
+          <NavItem key={item.category} {...item} />
+        ))}
+      </NavList>
+    </Nav>
+  </div>
+);
 
-//   &:last-of-type {
-//     margin-bottom: 0;
-//   }
-// `;
+const query = graphql`
+  {
+    file(
+      sourceInstanceName: { eq: "shared-components" }
+      relativePath: { eq: "left-nav.md" }
+    ) {
+      childMarkdownRemark {
+        frontmatter {
+          homeLogo {
+            text
+            logo {
+              childImageSharp {
+                fixed(height: 100) {
+                  ...GatsbyImageSharpFixed
+                }
+              }
+            }
+          }
+          items {
+            category
+            path
+            subitems {
+              path
+              subitem
+            }
+          }
+        }
+      }
+    }
+  }
+`;
 
-// const LeftNav = ({ items, ...rest }) => (
-//   <div {...rest}>
-//     <HomeLogo src='/assets/logo.svg' text='Golob Art' />
-//     <Nav>
-//       <NavList>
-//         {items.map(item => (
-//           <NavItem key={item.category} {...item} />
-//         ))}
-//       </NavList>
-//     </Nav>
-//   </div>
-// );
-
-// export default props => (
-//   <StaticQuery
-//     query={graphql`
-//       query {
-//         markdownRemark(frontmatter: { key: { eq: "left-nav" } }) {
-//           frontmatter {
-//             items {
-//               category
-//               path
-//               subitems {
-//                 path
-//                 subitem
-//               }
-//             }
-//           }
-//         }
-//       }
-//     `}
-//     render={data => (
-//       <LeftNav items={data.markdownRemark.frontmatter.items} {...props} />
-//     )}
-//   />
-// );
+export default props => {
+  const data = useStaticQuery(query);
+  const { frontmatter } = data.file.childMarkdownRemark;
+  return (
+    <LeftNav
+      {...frontmatter}
+      homeLogo={{
+        ...frontmatter.homeLogo,
+        logo: frontmatter.homeLogo.logo.childImageSharp.fixed
+      }}
+      {...props}
+    />
+  );
+};

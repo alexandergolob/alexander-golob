@@ -1,4 +1,5 @@
 ---
+secondaryLogo: /assets/secondary-logo.png
 items:
   - category: Portfolio
     path: /portfolio

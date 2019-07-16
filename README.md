@@ -21,11 +21,11 @@
 
 # Components
 
+- Footer - pending review
+- Social icons - pending review
 - Navs
-- Footer
-- Subscription widget
-- Social icons
 - Graffiti
+- Subscription widget
 
 # Broad tasks outside of main component development
 

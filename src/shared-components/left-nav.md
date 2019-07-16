@@ -1,4 +1,7 @@
 ---
+homeLogo:
+  logo: /assets/logo.png
+  text: Golob Art
 items:
   - category: Art
     path: /art
@@ -21,14 +24,14 @@ items:
     subitems:
       - path: /government
         subitem: government
-      - path: private
+      - path: /private
         subitem: private
   - category: Special Projects
     path: /special-projects
     subitems:
       - path: /post-cubicle-gallery
         subitem: post-cubicle gallery
-      - path: through-the-looking-glass
+      - path: /through-the-looking-glass
         subitem: through the looking glass
       - path: /venezia
         subitem: venezia

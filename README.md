@@ -23,9 +23,9 @@
 
 - Footer - pending review
 - Social icons - pending review
+- Graffiti - pending review
+- Subscription widget - pending review
 - Navs
-- Graffiti
-- Subscription widget
 
 # Broad tasks outside of main component development
 

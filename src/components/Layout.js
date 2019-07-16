@@ -61,22 +61,30 @@ const BackgroundWrapper = styled.div`
   `}
 `;
 
+const ZWrapper = styled.div`
+  position: relative;
+  z-index: 2;
+`;
+
 const Footer = styled(UnstyledFooter)`
   position: absolute;
+  z-index: 2;
   left: 0;
   bottom: 0;
   width: 100%;
 `;
 
-// const Graffiti = styled.img`
-//   height: 9rem;
-//   /* background: red; */
-//   position: absolute;
-//   bottom: 120px;
-//   left: 2.5rem;
-//   z-index: 1;
-//   user-select: none;
-// `;
+const Graffiti = styled.img`
+  height: 120px;
+  position: absolute;
+  bottom: 120px;
+  left: 2.5em;
+  z-index: 1;
+  user-select: none;
+
+  ${media.tablet`height: 100px;`}
+  ${media.mobile`height: 80px;`}
+`;
 
 export default ({ children }) => (
   <ThemeProvider>
@@ -85,8 +93,8 @@ export default ({ children }) => (
       <LeftNav />
       <RightNav />
       <BackgroundWrapper>
-        {children}
-        {/* <Graffiti alt='' src='assets/logo-white.svg' /> */}
+        <ZWrapper>{children}</ZWrapper>
+        <Graffiti alt='' src='assets/logo-white.svg' />
         <Footer />
       </BackgroundWrapper>
     </>

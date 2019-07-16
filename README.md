@@ -22,10 +22,13 @@
 # Components
 
 - Footer - pending review
+  - z-index should be such that it's under navs
 - Social icons - pending review
 - Graffiti - pending review
+  - need to think about this a bit more
 - Subscription widget - pending review
 - Navs
+- Right nav scroll component
 
 # Broad tasks outside of main component development
 

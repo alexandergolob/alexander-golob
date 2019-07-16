@@ -3,6 +3,10 @@ require('dotenv').config({
 });
 
 module.exports = {
+  siteMetadata: {
+    siteUrl: 'https://alexander-golob.netlify.com',
+    pathPrefix: '/'
+  },
   plugins: [
     {
       resolve: 'gatsby-plugin-netlify-cms',
@@ -10,6 +14,7 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
       resolve: 'gatsby-source-filesystem',
@@ -30,6 +35,13 @@ module.exports = {
       options: {
         name: 'shared-components',
         path: `${__dirname}/src/shared-components`
+      }
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'site-settings',
+        path: `${__dirname}/src/site-settings`
       }
     },
     'gatsby-plugin-sharp',

@@ -2,6 +2,7 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import ThemeProvider, { media } from './ThemeProvider';
+import Helmet from './Helmet'
 
 import UnstyledLeftNav from './LeftNav';
 import UnstyledRightNav from './RightNav';
@@ -86,10 +87,11 @@ const Graffiti = styled.img`
   ${media.mobile`height: 80px;`}
 `;
 
-export default ({ children }) => (
+export default ({ head, children }) => (
   <ThemeProvider>
     <>
       <GlobalStyle />
+      <Helmet {...head}/>
       <LeftNav />
       <RightNav />
       <BackgroundWrapper>

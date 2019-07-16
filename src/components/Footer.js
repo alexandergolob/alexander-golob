@@ -65,6 +65,7 @@ const Logo = styled.div`
   font-size: 2.5em;
 
   ${media.tablet`
+    justify-self: center;
     justify-content: flex-start;
     font-size: 1.75em;
   `}
@@ -93,6 +94,7 @@ const SocialIcons = styled(UnstyledSocialIcons)`
     }
   }
 
+  ${media.tablet`justify-self: center;`}
   ${media.mobile`font-size: 1.25em;`}
 `;
 

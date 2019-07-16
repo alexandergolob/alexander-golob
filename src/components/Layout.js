@@ -5,7 +5,7 @@ import ThemeProvider, { media } from './ThemeProvider';
 
 // import UnstyledLeftNav from './LeftNav';
 // import UnstyledRightNav from './RightNav';
-import Footer from './Footer';
+import UnstyledFooter from './Footer';
 
 // const LeftNav = styled(UnstyledLeftNav)`
 //   position: fixed;
@@ -56,36 +56,36 @@ const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
-  html, body {
-    height: 100%;
-  }
-
   body {    
     background: ${props => props.theme.colors.background};
     font-family: ${props => props.theme.fonts.sansSerif};
-  }
-
-  /* #___gatsby {
-    display: block;
-    min-height: 100vh;
-    position: relative;
-
-    & > * {
-      min-height: 100vh;
-    }
-  } */
+  }  
 `;
 
 const BackgroundWrapper = styled.div`
   margin: auto;
+  position: relative;
   max-width: ${props => props.theme.widths.large};
   background: url('/assets/brick-wall-bg.jpg');
   background-size: contain;
   padding: 80px;
+  padding-bottom: 120px;
 
   ${media.large`
     padding: 20px;
+    padding-bottom: 120px;
   `}
+
+  ${media.mobile`
+    padding-bottom: 80px;
+  `}
+`;
+
+const Footer = styled(UnstyledFooter)`
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 `;
 
 // const Graffiti = styled.img`
@@ -107,8 +107,8 @@ export default ({ children }) => (
       <BackgroundWrapper>
         {children}
         {/* <Graffiti alt='' src='assets/logo-white.svg' /> */}
+        <Footer />
       </BackgroundWrapper>
-      <Footer />
     </>
   </ThemeProvider>
 );

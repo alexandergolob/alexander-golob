@@ -122,12 +122,15 @@ const FinalCTAContainer = styled.div`
 `;
 
 export const AboutPageTemplate = ({
+  title,
+  description,
+  ogImage,
   heading,
   links,
   companyDescription,
   teamSection
 }) => (
-  <Layout>
+  <Layout head={{ title, description, ogImage }}>
     <Header heading={heading} pageLinks={links} />
 
     <MainSection>
@@ -166,6 +169,7 @@ export const AboutPageTemplate = ({
 export default ({ data }) => (
   <AboutPageTemplate
     {...data.markdownRemark.frontmatter}
+    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
     companyDescription={{
       ...data.markdownRemark.frontmatter.companyDescription,
       content: data.markdownRemark.fields.companyDescription.content
@@ -183,6 +187,15 @@ export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         heading
         links {
           content

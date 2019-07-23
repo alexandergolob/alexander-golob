@@ -1,7 +1,9 @@
 ---
 templateKey: project-subcategory
-path: /speaking
 title: Speaking
+description: Lorem ipsum
+ogImage: /assets/starry-night.jpg
+path: /speaking
 hero: Alexander Golob is a dude
 category: Engagements
 CTA:

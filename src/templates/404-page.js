@@ -67,13 +67,15 @@ const PageLink = styled(InternalLink)``;
 
 export const Template = ({
   title,
+  description,
+  ogImage,
   subtitle,
   preImage,
   image,
   preLink,
   preContact
 }) => (
-  <Layout>
+  <Layout head={{ title, description, ogImage }}>
     <Container>
       <Title>{title}</Title>
       <Subtitle>{subtitle}</Subtitle>
@@ -100,6 +102,7 @@ export const Template = ({
 export default ({ data }) => (
   <Template
     {...data.markdownRemark.frontmatter}
+    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
     image={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
   />
 );
@@ -109,6 +112,14 @@ export const query = graphql`
     markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         subtitle
         preImage
         image {

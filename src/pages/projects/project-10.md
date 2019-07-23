@@ -1,8 +1,10 @@
 ---
 templateKey: project-page
+title: test engagement made using engagement collection
+description: Lorem ipsum
+ogImage: /assets/starry-night.jpg
 date: 2014-04-02T04:34:23.774Z
 path: /lorem-ipsumewqfwefwe
-title: test engagement made using engagement collection
 category: Engagements
 subcategories:
   - Speaking

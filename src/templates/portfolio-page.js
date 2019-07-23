@@ -60,8 +60,14 @@ const ProjectTitle = styled.div`
   ${media.mobile`white-space: initial;`}
 `;
 
-export const Template = ({ heading, featuredProjects }) => (
-  <Layout>
+export const Template = ({
+  title,
+  description,
+  ogImage,
+  heading,
+  featuredProjects
+}) => (
+  <Layout head={{ title, description, ogImage }}>
     <HeadingContainer>
       <Heading>{heading}</Heading>
     </HeadingContainer>
@@ -85,6 +91,7 @@ export const Template = ({ heading, featuredProjects }) => (
 export default ({ data: { portfolio, featuredProjects } }) => (
   <Template
     {...portfolio.frontmatter}
+    ogImage={portfolio.frontmatter.ogImage.childImageSharp.fluid.src}
     featuredProjects={featuredProjects.edges.map(({ node }) => ({
       ...node.frontmatter,
       image: node.frontmatter.images[0].childImageSharp.fluid,
@@ -97,6 +104,15 @@ export const query = graphql`
   query($id: String!) {
     portfolio: markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         heading
       }
     }

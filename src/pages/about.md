@@ -1,4 +1,7 @@
 ---
+title: About
+description: About golob art
+ogImage: /assets/starry-night.jpg
 heading: About
 links:
   - content: SUBSCRIBE

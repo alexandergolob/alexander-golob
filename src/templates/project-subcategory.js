@@ -87,9 +87,17 @@ const CTALink = styled(InternalLink)`
   ${media.mobile`min-width: auto; width: 100%;`}
 `;
 
-export const Template = ({ title, hero, CTA, description, projects }) => {
+export const Template = ({
+  title,
+  description,
+  ogImage,
+  hero,
+  CTA,
+  subcategoryDescription,
+  projects
+}) => {
   return (
-    <Layout>
+    <Layout head={{ title, description, ogImage }}>
       <HeadingContainer>
         <Heading>{title}</Heading>
       </HeadingContainer>
@@ -97,7 +105,9 @@ export const Template = ({ title, hero, CTA, description, projects }) => {
         <Projects projects={projects} />
         <DescriptionContainer>
           <Hero>{hero}</Hero>
-          <Description dangerouslySetInnerHTML={{ __html: description }} />
+          <Description
+            dangerouslySetInnerHTML={{ __html: subcategoryDescription }}
+          />
           <CTAContainer>
             <CTAStatementAbove>{CTA.statementAbove}</CTAStatementAbove>
             <CTALink to={CTA.path}>{CTA.statement}</CTALink>
@@ -111,7 +121,8 @@ export const Template = ({ title, hero, CTA, description, projects }) => {
 export default ({ data: { subcategory, projects } }) => (
   <Template
     {...subcategory.frontmatter}
-    description={subcategory.html}
+    ogImage={subcategory.frontmatter.ogImage.childImageSharp.fluid.src}
+    subcategoryDescription={subcategory.html}
     projects={projects.edges.map(({ node }) => ({
       ...node.frontmatter,
       image: node.frontmatter.images[0].childImageSharp.fluid,
@@ -126,6 +137,14 @@ export const query = graphql`
       html
       frontmatter {
         title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         hero
         CTA {
           statementAbove

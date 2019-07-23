@@ -158,8 +158,16 @@ const BannerText = styled.div`
   ${media.mobile`padding: 5px 10px; font-size: 1em;`}
 `;
 
-export const ContactPageTemplate = ({ heading, links, statement, image }) => (
-  <Layout>
+export const ContactPageTemplate = ({
+  title,
+  description,
+  ogImage,
+  heading,
+  links,
+  statement,
+  image
+}) => (
+  <Layout head={{ title, description, ogImage }}>
     <Header heading={heading} pageLinks={links} />
     <FormAndBanner>
       <Form name='contact' data-netlify='true' method='POST'>
@@ -199,6 +207,7 @@ export const ContactPageTemplate = ({ heading, links, statement, image }) => (
 export default ({ data }) => (
   <ContactPageTemplate
     {...data.markdownRemark.frontmatter}
+    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
     image={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
   />
 );
@@ -207,6 +216,15 @@ export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         heading
         links {
           content

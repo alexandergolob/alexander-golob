@@ -83,7 +83,7 @@ const Tag = styled(InternalLink)`
   font-size: 0.8em;
 `;
 
-export const Template = ({ tags }) => {
+export const Template = ({ title, description, ogImage, tags }) => {
   const [filterValue, setFilterValue] = React.useState('');
 
   const filteredTags =
@@ -99,7 +99,7 @@ export const Template = ({ tags }) => {
   );
 
   return (
-    <Layout>
+    <Layout head={{ title, description, ogImage }}>
       <Heading>Tags</Heading>
       <TagsContainer>
         <FilterInput
@@ -125,12 +125,28 @@ export const Template = ({ tags }) => {
   );
 };
 
-export default ({ data }) => <Template tags={data.tags.group} />;
+export default ({ data: { seo, tags } }) => (
+  <Template
+    {...seo.frontmatter}
+    ogImage={seo.frontmatter.ogImage.childImageSharp.fluid.src}
+    tags={tags.group}
+  />
+);
 
 export const query = graphql`
   query($id: String!) {
-    description: markdownRemark(id: { eq: $id }) {
-      id
+    seo: markdownRemark(id: { eq: $id }) {
+      frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
+      }
     }
     tags: allMarkdownRemark(
       filter: { frontmatter: { templateKey: { eq: "blog-post" } } }

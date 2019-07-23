@@ -29,6 +29,9 @@ const Pagination = styled(UnstyledPagination)`
 `;
 
 export const BlogPageTemplate = ({
+  title,
+  description,
+  ogImage,
   heading,
   links,
   latestPost,
@@ -36,7 +39,7 @@ export const BlogPageTemplate = ({
   currentPage,
   numPages
 }) => (
-  <Layout>
+  <Layout head={{ title, description, ogImage }}>
     <Header heading={heading} pageLinks={links} />
     {currentPage === 1 && (
       <FeaturedPost
@@ -53,6 +56,7 @@ export const BlogPageTemplate = ({
 export default ({ data, pageContext }) => (
   <BlogPageTemplate
     {...data.markdownRemark.frontmatter}
+    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
     latestPost={{
       ...data.latestPost.edges[0].node.frontmatter,
       content: data.latestPost.edges[0].node.excerpt
@@ -71,6 +75,15 @@ export const query = graphql`
   query($id: String!, $limit: Int!, $skip: Int!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         heading
         links {
           content

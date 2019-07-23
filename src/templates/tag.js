@@ -42,7 +42,12 @@ const TagsLink = styled(InternalLink)`
 const Posts = styled(UnstyledPosts)``;
 
 export const Template = ({ tag, posts }) => (
-  <Layout>
+  <Layout
+    head={{
+      title: `Tags: ${tag}`,
+      description: `Posts containing the ${tag} tag.`
+    }}
+  >
     <Heading>Tags - {tag}</Heading>
     <LinkContainer>
       <TagsLink to='/tags'>All tags</TagsLink>

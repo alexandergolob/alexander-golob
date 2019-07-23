@@ -134,8 +134,15 @@ const ProjectsContainer = styled.div`
   ${media.mobile`grid-template-columns: 1fr; grid-auto-rows: auto;`}
 `;
 
-export const Template = ({ title, hero, subcategorySections, projects }) => (
-  <Layout>
+export const Template = ({
+  title,
+  description,
+  ogImage,
+  hero,
+  subcategorySections,
+  projects
+}) => (
+  <Layout head={{ title, description, ogImage }}>
     <HeadingContainer>
       <Heading>{title}</Heading>
     </HeadingContainer>
@@ -189,6 +196,7 @@ export default ({ data: { category, subcategories, projects } }) => {
   return (
     <Template
       {...category.frontmatter}
+      ogImage={category.frontmatter.ogImage.childImageSharp.fluid.src}
       subcategorySections={category.frontmatter.subcategorySections.map(
         (section, i) => ({
           ...section,
@@ -213,6 +221,14 @@ export const query = graphql`
     category: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         hero
         subcategorySections {
           subcategory

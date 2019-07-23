@@ -1,4 +1,7 @@
 ---
+title: Art for the community
+description: Lorem ipsum
+ogImage: /assets/starry-night.jpg
 heading: Contact Us
 links:
   - content: ABOUT
@@ -12,4 +15,3 @@ statement: >-
   touch here.
 image: /assets/kaleidoscope.webp
 ---
-

@@ -85,17 +85,19 @@ const Pagination = styled(PostPagination)`
 `;
 
 export const Template = ({
+  title,
+  description,
+  ogImage,
   headerImage,
   recentStories,
   tags,
-  title,
   subtitle,
   date,
   author,
   body,
   pagination
 }) => (
-  <Layout>
+  <Layout head={{ title, description, ogImage }}>
     <Wrapper>
       <Header>
         <HeaderImg alt='' fluid={headerImage} />
@@ -112,21 +114,20 @@ export const Template = ({
   </Layout>
 );
 
-export default ({ data, pageContext }) => (
+export default ({ data: { currentPost, recentStories }, pageContext }) => (
   <Template
-    body={data.currentPost.html}
-    {...data.currentPost.frontmatter}
-    headerImage={data.currentPost.frontmatter.headerImage.childImageSharp.fluid}
-    recentStories={data.recentStories.edges.map(
-      ({ node: { frontmatter } }) => ({
-        ...frontmatter,
-        headerImage: frontmatter.headerImage.childImageSharp.fluid,
-        path: `/blog${frontmatter.path}`
-      })
-    )}
+    body={currentPost.html}
+    {...currentPost.frontmatter}
+    ogImage={currentPost.frontmatter.ogImage.childImageSharp.fluid.src}
+    headerImage={currentPost.frontmatter.headerImage.childImageSharp.fluid}
+    recentStories={recentStories.edges.map(({ node: { frontmatter } }) => ({
+      ...frontmatter,
+      headerImage: frontmatter.headerImage.childImageSharp.fluid,
+      path: `/blog${frontmatter.path}`
+    }))}
     tags={[
       { path: '/blog', content: 'Blog' },
-      ...data.currentPost.frontmatter.tags.map(tag => ({
+      ...currentPost.frontmatter.tags.map(tag => ({
         content: tag,
         path: `/tags/${_.kebabCase(tag)}`
       }))
@@ -140,6 +141,15 @@ export const query = graphql`
     currentPost: markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         date(formatString: "MMMM D, YYYY")
         headerImage {
           childImageSharp {
@@ -148,7 +158,6 @@ export const query = graphql`
             }
           }
         }
-        title
         subtitle
         author
         tags

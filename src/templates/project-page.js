@@ -168,6 +168,8 @@ const BlogPosts = styled.div`
 
 export const Template = ({
   title,
+  description,
+  ogImage,
   details,
   descriptions,
   category,
@@ -178,7 +180,7 @@ export const Template = ({
   blogPosts
 }) => {
   return (
-    <Layout>
+    <Layout head={{ title, description, ogImage }}>
       <Heading>{title}</Heading>
       <Container>
         <Categories>
@@ -237,6 +239,7 @@ export const Template = ({
 export default ({ data: { project, projects, blog } }) => (
   <Template
     {...project.frontmatter}
+    ogImage={project.frontmatter.ogImage.childImageSharp.fluid.src}
     firstImage={project.frontmatter.images[0].childImageSharp.fluid}
     images={project.frontmatter.images
       .slice(1)
@@ -263,6 +266,14 @@ export const query = graphql`
     project: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         details {
           attribute
           value

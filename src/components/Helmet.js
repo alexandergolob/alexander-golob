@@ -60,7 +60,7 @@ export default ({
             name='description'
             content={
               description
-                ? `${description}\n${siteDescription}`
+                ? `${description} ${siteDescription}`
                 : siteDescription
             }
           />
@@ -86,7 +86,7 @@ export default ({
             property='og:description'
             content={
               description
-                ? `${description}\n${siteDescription}`
+                ? `${description} ${siteDescription}`
                 : siteDescription
             }
           />

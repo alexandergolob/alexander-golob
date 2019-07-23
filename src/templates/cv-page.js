@@ -136,8 +136,16 @@ const FinalCTA = styled(UnstyledFinalCTA)`
   ${media.mobile`width: 100%; padding: 0.25em 1em;`}
 `;
 
-export const CVPageTemplate = ({ heading, links, CVButton, CV }) => (
-  <Layout>
+export const CVPageTemplate = ({
+  title,
+  description,
+  ogImage,
+  heading,
+  links,
+  CVButton,
+  CV
+}) => (
+  <Layout head={{ title, description, ogImage }}>
     <Header heading={heading} pageLinks={links} />
 
     <CVDownloadContainer>
@@ -184,13 +192,25 @@ export const CVPageTemplate = ({ heading, links, CVButton, CV }) => (
 );
 
 export default ({ data }) => (
-  <CVPageTemplate {...data.markdownRemark.frontmatter} />
+  <CVPageTemplate
+    {...data.markdownRemark.frontmatter}
+    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+  />
 );
 
 export const query = graphql`
   query($id: String!) {
     markdownRemark(id: { eq: $id }) {
       frontmatter {
+        title
+        description
+        ogImage {
+          childImageSharp {
+            fluid(maxWidth: 250, maxHeight: 250) {
+              src
+            }
+          }
+        }
         heading
         links {
           content

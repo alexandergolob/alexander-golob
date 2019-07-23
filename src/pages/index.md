@@ -1,4 +1,7 @@
 ---
+title: Art for the community
+description: Lorem ipsum
+ogImage: /assets/starry-night.jpg
 carouselImages:
   - description: 'Kaleidoscope, Boston, MA'
     image: /assets/kaleidoscope.webp

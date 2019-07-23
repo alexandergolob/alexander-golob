@@ -97,7 +97,7 @@ export const Template = ({
   body,
   pagination
 }) => (
-  <Layout head={{ title, description, ogImage }}>
+  <Layout head={{ title, description, ogImage, ogType: 'blog' }}>
     <Wrapper>
       <Header>
         <HeaderImg alt='' fluid={headerImage} />

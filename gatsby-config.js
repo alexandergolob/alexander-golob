@@ -14,6 +14,13 @@ module.exports = {
         modulePath: `${__dirname}/src/cms/cms.js`
       }
     },
+    'gatsby-plugin-robots-txt',
+    {
+      resolve: 'gatsby-plugin-sitemap',
+      options: {
+        exclude: ['/admin/*']
+      }
+    },
     'gatsby-plugin-react-helmet',
     'gatsby-plugin-styled-components',
     {
@@ -78,6 +85,8 @@ module.exports = {
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_TRACKING_ID
       }
-    }
+    },
+    'gatsby-plugin-offline',
+    'gatsby-plugin-netlify-headers'
   ]
 };

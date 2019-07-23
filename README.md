@@ -32,15 +32,15 @@
 
 # Broad tasks outside of main component development
 
-- Head/SEO module
-- Partitioning images that don't need to be in assets folder
-- Ensure correct alt tags for images
-- role tags where appropriate
-- CMS interface
-- CMS previews
-- sitemap
-- robots.txt
-- PWA functionality
+- [x] Head/SEO module
+- [ ] Partitioning images that don't need to be in assets folder
+- [ ] Ensure correct alt tags for images
+- [ ] role tags where appropriate
+- [ ] CMS interface
+- [ ] CMS previews
+- [x] sitemap
+- [x] robots.txt
+- [ ] PWA functionality
 
 # Aspirational features
 

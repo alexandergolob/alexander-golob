@@ -12,7 +12,7 @@ links:
     path: /cv
 CVButton:
   content: DOWNLOAD C.V.
-  filename: /kaz-baig-resume.pdf
+  filename: /assets/kaz-baig-resume.pdf
 CV:
   image: /assets/pokecity.webp
   name: Alexander Golob
@@ -48,9 +48,8 @@ CV:
             - 'Rhett the Destroyer, Boston, MA'
           year: 2016
         - bulletPoints:
-            - 'Insider''s Guide to Venezia, Venice, Italy'
+            - "Insider's Guide to Venezia, Venice, Italy"
           year: 2015
       title: Group Exhibitions
   title: Golob Art
 ---
-

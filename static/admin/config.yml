@@ -340,6 +340,100 @@ collections:
       - { name: tags, label: Tags, widget: list }
       - { name: body, label: body, widget: markdown }
 
+  - name: projectCategories
+    label: Project Categories
+    folder: src/pages/project-categories
+    fields:
+      - { name: templateKey, widget: hidden, default: project-category }
+      - { name: title, label: Title, widget: string, required: true }
+      - {
+          name: description,
+          label: Description,
+          widget: string,
+          required: false,
+        }
+      - { name: ogImage, label: Social Image, required: false, widget: image }
+      - { name: path, label: Path, widget: string }
+      - { name: hero, label: Hero, widget: string }
+      - name: subcategorySections
+        label: Subcategory Sections
+        widget: list
+        fields:
+          - { name: subcategory, label: Subcategory, widget: string }
+          - { name: md_description, label: Description, widget: markdown }
+          - { name: linkContent, label: Link Content, widget: string }
+          - { name: image, label: Image, widget: image }
+
+  - name: projectSubategories
+    label: Project Subcategories
+    folder: src/pages/project-subcategories
+    fields:
+      - { name: templateKey, widget: hidden, default: project-subcategory }
+      - { name: title, label: Title, widget: string, required: true }
+      - {
+          name: description,
+          label: Description,
+          widget: string,
+          required: false,
+        }
+      - { name: ogImage, label: Social Image, required: false, widget: image }
+      - { name: path, label: Path, widget: string }
+      - { name: category, label: Category, widget: string }
+      - { name: hero, label: Hero, widget: string }
+      - name: CTA
+        label: CTA
+        widget: object
+        fields:
+          - { name: path, label: Path, widget: string }
+          - { name: statement, label: Statement, widget: string }
+          - { name: statementAbove, label: Statement Above, widget: string }
+      - { name: body, label: body, widget: markdown }
+
+  - name: projects
+    label: Projects
+    folder: src/pages/projects
+    fields:
+      - { name: templateKey, widget: hidden, default: project-page }
+      - { name: title, label: Title, widget: string, required: true }
+      - {
+          name: description,
+          label: Description,
+          widget: string,
+          required: false,
+        }
+      - { name: ogImage, label: Social Image, required: false, widget: image }
+      - { name: date, label: Date, widget: date }
+      - { name: path, label: Path, widget: string }
+      - { name: category, label: Category, widget: string }
+      - { name: subcategories, label: Subcategories, widget: list }
+      - {
+          name: isFeatured,
+          label: Featured Post,
+          widget: boolean,
+          default: false,
+        }
+      - name: details
+        label: Details
+        widget: list
+        fields:
+          - { name: attribute, label: Attribute, widget: string }
+          - { name: value, label: Value, widget: string }
+      - name: descriptions
+        label: Descriptions
+        widget: list
+        fields:
+          - {
+              name: startingRow,
+              label: Starting Row,
+              widget: number,
+              valueType: int,
+            }
+          - { name: md_content, label: Content, widget: markdown }
+      - name: images
+        label: Images
+        widget: list
+        field: { name: image, label: Image, widget: image }
+
   - name: siteSettings
     label: Site Settings
     delete: false
@@ -448,126 +542,3 @@ collections:
               - { name: content, label: Content, widget: string }
               - { name: external, label: External, widget: boolean }
               - { name: path, label: Path, widget: string }
-  # - name: projectCategories
-  #   label: Project Categories
-  #   folder: src/pages/project-categories
-  #   fields:
-  #     - { name: templateKey, widget: hidden, default: project-category }
-  #     - { name: title, label: Title, widget: string }
-  #     - name: subheadings
-  #       label: Subheading
-  #       widget: object
-  #       fields:
-  #         - { name: subheading1, label: Subheading 1, widget: string }
-  #         - { name: subheading2, label: Subheading 2, widget: string }
-  #         - { name: subheading3, label: Subheading 3, widget: string }
-  #         - { name: subheading4, label: Subheading 4, widget: string }
-  #     - name: descriptions
-  #       label: Descriptions
-  #       widget: object
-  #       fields:
-  #         - name: description1
-  #           label: Description 1
-  #           widget: object
-  #           fields:
-  #             - { name: heading, label: Heading, widget: string }
-  #             - { name: content, label: Content, widget: markdown }
-  #             - { name: image, label: Image, widget: image }
-  #         - name: description2
-  #           label: Description 2
-  #           widget: object
-  #           fields:
-  #             - { name: heading, label: Heading, widget: string }
-  #             - { name: content, label: Content, widget: markdown }
-  #             - { name: image, label: Image, widget: image }
-  #         - name: description3
-  #           label: Description 3
-  #           widget: object
-  #           fields:
-  #             - { name: heading, label: Heading, widget: string }
-  #             - { name: content, label: Content, widget: markdown }
-  #             - { name: image, label: Image, widget: image }
-  # - name: project-subcategories
-  #   label: Project Subcategories
-  #   folder: src/pages/project-subcategories
-  #   create: true
-  #   delete: true
-  #   fields:
-  #     - { name: templateKey, widget: hidden, default: project-subcategory }
-  #     - { name: title, label: Title, widget: string }
-  #     - name: category
-  #       label: Category
-  #       widget: select
-  #       options:
-  #         - { label: Art, value: art }
-  #         - { label: Engagements, value: engagements }
-  #         - { label: Consulting, value: consulting }
-  #         - { label: Special Projects, value: specialProjects }
-  #     - { name: body, label: Description Body, widget: markdown }
-  #     - name: cta
-  #       label: CTA
-  #       widget: object
-  #       fields:
-  #         - { name: statementAbove, label: Statement Above CTA, widget: string }
-  #         - { name: statement, label: CTA Statement, widget: string }
-  #         - { name: path, label: Path, widget: string }
-  # - name: projects
-  #   label: Projects
-  #   folder: src/pages/projects
-  #   create: true
-  #   delete: true
-  #   slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-  #   fields:
-  #     - { name: title, label: Title, widget: string }
-  #     - {
-  #         name: type,
-  #         label: Type,
-  #         widget: select,
-  #         options: ['Art', 'Engagement', 'Consulting', 'Special Project'],
-  #         multiple: true,
-  #       }
-  #     - { name: description, label: Description, widget: markdown }
-  # - name: art-project
-  #   label: Art Project
-  #   folder: src/pages/projects
-  #   filter: { field: type, value: Art }
-  #   create: true
-  #   delete: true
-  #   slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-  #   fields:
-  #     - { name: title, label: Title, widget: string }
-  #     - { name: type, label: Type, widget: hidden, default: Art }
-  #     - { name: description, label: Description, widget: markdown }
-  # - name: engagement-project
-  #   label: Engagement
-  #   folder: src/pages/projects
-  #   filter: { field: type, value: Engagement }
-  #   create: true
-  #   delete: true
-  #   slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-  #   fields:
-  #     - { name: title, label: Title, widget: string }
-  #     - { name: type, label: Type, widget: hidden, default: Engagement }
-  #     - { name: description, label: Description, widget: markdown }
-  # - name: consulting-project
-  #   label: Consulting Project
-  #   folder: src/pages/projects
-  #   filter: { field: type, value: Consulting }
-  #   create: true
-  #   delete: true
-  #   slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-  #   fields:
-  #     - { name: title, label: Title, widget: string }
-  #     - { name: type, label: Type, widget: hidden, default: Consulting }
-  #     - { name: description, label: Description, widget: markdown }
-  # - name: special-project
-  #   label: Special Project
-  #   folder: src/pages/projects
-  #   filter: { field: type, value: Special Project }
-  #   create: true
-  #   delete: true
-  #   slug: '{{year}}-{{month}}-{{day}}_{{slug}}'
-  #   fields:
-  #     - { name: title, label: Title, widget: string }
-  #     - { name: type, label: Type, widget: hidden, default: Special Project }
-  #     - { name: description, label: Description, widget: markdown }

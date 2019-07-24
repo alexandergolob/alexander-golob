@@ -14,13 +14,18 @@ collections:
         name: home
         file: src/pages/index.md
         fields:
-          - { name: title, label: Title, required: false }
-          - { name: description, label: Description, required: false }
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
           - {
               name: ogImage,
               label: Social Image,
-              required: false,
               widget: image,
+              required: false,
             }
           - name: carouselImages
             label: Carousel Image
@@ -33,7 +38,7 @@ collections:
                 widget: object
                 fields:
                   - { name: external, label: External, widget: boolean }
-                  - { name: path, label: Path }
+                  - { name: path, label: Path, widget: string }
           - { name: heroStatement, label: Hero Statement, widget: string }
           - name: CTAs
             label: CTAs
@@ -43,80 +48,216 @@ collections:
                 label: Left CTA
                 widget: object
                 fields:
-                  - { name: content, label: content }
+                  - { name: content, label: content, widget: string }
                   - { name: external, label: External, widget: boolean }
-                  - { name: path, label: Path }
+                  - { name: path, label: Path, widget: string }
               - name: rightCTA
                 label: Right CTA
                 widget: object
                 fields:
-                  - { name: content, label: content }
+                  - { name: content, label: content, widget: string }
                   - { name: external, label: External, widget: boolean }
-                  - { name: path, label: Path }
+                  - { name: path, label: Path, widget: string }
               - name: offCenterCTA
                 label: Off Center CTA
                 widget: object
                 fields:
-                  - { name: content, label: content }
+                  - { name: content, label: content, widget: string }
                   - { name: external, label: External, widget: boolean }
-                  - { name: path, label: Path }
+                  - { name: path, label: Path, widget: string }
 
       - label: About
         name: about
         file: src/pages/about.md
         fields:
-          - { name: title, label: Title, required: false }
-          - { name: description, label: Description, required: false }
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
           - {
               name: ogImage,
               label: Social Image,
               required: false,
               widget: image,
             }
-          - { name: heading, label: Heading }
+          - { name: heading, label: Heading, widget: string }
           - name: links
             Label: Links
             widget: list
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
-          - name: section1
-            label: Section 1
+          - name: companyDescription
+            label: Company Description
             widget: object
             fields:
               - { name: heading, label: Heading, widget: string }
-              - { name: content, label: Content, widget: markdown }
-          - name: section2
-            label: Section 2
-            widget: object
+              - { name: md_content, label: Content, widget: markdown }
+          - name: teamSection
+            label: Team Section
+            widget: list
             fields:
               - { name: heading, label: Heading, widget: string }
-              - name: headingCTA
-                label: Heading CTA
+              - name: CVLink
+                label: CV Link
                 widget: object
                 fields:
+                  - { name: show, label: Show, widget: boolean, default: false }
                   - { name: content, label: Content, widget: string }
+                  - { name: external, label: External, widget: boolean }
                   - { name: path, label: Path, widget: string }
-              - { name: content, label: Content, widget: markdown }
-          - name: section3
-            label: Section 3
-            widget: object
-            fields:
-              - { name: heading, label: Heading, widget: string }
-              - name: headingCTA
-                label: Heading CTA
-                widget: object
-                fields:
-                  - { name: content, label: Content, widget: string }
-                  - { name: path, label: Path, widget: string }
-              - { name: content, label: Content, widget: markdown }
-          - { name: image1, label: Image 1, widget: image }
-          - { name: image2, label: Image 2, widget: image }
+              - { name: image, label: Image, widget: image }
+              - { name: contentHeading, label: Content Heading, widget: string }
+              - { name: md_content, label: Content, widget: markdown }
 
-      - label: Subscribe
-        name: subscribe
-        file: src/pages/subscribe.md
+      - label: Portfolio
+        name: portfolio
+        file: src/pages/portfolio.md
         fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
+          - { name: heading, label: Heading, widget: string }
+
+      - label: Blog
+        name: blog
+        file: src/pages/blog.md
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+
+      - label: Tags
+        name: tags
+        file: src/pages/tags.md
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
+
+      - label: CV
+        name: cv
+        file: src/pages/cv.md
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
+          - { name: heading, label: Heading, widget: string }
+          - name: links
+            Label: Links
+            widget: list
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: path, label: Path, widget: string }
+          - name: CVButton
+            label: CV Button
+            widget: object
+            fields:
+              - { name: content, label: Content, widget: string }
+              - {
+                  name: filename,
+                  label: File,
+                  widget: file,
+                  allow_multiple: false,
+                }
+          - name: CV
+            label: CV
+            widget: object
+            fields:
+              - { name: title, label: Title, widget: string }
+              - { name: name, label: Name, widget: string }
+              - name: personalDetails
+                label: Personal Details
+                widget: list
+                field: { name: detail, label: Detail, widget: string }
+              - { name: image, label: Image, widget: image }
+              - name: sections
+                label: Sections
+                widget: list
+                fields:
+                  - { name: title, label: Title, widget: string }
+                  - name: items
+                    label: Items
+                    widget: list
+                    fields:
+                      - { name: year, label: Year, widget: string }
+                      - name: bulletPoints
+                        label: Bullet Points
+                        widget: list
+                        field:
+                          {
+                            name: bulletPoint,
+                            label: Bullet Point,
+                            widget: string,
+                          }
+
+      - label: Contact
+        name: contact
+        file: src/pages/contact.md
+        fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
           - { name: heading, label: Heading, widget: string }
           - name: links
             Label: Links
@@ -127,10 +268,23 @@ collections:
           - { name: statement, label: Statement, widget: string }
           - { name: image, label: Image, widget: image }
 
-      - label: Press
-        name: press
-        file: src/pages/press.md
+      - label: Subscribe
+        name: subscribe
+        file: src/pages/subscribe.md
         fields:
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
           - { name: heading, label: Heading, widget: string }
           - name: links
             Label: Links
@@ -138,104 +292,95 @@ collections:
             fields:
               - { name: content, label: Content, widget: string }
               - { name: path, label: Path, widget: string }
+          - { name: statement, label: Statement, widget: string }
           - { name: image, label: Image, widget: image }
 
-      - label: Blog
-        name: blog
-        file: src/pages/blog.md
+      - label: '404'
+        name: '404'
+        file: src/pages/404.md
         fields:
-          - { name: heading, label: Heading, widget: string }
-          - name: links
-            Label: Links
-            widget: list
-            fields:
-              - { name: content, label: Content, widget: string }
-              - { name: path, label: Path, widget: string }
-
-      - label: Contact
-        name: contact
-        file: src/pages/contact.md
-        fields:
-          - { name: heading, label: Heading, widget: string }
-          - name: links
-            Label: Links
-            widget: list
-            fields:
-              - { name: content, label: Content, widget: string }
-              - { name: path, label: Path, widget: string }
-          - { name: statement, label: statement, widget: string }
+          - { name: title, label: Title, widget: string, required: false }
+          - {
+              name: description,
+              label: Description,
+              widget: string,
+              required: false,
+            }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
+          - { name: message, label: Message, widget: string }
+          - { name: subtitle, label: Subtitle, widget: string }
+          - { name: preImage, label: Pre Image Statement, widget: string }
           - { name: image, label: Image, widget: image }
-
-      - label: Portfolio
-        name: portfolio
-        file: src/pages/portfolio.md
-        fields:
-          - { name: heading, label: Heading, widget: string }
-
-  - name: projectCategories
-    label: Project Categories
-    folder: src/pages/project-categories
-    fields:
-      - { name: templateKey, widget: hidden, default: project-category }
-      - { name: title, label: Title, widget: string }
-      - name: subheadings
-        label: Subheading
-        widget: object
-        fields:
-          - { name: subheading1, label: Subheading 1, widget: string }
-          - { name: subheading2, label: Subheading 2, widget: string }
-          - { name: subheading3, label: Subheading 3, widget: string }
-          - { name: subheading4, label: Subheading 4, widget: string }
-      - name: descriptions
-        label: Descriptions
-        widget: object
-        fields:
-          - name: description1
-            label: Description 1
-            widget: object
-            fields:
-              - { name: heading, label: Heading, widget: string }
-              - { name: content, label: Content, widget: markdown }
-              - { name: image, label: Image, widget: image }
-          - name: description2
-            label: Description 2
-            widget: object
-            fields:
-              - { name: heading, label: Heading, widget: string }
-              - { name: content, label: Content, widget: markdown }
-              - { name: image, label: Image, widget: image }
-          - name: description3
-            label: Description 3
-            widget: object
-            fields:
-              - { name: heading, label: Heading, widget: string }
-              - { name: content, label: Content, widget: markdown }
-              - { name: image, label: Image, widget: image }
-
-  - name: project-subcategories
-    label: Project Subcategories
-    folder: src/pages/project-subcategories
-    create: true
-    delete: true
-    fields:
-      - { name: templateKey, widget: hidden, default: project-subcategory }
-      - { name: title, label: Title, widget: string }
-      - name: category
-        label: Category
-        widget: select
-        options:
-          - { label: Art, value: art }
-          - { label: Engagements, value: engagements }
-          - { label: Consulting, value: consulting }
-          - { label: Special Projects, value: specialProjects }
-      - { name: body, label: Description Body, widget: markdown }
-      - name: cta
-        label: CTA
-        widget: object
-        fields:
-          - { name: statementAbove, label: Statement Above CTA, widget: string }
-          - { name: statement, label: CTA Statement, widget: string }
-          - { name: path, label: Path, widget: string }
+          - { name: preLink, label: Pre Link Statement, widget: string }
+          - { name: preContact, label: Pre Contact Statement, widget: string }
+  # - name: projectCategories
+  #   label: Project Categories
+  #   folder: src/pages/project-categories
+  #   fields:
+  #     - { name: templateKey, widget: hidden, default: project-category }
+  #     - { name: title, label: Title, widget: string }
+  #     - name: subheadings
+  #       label: Subheading
+  #       widget: object
+  #       fields:
+  #         - { name: subheading1, label: Subheading 1, widget: string }
+  #         - { name: subheading2, label: Subheading 2, widget: string }
+  #         - { name: subheading3, label: Subheading 3, widget: string }
+  #         - { name: subheading4, label: Subheading 4, widget: string }
+  #     - name: descriptions
+  #       label: Descriptions
+  #       widget: object
+  #       fields:
+  #         - name: description1
+  #           label: Description 1
+  #           widget: object
+  #           fields:
+  #             - { name: heading, label: Heading, widget: string }
+  #             - { name: content, label: Content, widget: markdown }
+  #             - { name: image, label: Image, widget: image }
+  #         - name: description2
+  #           label: Description 2
+  #           widget: object
+  #           fields:
+  #             - { name: heading, label: Heading, widget: string }
+  #             - { name: content, label: Content, widget: markdown }
+  #             - { name: image, label: Image, widget: image }
+  #         - name: description3
+  #           label: Description 3
+  #           widget: object
+  #           fields:
+  #             - { name: heading, label: Heading, widget: string }
+  #             - { name: content, label: Content, widget: markdown }
+  #             - { name: image, label: Image, widget: image }
+  # - name: project-subcategories
+  #   label: Project Subcategories
+  #   folder: src/pages/project-subcategories
+  #   create: true
+  #   delete: true
+  #   fields:
+  #     - { name: templateKey, widget: hidden, default: project-subcategory }
+  #     - { name: title, label: Title, widget: string }
+  #     - name: category
+  #       label: Category
+  #       widget: select
+  #       options:
+  #         - { label: Art, value: art }
+  #         - { label: Engagements, value: engagements }
+  #         - { label: Consulting, value: consulting }
+  #         - { label: Special Projects, value: specialProjects }
+  #     - { name: body, label: Description Body, widget: markdown }
+  #     - name: cta
+  #       label: CTA
+  #       widget: object
+  #       fields:
+  #         - { name: statementAbove, label: Statement Above CTA, widget: string }
+  #         - { name: statement, label: CTA Statement, widget: string }
+  #         - { name: path, label: Path, widget: string }
   # - name: settings
   #   label: Site Settings
   #   files:

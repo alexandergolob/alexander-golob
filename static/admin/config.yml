@@ -1,7 +1,6 @@
 backend:
   name: github
   repo: kbaig/alexander-golob
-  # name: test-repo
 
 media_folder: static/assets
 public_folder: assets
@@ -15,31 +14,66 @@ collections:
         name: home
         file: src/pages/index.md
         fields:
+          - { name: title, label: Title, required: false }
+          - { name: description, label: Description, required: false }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
           - name: carouselImages
             label: Carousel Image
             widget: list
             fields:
               - { name: image, label: Image, widget: image }
               - { name: description, label: Description, widget: string }
+              - name: link
+                label: Link
+                widget: object
+                fields:
+                  - { name: external, label: External, widget: boolean }
+                  - { name: path, label: Path }
           - { name: heroStatement, label: Hero Statement, widget: string }
-          - name: leftCta
-            label: Left CTA
+          - name: CTAs
+            label: CTAs
             widget: object
             fields:
-              - { name: content, label: Content, widget: string }
-              - { name: path, label: Path, widget: string }
-          - name: rightCta
-            label: Right CTA
-            widget: object
-            fields:
-              - { name: content, label: Content, widget: string }
-              - { name: path, label: Path, widget: string }
+              - name: leftCTA
+                label: Left CTA
+                widget: object
+                fields:
+                  - { name: content, label: content }
+                  - { name: external, label: External, widget: boolean }
+                  - { name: path, label: Path }
+              - name: rightCTA
+                label: Right CTA
+                widget: object
+                fields:
+                  - { name: content, label: content }
+                  - { name: external, label: External, widget: boolean }
+                  - { name: path, label: Path }
+              - name: offCenterCTA
+                label: Off Center CTA
+                widget: object
+                fields:
+                  - { name: content, label: content }
+                  - { name: external, label: External, widget: boolean }
+                  - { name: path, label: Path }
 
       - label: About
         name: about
         file: src/pages/about.md
         fields:
-          - { name: heading, label: Heading, widget: string }
+          - { name: title, label: Title, required: false }
+          - { name: description, label: Description, required: false }
+          - {
+              name: ogImage,
+              label: Social Image,
+              required: false,
+              widget: image,
+            }
+          - { name: heading, label: Heading }
           - name: links
             Label: Links
             widget: list

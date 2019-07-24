@@ -356,11 +356,98 @@ collections:
         fields:
           - { name: siteTitle, label: Site Title, widget: string }
           - { name: siteDescription, label: Site Description, widget: string }
-  # - name: sharedComponents
-  #   label: Shared Components
-  #   delete: false
-  #   files:
-  #     - name:
+
+  - name: sharedComponents
+    label: Shared Components
+    delete: false
+    files:
+      - name: socialLinks
+        label: Social Links
+        file: src/shared-components/social-links.md
+        fields:
+          - name: links
+            label: Links
+            widget: list
+            fields:
+              - {
+                  name: icon,
+                  label: Icon,
+                  widget: select,
+                  options: [Facebook, Instagram, Twitter, LinkedIn],
+                }
+              - { name: link, label: Link, widget: string }
+
+      - name: footer
+        label: Footer
+        file: src/shared-components/footer.md
+        fields:
+          - {
+              name: boldLeftStatement,
+              label: Bold Left Statement,
+              widget: string,
+            }
+          - name: middleStatement
+            label: Middle Statement
+            widget: object
+            fields:
+              - { name: img, label: Image, widget: image }
+              - { name: text, label: Text, widget: string }
+
+      - name: leftNav
+        label: Left Nav
+        file: src/shared-components/left-nav.md
+        fields:
+          - name: homeLogo
+            label: Home Logo
+            widget: object
+            fields:
+              - { name: logo, label: Logo, widget: image }
+              - { name: text, label: Text, widget: string }
+          - name: items
+            label: Items
+            widget: list
+            fields:
+              - { name: category, label: Category, widget: string }
+              - { name: path, label: Path, widget: string }
+              - name: subitems
+                label: Subitems
+                widget: list
+                fields:
+                  - { name: subitem, label: Subitem, widget: string }
+                  - { name: path, label: Path, widget: string }
+
+      - name: rightNav
+        label: Right Nav
+        file: src/shared-components/right-nav.md
+        fields:
+          - { name: secondaryLogo, label: Secondary Logo, widget: image }
+          - name: items
+            label: Items
+            widget: list
+            fields:
+              - { name: category, label: Category, widget: string }
+              - { name: path, label: Path, widget: string }
+
+      - name: finalCta
+        label: Final CTA
+        file: src/shared-components/final-cta.md
+        fields:
+          - { name: content, label: Content, widget: string }
+          - { name: external, label: External, widget: boolean }
+          - { name: path, label: Path, widget: string }
+
+      - name: supportCTA
+        label: Support CTA
+        file: src/shared-components/support-cta.md
+        fields:
+          - { name: outerContent, label: Outer Content, widget: string }
+          - name: link
+            label: Link
+            widget: object
+            fields:
+              - { name: content, label: Content, widget: string }
+              - { name: external, label: External, widget: boolean }
+              - { name: path, label: Path, widget: string }
   # - name: projectCategories
   #   label: Project Categories
   #   folder: src/pages/project-categories
@@ -424,83 +511,6 @@ collections:
   #         - { name: statementAbove, label: Statement Above CTA, widget: string }
   #         - { name: statement, label: CTA Statement, widget: string }
   #         - { name: path, label: Path, widget: string }
-  # - name: settings
-  #   label: Site Settings
-  #   files:
-  #     - name: left-nav
-  #       label: Left Navigation Bar
-  #       file: src/settings/left-nav.md
-  #       fields:
-  #         - name: key
-  #           label: key
-  #           widget: hidden
-  #           default: left-nav
-  #         - name: items
-  #           label: Items
-  #           widget: list
-  #           fields:
-  #             - { name: category, label: Category, widget: string }
-  #             - { name: path, label: Path, widget: string }
-  #             - name: subitems
-  #               label: SubItems
-  #               widget: list
-  #               fields:
-  #                 [
-  #                   { name: subitem, label: SubItem, widget: string },
-  #                   { name: path, label: Path, widget: string },
-  #                 ]
-  #     - name: right-nav
-  #       label: Right Navigation Bar
-  #       file: src/settings/right-nav.md
-  #       fields:
-  #         - name: key
-  #           label: key
-  #           widget: hidden
-  #           default: right-nav
-  #         - name: items
-  #           label: Items
-  #           widget: list
-  #           fields:
-  #             - { name: category, label: Category, widget: string }
-  #             - { name: path, label: Path, widget: string }
-  #     - name: social-links
-  #       label: Social Links
-  #       file: src/settings/social-links.md
-  #       fields:
-  #         - name: key
-  #           label: key
-  #           widget: hidden
-  #           default: social-links
-  #         - name: links
-  #           label: Social Links
-  #           widget: list
-  #           fields:
-  #             - {
-  #                 name: icon,
-  #                 label: Icon,
-  #                 widget: select,
-  #                 options: [Facebook, Instagram, LinkedIn, Twitter],
-  #               }
-  #             - { name: link, label: Link, widget: string }
-  #     - name: footer
-  #       label: Footer
-  #       file: src/settings/footer.md
-  #       fields:
-  #         - name: key
-  #           label: key
-  #           widget: hidden
-  #           default: footer
-  #         - {
-  #             name: bold_left_statement,
-  #             label: Bold Left Statement,
-  #             widget: string,
-  #           }
-  #         - name: middle_statement
-  #           label: Middle Statement
-  #           widget: object
-  #           fields:
-  #             - { name: img, label: Image, widget: image }
-  #             - { name: text, label: Text, widget: string }
   # - name: projects
   #   label: Projects
   #   folder: src/pages/projects

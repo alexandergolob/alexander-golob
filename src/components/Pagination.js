@@ -4,6 +4,8 @@ import styled from 'styled-components';
 import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
+import LightMarble from '../components/LightMarble';
+
 const Container = styled.div`
   display: flex;
   font-family: ${props => props.theme.fonts.serif};
@@ -14,17 +16,19 @@ const UnstyledLink = ({ isCurrent, hideOnSmallScreens, ...rest }) => (
   <InternalLink {...rest} />
 );
 
-const Link = styled(UnstyledLink)`
+const Link = styled(({ children, ...rest }) => (
+  <UnstyledLink {...rest}>
+    <LightMarble />
+    {children}
+  </UnstyledLink>
+))`
+  position: relative;
   margin-right: 0.2em;
   :last-of-type {
     margin-right: 0;
   }
 
   border: ${props => props.theme.misc.frameBorder};
-  background: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 2px 4px;
 
   font-weight: ${props => (props.isCurrent ? 600 : 400)};

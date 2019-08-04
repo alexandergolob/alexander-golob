@@ -5,6 +5,8 @@ import Image from 'gatsby-image';
 import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
+import LightMarble from '../components/LightMarble';
+
 const Container = styled.section`
   display: flex;
   justify-content: space-between;
@@ -39,12 +41,9 @@ const TextContainer = styled.div`
 `;
 
 const Title = styled.h2`
+  position: relative;
   margin-bottom: 0.25em;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 10px;
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
@@ -112,7 +111,10 @@ export default ({
     <PostImage fluid={image} />
 
     <TextContainer>
-      <Title>{title}</Title>
+      <Title>
+        <LightMarble />
+        {title}
+      </Title>
       <Body>
         {subtitle && <Subtitle>{subtitle}</Subtitle>}
         <AuthorAndDate>

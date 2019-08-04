@@ -17,7 +17,6 @@
 - [x] 404
 - [x] project
 - [x] cv
-- special (?) - pending designs
 
 # Components
 
@@ -26,7 +25,7 @@
 - Social icons - pending review
 - Graffiti - pending review
   - need to think about this a bit more
-- Subscription widget - pending review
+- [x] Subscription widget
 - Navs
 - Right nav scroll component
 
@@ -34,6 +33,20 @@
 
 - [x] Head/SEO module
 - [ ] Partitioning images that don't need to be in assets folder
+  - [x] index
+  - [x] about
+  - [ ] blog
+  - [ ] blog post
+  - [ ] contact
+  - [ ] suibscribe
+  - [ ] project category
+  - [ ] project subcategory
+  - [ ] portfolio
+  - [ ] tags
+  - [ ] tag
+  - [ ] 404
+  - [ ] project
+  - [ ] cv
 - [ ] Ensure correct alt tags for images
 - [ ] role tags where appropriate
 - [ ] CMS interface

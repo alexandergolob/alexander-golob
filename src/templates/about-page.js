@@ -10,14 +10,14 @@ import Link from '../components/Link';
 import ExpandableContent from '../components/ExpandableContent';
 import FinalCTA from '../components/FinalCTA';
 
+import LightMarble from '../components/LightMarble';
+import GreenMarble from '../components/GreenMarble';
+
 const Section = styled.section``;
 
 const Heading = styled.h2`
+  position: relative;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 8px 10px;
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
@@ -90,12 +90,9 @@ const TeamHeading = styled.h2`
 `;
 
 const TeamLink = styled(Link)`
+  position: relative;
   min-width: 75px;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/empty-square-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 2px 10px;
   text-align: center;
   font-size: 0.75em;
@@ -134,7 +131,10 @@ export const AboutPageTemplate = ({
     <Header heading={heading} pageLinks={links} />
 
     <MainSection>
-      <Heading>{companyDescription.heading}</Heading>
+      <Heading>
+        <LightMarble />
+        {companyDescription.heading}
+      </Heading>
       <MainContent
         dangerouslySetInnerHTML={{ __html: companyDescription.content }}
       />
@@ -146,9 +146,13 @@ export const AboutPageTemplate = ({
           <TeamMember key={i}>
             <TeamMemberDescription>
               <TeamHeadingContainer>
-                <TeamHeading>{heading}</TeamHeading>
+                <TeamHeading>
+                  <LightMarble />
+                  {heading}
+                </TeamHeading>
                 {CVLink.show && (
                   <TeamLink external={CVLink.external} path={CVLink.path}>
+                    <GreenMarble />
                     {CVLink.content}
                   </TeamLink>
                 )}

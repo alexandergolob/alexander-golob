@@ -57,6 +57,7 @@ const RecentStories = styled(RecentPosts)`
 
 const Tags = styled(PostTags)`
   grid-area: Tags;
+
   margin: 0.25em 0;
 
   ${media.mobile`margin-bottom: 0.5em;`}

@@ -4,12 +4,11 @@ import styled from 'styled-components';
 import { media } from './ThemeProvider';
 import PostShareIcons from './PostShareIcons';
 
+import LightMarble from './LightMarble';
+
 const Container = styled.div`
+  position: relative;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 10px 20px 10px 30px;
   display: flex;
   justify-content: space-between;
@@ -33,6 +32,7 @@ const ShareIcons = styled(PostShareIcons)`
 
 export default ({ children, ...rest }) => (
   <Container {...rest}>
+    <LightMarble />
     <Heading>{children}</Heading>
     <ShareIcons />
   </Container>

@@ -4,15 +4,14 @@ import styled from 'styled-components';
 import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
+import LightMarble from './LightMarble';
+
 const Container = styled.div``;
 
 const Tags = styled.div`
+  position: relative;
   border: ${props => props.theme.misc.frameBorder};
   display: inline-block;
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 8px;
   padding-right: 60px;
   font-family: ${props => props.theme.fonts.serif};
@@ -29,6 +28,7 @@ const Separator = styled.span.attrs({ children: '//' })`
 export default ({ tags, ...rest }) => (
   <Container>
     <Tags {...rest}>
+      <LightMarble />
       {tags.reduce((acc, { path, content }, i) => {
         if (i < tags.length - 1) {
           return [

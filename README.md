@@ -35,8 +35,8 @@
 - [ ] Partitioning images that don't need to be in assets folder
   - [x] index
   - [x] about
-  - [ ] blog
-  - [ ] blog post
+  - [x] blog
+  - [x] blog post
   - [ ] contact
   - [ ] suibscribe
   - [ ] project category

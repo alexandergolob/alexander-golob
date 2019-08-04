@@ -9,12 +9,11 @@ import {
 import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
+import LightMarble from './LightMarble';
+
 const Container = styled.div`
+  position: relative;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 10px;
   font-family: ${props => props.theme.fonts.serif};
 `;
@@ -64,6 +63,7 @@ const RightArrows = styled.div`
 
 export default ({ prev, next, ...rest }) => (
   <Container {...rest}>
+    <LightMarble />
     <Heading>Recent Stories</Heading>
     <LinkContainer>
       {prev && (

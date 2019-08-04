@@ -7,6 +7,8 @@ import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import Header from '../components/PageHeader';
 
+import GreenMarble from '../components/GreenMarble';
+
 const FormAndBanner = styled.section`
   margin-top: 2em;
   display: flex;
@@ -97,15 +99,15 @@ const Message = styled(Field)`
 
 const Submit = styled.button`
   grid-area: Submit;
+  position: relative;
+  z-index: 1;
   margin-top: 0.5em;
   margin-right: 2em;
   cursor: pointer;
   padding: 4px 8px;
   border: 1px solid #000;
-  background-image: url('/assets/empty-square-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: none;
+
   font-family: ${props => props.theme.fonts.serif};
   font-size: 1.5rem;
   font-weight: 600;
@@ -193,7 +195,10 @@ export const ContactPageTemplate = ({
           <Label>MESSAGE</Label>
           <Textarea name='message' />
         </Message>
-        <Submit>SUBMIT</Submit>
+        <Submit>
+          <GreenMarble />
+          SUBMIT
+        </Submit>
       </Form>
 
       <Banner>

@@ -231,7 +231,7 @@ export const SubscribePageTemplate = ({
     >
       {({ isSubmitting, status }) => (
         <Form>
-          <Image fluid={image} />
+          <Image fluid={image} alt='' />
 
           <Fields>
             <Email>

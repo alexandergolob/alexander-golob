@@ -92,9 +92,9 @@ const CardContainer = styled.div`
   position: relative;
 `;
 
-const Card = ({ image, description, count }) => (
+const Card = ({ image, alt, description, count }) => (
   <CardContainer>
-    <Img fluid={image} alt='' />
+    <Img fluid={image} alt={alt} />
     <ImgDescriptionContainer>
       <Description>{description}</Description>
       <Count>{count}</Count>
@@ -117,13 +117,8 @@ export default ({ images, ...rest }) => {
   return (
     <Container {...rest}>
       <Cards cardCount={images.length} index={index}>
-        {images.map(({ image, description }, i) => (
-          <Card
-            key={i}
-            image={image}
-            description={description}
-            count={`${i + 1}/${images.length}`}
-          />
+        {images.map((img, i) => (
+          <Card key={i} {...img} count={`${i + 1}/${images.length}`} />
         ))}
       </Cards>
       <LeftCycleButton onClick={setPrevIndex}>

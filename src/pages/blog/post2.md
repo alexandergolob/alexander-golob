@@ -5,6 +5,7 @@ description: Lorem ipsum
 ogImage: /assets/starry-night.jpg
 date: 2018-04-02T04:34:23.774Z
 headerImage: /assets/kaleidoscope.webp
+alt: a
 author: Khizer Baig
 path: /post-2
 tags:

@@ -125,7 +125,7 @@ export default ({ data: { subcategory, projects } }) => (
     subcategoryDescription={subcategory.html}
     projects={projects.edges.map(({ node }) => ({
       ...node.frontmatter,
-      image: node.frontmatter.images[0].childImageSharp.fluid,
+      image: node.frontmatter.images[0].image.childImageSharp.fluid,
       path: node.fields.slug
     }))}
   />
@@ -168,9 +168,11 @@ export const query = graphql`
             title
             date
             images {
-              childImageSharp {
-                fluid(maxWidth: 225) {
-                  ...GatsbyImageSharpFluid
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 225) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }

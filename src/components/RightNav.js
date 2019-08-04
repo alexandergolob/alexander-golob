@@ -75,7 +75,7 @@ const EmptyMarbleSquare = styled.div`
 const RightNav = ({ secondaryLogo, items, ...rest }) => (
   <div {...rest}>
     <SecondaryLogoContainer>
-      <SecondaryLogo fixed={secondaryLogo} />
+      <SecondaryLogo fixed={secondaryLogo} alt='' />
     </SecondaryLogoContainer>
     <nav>
       <NavList>

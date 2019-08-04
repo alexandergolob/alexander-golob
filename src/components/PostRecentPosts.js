@@ -88,7 +88,7 @@ export default ({ heading, posts, ...rest }) => (
     <Posts>
       {posts.map(({ path, title, headerImage }, i) => (
         <Post key={i} to={path}>
-          <Thumbnail fluid={headerImage} />
+          <Thumbnail fluid={headerImage} alt='' />
           <Title>{title}</Title>
         </Post>
       ))}

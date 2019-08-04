@@ -33,6 +33,7 @@ teamSection:
       external: false
       path: /cv
     image: /assets/kaleidoscope.webp
+    alt: Alexander
     contentHeading: President and Lead Artist
     md_content: >-
       Alexander Golob has experience engaging with communities, conducting
@@ -61,6 +62,7 @@ teamSection:
       external: true
       path: https://linkedin.com/in/kmbaig
     image: /assets/pokecity.webp
+    alt: Khizer
     contentHeading: Developer and All-Around Badass
     md_content: >-
       Alexander Golob has experience engaging with communities, conducting

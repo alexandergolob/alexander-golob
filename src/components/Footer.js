@@ -124,7 +124,7 @@ const Footer = ({ boldLeftStatement, middleStatement, ...rest }) => (
       </DevLink>
     </DevCredit>
     <Logo>
-      <LogoImg fluid={middleStatement.img} alt='' />
+      <LogoImg fluid={middleStatement.img} alt='logo' />
       {middleStatement.text}
     </Logo>
     <SocialIcons />

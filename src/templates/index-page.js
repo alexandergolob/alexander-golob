@@ -231,7 +231,7 @@ export const IndexPageTemplate = ({
         <InstagramThumbnailContainer>
           {instagramImages.map((fluid, i) => (
             <InstagramThumbnailLink key={i}>
-              <InstagramThumbnail fluid={fluid} />
+              <InstagramThumbnail fluid={fluid} alt='instagram post' />
             </InstagramThumbnailLink>
           ))}
         </InstagramThumbnailContainer>
@@ -284,6 +284,7 @@ export const query = graphql`
               }
             }
           }
+          alt
           link {
             external
             path

@@ -166,7 +166,7 @@ export const CVPageTemplate = ({
             ))}
           </PersonalDetails>
         </div>
-        <Photo fluid={CV.image.childImageSharp.fluid} />
+        <Photo fluid={CV.image.childImageSharp.fluid} alt={CV.alt} />
       </CVHeader>
 
       {CV.sections.map((section, i) => (
@@ -234,6 +234,7 @@ export const query = graphql`
               }
             }
           }
+          alt
           sections {
             title
             items {

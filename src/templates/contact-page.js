@@ -202,7 +202,7 @@ export const ContactPageTemplate = ({
       </Form>
 
       <Banner>
-        <BannerBG fluid={image} />
+        <BannerBG fluid={image} alt='' />
         <BannerText>{statement}</BannerText>
       </Banner>
     </FormAndBanner>

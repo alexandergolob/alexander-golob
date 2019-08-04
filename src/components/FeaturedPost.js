@@ -108,7 +108,7 @@ export default ({
   ...rest
 }) => (
   <Container {...rest}>
-    <PostImage fluid={image} />
+    <PostImage fluid={image} alt='' />
 
     <TextContainer>
       <Title>

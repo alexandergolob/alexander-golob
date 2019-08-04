@@ -165,7 +165,7 @@ export const Template = ({
       }
     >
       {subcategorySections.map(
-        ({ subcategory, description, image, linkContent, path }, i) => (
+        ({ subcategory, description, image, alt, linkContent, path }, i) => (
           <React.Fragment key={i}>
             <SubcategoryTitleAndDescription
               startingColumn={i % 2 === 0 ? 1 : 3}
@@ -180,7 +180,7 @@ export const Template = ({
               </SubcategoryDescriptionContainer>
             </SubcategoryTitleAndDescription>
             <SubcategoryImage
-              alt=''
+              alt={alt}
               fluid={image}
               startingColumn={i % 2 === 0 ? 2 : 1}
               sectionNumber={i}
@@ -212,7 +212,7 @@ export default ({ data: { category, subcategories, projects } }) => {
       )}
       projects={projects.edges.map(({ node }) => ({
         ...node.frontmatter,
-        image: node.frontmatter.images[0].childImageSharp.fluid,
+        image: node.frontmatter.images[0].image.childImageSharp.fluid,
         path: node.fields.slug
       }))}
     />
@@ -243,6 +243,7 @@ export const query = graphql`
               }
             }
           }
+          alt
         }
       }
       fields {
@@ -285,9 +286,11 @@ export const query = graphql`
             title
             date
             images {
-              childImageSharp {
-                fluid(maxWidth: 225) {
-                  ...GatsbyImageSharpFluid
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 225) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }

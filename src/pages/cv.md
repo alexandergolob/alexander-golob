@@ -15,6 +15,7 @@ CVButton:
   filename: /assets/kaz-baig-resume.pdf
 CV:
   image: /assets/pokecity.webp
+  alt: Alexander
   name: Alexander Golob
   personalDetails:
     - President and Artist

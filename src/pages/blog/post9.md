@@ -5,6 +5,7 @@ description: Lorem ipsum
 ogImage: /assets/starry-night.jpg
 date: 2015-04-02T04:34:23.774Z
 headerImage: /assets/kaleidoscope.webp
+alt: a
 subtitle: Take aways of patience, creativity, and inspiration after hours of work.
 author: Khizer Baig
 path: /post-9

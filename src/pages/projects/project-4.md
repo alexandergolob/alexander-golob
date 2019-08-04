@@ -43,11 +43,18 @@ descriptions:
 
       Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 images:
-  - /assets/kaleidoscope.webp
-  - /assets/starry-night.jpg
-  - /assets/starry-night.jpg
-  - /assets/kaleidoscope.webp
-  - /assets/starry-night.jpg
-  - /assets/starry-night.jpg
-  - /assets/kaleidoscope.webp
+  - image: /assets/kaleidoscope.webp
+    alt: a
+  - image: /assets/starry-night.jpg
+    alt: b
+  - image: /assets/starry-night.jpg
+    alt: c
+  - image: /assets/kaleidoscope.webp
+    alt: d
+  - image: /assets/starry-night.jpg
+    alt: e
+  - image: /assets/starry-night.jpg
+    alt: f
+  - image: /assets/kaleidoscope.webp
+    alt: g
 ---

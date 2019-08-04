@@ -196,7 +196,7 @@ export const Template = ({
             </>
           ))}
         </Categories>
-        <FirstImage fluid={firstImage} alt='' />
+        <FirstImage fluid={firstImage.image} alt={firstImage.alt} />
         <Details>
           {details.map(({ attribute, value }, i) => (
             <Detail key={i}>
@@ -206,8 +206,8 @@ export const Template = ({
           ))}
         </Details>
 
-        {images.map((image, i) => (
-          <Image key={i} fluid={image} alt='' />
+        {images.map(({ image, alt }, i) => (
+          <Image key={i} fluid={image} alt={alt} />
         ))}
 
         {descriptions.map(({ startingRow, content }, i) => (
@@ -240,17 +240,21 @@ export default ({ data: { project, projects, blog } }) => (
   <Template
     {...project.frontmatter}
     ogImage={project.frontmatter.ogImage.childImageSharp.fluid.src}
-    firstImage={project.frontmatter.images[0].childImageSharp.fluid}
-    images={project.frontmatter.images
-      .slice(1)
-      .map(image => image.childImageSharp.fluid)}
+    firstImage={{
+      image: project.frontmatter.images[0].image.childImageSharp.fluid,
+      alt: project.frontmatter.images[0].alt
+    }}
+    images={project.frontmatter.images.slice(1).map(({ image, ...rest }) => ({
+      ...rest,
+      image: image.childImageSharp.fluid
+    }))}
     descriptions={project.frontmatter.descriptions.map((description, i) => ({
       ...description,
       content: project.fields.descriptions[i].content
     }))}
     recentProjects={projects.edges.map(({ node: { frontmatter } }) => ({
       ...frontmatter,
-      headerImage: frontmatter.images[0].childImageSharp.fluid,
+      headerImage: frontmatter.images[0].image.childImageSharp.fluid,
       path: `/projects${frontmatter.path}`
     }))}
     blogPosts={blog.edges.map(({ node: { frontmatter } }) => ({
@@ -284,11 +288,14 @@ export const query = graphql`
         category
         subcategories
         images {
-          childImageSharp {
-            fluid(maxWidth: 500) {
-              ...GatsbyImageSharpFluid
+          image {
+            childImageSharp {
+              fluid(maxWidth: 500) {
+                ...GatsbyImageSharpFluid
+              }
             }
           }
+          alt
         }
       }
       fields {
@@ -306,9 +313,11 @@ export const query = graphql`
         node {
           frontmatter {
             images {
-              childImageSharp {
-                fluid(maxWidth: 525) {
-                  ...GatsbyImageSharpFluid
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 525) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }

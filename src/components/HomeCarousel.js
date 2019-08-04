@@ -97,12 +97,12 @@ const CardContainer = styled.div`
   position: relative;
 `;
 
-const Card = ({ image, description, count, external, path }) => (
+const Card = ({ image, alt, description, count, external, path }) => (
   <CardContainer
     as={external ? ExternalLink : InternalLink}
     {...(external ? { href: path } : { to: path })}
   >
-    <Img fluid={image} alt='' />
+    <Img fluid={image} alt={alt} />
     <ImgDescriptionContainer>
       <Description>{description}</Description>
       <Count>{count}</Count>
@@ -125,16 +125,19 @@ export default ({ images, ...rest }) => {
   return (
     <Container {...rest}>
       <Cards cardCount={images.length} index={index}>
-        {images.map(({ image, description, link: { external, path } }, i) => (
-          <Card
-            key={i}
-            image={image}
-            description={description}
-            count={`${i + 1}/${images.length}`}
-            external={external}
-            path={path}
-          />
-        ))}
+        {images.map(
+          ({ image, alt, description, link: { external, path } }, i) => (
+            <Card
+              key={i}
+              image={image}
+              alt={alt}
+              description={description}
+              count={`${i + 1}/${images.length}`}
+              external={external}
+              path={path}
+            />
+          )
+        )}
       </Cards>
       <LeftCycleButton onClick={setPrevIndex}>
         <FontAwesomeIcon icon={faChevronLeft} />

@@ -42,7 +42,7 @@ const Author = styled.div``;
 
 export default ({ path, headerImage, title, subtitle, author, ...rest }) => (
   <Container to={`/blog${path}`} {...rest}>
-    <Img fluid={headerImage.childImageSharp.fluid} />
+    <Img fluid={headerImage.childImageSharp.fluid} alt='' />
     <Text>
       <Title>{title}</Title>
       <Description>{subtitle}</Description>

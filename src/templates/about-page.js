@@ -142,7 +142,7 @@ export const AboutPageTemplate = ({
 
     <TeamSection>
       {teamSection.map(
-        ({ heading, CVLink, image, contentHeading, content }, i) => (
+        ({ heading, CVLink, image, alt, contentHeading, content }, i) => (
           <TeamMember key={i}>
             <TeamMemberDescription>
               <TeamHeadingContainer>
@@ -159,7 +159,7 @@ export const AboutPageTemplate = ({
               </TeamHeadingContainer>
               <TeamContent heading={contentHeading} content={content} />
             </TeamMemberDescription>
-            <TeamImage alt='' fluid={image.childImageSharp.fluid} />
+            <TeamImage alt={alt} fluid={image.childImageSharp.fluid} />
           </TeamMember>
         )
       )}
@@ -223,6 +223,7 @@ export const query = graphql`
               }
             }
           }
+          alt
           contentHeading
         }
       }

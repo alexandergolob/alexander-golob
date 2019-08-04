@@ -32,6 +32,7 @@ collections:
             widget: list
             fields:
               - { name: image, label: Image, widget: image }
+              - { name: alt, label: Alt, widget: string }
               - { name: description, label: Description, widget: string }
               - name: link
                 label: Link
@@ -110,6 +111,7 @@ collections:
                   - { name: external, label: External, widget: boolean }
                   - { name: path, label: Path, widget: string }
               - { name: image, label: Image, widget: image }
+              - { name: alt, label: Alt, widget: string }
               - { name: contentHeading, label: Content Heading, widget: string }
               - { name: md_content, label: Content, widget: markdown }
 
@@ -221,6 +223,7 @@ collections:
                 widget: list
                 field: { name: detail, label: Detail, widget: string }
               - { name: image, label: Image, widget: image }
+              - { name: alt, label: Alt, widget: string }
               - name: sections
                 label: Sections
                 widget: list
@@ -335,6 +338,7 @@ collections:
       - { name: ogImage, label: Social Image, required: false, widget: image }
       - { name: date, label: Date, widget: date }
       - { name: headerImage, label: Header Image, widget: image }
+      - { name: alt, label: Alt, widget: string }
       - { name: author, label: Author, widget: string }
       - { name: path, label: Path, widget: string }
       - { name: tags, label: Tags, widget: list }
@@ -363,6 +367,7 @@ collections:
           - { name: md_description, label: Description, widget: markdown }
           - { name: linkContent, label: Link Content, widget: string }
           - { name: image, label: Image, widget: image }
+          - { name: alt, label: alt, widget: string }
 
   - name: projectSubategories
     label: Project Subcategories

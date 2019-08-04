@@ -72,8 +72,8 @@ export const Template = ({
       <Heading>{heading}</Heading>
     </HeadingContainer>
     <Carousel
-      images={featuredProjects.map(({ image, title, date }) => ({
-        image,
+      images={featuredProjects.map(({ title, date, ...rest }) => ({
+        ...rest,
         description: `${title}, ${date}`
       }))}
     />
@@ -94,7 +94,8 @@ export default ({ data: { portfolio, featuredProjects } }) => (
     ogImage={portfolio.frontmatter.ogImage.childImageSharp.fluid.src}
     featuredProjects={featuredProjects.edges.map(({ node }) => ({
       ...node.frontmatter,
-      image: node.frontmatter.images[0].childImageSharp.fluid,
+      image: node.frontmatter.images[0].image.childImageSharp.fluid,
+      alt: '',
       path: node.fields.slug
     }))}
   />
@@ -131,9 +132,11 @@ export const query = graphql`
             title
             date(formatString: "YYYY")
             images {
-              childImageSharp {
-                fluid(maxWidth: 1050) {
-                  ...GatsbyImageSharpFluid
+              image {
+                childImageSharp {
+                  fluid(maxWidth: 1050) {
+                    ...GatsbyImageSharpFluid
+                  }
                 }
               }
             }

@@ -90,6 +90,7 @@ export const Template = ({
   description,
   ogImage,
   headerImage,
+  alt,
   recentStories,
   tags,
   subtitle,
@@ -101,7 +102,7 @@ export const Template = ({
   <Layout head={{ title, description, ogImage, ogType: 'blog' }}>
     <Wrapper>
       <Header>
-        <HeaderImg alt='' fluid={headerImage} />
+        <HeaderImg fluid={headerImage} alt={alt} />
       </Header>
       <RecentStories heading='Recent Stories' posts={recentStories} />
       <Tags tags={tags} />
@@ -159,6 +160,7 @@ export const query = graphql`
             }
           }
         }
+        alt
         subtitle
         author
         tags

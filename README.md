@@ -31,22 +31,8 @@
 
 - [x] Head/SEO module
 - [x] Partitioning images that don't need to be in assets folder
-  - [x] index
-  - [x] about
-  - [x] blog
-  - [x] blog post
-  - [x] contact
-  - [x] subscribe
-  - [x] project category
-  - [x] project subcategory
-  - [x] portfolio
-  - [x] tags
-  - [x] tag
-  - [x] 404
-  - [x] project
-  - [x] cv
-- [ ] Ensure correct alt tags for images
-- [ ] CMS interface
+- [x] Ensure correct alt tags for images
+- [x] CMS interface
 - [ ] CMS previews
 - [x] sitemap
 - [x] robots.txt

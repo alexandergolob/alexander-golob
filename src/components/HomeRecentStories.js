@@ -61,7 +61,7 @@ export default ({ posts, ...rest }) => (
     <StoriesContainer>
       {posts.map(({ path, headerImage, title, author }, i) => (
         <Story key={i} to={`/blog${path}`}>
-          <StoryThumbnail fluid={headerImage.childImageSharp.fluid} />
+          <StoryThumbnail fluid={headerImage.childImageSharp.fluid} alt='' />
           <StoryTitle>{title}</StoryTitle>
           <Author>{author}</Author>
         </Story>

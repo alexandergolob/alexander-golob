@@ -90,7 +90,7 @@ export default ({
   ...rest
 }) => (
   <Container to={path} {...rest} useListView={useListView}>
-    <PostImage fluid={headerImage} useListView={useListView} />
+    <PostImage fluid={headerImage} useListView={useListView} alt='' />
     <Description useListView={useListView}>
       <Title>{title}</Title>
       {subtitle && !useListView && <Subtitle>{subtitle}</Subtitle>}

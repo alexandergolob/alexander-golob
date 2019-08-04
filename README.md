@@ -39,8 +39,8 @@
   - [x] blog post
   - [x] contact
   - [x] subscribe
-  - [ ] project category
-  - [ ] project subcategory
+  - [x] project category
+  - [x] project subcategory
   - [ ] portfolio
   - [ ] tags
   - [ ] tag

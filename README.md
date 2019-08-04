@@ -20,11 +20,9 @@
 
 # Components
 
-- Footer - pending review
-  - z-index should be such that it's under navs
+- [x] Footer
 - [x] Social icons
-- Graffiti - pending review
-  - need to think about this a bit more
+- Graffiti - need to think about this a bit more
 - [x] Subscription widget
 - Navs
 - Right nav scroll component
@@ -53,10 +51,6 @@
 - [x] sitemap
 - [x] robots.txt
 - [ ] PWA functionality
-
-# Aspirational features
-
-- Lightbox-like component
 
 # Questions
 

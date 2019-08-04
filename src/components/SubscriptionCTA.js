@@ -6,6 +6,8 @@ import addToMailchimp from 'gatsby-plugin-mailchimp';
 
 import { media } from './ThemeProvider';
 
+import LightMarble from './LightMarble';
+
 const Container = styled(Form)`
   position: relative;
   width: 425px;
@@ -66,12 +68,11 @@ const ErrorContainer = styled.div`
 `;
 
 const Submit = styled.button.attrs({ type: 'submit' })`
+  position: relative;
   cursor: pointer;
+  background: none;
+  z-index: 1;
   border: 1px solid #999;
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: none;
-  background-size: cover;
-  background-position: center center;
   padding: 4px 8px;
   font-size: inherit;
   font-weight: 600;
@@ -146,6 +147,7 @@ export default ({ ...rest }) => (
           </ErrorContainer>
         )}
         <Submit disabled={isSubmitting} success={status && status.success}>
+          <LightMarble />
           {isSubmitting
             ? 'Submitting...'
             : status && status.success

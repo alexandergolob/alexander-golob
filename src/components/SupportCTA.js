@@ -6,13 +6,13 @@ import { media } from './ThemeProvider';
 import UnstyledInternalLink from './InternalLink';
 import UnstyledExternalLink from './ExternalLink';
 
+import LightMarble from './LightMarble';
+import GreenMarble from './GreenMarble';
+
 const Container = styled.div`
+  position: relative;
   border: ${props => props.theme.misc.frameBorder};
   padding: 10px 15px;
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: none;
-  background-size: cover;
-  background-position: center center;
   display: inline-flex;
   justify-content: center;
   align-items: center;
@@ -29,10 +29,7 @@ const Statement = styled.div`
 `;
 
 const linkStyles = css`
-  background-image: url('/assets/empty-square-bg.png');
-  background-repeat: none;
-  background-size: cover;
-  background-position: center center;
+  position: relative;
   padding: 2px 10px;
   text-align: center;
   color: ${props => props.theme.colors.light};
@@ -76,11 +73,18 @@ export default props => {
 
   return (
     <Container {...props}>
+      <LightMarble />
       <Statement>{outerContent}</Statement>
       {external ? (
-        <ExternalLink href={path}>{content}</ExternalLink>
+        <ExternalLink href={path}>
+          <GreenMarble />
+          {content}
+        </ExternalLink>
       ) : (
-        <InternalLink to={path}>{content}</InternalLink>
+        <InternalLink to={path}>
+          <GreenMarble />
+          {content}
+        </InternalLink>
       )}
     </Container>
   );

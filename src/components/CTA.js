@@ -12,7 +12,7 @@ const linkStyles = css`
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
   font-size: 1.1em;
-  font-weight: 700;
+  font-weight: 600;
 
   ${media.tablet`font-size: 1em;`}
 `;

@@ -15,6 +15,8 @@ import UnstyledSubscriptionCTA from '../components/SubscriptionCTA';
 import UnstyledFinalCTA from '../components/FinalCTA';
 import ExternalLink from '../components/ExternalLink';
 
+import LightMarble from '../components/LightMarble';
+
 const Header = styled.header`
   display: flex;
   flex-direction: column;
@@ -144,11 +146,8 @@ const InstagramContainer = styled.div`
 `;
 
 const InstagramHeading = styled.div`
+  position: relative;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: none;
-  background-size: contain;
-  background-position: center center;
   padding: 0.75em 1.25em;
   text-align: center;
   font-size: 1.1em;
@@ -225,7 +224,10 @@ export const IndexPageTemplate = ({
       <SubscriptionCTA />
 
       <InstagramContainer>
-        <InstagramHeading>From Instagram</InstagramHeading>
+        <InstagramHeading>
+          <LightMarble />
+          From Instagram
+        </InstagramHeading>
         <InstagramThumbnailContainer>
           {instagramImages.map((fluid, i) => (
             <InstagramThumbnailLink key={i}>

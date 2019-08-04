@@ -51,6 +51,13 @@ module.exports = {
         path: `${__dirname}/src/site-settings`
       }
     },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'texture-images',
+        path: `${__dirname}/src/texture-images`
+      }
+    },
     'gatsby-plugin-sharp',
     'gatsby-transformer-sharp',
     {

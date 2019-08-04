@@ -7,11 +7,10 @@ import { media } from './ThemeProvider';
 import UnstyledSocialIcons from './SocialIcons';
 import Link from './Link';
 
+import LightMarble from './LightMarble';
+
 const Container = styled.footer`
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  position: relative;
   border-top: 2px solid #000;
   padding: 20px 60px 7px;
 
@@ -116,6 +115,7 @@ const ResponsiveCopyright = styled.span`
 
 const Footer = ({ boldLeftStatement, middleStatement, ...rest }) => (
   <Container {...rest}>
+    <LightMarble />
     <SupportUs>{boldLeftStatement}</SupportUs>
     <DevCredit>
       developed by{' '}

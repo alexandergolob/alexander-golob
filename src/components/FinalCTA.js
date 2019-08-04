@@ -4,12 +4,12 @@ import { useStaticQuery, graphql } from 'gatsby';
 
 import CTA from './CTA';
 
+import GreenMarble from './GreenMarble';
+
 const FinalCTA = styled(CTA)`
   padding: 8px 25px;
-  background-image: url('/assets/empty-square-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: none;
+  position: relative;
 `;
 
 const query = graphql`
@@ -29,7 +29,18 @@ const query = graphql`
   }
 `;
 
-export default props => {
+export default ({ content, ...rest }) => {
   const data = useStaticQuery(query);
-  return <FinalCTA {...data.file.childMarkdownRemark.frontmatter} {...props} />;
+  return (
+    <FinalCTA
+      {...data.file.childMarkdownRemark.frontmatter}
+      content={
+        <>
+          <GreenMarble />
+          {data.file.childMarkdownRemark.frontmatter.content}
+        </>
+      }
+      {...rest}
+    />
+  );
 };

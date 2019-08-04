@@ -6,6 +6,8 @@ import GatsbyImage from 'gatsby-image';
 import UnstyledSocialIcons from './SocialIcons';
 import Link from './InternalLink';
 
+import GreenMarble from './GreenMarble';
+
 const SecondaryLogoContainer = styled.div`
   margin-bottom: 25px;
   border: ${props => props.theme.misc.frameBorder};
@@ -48,31 +50,25 @@ const SocialIcons = styled(UnstyledSocialIcons)`
 
 const SocialIconsBox = styled(NavListItem)`
   margin-bottom: 15px;
-
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
 `;
 
 const ContactLink = styled(NavListItemLink)`
+  position: relative;
   margin-top: 15px;
+  background: none;
 `;
 
 const ContactItem = styled(NavListItem)`
   padding: 1.25em 0;
-  background: url('/assets/contact-button-bg.png'), hsl(0, 0%, 93%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
   color: hsl(148, 93%, 5%);
 `;
 
 const EmptyMarbleSquare = styled.div`
+  position: relative;
   margin-top: 1.5em;
   border: ${props => props.theme.misc.frameBorder};
-  background: url('/assets/empty-square-bg.png'), hsl(148, 93%, 5%);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  background-position: center center;
   height: 7.5em;
 `;
 
@@ -92,11 +88,14 @@ const RightNav = ({ secondaryLogo, items, ...rest }) => (
           </NavListItemLink>
         ))}
         <ContactLink to='/contact'>
+          <GreenMarble />
           <ContactItem>Contact</ContactItem>
         </ContactLink>
       </NavList>
     </nav>
-    <EmptyMarbleSquare />
+    <EmptyMarbleSquare>
+      <GreenMarble />
+    </EmptyMarbleSquare>
   </div>
 );
 

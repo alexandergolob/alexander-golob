@@ -22,7 +22,7 @@
 
 - Footer - pending review
   - z-index should be such that it's under navs
-- Social icons - pending review
+- [x] Social icons
 - Graffiti - pending review
   - need to think about this a bit more
 - [x] Subscription widget

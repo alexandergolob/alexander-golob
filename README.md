@@ -5,8 +5,7 @@
 - [x] index
 - [x] about
 - [x] blog
-- blog post
-  - social icons - do after nav
+- [x] blog post
 - [x] contact
 - [x] subscribe
 - [x] project category

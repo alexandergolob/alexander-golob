@@ -41,10 +41,10 @@
   - [x] subscribe
   - [x] project category
   - [x] project subcategory
-  - [ ] portfolio
-  - [ ] tags
-  - [ ] tag
-  - [ ] 404
+  - [x] portfolio
+  - [x] tags
+  - [x] tag
+  - [x] 404
   - [ ] project
   - [ ] cv
 - [ ] Ensure correct alt tags for images

@@ -7,9 +7,10 @@ import CTA from './CTA';
 import GreenMarble from './GreenMarble';
 
 const FinalCTA = styled(CTA)`
-  padding: 8px 25px;
-  background: none;
   position: relative;
+  z-index: 1;
+  background: none;
+  padding: 8px 25px;
 `;
 
 const query = graphql`

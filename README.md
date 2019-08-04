@@ -32,7 +32,7 @@
 # Broad tasks outside of main component development
 
 - [x] Head/SEO module
-- [ ] Partitioning images that don't need to be in assets folder
+- [x] Partitioning images that don't need to be in assets folder
   - [x] index
   - [x] about
   - [x] blog
@@ -45,10 +45,9 @@
   - [x] tags
   - [x] tag
   - [x] 404
-  - [ ] project
-  - [ ] cv
+  - [x] project
+  - [x] cv
 - [ ] Ensure correct alt tags for images
-- [ ] role tags where appropriate
 - [ ] CMS interface
 - [ ] CMS previews
 - [x] sitemap

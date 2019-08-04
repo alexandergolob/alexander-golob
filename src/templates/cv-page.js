@@ -10,6 +10,8 @@ import PageHeading from '../components/PageHeading';
 import ExternalLink from '../components/ExternalLink';
 import UnstyledFinalCTA from '../components/FinalCTA';
 
+import LightMarble from '../components/LightMarble';
+
 const CVDownloadContainer = styled.div`
   display: flex;
   justify-content: center;
@@ -18,12 +20,10 @@ const CVDownloadContainer = styled.div`
 const CVDownloadButton = styled(PageHeading).attrs({
   as: ExternalLink
 })`
+  position: relative;
   margin: 1em 0;
   min-width: auto;
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: none;
-  background-size: contain;
-  background-position: center center;
+  background: none;
   display: inline-block;
   font-size: 1.25em;
 
@@ -150,6 +150,7 @@ export const CVPageTemplate = ({
 
     <CVDownloadContainer>
       <CVDownloadButton href={`${CVButton.filename.publicURL}`}>
+        <LightMarble />
         {CVButton.content}
       </CVDownloadButton>
     </CVDownloadContainer>

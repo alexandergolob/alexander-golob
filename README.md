@@ -37,8 +37,8 @@
   - [x] about
   - [x] blog
   - [x] blog post
-  - [ ] contact
-  - [ ] suibscribe
+  - [x] contact
+  - [x] subscribe
   - [ ] project category
   - [ ] project subcategory
   - [ ] portfolio

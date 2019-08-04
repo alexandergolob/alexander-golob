@@ -10,13 +10,13 @@ import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import Header from '../components/PageHeader';
 
+import LightMarble from '../components/LightMarble';
+import GreenMarble from '../components/GreenMarble';
+
 const Statement = styled.div`
+  position: relative;
   margin: 1em auto;
   border: ${props => props.theme.misc.frameBorder};
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   padding: 10px;
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
@@ -128,15 +128,14 @@ const ErrorContainer = styled.div`
 
 const Submit = styled.button.attrs({ type: 'submit' })`
   grid-area: Submit;
+  position: relative;
+  z-index: 1;
   margin-top: 0.5em;
   width: 100%;
   cursor: pointer;
   border: ${props => props.theme.misc.frameBorder};
+  background: none;
   padding: 4px 0;
-  background-image: url('/assets/empty-square-bg.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
   font-family: ${props => props.theme.fonts.serif};
   font-weight: 600;
   font-size: 1.2rem;
@@ -221,7 +220,10 @@ export const SubscribePageTemplate = ({
   <Layout head={{ title, description, ogImage }}>
     <Header heading={heading} pageLinks={links} />
 
-    <Statement>{statement}</Statement>
+    <Statement>
+      <LightMarble />
+      {statement}
+    </Statement>
     <Formik
       initialValues={initialValues}
       validationSchema={validationSchema}
@@ -256,6 +258,7 @@ export const SubscribePageTemplate = ({
           </Fields>
 
           <Submit disabled={isSubmitting} success={status && status.success}>
+            <GreenMarble />
             {isSubmitting
               ? 'SUBMITTING...'
               : status && status.success

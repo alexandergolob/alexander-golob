@@ -12,16 +12,6 @@ const GreenMarble = styled(Image)`
   height: 100%;
 `;
 
-// const GreenMarble = styled.div`
-//   position: absolute !important;
-//   z-index: -1;
-//   top: 0;
-//   left: 0;
-//   width: 100%;
-//   height: 100%;
-//   background: red;
-// `;
-
 const query = graphql`
   {
     file(

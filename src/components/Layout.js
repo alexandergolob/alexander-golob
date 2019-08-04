@@ -2,15 +2,17 @@ import React from 'react';
 import styled, { createGlobalStyle } from 'styled-components';
 
 import ThemeProvider, { media } from './ThemeProvider';
-import Helmet from './Helmet'
+import Helmet from './Helmet';
 
 import UnstyledLeftNav from './LeftNav';
 import UnstyledRightNav from './RightNav';
 import UnstyledFooter from './Footer';
 
+import BrickBG from '../texture-images/brick-wall-bg.jpg';
+
 const LeftNav = styled(UnstyledLeftNav)`
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   width: 150px;
   top: 14vh;
   left: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
@@ -20,7 +22,7 @@ const LeftNav = styled(UnstyledLeftNav)`
 
 const RightNav = styled(UnstyledRightNav)`
   position: fixed;
-  z-index: 1;
+  z-index: 3;
   width: 150px;
   top: 17vh;
   right: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
@@ -47,18 +49,19 @@ const BackgroundWrapper = styled.div`
   margin: auto;
   position: relative;
   max-width: ${props => props.theme.widths.large};
-  background: url('/assets/brick-wall-bg.jpg');
+  min-height: 100vh;
+  background: url(${BrickBG});
   background-size: contain;
   padding: 80px;
-  padding-bottom: 120px;
+  padding-bottom: 200px;
 
   ${media.large`
     padding: 20px;
-    padding-bottom: 120px;
+    padding-bottom: 200px;
   `}
 
   ${media.mobile`
-    padding-bottom: 80px;
+    padding-bottom: 150px;
   `}
 `;
 
@@ -91,7 +94,7 @@ export default ({ head, children }) => (
   <ThemeProvider>
     <>
       <GlobalStyle />
-      <Helmet {...head}/>
+      <Helmet {...head} />
       <LeftNav />
       <RightNav />
       <BackgroundWrapper>

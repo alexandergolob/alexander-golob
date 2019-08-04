@@ -5,6 +5,8 @@ import GatsbyImage from 'gatsby-image';
 import { media } from './ThemeProvider';
 import InternalLink from './InternalLink';
 
+import LightMarble from '../components/LightMarble';
+
 const Project = styled(InternalLink)`
   display: flex;
   flex-direction: column;
@@ -34,10 +36,7 @@ const Title = styled.div`
 const YearMarker = styled(Project).attrs({ as: 'div' })``;
 
 const Year = styled(Image).attrs({ as: 'div' })`
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  position: relative;
   display: grid;
   place-items: center;
   font-family: ${props => props.theme.fonts.serif};
@@ -70,7 +69,10 @@ export default ({ projects }) =>
           ...acc,
           markup,
           <YearMarker key={i + 0.5}>
-            <Year>{nextYear}</Year>
+            <Year>
+              <LightMarble />
+              {nextYear}
+            </Year>
             <YearTitle>Year</YearTitle>
           </YearMarker>
         ]

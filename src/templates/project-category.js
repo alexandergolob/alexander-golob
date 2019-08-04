@@ -9,6 +9,8 @@ import PageHeading from '../components/PageHeading';
 import InternalLink from '../components/InternalLink';
 import Projects from '../components/Projects';
 
+import LightMarble from '../components/LightMarble';
+
 const HeadingContainer = styled.div`
   margin-bottom: 2em;
   display: flex;
@@ -24,11 +26,9 @@ const Heading = styled(PageHeading)`
 `;
 
 const Hero = styled(Heading).attrs({ as: 'div' })`
+  position: relative;
   margin: 1em 0 1.5em;
-  background-image: url('/assets/light-marble.svg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
+  background: none;
   font-size: 1.25em;
 
   ${media.tablet`font-size: 1.15em;`}
@@ -146,7 +146,10 @@ export const Template = ({
     <HeadingContainer>
       <Heading>{title}</Heading>
     </HeadingContainer>
-    <Hero>{hero}</Hero>
+    <Hero>
+      <LightMarble />
+      {hero}
+    </Hero>
     <Subcategories
       repeat={Math.ceil(subcategorySections.length / 2)}
       gridTemplateRows={spec =>

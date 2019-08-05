@@ -323,6 +323,8 @@ collections:
 
   - name: blog
     label: Blog
+    create: true
+    delete: true
     folder: src/pages/blog
     fields:
       - { name: templateKey, widget: hidden, default: blog-post }
@@ -345,6 +347,8 @@ collections:
 
   - name: projectCategories
     label: Project Categories
+    create: true
+    delete: true
     folder: src/pages/project-categories
     fields:
       - { name: templateKey, widget: hidden, default: project-category }
@@ -370,6 +374,8 @@ collections:
 
   - name: projectSubategories
     label: Project Subcategories
+    create: true
+    delete: true
     folder: src/pages/project-subcategories
     fields:
       - { name: templateKey, widget: hidden, default: project-subcategory }
@@ -395,6 +401,8 @@ collections:
 
   - name: projects
     label: Projects
+    create: true
+    delete: true
     folder: src/pages/projects
     fields:
       - { name: templateKey, widget: hidden, default: project-page }

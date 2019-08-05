@@ -6,6 +6,7 @@ import Helmet from './Helmet';
 
 import UnstyledLeftNav from './LeftNav';
 import UnstyledRightNav from './RightNav';
+import UnstyledResponsiveNav from './ResponsiveNav';
 import UnstyledFooter from './Footer';
 
 import BrickBG from '../texture-images/brick-wall-bg.jpg';
@@ -28,6 +29,16 @@ const RightNav = styled(UnstyledRightNav)`
   right: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
 
   ${media.extraLarge`display: none;`}
+`;
+
+const ResponsiveNav = styled(UnstyledResponsiveNav)`
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: none;
+  ${media.extraLarge`display: block;`}
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -57,6 +68,7 @@ const BackgroundWrapper = styled.div`
 
   ${media.large`
     padding: 20px;
+    padding-top: 200px;
     padding-bottom: 200px;
   `}
 
@@ -98,6 +110,7 @@ export default ({ head, children }) => (
       <LeftNav />
       <RightNav />
       <BackgroundWrapper>
+        <ResponsiveNav />
         <ZWrapper>{children}</ZWrapper>
         <Graffiti alt='' src='assets/logo-white.svg' />
         <Footer />

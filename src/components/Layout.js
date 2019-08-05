@@ -66,6 +66,10 @@ const BackgroundWrapper = styled.div`
   padding: 80px;
   padding-bottom: 200px;
 
+  ${media.extraLarge`
+    padding-top: 200px; 
+  `}
+
   ${media.large`
     padding: 20px;
     padding-top: 200px;

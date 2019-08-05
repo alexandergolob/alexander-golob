@@ -26,15 +26,15 @@ companyDescription:
     policy and implementation, non-profits embarking upon art initiatives, and
     early-stage start-ups looking for guidance.
 teamSection:
-  - heading: About Alexander
-    CVLink:
-      show: false
+  - CVLink:
       content: CV
       external: false
       path: /cv
-    image: /assets/kaleidoscope.webp
+      show: false
     alt: Alexander
     contentHeading: President and Lead Artist
+    heading: About Alexander
+    image: /assets/kaleidoscope.webp
     md_content: >-
       Alexander Golob has experience engaging with communities, conducting
       research, and developing and implementing art and placemaking policy,
@@ -55,15 +55,15 @@ teamSection:
       strategy, and integration. His studio has worked with city governments on
       policy and implementation, non-profits embarking upon art initiatives, and
       early-stage start-ups looking for guidance.
-  - heading: About Khizer
-    CVLink:
-      show: true
+  - CVLink:
       content: CV
       external: true
-      path: https://linkedin.com/in/kmbaig
-    image: /assets/pokecity.webp
-    alt: Khizer
+      path: 'https://linkedin.com/in/kmbaig'
+      show: true
+    alt: Rachael
     contentHeading: Developer and All-Around Badass
+    heading: About Rachael
+    image: /assets/pokecity.webp
     md_content: >-
       Alexander Golob has experience engaging with communities, conducting
       research, and developing and implementing art and placemaking policy,
@@ -73,6 +73,7 @@ teamSection:
 
 
       Art provides benefits for sense of community, business, marketing, and
-      health. sometimes, it helps to have an artist to integrate that perspective
-      into a community, business, or project.
+      health. sometimes, it helps to have an artist to integrate that
+      perspective into a community, business, or project.
 ---
+

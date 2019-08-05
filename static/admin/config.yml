@@ -436,7 +436,9 @@ collections:
       - name: images
         label: Images
         widget: list
-        field: { name: image, label: Image, widget: image }
+        fields:
+          - { name: image, label: Image, widget: image }
+          - { name: alt, label: Alt, widget: string }
 
   - name: siteSettings
     label: Site Settings

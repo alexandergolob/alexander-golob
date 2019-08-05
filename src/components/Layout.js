@@ -77,6 +77,7 @@ const BackgroundWrapper = styled.div`
   `}
 
   ${media.mobile`
+    padding-top: 150px;
     padding-bottom: 150px;
   `}
 `;

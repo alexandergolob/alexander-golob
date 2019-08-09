@@ -1,6 +1,6 @@
 ---
 title: About
-description: About golob art
+description: About Golob Art
 ogImage: /assets/starry-night.jpg
 heading: About
 links:

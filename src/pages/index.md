@@ -1,29 +1,29 @@
 ---
 title: Art for the community
 description: Lorem ipsum
-ogImage: /assets/starry-night.jpg
+ogImage: /assets/dscn3103-2.jpg
 carouselImages:
-  - description: 'Kaleidoscope, Boston, MA'
+  - alt: a
+    description: 'Kaleidoscope, Boston, MA'
     image: /assets/kaleidoscope.webp
-    alt: a
     link:
       external: true
-      path: https://linkedin.com/in/kmbaig
-  - description: 'PokeCity Mural, Cambridge'
+      path: 'https://linkedin.com/in/kmbaig'
+  - alt: b
+    description: 'PokeCity Mural, Cambridge'
     image: /assets/pokecity.webp
-    alt: b
     link:
       external: true
-      path: https://github.com/kbaig
-  - description: '#theSnapGallery at the PEM 3'
+      path: 'https://github.com/kbaig'
+  - alt: c
+    description: '#theSnapGallery at the PEM 3'
     image: /assets/the-snap-gallery.webp
-    alt: c
     link:
       external: false
       path: /about
-  - description: Starry Night
+  - alt: d
+    description: Starry Night
     image: /assets/starry-night.jpg
-    alt: d
     link:
       external: false
       path: /contact
@@ -33,12 +33,13 @@ CTAs:
     content: Art and Merchandise for Sale
     external: false
     path: /for-sale
-  rightCTA:
-    content: Support our work with Patreon
-    external: false
-    path: /patreon
   offCenterCTA:
     content: See Our Portfolio Here
     external: false
     path: /patreon
+  rightCTA:
+    content: Support our work with Patreon
+    external: false
+    path: /patreon
 ---
+

@@ -16,6 +16,7 @@ const Container = styled.div`
   display: inline-flex;
   justify-content: center;
   align-items: center;
+  font-family: ${props => props.theme.fonts.serif};
   font-size: 14px;
 
   ${media.mobile`flex-direction: column;`}

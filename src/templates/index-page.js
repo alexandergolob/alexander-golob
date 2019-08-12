@@ -150,6 +150,7 @@ const InstagramHeading = styled.div`
   border: ${props => props.theme.misc.frameBorder};
   padding: 0.75em 1.25em;
   text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
   font-size: 1.1em;
   font-weight: 700;
 

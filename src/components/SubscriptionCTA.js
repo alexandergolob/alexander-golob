@@ -16,6 +16,7 @@ const Container = styled(Form)`
   padding: 8px 15px;
   display: inline-flex;
   align-items: center;
+  font-family: ${props => props.theme.fonts.serif};
   font-size: 0.85em;
 
   ${media.mobile`flex-direction: column; width: 100%;`}
@@ -74,6 +75,7 @@ const Submit = styled.button.attrs({ type: 'submit' })`
   z-index: 1;
   border: 1px solid #999;
   padding: 4px 8px;
+  font-family: inherit;
   font-size: inherit;
   font-weight: 600;
 

@@ -106,6 +106,7 @@ const SubcategoryLink = styled(InternalLink)`
   background: ${props => props.theme.colors.inputBackground};
   padding: 6px 12px;
   text-align: center;
+  font-family: ${props => props.theme.fonts.serif};
 
   ${media.mobile`min-width: auto; width: 100%;`}
 `;

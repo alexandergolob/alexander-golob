@@ -1,5 +1,5 @@
 ---
-title: About
+title: Abouta
 description: 'About Golob Art '
 ogImage: /assets/starry-night.jpg
 heading: About

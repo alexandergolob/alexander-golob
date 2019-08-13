@@ -1,5 +1,5 @@
 ---
-title: Art for the community
+title: Art for the communitya
 description: Lorem ipsum
 ogImage: /assets/dscn3103-2.jpg
 carouselImages:

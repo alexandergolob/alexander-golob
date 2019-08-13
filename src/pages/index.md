@@ -5,10 +5,10 @@ ogImage: /assets/dscn3103-2.jpg
 carouselImages:
   - alt: a
     description: 'Kaleidoscope, Boston, MA'
-    image: /assets/kaleidoscope.webp
+    image: /assets/dscn3103-2.jpg
     link:
-      external: true
-      path: 'https://linkedin.com/in/kmbaig'
+      external: false
+      path: /patreon
   - alt: b
     description: 'PokeCity Mural, Cambridge'
     image: /assets/pokecity.webp

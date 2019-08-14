@@ -1,12 +1,12 @@
 ---
 templateKey: blog-post
-title: How to design a website with an artist
+title: We are starting a blog!
+subtitle: 'Take aways of patience, creativity, and inspiration after hours of work.'
 description: Lorem ipsum
 ogImage: /assets/starry-night.jpg
 date: 2019-04-02T04:34:23.774Z
 headerImage: /assets/starry-night.jpg
 alt: a
-subtitle: Take aways of patience, creativity, and inspiration after hours of work.
 author: Khizer Baig
 path: /post-1
 tags:

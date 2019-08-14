@@ -4,6 +4,14 @@ description: Lorem ipsum
 ogImage: /assets/dscn3103-2.jpg
 carouselImages:
   - alt: a
+    description: >-
+      Honoring the Past, Celebrating the Future - South Middlesex Opportunity
+      Center, Framingham, MA
+    image: /assets/20150808_173849.jpg
+    link:
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
+  - alt: a
     description: 'Kaleidoscope, Boston, MA'
     image: /assets/dscn3103-2.jpg
     link:

@@ -17,12 +17,14 @@ carouselImages:
     link:
       external: true
       path: 'https://alexander-golob.netlify.com/projects'
-  - alt: b
-    description: 'PokeCity Mural, Cambridge'
-    image: /assets/pokecity.webp
+  - alt: c
+    description: >-
+      Triumph of the People and Prosperity on the Mystic - Assembly Square,
+      Somerville, MA
+    image: /assets/20190522_121539.jpg
     link:
       external: true
-      path: 'https://github.com/kbaig'
+      path: 'https://alexander-golob.netlify.com/projects'
   - alt: c
     description: '#theSnapGallery at the PEM 3'
     image: /assets/the-snap-gallery.webp

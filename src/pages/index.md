@@ -31,12 +31,12 @@ carouselImages:
     link:
       external: true
       path: 'https://alexander-golob.netlify.com/projects'
-  - alt: d
-    description: Starry Night
-    image: /assets/starry-night.jpg
+  - alt: e
+    description: 'Miles to Go Before We Sleep - the Garibaldi Club, Haverhill, MA'
+    image: /assets/20190531_120305.jpg
     link:
-      external: false
-      path: /contact
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
 heroStatement: We create art for community.
 CTAs:
   leftCTA:

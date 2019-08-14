@@ -1,5 +1,10 @@
 [Dev site](https://alexander-golob.netlify.com)
 
+description for subcategories pre link and link text should be serif
+change nav from web to mobile at 1025px
+standardize aspect ratio on /about
+ensure that responsive nav subitems are links
+
 # Page Types
 
 - [x] index
@@ -21,10 +26,10 @@
 
 - [x] Footer
 - [x] Social icons
-- Graffiti - need to think about this a bit more
+- [ ] Graffiti - need to think about this a bit more
 - [x] Subscription widget
-- Navs
-- Right nav scroll component
+- [x] Navs
+- [ ] Right nav scroll component
 
 # Broad tasks outside of main component development
 

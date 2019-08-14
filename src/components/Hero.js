@@ -11,9 +11,6 @@ const Hero = styled.div`
   font-family: ${props => props.theme.fonts.monospace};
   font-size: 2.5em;
   font-style: italic;
-  color: ${props => props.theme.colors.offLight};
-  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
-    1px 1px 0 #000;
 
   ${media.laptop`font-size: 2.25em;`}
   ${media.tablet`

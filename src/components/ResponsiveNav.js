@@ -18,6 +18,7 @@ import LightMarble from './LightMarble';
 
 const Nav = styled.nav`
   position: relative;
+  border-bottom: 1px solid black;
   padding: 20px;
 `;
 
@@ -86,24 +87,27 @@ const Menu = styled.ul`
   right: 100%;
   width: 250px;
   border: 1px solid black;
-  border-bottom: none;
   background: ${props => props.theme.colors.offLight};
   display: ${props => (props.show ? 'block' : 'none')};
   font-family: ${props => props.theme.fonts.serif};
 `;
 
 const MenuItemContainer = styled.li`
-  min-height: 40px;
   border-bottom: 1px solid black;
-  padding: 5px 0;
+  :last-of-type {
+    border-bottom: none;
+  }
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 `;
 
 const MenuItemLink = styled(InternalLink)`
+  height: 40px;
   flex: 1;
   padding: 0px 15px;
+  display: flex;
+  align-items: center;
   font-weight: 600;
 `;
 
@@ -111,7 +115,7 @@ const ArrowButton = styled.button`
   cursor: pointer;
   background: none;
   border: none;
-  padding: 5px 15px;
+  padding: 0 15px;
   color: inherit;
 `;
 
@@ -127,8 +131,15 @@ const SubItems = styled.ul`
 `;
 
 const SubItem = styled.li`
+  height: 40px;
   border-top: 1px solid black;
   padding: 2px 15px 2px 30px;
+  display: flex;
+  align-items: center;
+`;
+
+const SubItemLink = styled(InternalLink)`
+  width: 100%;
 `;
 
 const query = graphql`
@@ -191,8 +202,8 @@ const MenuItem = ({ expandable, category, path, subitems }) => {
       {subitems && (
         <SubItems show={isExpanded}>
           {subitems.map(({ subitem, path }, i) => (
-            <SubItem key={i} to={path}>
-              {subitem}
+            <SubItem key={i}>
+              <SubItemLink to={path}>{subitem}</SubItemLink>
             </SubItem>
           ))}
         </SubItems>

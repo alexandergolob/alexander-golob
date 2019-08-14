@@ -11,12 +11,12 @@ carouselImages:
     link:
       external: true
       path: 'https://alexander-golob.netlify.com/projects'
-  - alt: a
-    description: 'Kaleidoscope, Boston, MA'
+  - alt: b
+    description: 'Kaleidoscope - Boston University, Boston, MA'
     image: /assets/dscn3103-2.jpg
     link:
-      external: false
-      path: /patreon
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
   - alt: b
     description: 'PokeCity Mural, Cambridge'
     image: /assets/pokecity.webp

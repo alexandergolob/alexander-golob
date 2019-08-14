@@ -25,12 +25,12 @@ carouselImages:
     link:
       external: true
       path: 'https://alexander-golob.netlify.com/projects'
-  - alt: c
-    description: '#theSnapGallery at the PEM 3'
-    image: /assets/the-snap-gallery.webp
+  - alt: d
+    description: 'Golobology - Stored in Studio, Wellesley, MA'
+    image: /assets/golobology-2-edit.jpg
     link:
-      external: false
-      path: /about
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
   - alt: d
     description: Starry Night
     image: /assets/starry-night.jpg

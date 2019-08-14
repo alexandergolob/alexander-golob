@@ -37,6 +37,20 @@ carouselImages:
     link:
       external: true
       path: 'https://alexander-golob.netlify.com/projects'
+  - alt: f
+    description: >-
+      A Meditation on Community and Nature - South Middlesex Opportunity
+      Council, Framingham, MA
+    image: /assets/a-meditation-on-community-and-nature-01.jpg
+    link:
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
+  - alt: g
+    description: 'The Joy of Entering the Forrest - Sweet Greens, Wellesley, MA'
+    image: /assets/20180702_083819.jpg
+    link:
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
 heroStatement: We create art for community.
 CTAs:
   leftCTA:

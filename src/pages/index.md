@@ -60,7 +60,7 @@ CTAs:
   offCenterCTA:
     content: See Our Portfolio Here
     external: false
-    path: /patreon
+    path: /portfolio
   rightCTA:
     content: Support our work with Patreon
     external: false

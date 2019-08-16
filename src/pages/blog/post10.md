@@ -27,4 +27,4 @@ Together with co-curators Edie Côté and Danielle Pratt, who both graduated fro
 
 Thirty artists are featured in the exhibition, including Golob, Côté and Pratt themselves. The medium of art varies widely, ranging from oil paintings to etchings to plaster-and-foam-sculptures to video projects. Each piece relates to the theme of “tales from the gut.”
 
-_For the whole article, click_ [_here_](https://dailyfreepress.com/blog/2018/04/22/bu-alum-transforms-pet-hotel-into-kenmore-gallery-space/)__
+_For the whole article, click_ [_here_](https://dailyfreepress.com/blog/2018/04/22/bu-alum-transforms-pet-hotel-into-kenmore-gallery-space/)

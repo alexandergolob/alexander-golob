@@ -8,7 +8,7 @@ date: 2016-03-28T04:34:23.774Z
 headerImage: /assets/bu-hall-article-.jpg
 alt: a
 author: By Rich Barlow
-path: /post-11
+path: /post-3
 tags:
   - Public Art
   - Boston University

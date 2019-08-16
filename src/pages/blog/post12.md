@@ -1,6 +1,6 @@
 ---
 templateKey: blog-post
-title: 'Student launches online marketplace, grows site with community outreach'
+title: 'Student Launches Online Marketplace, Grows Site with Community Outreach'
 subtitle: ''
 description: ''
 ogImage: /assets/starry-night.jpg

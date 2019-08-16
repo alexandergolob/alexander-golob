@@ -2,7 +2,7 @@
 templateKey: blog-post
 title: We are starting a blog!
 subtitle: ''
-description: Lorem ipsum
+description: ''
 ogImage: /assets/logo.png
 date: 2019-08-16T04:34:23.774Z
 headerImage: /assets/48365444_10216094366626294_3813282689369243648_o.jpg

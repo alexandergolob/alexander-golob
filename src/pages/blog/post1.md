@@ -3,7 +3,7 @@ templateKey: blog-post
 title: We are starting a blog!
 subtitle: ''
 description: Lorem ipsum
-ogImage: /assets/starry-night.jpg
+ogImage: /assets/logo.png
 date: 2019-08-16T04:34:23.774Z
 headerImage: /assets/starry-night.jpg
 alt: a

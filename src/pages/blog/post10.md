@@ -8,7 +8,7 @@ date: 2018-04-22T04:34:23.774Z
 headerImage: /assets/kenmore-gallery-article.jpg
 alt: a
 author: By Julia Maruca
-path: /post-10
+path: /post-2
 tags:
   - Public Art
   - Kenmore

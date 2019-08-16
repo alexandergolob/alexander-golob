@@ -12,7 +12,6 @@ tags:
   - Public Art
   - Boston Art
   - News
-  - Press
 ---
  As the sun rose on the second day of Wellesley’s Wonderful Weekend on Sunday, May 19, there was a new addition to the roadway on Central Street. But just barely, as it took Alexander Golob until after 3 a.m. to finish painting the blue and yellow “Boston Strong” and “Wellesley Strong” mottos at the halfway point of the Boston Marathon course.
 

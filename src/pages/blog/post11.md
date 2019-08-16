@@ -14,7 +14,6 @@ tags:
   - Boston University
   - Hallway Art
   - News
-  - Press
 ---
 Think “political science” and you wouldn’t conjure up an image of an art gallery. But a stroll to the third floor of 232 Bay State Road, home to the College of Arts & Sciences poli-sci department, is a minicourse in art appreciation. On the wall hangs a carved reproduction of the University seal, its waterfront view of Boston depicting what Puritan John Winthrop celebrated as the “city upon a hill.” In a bit of artistic license, a peace dove is affixed to the seal, which also is surrounded by multicolored wooden rectangles.
 

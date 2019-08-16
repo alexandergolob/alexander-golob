@@ -8,7 +8,7 @@ date: 2015-04-02T04:34:23.774Z
 headerImage: /assets/cookin-cafe-article.jpg
 alt: a
 author: By Mina Corpuz
-path: /post-12
+path: /post-4
 tags:
   - Public Art
   - Boston University

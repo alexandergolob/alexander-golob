@@ -8,7 +8,7 @@ date: 2014-05-05T04:34:23.774Z
 headerImage: /assets/alexander-article.jpg
 alt: a
 author: By Lauren Michael
-path: /post-13
+path: /post-5
 tags:
   - Public Art
   - Boston University

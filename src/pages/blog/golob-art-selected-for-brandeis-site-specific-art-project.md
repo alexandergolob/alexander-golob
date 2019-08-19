@@ -12,13 +12,13 @@ tags:
   - Site-Specific Art
   - Boston
 ---
-**Waltham, Ma. (March 27, 2017)** – Golob Art is pleased to announce that it will be working with Brandeis University to develop an exciting work of permanent site-specific art for the Brandeis community. The project is supported by a grant from Brandeis University’s Community Emergency and Enhancement Fund (CEEF).
+**Waltham, Ma. (March 27, 2017)** – Golob Art is pleased to announce that it will be working with Brandeis University to develop an exciting work of permanent site-specific art for the Brandeis community. The project is supported by a grant from [Brandeis University’s Community Emergency and Enhancement Fund (CEEF).](http://union.brandeis.edu/ceef/)
 
 The location of the work is yet to be determined. Golob is planning to hold a community event to determine the location and various themes within the next month.
 
 The artwork is expected to be complete in preparation for Brandeis’ Fall Semester.​
 
-The CEEF serves as a source of funding for student-led initiatives that have a campus-wide benefit and long term impact on the Brandeis campus and community. It is made up of a four student panel and then sends its recommendations to the administrators. The proposal was submitted by Brandeis Senior, Jeremy Koob and was endorsed by Assistant Director of Community Living, Tim Touchette.
+The CEEF serves as a source of funding for student-led initiatives that have a campus-wide benefit and long term impact on the Brandeis campus and community. It is made up of a four student panel and then sends its recommendations to the administrators. The proposal was submitted by Brandeis Senior, Jeremy Koob and was endorsed by [Assistant Director of Community Living, Tim Touchette](http://www.brandeis.edu/studentlife/dcl/about/staff.html).
 
 ​
 
@@ -26,4 +26,4 @@ The CEEF serves as a source of funding for student-led initiatives that have a c
 
 Local Boston artist Alexander Golob created Golob Art with the purpose of creating engaging art that provokes thought in the public, lifts its viewers and transforms physical space. Moreover, Golob Art aims to improve conditions for artists by developing a fair artistic practice.
 
-Golob, a recent Boston University graduate has already worked with several non-profits, communities, and companies in the Greater Boston area to provide transformative public art. Some past clients include Boston University and the South Middlesex Opportunity Council in Framingham.
+Golob, a recent Boston University graduate has already worked with several non-profits, communities, and companies in the Greater Boston area to provide transformative public art. Some past clients include [Boston University](https://www.bu.edu/today/2016/cfa-student-turns-stairwells-hall-into-public-art/) and the [South Middlesex Opportunity Council in Framingham.](http://www.metrowestdailynews.com/apps/pbcs.dll/section?template=videodetail&vid=95E91E2D-FC6A-405D-BEF7-E61B05C5C406&t=Alexander-Golob-discusses-his-mural%2C-Meditation-on-Community-and-Nature%2C-at-SMOC-in-Framingham)

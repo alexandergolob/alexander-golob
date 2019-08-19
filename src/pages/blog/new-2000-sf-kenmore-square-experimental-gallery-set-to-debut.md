@@ -3,7 +3,7 @@ templateKey: blog-post
 title: New 2000+ SF Kenmore Square Experimental Gallery Set to Debut
 date: 2018-04-03T04:00:00.000Z
 headerImage: /assets/screen-shot-2019-08-16-at-6.18.01-pm.png
-alt: b
+alt: g
 author: By Alexander Golob
 path: /post-7
 tags:

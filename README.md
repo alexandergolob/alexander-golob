@@ -1,6 +1,5 @@
 [Dev site](https://alexander-golob.netlify.com)
 
-fix /pages link bug
 review all pages for responsiveness after dimension change
 
 # Page Types

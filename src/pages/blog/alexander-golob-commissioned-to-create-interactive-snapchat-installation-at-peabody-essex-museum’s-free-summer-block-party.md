@@ -22,7 +22,7 @@ Participants will help Golob complete a large mural composed of hundreds of indi
 
 \#TheSnapGallery will be Golob’s first museum collaboration, and he is excited to share his creation with the Peabody Essex’s fantastic visitors. 
 
-Golob will be accepting snap submissions to be included in the installation through his Instagram and Facebook pages (@AlexanderGolobArt) and through email (alexandergolobart@gmail.com). He and the Peabody Essex are specifically looking for images having to do with the theme of home, whatever that may mean to different individuals. The most creative submission will win a Golob Art t-shirt screen printed by the artist. 
+Golob will be accepting snap submissions to be included in the installation through his Instagram and Facebook pages ([@AlexanderGolobArt](https://www.instagram.com/alexandergolobart/)) and through email ([alexandergolobart@gmail.com](alexandergolobart@gmail.com)). He and the Peabody Essex are specifically looking for images having to do with the theme of home, whatever that may mean to different individuals. The most creative submission will win a Golob Art t-shirt screen printed by the artist. 
 
 ​
 

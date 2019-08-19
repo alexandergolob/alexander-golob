@@ -40,6 +40,7 @@ const NavListItem = styled.li`
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
   font-weight: 600;
+  font-size: 0.9em;
 `;
 
 const SocialIcons = styled(UnstyledSocialIcons)`
@@ -56,7 +57,6 @@ const SocialIconsBox = styled(NavListItem)`
 
 const ContactLink = styled(NavListItemLink)`
   position: relative;
-  margin-top: 15px;
   background: none;
 `;
 
@@ -67,7 +67,7 @@ const ContactItem = styled(NavListItem)`
 
 const EmptyMarbleSquare = styled.div`
   position: relative;
-  margin-top: 1.5em;
+  margin-top: 1em;
   border: ${props => props.theme.misc.frameBorder};
   height: 7.5em;
 `;

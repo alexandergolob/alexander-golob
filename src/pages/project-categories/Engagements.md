@@ -1,7 +1,7 @@
 ---
 templateKey: project-category
 title: Engagements
-description: Lorem ipsum
+description: ''
 ogImage: /assets/starry-night.jpg
 path: /engagements
 hero: >-

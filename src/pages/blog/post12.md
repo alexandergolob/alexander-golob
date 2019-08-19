@@ -6,7 +6,7 @@ description: ''
 ogImage: /assets/starry-night.jpg
 date: 2015-04-02T04:34:23.774Z
 headerImage: /assets/cookin-cafe-article.jpg
-alt: a
+alt: d
 author: By Mina Corpuz
 path: /post-4
 tags:

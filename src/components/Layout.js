@@ -16,7 +16,7 @@ const LeftNav = styled(UnstyledLeftNav)`
   position: fixed;
   z-index: 3;
   width: 150px;
-  top: 14vh;
+  top: 5vh;
   left: calc(50% - (50% - 100px));
   transform: translateX(-50%);
 
@@ -27,7 +27,7 @@ const RightNav = styled(UnstyledRightNav)`
   position: fixed;
   z-index: 3;
   width: 150px;
-  top: 17vh;
+  top: 7vh;
   left: calc(50% + (50% - 100px));
   transform: translateX(-50%);
 

@@ -14,6 +14,7 @@ const Nav = styled.nav`
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.background};
   padding: 15px;
+  font-size: 0.9em;
 `;
 
 const NavList = styled.ul`
@@ -64,7 +65,7 @@ const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (
 );
 
 const NavItem = styled(UnstyledNavItem)`
-  margin-bottom: 1.5em;
+  margin-bottom: 1.25em;
 
   &:last-of-type {
     margin-bottom: 0;

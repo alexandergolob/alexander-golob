@@ -109,13 +109,13 @@ const Graffiti = styled.img`
   ${media.mobile`height: 80px;`}
 `;
 
-export default ({ head, children }) => (
+export default ({ head, rightNavReplacementComponent, children }) => (
   <ThemeProvider>
     <>
       <GlobalStyle />
       <Helmet {...head} />
       <LeftNav />
-      <RightNav />
+      <RightNav replacementComponent={rightNavReplacementComponent} />
       <BackgroundWrapper>
         <ResponsiveNav />
         <ZWrapper>{children}</ZWrapper>

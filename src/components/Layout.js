@@ -16,9 +16,9 @@ const LeftNav = styled(UnstyledLeftNav)`
   position: fixed;
   z-index: 3;
   width: 150px;
-  top: 5vh;
+  top: 50%;
   left: calc(50% - (50% - 100px));
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   ${media.laptop`display: none;`}
 `;
@@ -27,9 +27,9 @@ const RightNav = styled(UnstyledRightNav)`
   position: fixed;
   z-index: 3;
   width: 150px;
-  top: 7vh;
+  top: calc(50% + 10px);
   left: calc(50% + (50% - 100px));
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
 
   ${media.laptop`display: none;`}
 `;

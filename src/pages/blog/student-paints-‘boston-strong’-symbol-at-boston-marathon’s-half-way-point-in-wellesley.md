@@ -5,7 +5,7 @@ title: >-
   Wellesley
 date: 2013-05-23T04:00:00.000Z
 headerImage: /assets/screen-shot-2019-08-16-at-5.36.41-pm.png
-alt: b
+alt: f
 author: By Jordan Mayblum
 path: /post-6
 tags:

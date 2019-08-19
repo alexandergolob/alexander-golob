@@ -102,7 +102,10 @@ export const Template = ({
 export default ({ data }) => (
   <Template
     {...data.markdownRemark.frontmatter}
-    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      data.markdownRemark.frontmatter.ogImage &&
+      data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     image={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
   />
 );

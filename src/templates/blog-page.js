@@ -56,7 +56,10 @@ export const BlogPageTemplate = ({
 export default ({ data, pageContext }) => (
   <BlogPageTemplate
     {...data.markdownRemark.frontmatter}
-    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      data.markdownRemark.frontmatter.ogImage &&
+      data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     latestPost={{
       ...data.latestPost.edges[0].node.frontmatter,
       content: data.latestPost.edges[0].node.excerpt

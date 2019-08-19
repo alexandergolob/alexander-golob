@@ -212,7 +212,10 @@ export const ContactPageTemplate = ({
 export default ({ data }) => (
   <ContactPageTemplate
     {...data.markdownRemark.frontmatter}
-    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      data.markdownRemark.frontmatter.ogImage &&
+      data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     image={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
   />
 );

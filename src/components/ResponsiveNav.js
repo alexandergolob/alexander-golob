@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
-// import Image from 'gatsby-image';
+import Image from 'gatsby-image';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faBars,
@@ -22,19 +22,16 @@ const Nav = styled.nav`
   padding: 20px;
 `;
 
-const LogoAndText = styled.div`
+const LogoAndText = styled(InternalLink)`
   margin-bottom: 0.5em;
   display: flex;
   justify-content: center;
   align-items: center;
 `;
 
-// const Logo = styled(Image)`
-//   margin-right: 0.2em;
-
-//   /* ${media.tablet`height: 80px;`} */
-//   /* ${media.mobile`font-size: 1.5em;`} */
-// `;
+const Logo = styled(Image)`
+  margin-right: 0.2em;
+`;
 
 const LogoText = styled.div`
   font-family: ${props => props.theme.fonts.serif};
@@ -154,7 +151,7 @@ const query = graphql`
             text
             logo {
               childImageSharp {
-                fixed(height: 100) {
+                fixed(height: 50) {
                   ...GatsbyImageSharpFixed
                 }
               }
@@ -218,8 +215,8 @@ const ResponsiveNav = ({ homeLogo, leftNavItems, rightNavItems, ...rest }) => {
   return (
     <Nav {...rest}>
       <LightMarble />
-      <LogoAndText>
-        {/* <Logo fluid={homeLogo.logo} alt='logo' /> */}
+      <LogoAndText to='/'>
+        <Logo fixed={homeLogo.logo} alt='logo' />
         <LogoText>{homeLogo.text}</LogoText>
       </LogoAndText>
       <SocialIcons />
@@ -252,7 +249,7 @@ export default props => {
       rightNavItems={right.items}
       homeLogo={{
         ...left.homeLogo,
-        logo: left.homeLogo.logo.childImageSharp.fluid
+        logo: left.homeLogo.logo.childImageSharp.fixed
       }}
       {...props}
     />

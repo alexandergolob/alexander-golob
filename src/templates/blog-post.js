@@ -120,7 +120,10 @@ export default ({ data: { currentPost, recentStories }, pageContext }) => (
   <Template
     body={currentPost.html}
     {...currentPost.frontmatter}
-    ogImage={currentPost.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      currentPost.frontmatter.ogImage &&
+      currentPost.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     headerImage={currentPost.frontmatter.headerImage.childImageSharp.fluid}
     recentStories={recentStories.edges.map(({ node: { frontmatter } }) => ({
       ...frontmatter,

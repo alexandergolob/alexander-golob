@@ -40,6 +40,7 @@ const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
   padding: 15px 25px;
+  font-family: ${props => props.theme.fonts.serif};
 
   ${media.tablet`grid-area: 1 / 1 / span 1 / -1;`}
 `;
@@ -121,7 +122,10 @@ export const Template = ({
 export default ({ data: { subcategory, projects } }) => (
   <Template
     {...subcategory.frontmatter}
-    ogImage={subcategory.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      subcategory.frontmatter.ogImage &&
+      subcategory.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     subcategoryDescription={subcategory.html}
     projects={projects.edges.map(({ node }) => ({
       ...node.frontmatter,

@@ -1,9 +1,7 @@
 [Dev site](https://alexander-golob.netlify.com)
 
-description for subcategories pre link and link text should be serif
-change nav from web to mobile at 1025px
-standardize aspect ratio on /about
-ensure that responsive nav subitems are links
+fix /pages link bug
+review all pages for responsiveness after dimension change
 
 # Page Types
 
@@ -26,7 +24,7 @@ ensure that responsive nav subitems are links
 
 - [x] Footer
 - [x] Social icons
-- [ ] Graffiti - need to think about this a bit more
+- [x] Graffiti
 - [x] Subscription widget
 - [x] Navs
 - [ ] Right nav scroll component
@@ -37,7 +35,6 @@ ensure that responsive nav subitems are links
 - [x] Partitioning images that don't need to be in assets folder
 - [x] Ensure correct alt tags for images
 - [x] CMS interface
-- [ ] CMS previews
 - [x] sitemap
 - [x] robots.txt
 - [ ] PWA functionality

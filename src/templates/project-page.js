@@ -239,7 +239,10 @@ export const Template = ({
 export default ({ data: { project, projects, blog } }) => (
   <Template
     {...project.frontmatter}
-    ogImage={project.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      project.frontmatter.ogImage &&
+      project.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     firstImage={{
       image: project.frontmatter.images[0].image.childImageSharp.fluid,
       alt: project.frontmatter.images[0].alt

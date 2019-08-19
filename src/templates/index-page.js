@@ -249,7 +249,10 @@ export const IndexPageTemplate = ({
 export default ({ data: { index, postsLatest, postsRest, instagram } }) => (
   <IndexPageTemplate
     {...index.frontmatter}
-    ogImage={index.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      index.frontmatter.ogImage &&
+      index.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     carouselImages={index.frontmatter.carouselImages.map(carouselImage => ({
       ...carouselImage,
       image: carouselImage.image.childImageSharp.fluid

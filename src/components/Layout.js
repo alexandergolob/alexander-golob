@@ -10,6 +10,7 @@ import UnstyledResponsiveNav from './ResponsiveNav';
 import UnstyledFooter from './Footer';
 
 import BrickBG from '../texture-images/brick-wall-bg.jpg';
+import GraffitiImg from '../texture-images/logo-white.png';
 
 const LeftNav = styled(UnstyledLeftNav)`
   position: fixed;
@@ -97,7 +98,9 @@ const Footer = styled(UnstyledFooter)`
   width: 100%;
 `;
 
-const GraffitiContainer = styled.div``;
+const GraffitiContainer = styled.div`
+  margin-top: 0.5em;
+`;
 
 const Graffiti = styled.img`
   height: 120px;
@@ -117,7 +120,7 @@ export default ({ head, children }) => (
         <ResponsiveNav />
         <ZWrapper>{children}</ZWrapper>
         <GraffitiContainer>
-          <Graffiti alt='' src='/assets/logo-white.png' />
+          <Graffiti alt='' src={GraffitiImg} />
         </GraffitiContainer>
         <Footer />
       </BackgroundWrapper>

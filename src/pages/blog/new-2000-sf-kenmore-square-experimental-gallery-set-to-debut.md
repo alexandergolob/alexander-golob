@@ -13,7 +13,7 @@ tags:
   - Kenmore Square
   - Art Studio
 ---
-Post-Cubicle Gallery, a new gallery space in Kenmore Square, is set to make its debut April 20th 6-9pm, with its first exhibition ‘Tales from the Gut.’ The show will be open through May 20th and will feature a variety of art selected from a diverse and competitive pool of applicants.
+**Boston, MA. (April 03, 2018)** Post-Cubicle Gallery, a new gallery space in Kenmore Square, is set to make its debut April 20th 6-9pm, with its first exhibition ‘Tales from the Gut.’ The show will be open through May 20th and will feature a variety of art selected from a diverse and competitive pool of applicants.
 
 ‘Tales from the Gut’ intends to display stories of soulful conviction through a variety of artistic methods, all while representing a variety of internal and external experiences. The show will establish an inviting and remarkable atmosphere, poised to recall the defiant past of Boston’s Kenmore Square. Director, Alexander Golob, and co-curators, Edie Côté and Danielle Pratt, invite the community to stop by and experience this first, spectacular installment.
 
@@ -21,4 +21,8 @@ Featured artists include: Evan Morse, Sam Kindler, Alexandra Rozenmam, Caitlin S
 
 Event: https://www.facebook.com/events/165998994113482/
 
-About Post-Cubicle Gallery: Located in Kenmore Square in collaboration with Hotel Buckminster, Post-Cubicle Gallery is a 2000+ square foot space organized by local Boston artists Alexander Golob, Edie Côté and Danielle Pratt. Post-Cubicle Gallery aims to take risks with artistic expression and give voice to people who may not have the opportunity otherwise.
+****
+
+**About Post-Cubicle Gallery:**
+
+Located in Kenmore Square in collaboration with Hotel Buckminster, Post-Cubicle Gallery is a 2000+ square foot space organized by local Boston artists Alexander Golob, Edie Côté and Danielle Pratt. Post-Cubicle Gallery aims to take risks with artistic expression and give voice to people who may not have the opportunity otherwise.

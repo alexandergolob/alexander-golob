@@ -58,20 +58,15 @@ export default ({ projects, refs }) => {
         ? new Date(projects[i + 1].date).getFullYear()
         : currentYear;
 
-    // const firstRef = i === 0 ? { ref: refs[0] } : {};
-    const firstRef = {};
-
-    console.log(firstRef);
-
     const markup = (
-      <Project to={path} key={i} {...(i === 0 ? { ref: refs[0] } : {})}>
+      <Project to={path} key={i} {...(refs && i === 0? { ref: refs[0] } : {})}>
         <Image alt='' fluid={image} />
         <Title>{title}</Title>
       </Project>
     );
 
     let restOfRefs = {};
-    if (i !== 0 && currentYear > nextYear) {
+    if (refs && i !== 0 && currentYear > nextYear) {
       restOfRefs.ref = refs[nextRef];
       nextRef++;
     }

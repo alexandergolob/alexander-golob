@@ -114,6 +114,13 @@ exports.createPages = ({ actions, graphql }) => {
       tags: node.frontmatter.tags
     }));
 
+    console.log('hello');
+    result.data.pages.edges.forEach(({ node }) =>
+      console.log(node.childMarkdownRemark.id, node.childMarkdownRemark.fields)
+    );
+    // console.log(node.childMarkdownRemark);
+    // console.log(node.childMarkdownRemark.fields.slug);
+
     const pages = result.data.pages.edges.map(({ node }) => ({
       id: node.childMarkdownRemark.id,
       slug: node.childMarkdownRemark.fields.slug,

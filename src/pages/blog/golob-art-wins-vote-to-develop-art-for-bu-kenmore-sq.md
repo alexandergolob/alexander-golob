@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Golob Art Wins Vote to Develop Art for BU, Kenmore Sq'
 date: 2016-12-06T20:26:00.592Z
 headerImage: /assets/kaleidoscope.webp
-alt: m
+alt: l
 author: By Alexander Golob
 path: /post-12
 tags:

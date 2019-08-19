@@ -41,6 +41,7 @@ const Header = styled.header`
 
 const HeaderImg = styled(Image)`
   height: 100%;
+  border: 2px solid black;
 
   /* override aspect ratio */
   > div {

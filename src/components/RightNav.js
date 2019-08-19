@@ -93,9 +93,9 @@ const RightNav = ({ secondaryLogo, items, ...rest }) => (
         </ContactLink>
       </NavList>
     </nav>
-    <EmptyMarbleSquare>
+    {/* <EmptyMarbleSquare>
       <GreenMarble />
-    </EmptyMarbleSquare>
+    </EmptyMarbleSquare> */}
   </div>
 );
 

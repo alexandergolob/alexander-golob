@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { graphql } from 'gatsby';
+import { uniq } from 'lodash';
 
 import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
@@ -88,6 +89,19 @@ const CTALink = styled(InternalLink)`
   ${media.mobile`min-width: auto; width: 100%;`}
 `;
 
+const NavReplacementContainer = styled.ul`
+  font-family: ${props => props.theme.fonts.serif};
+  font-weight: 600;
+`;
+
+const NavReplacementItem = styled.li`
+  cursor: pointer;
+  margin-bottom: 0.25em;
+  :last-of-type {
+    margin-bottom: 0;
+  }
+`;
+
 export const Template = ({
   title,
   description,
@@ -97,13 +111,34 @@ export const Template = ({
   subcategoryDescription,
   projects
 }) => {
+  const projectYears = uniq(projects.map(p => new Date(p.date).getFullYear()));
+  const refs = projectYears.map(() => React.useRef(null));
+
   return (
-    <Layout head={{ title, description, ogImage }}>
+    <Layout
+      head={{ title, description, ogImage }}
+      rightNavReplacementComponent={() => {
+        const onClick = i =>
+          refs[i].current.scrollIntoView({
+            behavior: 'smooth'
+          });
+
+        return (
+          <NavReplacementContainer>
+            {projectYears.map((y, i) => (
+              <NavReplacementItem key={y} onClick={() => onClick(i)}>
+                {y}
+              </NavReplacementItem>
+            ))}
+          </NavReplacementContainer>
+        );
+      }}
+    >
       <HeadingContainer>
         <Heading>{title}</Heading>
       </HeadingContainer>
       <ProjectsContainer>
-        <Projects projects={projects} />
+        <Projects projects={projects} refs={refs} />
         <DescriptionContainer>
           <Hero>{hero}</Hero>
           <Description

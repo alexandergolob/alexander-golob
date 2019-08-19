@@ -49,26 +49,38 @@ const YearTitle = styled(Title)`
   place-items: center;
 `;
 
-export default ({ projects }) =>
-  projects.reduce((acc, { date, path, image, title }, i) => {
+export default ({ projects, refs }) => {
+  let nextRef = 1;
+  return projects.reduce((acc, { date, path, image, title }, i) => {
     const currentYear = new Date(date).getFullYear();
     const nextYear =
       i < projects.length - 1
         ? new Date(projects[i + 1].date).getFullYear()
         : currentYear;
 
+    // const firstRef = i === 0 ? { ref: refs[0] } : {};
+    const firstRef = {};
+
+    console.log(firstRef);
+
     const markup = (
-      <Project to={path} key={i}>
+      <Project to={path} key={i} {...(i === 0 ? { ref: refs[0] } : {})}>
         <Image alt='' fluid={image} />
         <Title>{title}</Title>
       </Project>
     );
 
+    let restOfRefs = {};
+    if (i !== 0 && currentYear > nextYear) {
+      restOfRefs.ref = refs[nextRef];
+      nextRef++;
+    }
+
     return currentYear > nextYear
       ? [
           ...acc,
           markup,
-          <YearMarker key={i + 0.5}>
+          <YearMarker key={i + 0.5} {...restOfRefs}>
             <Year>
               <LightMarble />
               {nextYear}
@@ -78,3 +90,4 @@ export default ({ projects }) =>
         ]
       : [...acc, markup];
   }, []);
+};

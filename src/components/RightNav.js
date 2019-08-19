@@ -65,17 +65,26 @@ const ContactItem = styled(NavListItem)`
   color: hsl(148, 93%, 5%);
 `;
 
-const EmptyMarbleSquare = styled.div`
-  position: relative;
-  margin-top: 1em;
-  border: ${props => props.theme.misc.frameBorder};
-  height: 7.5em;
-`;
+// const EmptyMarbleSquare = styled.div`
+//   position: relative;
+//   margin-top: 1em;
+//   border: ${props => props.theme.misc.frameBorder};
+//   height: 7.5em;
+// `;
 
-const RightNav = ({ secondaryLogo, items, ...rest }) => (
+const RightNav = ({
+  secondaryLogo,
+  items,
+  replacementComponent: ReplacementComponent,
+  ...rest
+}) => (
   <div {...rest}>
     <SecondaryLogoContainer>
-      <SecondaryLogo fixed={secondaryLogo} alt='' />
+      {ReplacementComponent ? (
+        <ReplacementComponent />
+      ) : (
+        <SecondaryLogo fixed={secondaryLogo} alt='' />
+      )}
     </SecondaryLogoContainer>
     <nav>
       <NavList>

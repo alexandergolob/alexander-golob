@@ -1,12 +1,11 @@
-import React from 'react';
 import { Link } from 'gatsby';
 import styled from 'styled-components';
 
-const InternalLink = styled(Link)`
+const InternalLink = styled(Link).attrs(props => ({
+  to: props.to && props.to.replace('../pages', '')
+}))`
   color: inherit;
   text-decoration: none;
 `;
 
-export default ({ to, ...rest }) => (
-  <InternalLink to={to.replace('/pages', '')} {...rest} />
-);
+export default InternalLink;

@@ -8,7 +8,7 @@ hero: >-
   technique research. 
 CTA:
   path: /contact
-  statement: s
+  statement: Get in touch
   statementAbove: Interested? Got Questions?
 ---
 hi

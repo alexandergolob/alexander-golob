@@ -6,7 +6,7 @@ description: ''
 ogImage: /assets/starry-night.jpg
 date: 2018-04-22T04:34:23.774Z
 headerImage: /assets/kenmore-gallery-article.jpg
-alt: a
+alt: b
 author: By Julia Maruca
 path: /post-2
 tags:

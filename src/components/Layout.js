@@ -12,7 +12,6 @@ import UnstyledFooter from './Footer';
 import BrickBG from '../texture-images/brick-wall-bg.jpg';
 
 const LeftNav = styled(UnstyledLeftNav)`
-  /* display: none; */
   position: fixed;
   z-index: 3;
   width: 150px;
@@ -24,7 +23,6 @@ const LeftNav = styled(UnstyledLeftNav)`
 `;
 
 const RightNav = styled(UnstyledRightNav)`
-  /* display: none; */
   position: fixed;
   z-index: 3;
   width: 150px;

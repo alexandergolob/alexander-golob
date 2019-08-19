@@ -16,7 +16,8 @@ const LeftNav = styled(UnstyledLeftNav)`
   z-index: 3;
   width: 150px;
   top: 14vh;
-  left: calc(50% - ${props => props.theme.widths.laptop} / 2 + 25px);
+  left: calc(50% - (50% - 100px));
+  transform: translateX(-50%);
 
   ${media.laptop`display: none;`}
 `;
@@ -26,7 +27,8 @@ const RightNav = styled(UnstyledRightNav)`
   z-index: 3;
   width: 150px;
   top: 17vh;
-  right: calc(50% - ${props => props.theme.widths.laptop} / 2 + 25px);
+  left: calc(50% + (50% - 100px));
+  transform: translateX(-50%);
 
   ${media.laptop`display: none;`}
 `;
@@ -59,7 +61,8 @@ const GlobalStyle = createGlobalStyle`
 const BackgroundWrapper = styled.div`
   margin: auto;
   position: relative;
-  max-width: 800px;
+  max-width: 1200px;
+  width: calc(100% - 200px);
   min-height: 100vh;
   background-color: hsl(15, 78%, 56%);
   background-image: url(${BrickBG});
@@ -69,6 +72,7 @@ const BackgroundWrapper = styled.div`
 
   ${media.laptop`
     max-width: 100%;
+    width: 100%;
     padding: 20px;
     padding-top: 200px; 
     padding-bottom: 150px;

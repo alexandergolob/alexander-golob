@@ -6,7 +6,7 @@ description: ''
 ogImage: /assets/starry-night.jpg
 date: 2014-05-05T04:34:23.774Z
 headerImage: /assets/alexander-article.jpg
-alt: a
+alt: e
 author: By Lauren Michael
 path: /post-5
 tags:

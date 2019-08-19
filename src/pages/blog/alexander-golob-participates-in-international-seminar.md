@@ -3,7 +3,7 @@ templateKey: blog-post
 title: 'Alexander Golob Participates in International Seminar '
 date: 2016-10-14T19:54:20.270Z
 headerImage: /assets/screen-shot-2019-08-19-at-3.55.29-pm.png
-alt: 'n'
+alt: m
 author: '----'
 path: /post-13
 tags:

@@ -6,7 +6,7 @@ description: ''
 ogImage: /assets/starry-night.jpg
 date: 2016-03-28T04:34:23.774Z
 headerImage: /assets/bu-hall-article-.jpg
-alt: a
+alt: c
 author: By Rich Barlow
 path: /post-3
 tags:

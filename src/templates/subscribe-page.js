@@ -274,7 +274,10 @@ export const SubscribePageTemplate = ({
 export default ({ data }) => (
   <SubscribePageTemplate
     {...data.markdownRemark.frontmatter}
-    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      data.markdownRemark.frontmatter.ogImage &&
+      data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     image={data.markdownRemark.frontmatter.image.childImageSharp.fluid}
   />
 );

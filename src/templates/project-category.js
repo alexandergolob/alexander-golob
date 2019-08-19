@@ -200,7 +200,10 @@ export default ({ data: { category, subcategories, projects } }) => {
   return (
     <Template
       {...category.frontmatter}
-      ogImage={category.frontmatter.ogImage.childImageSharp.fluid.src}
+      ogImage={
+        category.frontmatter.ogImage &&
+        category.frontmatter.ogImage.childImageSharp.fluid.src
+      }
       subcategorySections={category.frontmatter.subcategorySections.map(
         (section, i) => ({
           ...section,

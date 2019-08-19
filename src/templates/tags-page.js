@@ -128,7 +128,10 @@ export const Template = ({ title, description, ogImage, tags }) => {
 export default ({ data: { seo, tags } }) => (
   <Template
     {...seo.frontmatter}
-    ogImage={seo.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      seo.frontmatter.ogImage &&
+      seo.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     tags={tags.group}
   />
 );

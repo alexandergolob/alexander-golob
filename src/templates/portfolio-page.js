@@ -91,7 +91,10 @@ export const Template = ({
 export default ({ data: { portfolio, featuredProjects } }) => (
   <Template
     {...portfolio.frontmatter}
-    ogImage={portfolio.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      portfolio.frontmatter.ogImage &&
+      portfolio.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     featuredProjects={featuredProjects.edges.map(({ node }) => ({
       ...node.frontmatter,
       image: node.frontmatter.images[0].image.childImageSharp.fluid,

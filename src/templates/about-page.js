@@ -108,8 +108,7 @@ const TeamImage = styled(Image)`
   width: 300px;
   height: 300px;
 
-  ${media.tablet`margin: 0.25em 0; width: 100%;`}
-  ${media.mobile`height: 200px;`}
+  ${media.tablet`margin: 0.25em auto; max-width: 100%;`}
 `;
 
 const FinalCTAContainer = styled.div`
@@ -173,7 +172,10 @@ export const AboutPageTemplate = ({
 export default ({ data }) => (
   <AboutPageTemplate
     {...data.markdownRemark.frontmatter}
-    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      data.markdownRemark.frontmatter.ogImage &&
+      data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src
+    }
     companyDescription={{
       ...data.markdownRemark.frontmatter.companyDescription,
       content: data.markdownRemark.fields.companyDescription.content

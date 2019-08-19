@@ -195,7 +195,10 @@ export const CVPageTemplate = ({
 export default ({ data }) => (
   <CVPageTemplate
     {...data.markdownRemark.frontmatter}
-    ogImage={data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src}
+    ogImage={
+      data.markdownRemark.frontmatter.ogImage &&
+      data.markdownRemark.frontmatter.ogImage.childImageSharp.fluid.src
+    }
   />
 );
 

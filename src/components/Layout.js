@@ -16,9 +16,9 @@ const LeftNav = styled(UnstyledLeftNav)`
   z-index: 3;
   width: 150px;
   top: 14vh;
-  left: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
+  left: calc(50% - ${props => props.theme.widths.laptop} / 2 + 25px);
 
-  ${media.extraLarge`display: none;`}
+  ${media.laptop`display: none;`}
 `;
 
 const RightNav = styled(UnstyledRightNav)`
@@ -26,9 +26,9 @@ const RightNav = styled(UnstyledRightNav)`
   z-index: 3;
   width: 150px;
   top: 17vh;
-  right: calc(50% - ${props => props.theme.widths.large} / 2 - 100px);
+  right: calc(50% - ${props => props.theme.widths.laptop} / 2 + 25px);
 
-  ${media.extraLarge`display: none;`}
+  ${media.laptop`display: none;`}
 `;
 
 const ResponsiveNav = styled(UnstyledResponsiveNav)`
@@ -38,7 +38,7 @@ const ResponsiveNav = styled(UnstyledResponsiveNav)`
   left: 0;
   width: 100%;
   display: none;
-  ${media.extraLarge`display: block;`}
+  ${media.laptop`display: block;`}
 `;
 
 const GlobalStyle = createGlobalStyle`
@@ -59,26 +59,24 @@ const GlobalStyle = createGlobalStyle`
 const BackgroundWrapper = styled.div`
   margin: auto;
   position: relative;
-  max-width: ${props => props.theme.widths.large};
+  max-width: 800px;
   min-height: 100vh;
-  background: url(${BrickBG});
+  background-color: hsl(15, 78%, 56%);
+  background-image: url(${BrickBG});
   background-size: contain;
   padding: 80px;
   padding-bottom: 200px;
 
-  ${media.extraLarge`
-    padding-top: 200px; 
-  `}
-
-  ${media.large`
+  ${media.laptop`
+    max-width: 100%;
     padding: 20px;
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding-top: 200px; 
+    padding-bottom: 150px;
   `}
 
   ${media.mobile`
     padding-top: 150px;
-    padding-bottom: 150px;
+    padding-bottom: 125px;
   `}
 `;
 
@@ -95,13 +93,10 @@ const Footer = styled(UnstyledFooter)`
   width: 100%;
 `;
 
+const GraffitiContainer = styled.div``;
+
 const Graffiti = styled.img`
   height: 120px;
-  position: absolute;
-  bottom: 120px;
-  left: 2.5em;
-  z-index: 1;
-  user-select: none;
 
   ${media.tablet`height: 100px;`}
   ${media.mobile`height: 80px;`}
@@ -117,7 +112,9 @@ export default ({ head, children }) => (
       <BackgroundWrapper>
         <ResponsiveNav />
         <ZWrapper>{children}</ZWrapper>
-        <Graffiti alt='' src='assets/logo-white.svg' />
+        <GraffitiContainer>
+          <Graffiti alt='' src='/assets/logo-white.png' />
+        </GraffitiContainer>
         <Footer />
       </BackgroundWrapper>
     </>

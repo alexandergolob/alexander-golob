@@ -15,15 +15,13 @@ tags:
 ---
 **Boston, Ma. (December 6, 2016)** – Golob Art, after winning a vote at the Boston University Student Government, will be working with the BU community to develop a proposal for a work of transformative public art for Kenmore square on the exterior of the Kenmore Classroom Building.
 
-Alexander Golob, a BU College of Fine Arts Class of 2016 alumni, and Anuska Pinto, a College of Arts and Sciences Senator, proposed the project during the BU Senate’s regular meeting at 8:00 pm Monday evening in the Photonics Science Building on BU Campus.
+Alexander Golob, [a BU College of Fine Arts Class of 2016 alumni](https://www.bu.edu/today/2016/cfa-student-turns-stairwells-hall-into-public-art/), and Anuska Pinto, a [College of Arts and Sciences Senator](https://www.bu.edu/cgs/2016/11/07/five-cgs-alums-inducted-into-scarlet-key-honor-society/), proposed the project during the BU Senate’s regular meeting at 8:00 pm Monday evening in the Photonics Science Building on BU Campus.
 
-The proposal passed with 90 percent yea’s and 10 percent nays.
+[The proposal passed with 90 percent yea’s and 10 percent nays.](http://dailyfreepress.com/2016/12/06/sg-passes-proposal-urging-bu-become-sanctuary-campus/)
 
-The plan calls for two phases. The first, which was voted on by the Student Government, is taking place December 2016 through May 2017 and will consist of community meetings and developing a proposal for a work of art on Boston University’s Kenmore Classroom Building. The second phase of the project will include the creation of the proposed artwork.
+The plan calls for two phases. The first, which was voted on by the [Student Government](http://www.bu.edu/stugov/), is taking place December 2016 through May 2017 and will consist of community meetings and developing a proposal for a work of art on Boston University’s Kenmore Classroom Building. The second phase of the project will include the creation of the proposed artwork.
 
 College of Engineering Senator Piergacomo Cacciamani successfully added an amendment to the proposal to require the inclusion of the Student Government’s name as the initial sponsor of the work.
-
-
 
 **About Golob Art**
 

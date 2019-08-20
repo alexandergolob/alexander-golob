@@ -8,11 +8,23 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
   const { createNodeField } = actions;
   fmImagesToRelative(node);
 
-  // only create pages from the .md files in /pages so that things like site settings are ignored
+  // if (
+  //   node.frontmatter &&
+  //   node.frontmatter.templateKey &&
+  //   node.frontmatter.templateKey === 'blog-post'
+  // )
+  //   console.log(
+  //     node.internal.type,
+  //     node.frontmatter.path,
+  //     node.fileAbsolutePath
+  //   );
+
   if (
     node.internal.type === 'MarkdownRemark' &&
-    node.fileAbsolutePath.includes('/pages/')
+    (node.fileAbsolutePath.includes('/pages/') ||
+      node.fileAbsolutePath.includes('\\pages\\'))
   ) {
+    // only create pages from the .md files in /pages so that things like site settings are ignored
     const { templateKey, path } = node.frontmatter;
 
     let slug = createFilePath({ node, getNode }).replace(
@@ -114,10 +126,10 @@ exports.createPages = ({ actions, graphql }) => {
       tags: node.frontmatter.tags
     }));
 
-    console.log('hello');
-    result.data.pages.edges.forEach(({ node }) =>
-      console.log(node.childMarkdownRemark.id, node.childMarkdownRemark.fields)
-    );
+    // console.log('hello');
+    // result.data.pages.edges.forEach(({ node }) =>
+    //   console.log(node.childMarkdownRemark.id, node.childMarkdownRemark.fields)
+    // );
     // console.log(node.childMarkdownRemark);
     // console.log(node.childMarkdownRemark.fields.slug);
 

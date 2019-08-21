@@ -8,6 +8,7 @@ links:
     path: /
   - content: Blog
     path: /blog
-  - content: News
+  - content: Press
     path: /
 ---
+

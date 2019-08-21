@@ -13,6 +13,7 @@ tags:
   - Public Art
   - Boston University
   - News
+  - Press Release
 ---
 Alexander Golob
 

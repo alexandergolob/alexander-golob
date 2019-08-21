@@ -4,8 +4,8 @@ title: Personal
 path: /personal
 category: Art
 hero: >-
-  Projects that are done for Alexander, by Alexander. In the name of art
-  technique research. 
+  Golob Art is an innovative art company, and, thanks to our Patreon supporters,
+  we are able to execute art projects to experiment with new project techniques.
 CTA:
   path: /contact
   statement: Get in touch

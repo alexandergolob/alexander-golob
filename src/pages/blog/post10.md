@@ -15,6 +15,7 @@ tags:
   - Art Gallery
   - News
   - Boston Art
+  - Press Release
 ---
 Boston residents walking up Beacon Street may notice a new burst of color among the storefronts in Kenmore Square.
 

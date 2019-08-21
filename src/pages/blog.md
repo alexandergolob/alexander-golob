@@ -5,10 +5,10 @@ ogImage: /assets/starry-night.jpg
 heading: Golob Art Blog
 links:
   - content: All
-    path: /
-  - content: Blog
     path: /blog
+  - content: Blog
+    path: /tags/blog
   - content: Press
-    path: /
+    path: /tags/press-release
 ---
 

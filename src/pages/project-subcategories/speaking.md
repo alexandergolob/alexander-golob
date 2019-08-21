@@ -4,8 +4,10 @@ title: Speaking
 description: Lorem ipsum
 ogImage: /assets/starry-night.jpg
 path: /speaking
-hero: Alexander Golob is a dude
 category: Engagements
+hero: >-
+  Golob Art is invested in supporting art education, and is contributing to that
+  goal by offering lectures, classes, and mentorship for aspiring artists.
 CTA:
   path: /contact
   statement: Get in touch

@@ -13,7 +13,7 @@ tags:
   - Public Art
   - Boston University
   - News
-  - ''
+  - Press Release
 ---
 As music pulsed through Boston University’s Center for Gender, Sexuality and Activism on Sunday, students eyed the space, full of used clothing, with anticipation. Through racks of shirts, coats and accessories, Alex Shadrow walked to the head of the room, cut the music and shouted, “Go.” With students ripping clothes off the racks and guarding them protectively in their arms, BU’s first clothing swap had just begun.
 

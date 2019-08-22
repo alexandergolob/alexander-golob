@@ -1,10 +1,10 @@
 ---
 templateKey: project-page
-title: test engagement made using engagement collection
-description: Lorem ipsum
-ogImage: /assets/starry-night.jpg
-date: 2019-04-02T04:34:23.774Z
-path: /lorem-ipsum
+title: Kaleidoscope
+description: ''
+ogImage: ''
+date: 2013-09-01T04:34:23.774Z
+path: /kaleidoscope
 category: Art
 subcategories:
   - Personal

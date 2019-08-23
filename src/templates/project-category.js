@@ -166,7 +166,10 @@ export const Template = ({
       }
     >
       {subcategorySections.map(
-        ({ subcategory, description, image, alt, linkContent, path }, i) => (
+        (
+          { subcategory, description, image, alt, linkContent, linkPath },
+          i
+        ) => (
           <React.Fragment key={i}>
             <SubcategoryTitleAndDescription
               startingColumn={i % 2 === 0 ? 1 : 3}
@@ -177,7 +180,7 @@ export const Template = ({
                 <SubcategoryDescription
                   dangerouslySetInnerHTML={{ __html: description }}
                 />
-                <SubcategoryLink to={path}>{linkContent}</SubcategoryLink>
+                <SubcategoryLink to={linkPath}>{linkContent}</SubcategoryLink>
               </SubcategoryDescriptionContainer>
             </SubcategoryTitleAndDescription>
             <SubcategoryImage
@@ -196,7 +199,7 @@ export const Template = ({
   </Layout>
 );
 
-export default ({ data: { category, subcategories, projects } }) => {
+export default ({ data: { category, projects } }) => {
   return (
     <Template
       {...category.frontmatter}
@@ -208,10 +211,7 @@ export default ({ data: { category, subcategories, projects } }) => {
         (section, i) => ({
           ...section,
           description: category.fields.subcategorySections[i].description,
-          image: section.image.childImageSharp.fluid,
-          path: subcategories.edges.find(
-            ({ node }) => node.frontmatter.title === section.subcategory
-          ).node.fields.slug
+          image: section.image.childImageSharp.fluid
         })
       )}
       projects={projects.edges.map(({ node }) => ({
@@ -240,6 +240,7 @@ export const query = graphql`
         subcategorySections {
           subcategory
           linkContent
+          linkPath
           image {
             childImageSharp {
               fluid(maxWidth: 600) {

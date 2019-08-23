@@ -11,6 +11,7 @@ subcategorySections:
   - alt: a
     image: /assets/kaleidoscope.webp
     linkContent: /projects/speaking
+    linkPath: /projects/speaking
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -21,6 +22,7 @@ subcategorySections:
   - alt: c
     image: /assets/img-20190220-wa0005-1-.jpg
     linkContent: /projects/events
+    linkPath: /projects/events
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

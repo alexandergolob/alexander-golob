@@ -9,6 +9,7 @@ subcategorySections:
   - alt: a
     image: /assets/screen-shot-2019-08-16-at-6.18.01-pm.png
     linkContent: /projects/post-cubicle-gallery
+    linkPath: /projects/post-cubicle-gallery
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -19,6 +20,7 @@ subcategorySections:
   - alt: b
     image: /assets/screen-shot-2019-08-21-at-2.54.28-pm.png
     linkContent: /projects/through-the-looking-glass
+    linkPath: /projects/through-the-looking-glass
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -29,6 +31,7 @@ subcategorySections:
   - alt: c
     image: /assets/10.-venetian-lanterns.jpg
     linkContent: /projects/venezia
+    linkPath: /projects/venezia
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -39,6 +42,7 @@ subcategorySections:
   - alt: d
     image: /assets/the-snap-gallery.webp
     linkContent: '/projects/#thesnapgallery-series'
+    linkPath: '/projects/#thesnapgallery-series'
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

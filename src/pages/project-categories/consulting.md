@@ -9,6 +9,7 @@ subcategorySections:
   - alt: a
     image: /assets/starry-night.jpg
     linkContent: /projects/government
+    linkPath: /projects/government
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -19,6 +20,7 @@ subcategorySections:
   - alt: b
     image: /assets/starry-night.jpg
     linkContent: /projects/private
+    linkPath: /projects/private
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

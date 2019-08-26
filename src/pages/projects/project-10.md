@@ -32,6 +32,8 @@ descriptions:
       #TheSnapGallery is adaptable and can be executed as a pop-up event or in a
       more organized environment.
     startingRow: 2
-images: []
+images:
+  - alt: a
+    image: /assets/screen-shot-2019-08-19-at-3.05.57-pm.png
 ---
 

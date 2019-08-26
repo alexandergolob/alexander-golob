@@ -3,7 +3,7 @@ templateKey: project-category
 title: Engagements
 description: ''
 ogImage: ''
-path: /engagements
+path: /projects/engagements
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift
   people up, provoke thought, and transform spaces.

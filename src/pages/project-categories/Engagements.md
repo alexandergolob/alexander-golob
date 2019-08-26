@@ -10,7 +10,7 @@ hero: >-
 subcategorySections:
   - alt: a
     image: /assets/kaleidoscope.webp
-    linkContent: /projects/speaking
+    linkContent: Speaking
     linkPath: /projects/speaking
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -21,7 +21,7 @@ subcategorySections:
     subcategory: Speaking
   - alt: c
     image: /assets/img-20190220-wa0005-1-.jpg
-    linkContent: /projects/events
+    linkContent: Events
     linkPath: /projects/events
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

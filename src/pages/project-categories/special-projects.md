@@ -8,7 +8,7 @@ hero: >-
 subcategorySections:
   - alt: a
     image: /assets/screen-shot-2019-08-16-at-6.18.01-pm.png
-    linkContent: /projects/post-cubicle-gallery
+    linkContent: Post Cubicle Gallery
     linkPath: /projects/post-cubicle-gallery
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -19,7 +19,7 @@ subcategorySections:
     subcategory: Post-Cubicle Gallery
   - alt: b
     image: /assets/screen-shot-2019-08-21-at-2.54.28-pm.png
-    linkContent: /projects/through-the-looking-glass
+    linkContent: Through the Looking Glass
     linkPath: /projects/through-the-looking-glass
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -30,7 +30,7 @@ subcategorySections:
     subcategory: Through the Looking Glass
   - alt: c
     image: /assets/10.-venetian-lanterns.jpg
-    linkContent: /projects/venezia
+    linkContent: Venezia
     linkPath: /projects/venezia
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -41,7 +41,7 @@ subcategorySections:
     subcategory: Venezia
   - alt: d
     image: /assets/the-snap-gallery.webp
-    linkContent: '/projects/#thesnapgallery-series'
+    linkContent: '#TheSnapGallery - Series'
     linkPath: '/projects/#thesnapgallery-series'
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

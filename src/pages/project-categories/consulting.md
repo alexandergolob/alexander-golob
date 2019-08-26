@@ -8,7 +8,7 @@ hero: >-
 subcategorySections:
   - alt: a
     image: /assets/starry-night.jpg
-    linkContent: /projects/government
+    linkContent: Government
     linkPath: /projects/government
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -19,7 +19,7 @@ subcategorySections:
     subcategory: Government
   - alt: b
     image: /assets/starry-night.jpg
-    linkContent: /projects/private
+    linkContent: Private
     linkPath: /projects/private
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

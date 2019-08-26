@@ -119,5 +119,9 @@ images:
     image: /assets/dscn3152.jpg
   - alt: g
     image: /assets/dscn3153.jpg
+  - alt: h
+    image: /assets/dscn3154.jpg
+  - alt: i
+    image: /assets/dscn3155.jpg
 ---
 

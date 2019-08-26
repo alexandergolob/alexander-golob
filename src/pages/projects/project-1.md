@@ -62,5 +62,7 @@ images:
     image: /assets/dscn3116.jpg
   - alt: g
     image: /assets/dscn3117.jpg
+  - alt: h
+    image: /assets/dscn3119.jpg
 ---
 

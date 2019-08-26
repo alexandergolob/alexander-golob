@@ -46,7 +46,7 @@ descriptions:
       completed in September of 2013.
     startingRow: 3
   - md_content: "Golob Art showcased one of its signature community murals, Kaleidoscope, in the Wall to Wall: Art Builds Communities gallery exhibition Saturday, October 2, 2016 in Somerville, Massachusetts.\_\n\nW2W, held from 1:00 p.m. to 5:00 p.m. at the Nave Gallery on Powder House Boulevard, featured the exhibition itself as well as artist panels and presentations in the spirit of initiating positive dialogue and laying groundwork for fundamentally equal artist practice.\n\nThe gallery will showcased dozens of street artists, highlighting the ways in which their pieces unite communities and inspire creativity and involvement."
-    startingRow: 4
+    startingRow: 5
 images:
   - alt: a
     image: /assets/dscn3098.jpg

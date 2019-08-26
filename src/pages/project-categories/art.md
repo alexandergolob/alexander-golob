@@ -8,16 +8,16 @@ hero: >-
 subcategorySections:
   - alt: a
     image: /assets/10.-venetian-lanterns.jpg
+    linkContent: Personal
     linkPath: /projects/personal
-    linkContent: /personal
     md_description: >-
       As an art studio, Golob art also endeavors in exploring new  techniques
       and mediums to create, or communicate innovative art.
     subcategory: 'Personal '
   - alt: b
     image: /assets/20180702_083819-1-.jpg
-    linkPath: /projects/commissioned
     linkContent: /commissioned
+    linkPath: /projects/commissioned
     md_description: Golob art's mission is to increase the presence of
     subcategory: Commissioned
 ---

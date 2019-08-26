@@ -49,10 +49,18 @@ descriptions:
     startingRow: 4
 images:
   - alt: a
-    image: /assets/dscn3085.jpg
+    image: /assets/dscn3098.jpg
   - alt: b
     image: /assets/dscn3091.jpg
   - alt: c
     image: /assets/dscn3092.jpg
+  - alt: d
+    image: /assets/dscn3096.jpg
+  - alt: e
+    image: /assets/dscn3085.jpg
+  - alt: f
+    image: /assets/dscn3116.jpg
+  - alt: g
+    image: /assets/dscn3117.jpg
 ---
 

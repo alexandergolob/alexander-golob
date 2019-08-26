@@ -106,18 +106,18 @@ descriptions:
     startingRow: 5
 images:
   - alt: a
-    image: /assets/kaleidoscope.webp
+    image: /assets/dscn3156.jpg
   - alt: b
-    image: /assets/starry-night.jpg
+    image: /assets/screen-shot-2019-08-26-at-4.39.14-pm.png
   - alt: c
-    image: /assets/starry-night.jpg
+    image: /assets/dscn3146.jpg
   - alt: d
-    image: /assets/kaleidoscope.webp
+    image: /assets/dscn3147.jpg
   - alt: e
-    image: /assets/starry-night.jpg
+    image: /assets/dscn3149.jpg
   - alt: f
-    image: /assets/starry-night.jpg
+    image: /assets/dscn3152.jpg
   - alt: g
-    image: /assets/kaleidoscope.webp
+    image: /assets/dscn3153.jpg
 ---
 

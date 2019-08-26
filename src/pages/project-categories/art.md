@@ -16,7 +16,7 @@ subcategorySections:
     subcategory: 'Personal '
   - alt: b
     image: /assets/20180702_083819-1-.jpg
-    linkContent: /commissioned
+    linkContent: Commissioned
     linkPath: /projects/commissioned
     md_description: Golob art's mission is to increase the presence of
     subcategory: Commissioned

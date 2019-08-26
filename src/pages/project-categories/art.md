@@ -1,7 +1,7 @@
 ---
 templateKey: project-category
 title: Art
-path: /art
+path: /projects/art
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift
   people up, provoke thought, and transform spaces.

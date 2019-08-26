@@ -4,7 +4,7 @@ homeLogo:
   text: Golob Art
 items:
   - category: Art
-    path: /art
+    path: /projects/art
     subitems:
       - path: /projects/personal
         subitem: personal
@@ -13,7 +13,7 @@ items:
       - path: /projects/public-art
         subitem: public art
   - category: Engagements
-    path: /engagements
+    path: /projects/engagements
     subitems:
       - path: /projects/speaking
         subitem: speaking
@@ -27,7 +27,7 @@ items:
       - path: /projects/private
         subitem: private
   - category: Special Projects
-    path: /special-projects
+    path: /projects/special-projects
     subitems:
       - path: /post-cubicle-gallery
         subitem: post-cubicle gallery

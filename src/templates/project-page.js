@@ -247,7 +247,7 @@ export default ({ data: { project, projects, blog } }) => (
       image: project.frontmatter.images[0].image.childImageSharp.fluid,
       alt: project.frontmatter.images[0].alt
     }}
-    images={project.frontmatter.images.slice(1).map(({ image, ...rest }) => ({
+    images={project.frontmatter.images && project.frontmatter.images.slice(1).map(({ image, ...rest }) => ({
       ...rest,
       image: image.childImageSharp.fluid
     }))}

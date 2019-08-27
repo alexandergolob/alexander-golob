@@ -3,14 +3,14 @@ templateKey: project-category
 title: Engagements
 description: ''
 ogImage: ''
-path: /projects/engagements
+path: /engagements
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift
   people up, provoke thought, and transform spaces.
 subcategorySections:
   - alt: a
     image: /assets/kaleidoscope.webp
-    linkContent: /projects/speaking
+    linkContent: Speaking
     linkPath: /projects/speaking
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -21,7 +21,7 @@ subcategorySections:
     subcategory: Speaking
   - alt: c
     image: /assets/img-20190220-wa0005-1-.jpg
-    linkContent: /projects/events
+    linkContent: Events
     linkPath: /projects/events
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

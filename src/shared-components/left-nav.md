@@ -4,30 +4,30 @@ homeLogo:
   text: Golob Art
 items:
   - category: Art
-    path: /art
+    path: /projects/art
     subitems:
-      - path: /personal
+      - path: /projects/personal
         subitem: personal
-      - path: /commissioned
+      - path: /projects/commissioned
         subitem: commissioned
-      - path: /public-art
+      - path: /projects/public-art
         subitem: public art
   - category: Engagements
-    path: /engagements
+    path: /projects/engagements
     subitems:
-      - path: /speaking
+      - path: /projects/speaking
         subitem: speaking
-      - path: /events
+      - path: /projects/events
         subitem: events
   - category: Consulting
-    path: /consulting
+    path: /projects/consulting
     subitems:
-      - path: /government
+      - path: /projects/government
         subitem: government
-      - path: /private
+      - path: /projects/private
         subitem: private
   - category: Special Projects
-    path: /special-projects
+    path: /projects/special-projects
     subitems:
       - path: /post-cubicle-gallery
         subitem: post-cubicle gallery
@@ -36,3 +36,4 @@ items:
       - path: /venezia
         subitem: venezia
 ---
+

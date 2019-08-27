@@ -1,60 +1,41 @@
 ---
 templateKey: project-page
-title: test engagement made using engagement collection
-description: Lorem ipsum
-ogImage: /assets/starry-night.jpg
-date: 2019-04-02T04:34:23.774Z
-path: /lorem-ipsumfwef
-category: Engagements
+title: 'Community #theSnapGallery'
+description: ''
+ogImage: ''
+date: 2015-08-01T04:34:23.774Z
+path: '/community-#thesnapgallery'
+category: Art
 subcategories:
-  - Speaking
-  - Public
+  - Public Art
+  - Commissioned
 isFeatured: true
 details:
   - attribute: Date
-    value: September - December 2018
+    value: August 2015
   - attribute: Location
-    value: Haverhill, MA, USA
+    value: 'College of General Studies, Boston University, Boston MA, USA, 02215'
   - attribute: Medium
-    value: Acrylic paint on panels
+    value: 'snapchat, instagram, sharpie, acrylic panelling'
   - attribute: Size
-    value: 70' x 18'
-  - attribute: Project Partners
-    value: City of Haverhill, Pentucket Bank
+    value: '(6) 10" x 14", (2) 10" x 21"'
   - attribute: Client
-    value: Garibaldi Club
+    value: 'College of General Studies, Boston University, Boston, MA, USA'
 descriptions:
-  - startingRow: 1
-    md_content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 1
-
-
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-  - startingRow: 4
-    md_content: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-
-
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
-
-
-      Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  - md_content: >-
+      \#theSnapGallery is an artistic investigation into the growing influence
+      of the internet and social media on how we form interpersonal
+      relationships, express ourselves, and form communities. #theSnapGallery is
+      heavily reliant on community participation. It is composed of two
+      elements: snapchats placed behind a glass sheet and drawings by
+      participants who add to or trace aspects of the snaps with markers. After
+      this step, the original snapchat is removed, leaving behind a
+      collaboratively-created image emblematic of a productive community.
+      #TheSnapGallery is adaptable and can be executed as a pop-up event or in a
+      more organized environment.
+    startingRow: 1
 images:
-  - image: /assets/kaleidoscope.webp
-    alt: a
-  - image: /assets/starry-night.jpg
-    alt: b
-  - image: /assets/starry-night.jpg
-    alt: c
-  - image: /assets/kaleidoscope.webp
-    alt: d
-  - image: /assets/starry-night.jpg
-    alt: e
-  - image: /assets/starry-night.jpg
-    alt: f
-  - image: /assets/kaleidoscope.webp
-    alt: g
+  - alt: g
+    image: /assets/kaleidoscope.webp
 ---
+

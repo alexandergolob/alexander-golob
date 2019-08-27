@@ -1,14 +1,14 @@
 ---
 templateKey: project-category
 title: Consulting
-path: /projects/consulting
+path: /consulting
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift
   people up, provoke thought, and transform spaces.
 subcategorySections:
   - alt: a
     image: /assets/starry-night.jpg
-    linkContent: /projects/government
+    linkContent: Government
     linkPath: /projects/government
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
@@ -19,7 +19,7 @@ subcategorySections:
     subcategory: Government
   - alt: b
     image: /assets/starry-night.jpg
-    linkContent: /projects/private
+    linkContent: Private
     linkPath: /projects/private
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod

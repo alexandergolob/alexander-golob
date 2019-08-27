@@ -8,5 +8,6 @@ items:
   - category: Blog
     path: /blog
   - category: Press
-    path: /press
+    path: /tags/press-release
 ---
+

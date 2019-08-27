@@ -4,7 +4,7 @@ title: 'Community #theSnapGallery'
 description: ''
 ogImage: ''
 date: 2015-08-01T04:34:23.774Z
-path: '/community-#thesnapgallery'
+path: /community-thesnapgallery
 category: Art
 subcategories:
   - Public Art

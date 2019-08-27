@@ -8,5 +8,11 @@ const InternalLink = styled(Link)`
 `;
 
 export default ({ to, ...rest }) => (
-  <InternalLink to={to && to.replace('../pages', '')} {...rest} />
+  <InternalLink
+    to={
+      to && to.replace('../pages', '')
+      // .replace(/^((blog)|(about)|(projects))/, str => `/tags/${str}`)
+    }
+    {...rest}
+  />
 );

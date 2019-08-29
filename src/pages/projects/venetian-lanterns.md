@@ -28,24 +28,6 @@ descriptions:
       lanterns made from laser-cutting that emulate the surreal qualities of one
       of the most spectacular cities on earth.
     startingRow: 1
-  - md_content: >-
-      ## The Designs
-
-
-      Gondola Birdseye:
-
-
-      The design below takes the motif of boats (or gondolla) seen from a
-      birds-eye view. The abstraction depicts them laid out extending from a
-      central, vertically oriented series of circles.
-    startingRow: 3
-  - md_content: >-
-      Byzantine Gothic:
-
-
-      The lantern at the left draws on Venice's Byzantine and Near East
-      influences by making use of greek crosses and ogee curves.
-    startingRow: 5
 images:
   - alt: a
     image: /assets/10.-venetian-lanterns.jpg

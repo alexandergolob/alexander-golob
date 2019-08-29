@@ -33,6 +33,10 @@ descriptions:
       collaboratively-created image emblematic of a productive community.
       #TheSnapGallery is adaptable and can be executed as a pop-up event or in a
       more organized environment.
+
+
+      For more details on #theSnapGallery, [click
+      here](https://www.alexandergolob.com/thesnapgallery).
     startingRow: 1
 images: []
 ---

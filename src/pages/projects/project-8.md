@@ -106,20 +106,6 @@ descriptions:
       a gospel truth, but rather to have viewers acknowledge their own
       preconceptions, to question them, and to grow from the experience.
     startingRow: 39
-images:
-  - alt: a
-    image: /assets/kaleidoscope.webp
-  - alt: b
-    image: /assets/starry-night.jpg
-  - alt: c
-    image: /assets/starry-night.jpg
-  - alt: d
-    image: /assets/kaleidoscope.webp
-  - alt: e
-    image: /assets/starry-night.jpg
-  - alt: f
-    image: /assets/starry-night.jpg
-  - alt: g
-    image: /assets/kaleidoscope.webp
+images: []
 ---
 

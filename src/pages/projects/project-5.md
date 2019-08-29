@@ -34,8 +34,6 @@ descriptions:
       #TheSnapGallery is adaptable and can be executed as a pop-up event or in a
       more organized environment.
     startingRow: 1
-images:
-  - alt: g
-    image: /assets/kaleidoscope.webp
+images: []
 ---
 

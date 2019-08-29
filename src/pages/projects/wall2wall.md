@@ -35,16 +35,21 @@ descriptions:
       involvement.
 
 
-      Alexander’s mural, Kaleidoscope, is located at Commonwealth Avenue and
-      depicts recognizable landmarks and buildings along the road. It has
-      sparked a wealth of community involvement, being used as a backdrop for a
-      music video, for advertising purposes and as a site for various public
-      events at Boston University. The mural has even been adopted as a local
-      PokeStop.
+      Alexander’s mural,
+      [_Kaleidoscope_](https://alexander-golob.netlify.com/projects/kaleidoscope/),
+      is located at Commonwealth Avenue and depicts recognizable landmarks and
+      buildings along the road. It has sparked a wealth of community
+      involvement, being used as a backdrop for a music video, for advertising
+      purposes and as a site for various public events at Boston University. The
+      mural has even been adopted as a local PokeStop.
 
 
       W2W featured large-scale photos of community members involving
       Kaleidoscope in events or publications.​
+
+
+      Click Here for more details regarding
+      [_Kaleidoscope_](https://alexander-golob.netlify.com/projects/kaleidoscope/).
     startingRow: 2
 images:
   - alt: a

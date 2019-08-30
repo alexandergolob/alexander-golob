@@ -21,6 +21,9 @@ details:
     value: Artaic
   - attribute: Client
     value: 'Mark Berkowitz, Allston''s Finest, 916 Commonwealth Ave, Boston, MA, USA'
+descriptions:
+  - md_content: \----
+    startingRow: 2
 images:
   - alt: a
     image: /assets/tales-of-the-voyage.jpg

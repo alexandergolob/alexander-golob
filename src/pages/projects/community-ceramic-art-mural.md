@@ -8,6 +8,7 @@ subcategories:
   - Public Art
   - Commissioned
   - Events
+  - Speaking
 isFeatured: true
 details:
   - attribute: Date

@@ -29,11 +29,11 @@ items:
   - category: Special Projects
     path: /projects/special-projects
     subitems:
-      - path: /post-cubicle-gallery
+      - path: /projects/post-cubicle-gallery
         subitem: post-cubicle gallery
-      - path: /through-the-looking-glass
+      - path: /projects/through-the-looking-glass
         subitem: through the looking glass
-      - path: /venezia
+      - path: /projects/venezia
         subitem: venezia
 ---
 

@@ -23,5 +23,16 @@ descriptions:
       here](https://www.alexandergolob.com/through-the-looking-glass) to learn
       more about it!
     startingRow: 1
+images:
+  - alt: a
+    image: /assets/screen-shot-2019-08-30-at-7.35.24-am.png
+  - alt: b
+    image: /assets/screen-shot-2019-08-30-at-7.35.34-am.png
+  - alt: c
+    image: /assets/screen-shot-2019-08-30-at-7.35.43-am.png
+  - alt: d
+    image: /assets/screen-shot-2019-08-30-at-7.35.54-am.png
+  - alt: e
+    image: /assets/screen-shot-2019-08-30-at-7.36.03-am.png
 ---
 

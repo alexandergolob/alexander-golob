@@ -2,7 +2,7 @@
 templateKey: project-page
 title: '#theSnapGallery'
 description: ''
-ogImage: /assets/starry-night.jpg
+ogImage: ''
 date: 2015-07-01T04:00:00.000Z
 path: /thesnapgallery
 category: Art

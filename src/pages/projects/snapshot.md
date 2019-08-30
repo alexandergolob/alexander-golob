@@ -7,6 +7,17 @@ category: Art
 subcategories:
   - Personal
 isFeatured: true
+details:
+  - attribute: Date
+    value: May 2017
+  - attribute: Address
+    value: 'Golob Art HQ, 405 Linden Street, Wellesley, MA, USA'
+  - attribute: Medium
+    value: '---'
+  - attribute: Size
+    value: '---'
+  - attribute: Partner
+    value: Wellesley High School Diversity Club
 descriptions:
   - md_content: >-
       _Snapshot_ was derived from a collaboration between Golob Art and the

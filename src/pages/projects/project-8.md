@@ -106,6 +106,12 @@ descriptions:
       a gospel truth, but rather to have viewers acknowledge their own
       preconceptions, to question them, and to grow from the experience.
     startingRow: 39
-images: []
+images:
+  - alt: a
+    image: /assets/screen-shot-2019-08-30-at-10.26.55-am.png
+  - alt: b
+    image: /assets/screen-shot-2019-08-30-at-10.26.33-am.png
+  - alt: c
+    image: /assets/screen-shot-2019-08-30-at-10.26.23-am.png
 ---
 

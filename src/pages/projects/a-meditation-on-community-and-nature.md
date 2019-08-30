@@ -19,7 +19,7 @@ details:
   - attribute: Size
     value: 48' x 11'
   - attribute: Client
-    value: South Middlesex Opportnity Council
+    value: South Middlesex Opportunity Council
 descriptions:
   - md_content: >-
       Located in a zen garden, this mural’s abstract composition draws its

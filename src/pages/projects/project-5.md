@@ -38,6 +38,8 @@ descriptions:
       For more details on #theSnapGallery, [click
       here](https://www.alexandergolob.com/thesnapgallery).
     startingRow: 1
-images: []
+images:
+  - alt: a
+    image: /assets/screen-shot-2019-08-19-at-3.05.57-pm.png
 ---
 

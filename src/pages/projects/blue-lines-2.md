@@ -6,7 +6,7 @@ path: /bluelines2
 category: Art
 subcategories:
   - Personal
-isFeatured: false
+isFeatured: true
 details:
   - attribute: Date
     value: January 2017

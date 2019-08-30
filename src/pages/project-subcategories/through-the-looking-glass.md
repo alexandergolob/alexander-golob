@@ -1,7 +1,7 @@
 ---
 templateKey: project-subcategory
 title: Through the Looking Glass
-path: /through-the-looking-glass
+path: 'https://www.alexandergolob.com/through-the-looking-glass'
 category: Special Projects
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift

@@ -1,7 +1,7 @@
 ---
 templateKey: project-page
 title: Fighting for Our Planet- Mural Series
-date: 2019-08-30T04:00:00.000Z
+date: 2018-01-01T05:00:00.000Z
 path: /neep
 category: Art
 subcategories:
@@ -33,22 +33,40 @@ descriptions:
       Grey Wall: The entry way to NEEP. It should say what NEEP is all about and
       what regions it serves. Possibly including text and logo using adhesive
       vinyl and laser-cut wood.
-    startingRow: 4
-  - md_content: >-
+
+
+
+
       Yellow Wall: The visualization of what NEEP is all about: energy and
       material efficiency. This wall will likely involve imagery connecting
       nature and machinery. It will probably be created on plywood panels that
       will be affixed to the wall. When/if NEEP moves office spaces, this work
       will be able to move with the organization.
-    startingRow: 6
+    startingRow: 4
   - md_content: >-
       Blue Wall: The visualization of the future that NEEP envisions: one where
       our society use 100 percent sustainable and green energy and material
       practices. This piece will likely showcase a architectural structures
       along with other images.
-    startingRow: 8
+    startingRow: 6
 images:
   - alt: a
+    image: /assets/dsc_0179.jpg
+  - alt: b
+    image: /assets/dsc_0159.jpg
+  - alt: c
+    image: /assets/dsc_0154.jpg
+  - alt: d
+    image: /assets/dsc_0184.jpg
+  - alt: e
+    image: /assets/dsc_0142.jpg
+  - alt: f
+    image: /assets/dsc_0135.jpg
+  - alt: g
+    image: /assets/dsc_0126.jpg
+  - alt: h
     image: /assets/dsc_0124.jpg
+  - alt: j
+    image: /assets/dsc_0117.jpg
 ---
 

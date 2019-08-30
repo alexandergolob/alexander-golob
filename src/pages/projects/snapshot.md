@@ -6,7 +6,7 @@ path: /snapshot
 category: Art
 subcategories:
   - Personal
-isFeatured: false
+isFeatured: true
 descriptions:
   - md_content: >-
       _Snapshot_ was derived from a collaboration between Golob Art and the

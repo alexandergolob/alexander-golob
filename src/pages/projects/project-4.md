@@ -8,7 +8,7 @@ path: /bu-artist-in-residency
 category: Art
 subcategories:
   - Public Art
-isFeatured: false
+isFeatured: true
 details:
   - attribute: Date
     value: July 2017

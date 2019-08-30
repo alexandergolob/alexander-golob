@@ -19,7 +19,9 @@ details:
     value: 14' x 3.5'
   - attribute: Client
     value: South Middlesex Opportunity Council
-descriptions: []
+descriptions:
+  - md_content: \---
+    startingRow: 2
 images:
   - alt: a
     image: /assets/16.-everybody-matters.jpg

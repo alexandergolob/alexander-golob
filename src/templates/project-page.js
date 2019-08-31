@@ -239,6 +239,7 @@ export const Template = ({
 export default ({ data: { project, projects, blog } }) => (
   <Template
     {...project.frontmatter}
+    details={project.frontmatter.details || []}
     ogImage={
       project.frontmatter.ogImage &&
       project.frontmatter.ogImage.childImageSharp.fluid.src
@@ -247,14 +248,19 @@ export default ({ data: { project, projects, blog } }) => (
       image: project.frontmatter.images[0].image.childImageSharp.fluid,
       alt: project.frontmatter.images[0].alt
     }}
-    images={project.frontmatter.images && project.frontmatter.images.slice(1).map(({ image, ...rest }) => ({
-      ...rest,
-      image: image.childImageSharp.fluid
-    }))}
-    descriptions={project.frontmatter.descriptions.map((description, i) => ({
-      ...description,
-      content: project.fields.descriptions[i].content
-    }))}
+    images={
+      project.frontmatter.images &&
+      project.frontmatter.images.slice(1).map(({ image, ...rest }) => ({
+        ...rest,
+        image: image.childImageSharp.fluid
+      }))
+    }
+    descriptions={(project.frontmatter.descriptions || []).map(
+      (description, i) => ({
+        ...description,
+        content: project.fields.descriptions[i].content
+      })
+    )}
     recentProjects={projects.edges.map(({ node: { frontmatter } }) => ({
       ...frontmatter,
       headerImage: frontmatter.images[0].image.childImageSharp.fluid,

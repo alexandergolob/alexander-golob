@@ -37,7 +37,7 @@ const PostImage = styled(Image)`
 `;
 
 const TextContainer = styled.div`
-  flex: 1;
+  flex: 2;
 `;
 
 const Title = styled.h2`

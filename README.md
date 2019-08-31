@@ -2,6 +2,7 @@
 
 - review all pages for responsiveness after dimension change
 - for the blog page, have it span about 2/3 of the current space it occupies
+- edge fix
 - /tags/blog link workaround
 
 # Page Types

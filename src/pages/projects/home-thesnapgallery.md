@@ -3,10 +3,11 @@ templateKey: project-page
 title: 'Home #theSnapGallery'
 date: 2017-07-01T14:12:03.909Z
 path: '/home-#thesnapgallery'
-category: Art
+category: 'Art, Engagements'
 subcategories:
   - Public Art
   - Commissioned
+  - Events
 isFeatured: true
 details:
   - attribute: Date

@@ -3,10 +3,11 @@ templateKey: project-page
 title: 'Exploring New Realities, #theSnapGallery'
 date: 2017-10-01T20:17:46.812Z
 path: '/exploring-new-realities-#thesnapgallery'
-category: Art
+category: 'Art, Engagements'
 subcategories:
   - Commissioned
   - Public Art
+  - Events
 isFeatured: false
 details:
   - attribute: Date

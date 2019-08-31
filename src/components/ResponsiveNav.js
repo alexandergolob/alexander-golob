@@ -70,9 +70,7 @@ const Toggler = styled.button`
   height: 40px;
 `;
 
-const HamburgerIcon = styled(FontAwesomeIcon).attrs(props => ({
-  icon: props.isExpanded ? faTimes : faBars
-}))`
+const HamburgerIcon = styled(FontAwesomeIcon)`
   color: hsla(33, 29%, 62%, 1);
   font-size: 1.8em;
 `;
@@ -222,7 +220,7 @@ const ResponsiveNav = ({ homeLogo, leftNavItems, rightNavItems, ...rest }) => {
       <SocialIcons />
       <TogglerContainer>
         <Toggler onClick={() => setIsExpanded(!isExpanded)}>
-          <HamburgerIcon isExpanded={isExpanded} />
+          <HamburgerIcon icon={isExpanded ? faTimes : faBars} />
         </Toggler>
         <Menu show={isExpanded}>
           {leftNavItems.map((item, i) => (

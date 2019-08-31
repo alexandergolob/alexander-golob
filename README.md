@@ -1,8 +1,8 @@
 [Dev site](https://alexander-golob.netlify.com)
 
-- review all pages for responsiveness after dimension change
-- for the blog page, have it span about 2/3 of the current space it occupies
 - edge fix
+- isExpanded linting error
+- revies all pages for responsiveness after dimension change
 - /tags/blog link workaround
 
 # Page Types

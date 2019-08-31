@@ -2,7 +2,7 @@
 templateKey: project-page
 title: 'Home #theSnapGallery'
 date: 2017-07-01T14:12:03.909Z
-path: '/home-#thesnapgallery'
+path: /home-thesnapgallery
 category: 'Art, Engagements'
 subcategories:
   - Public Art

@@ -3,6 +3,12 @@ title: Art for the community
 description: Lorem ipsum
 ogImage: /assets/dscn3103-2.jpg
 carouselImages:
+  - alt: e
+    description: 'Miles to Go Before We Sleep - the Garibaldi Club, Haverhill, MA'
+    image: /assets/20190531_120305.jpg
+    link:
+      external: true
+      path: 'https://alexander-golob.netlify.com/projects'
   - alt: a
     description: >-
       Honoring the Past, Celebrating the Future - South Middlesex Opportunity
@@ -28,12 +34,6 @@ carouselImages:
   - alt: d
     description: 'Golobology - Stored in Studio, Wellesley, MA'
     image: /assets/golobology-2-edit.jpg
-    link:
-      external: true
-      path: 'https://alexander-golob.netlify.com/projects'
-  - alt: e
-    description: 'Miles to Go Before We Sleep - the Garibaldi Club, Haverhill, MA'
-    image: /assets/20190531_120305.jpg
     link:
       external: true
       path: 'https://alexander-golob.netlify.com/projects'

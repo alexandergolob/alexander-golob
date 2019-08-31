@@ -2,7 +2,7 @@
 templateKey: project-page
 title: 'Exploring New Realities, #theSnapGallery'
 date: 2017-10-01T20:17:46.812Z
-path: '/exploring-new-realities-#thesnapgallery'
+path: /exploring-new-realities-thesnapgallery
 category: 'Art, Engagements'
 subcategories:
   - Commissioned

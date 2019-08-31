@@ -4,13 +4,12 @@ title: Government
 path: /government
 category: Engagements
 hero: >-
-  Golob art offers a wide array of fine art and creative services to help lift
-  people up, provoke thought, and transform spaces.
+  Golob Art has experience engaging with communities, conducting research, and
+  developing and implementing art and placemaking policy, strategy, and
+  integration.
 CTA:
   path: /contact
   statement: Get In Touch
   statementAbove: Interested? Got Questions?
 ---
-Golob Art has experience engaging with communities, conducting research, and developing and implementing art and placemaking policy, strategy, and integration. The studio has worked with city governments on policy and implementation, non-profits embarking upon art initiative, and early stage start-ups looking for guidance.
-
-Art provides benefits for sense of community, business, marketing, and health. Sometimes, it helps to have an artist to integrate that perspective into a community, business, or project.
+Understanding how to move forward with creative endeavors and what initiatives should be taken on can be difficult. Golob Art offers critical research, innovative problem solving, and a deep expertise in the arts to confidently and effectively foster the arts in your community or organization. We have helped a number of organizations explore their options and write grants or short-papers on the value of the arts in a community.

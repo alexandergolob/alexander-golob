@@ -31,7 +31,7 @@ items:
     subitems:
       - path: /projects/post-cubicle-gallery
         subitem: post-cubicle gallery
-      - path: /projects/through-the-looking-glass
+      - path: 'https://www.alexandergolob.com/through-the-looking-glass'
         subitem: through the looking glass
       - path: /projects/venezia
         subitem: venezia

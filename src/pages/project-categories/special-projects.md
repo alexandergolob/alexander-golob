@@ -20,7 +20,7 @@ subcategorySections:
   - alt: b
     image: /assets/screen-shot-2019-08-21-at-2.54.28-pm.png
     linkContent: Through the Looking Glass
-    linkPath: /projects/through-the-looking-glass
+    linkPath: 'https://www.alexandergolob.com/through-the-looking-glass'
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

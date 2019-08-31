@@ -11,4 +11,4 @@ CTA:
   statement: Get In Touch
   statementAbove: Interested? Got Questions?
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Along with helping to form organizations, Golob Art has deep experience with engaging and organizing communities. This includes respectfully listening to, learning from, and partnering with local community members and leaders, fundraising and identifying sponsors for critical arts projects, organizing community round-tables, planning arts events, and developing longer term arts initiatives. Because Golob Art deeply believes in the value of this type of engagement in the public art process, this service is a critical component to many of the studio’s art projects.

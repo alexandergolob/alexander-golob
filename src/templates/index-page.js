@@ -24,7 +24,7 @@ const Header = styled.header`
 `;
 
 const HomeCarousel = styled(UnstyledHomeCarousel)`
-  margin: 2em 0;
+  margin-bottom: 1em;
   width: 100%;
 
   ${media.tablet`margin-bottom: 0;`}

@@ -39,8 +39,6 @@ descriptions:
 images:
   - alt: a
     image: /assets/breathe-in-copy-1.jpg
-  - alt: b
-    image: /assets/gif-art.gif
   - alt: c
     image: /assets/breathe-in-copy-2-edit.jpg
   - alt: d

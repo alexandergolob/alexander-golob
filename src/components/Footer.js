@@ -34,7 +34,10 @@ const Container = styled.footer`
   `}
 `;
 
-const SupportUs = styled.div`
+const SupportUs = styled(Link)`
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
   margin-bottom: 5px;
   grid-area: SupportUs;
   font-weight: 600;
@@ -113,10 +116,17 @@ const ResponsiveCopyright = styled.span`
   ${media.tablet`display: inline-block;`}
 `;
 
-const Footer = ({ boldLeftStatement, middleStatement, ...rest }) => (
+const Footer = ({
+  supportLink,
+  boldLeftStatement,
+  middleStatement,
+  ...rest
+}) => (
   <Container {...rest}>
     <LightMarble />
-    <SupportUs>{boldLeftStatement}</SupportUs>
+    <SupportUs external={supportLink.external} path={supportLink.path}>
+      {boldLeftStatement}
+    </SupportUs>
     <DevCredit>
       developed by{' '}
       <DevLink external path='https://kbaig.me'>
@@ -149,6 +159,10 @@ const query = graphql`
     ) {
       childMarkdownRemark {
         frontmatter {
+          supportLink {
+            external
+            path
+          }
           boldLeftStatement
           middleStatement {
             text

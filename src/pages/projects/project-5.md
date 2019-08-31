@@ -5,10 +5,11 @@ description: ''
 ogImage: ''
 date: 2015-08-01T04:34:23.774Z
 path: /community-thesnapgallery
-category: Art
+category: 'Art, Engagements'
 subcategories:
   - Public Art
   - Commissioned
+  - Events
 isFeatured: true
 details:
   - attribute: Date

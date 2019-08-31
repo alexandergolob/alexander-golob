@@ -2,7 +2,7 @@
 templateKey: project-subcategory
 title: Speaking
 description: Lorem ipsum
-ogImage: /assets/starry-night.jpg
+ogImage: ''
 path: /speaking
 category: Engagements
 hero: >-

@@ -1,8 +1,7 @@
 [Dev site](https://alexander-golob.netlify.com)
 
-- edge fix
-- isExpanded linting error
-- revies all pages for responsiveness after dimension change
+- scroll component fix 
+- review all pages for responsiveness after dimension change
 - /tags/blog link workaround
 
 # Page Types

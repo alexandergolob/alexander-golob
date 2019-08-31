@@ -13,8 +13,9 @@ const SecondaryLogoContainer = styled.div`
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
   padding: 15px;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 `;
 
 const SecondaryLogo = styled(GatsbyImage)``;

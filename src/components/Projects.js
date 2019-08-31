@@ -39,8 +39,9 @@ const YearMarker = styled(Project).attrs({ as: 'div' })``;
 
 const Year = styled(Image).attrs({ as: 'div' })`
   position: relative;
-  display: grid;
-  place-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: ${props => props.theme.fonts.serif};
   font-weight: 600;
   font-size: 1.5em;

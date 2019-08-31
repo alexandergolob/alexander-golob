@@ -11,4 +11,4 @@ CTA:
   statement: Get In Touch
   statementAbove: Interested? Got Questions?
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+Golob Art has worked with diverse organizations to develop and participate in lectures, presentations, and panels. These range from presentations on the values of public art and placemaking to the Braintree City Council, to presentations to 400 6th and 7th grade Wellesley Middle School students on what being an artist means, to judging and offering constructive criticism for a Boston University’s creative start-up pitch-off.

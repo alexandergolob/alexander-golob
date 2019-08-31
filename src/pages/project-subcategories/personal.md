@@ -11,4 +11,4 @@ CTA:
   statement: Get in touch
   statementAbove: Interested? Got Questions?
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+As an aspiring leader in the future of the artistic fields, Golob Art is also involved in many experiments with new art techniques, and finding ways to expand its horizons and mediums for artistic expression.

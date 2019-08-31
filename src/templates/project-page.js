@@ -58,6 +58,7 @@ const Category = styled(InternalLink)`
 const FirstImage = styled(GatsbyImage)`
   grid-area: 2 / 1 / span 1 / -1;
   height: 400px;
+  border: 5px solid ${props => props.theme.colors.carouselBorder};
 
   ${media.tablet`height: 325px;`}
   ${media.mobile`height: 250px;`}

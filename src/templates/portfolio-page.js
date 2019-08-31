@@ -41,6 +41,8 @@ const Project = styled(InternalLink)`
 
 const ProjectImage = styled(Image)`
   flex: 1;
+  border: 1px solid ${props => props.theme.colors.dark};
+  border-bottom: none;
 
   ${media.mobile`flex: auto; height: 250px;`}
 `;

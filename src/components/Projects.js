@@ -14,6 +14,8 @@ const Project = styled(InternalLink)`
 
 const Image = styled(GatsbyImage)`
   flex: 1;
+  border: 1px solid ${props => props.theme.colors.dark};
+  border-bottom: none;
 
   ${media.mobile`flex: auto; height: 225px;`}
 `;
@@ -59,7 +61,7 @@ export default ({ projects, refs }) => {
         : currentYear;
 
     const markup = (
-      <Project to={path} key={i} {...(refs && i === 0? { ref: refs[0] } : {})}>
+      <Project to={path} key={i} {...(refs && i === 0 ? { ref: refs[0] } : {})}>
         <Image alt='' fluid={image} />
         <Title>{title}</Title>
       </Project>

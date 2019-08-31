@@ -1,6 +1,11 @@
 [Dev site](https://alexander-golob.netlify.com)
 
-review all pages for responsiveness after dimension change
+- review all pages for responsiveness after dimension change
+- Link for 'suport our work work on patreon in footer' 
+- could we move up the gallery on the front page like 1/2 an inch to not have so much empty space at the top
+- move up Same with hero text below gallery, to decrease that gap to about half its current width.
+- for the page, have it span about 2/3 of the current space it occupies
+- /tags/blog link workaround
 
 # Page Types
 
@@ -26,7 +31,7 @@ review all pages for responsiveness after dimension change
 - [x] Graffiti
 - [x] Subscription widget
 - [x] Navs
-- [ ] Right nav scroll component
+- [X] Right nav scroll component
 
 # Broad tasks outside of main component development
 

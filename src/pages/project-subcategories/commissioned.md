@@ -11,4 +11,4 @@ CTA:
   statement: Get in touch
   statementAbove: Interested? Got Questions?
 ---
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+It is our studio’s opinion that people need creativity and art. Having art built into the fabric of the space where they live, work, and play results in stronger recognition and uniqueness in crowded markets, increased social and economic activity, higher retention of tenants, and happier community members. Golob Art offers the unique artist’s touch to developing character and uniqueness in a community and space.

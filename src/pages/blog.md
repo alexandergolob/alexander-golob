@@ -7,7 +7,7 @@ links:
   - content: All
     path: /blog
   - content: Blog
-    path: /tags/blog
+    path: "[workaround]/tags/blog"
   - content: Press
     path: /tags/press-release
 ---

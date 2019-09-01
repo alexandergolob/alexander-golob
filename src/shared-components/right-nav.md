@@ -6,7 +6,7 @@ items:
   - category: About
     path: /about
   - category: Blog
-    path: /blog
+    path: "[workaround]/blog"
   - category: Press
     path: /tags/press-release
 ---

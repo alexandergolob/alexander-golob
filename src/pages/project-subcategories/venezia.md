@@ -1,7 +1,7 @@
 ---
 templateKey: project-subcategory
 title: Venezia
-path: /venezia
+path: 'https://www.alexandergolob.com/venice'
 category: Special Projects
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift

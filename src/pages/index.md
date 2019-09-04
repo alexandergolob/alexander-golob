@@ -43,14 +43,14 @@ carouselImages:
       Council, Framingham, MA
     image: /assets/a-meditation-on-community-and-nature-01.jpg
     link:
-      external: true
-      path: 'https://alexander-golob.netlify.com/projects'
+      external: false
+      path: /projects/smoc-2-meditation-on-community
   - alt: g
     description: 'The Joy of Entering the Forrest - Sweet Greens, Wellesley, MA'
     image: /assets/20180702_083819.jpg
     link:
-      external: true
-      path: 'https://alexander-golob.netlify.com/projects'
+      external: false
+      path: /projects/frit-joy-of-entering-the-forrest
 heroStatement: We create art for community.
 CTAs:
   leftCTA:

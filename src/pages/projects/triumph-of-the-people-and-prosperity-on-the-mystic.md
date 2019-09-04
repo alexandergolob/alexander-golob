@@ -13,6 +13,8 @@ details:
     value: April 2019
   - attribute: Location
     value: 'Assembly Square, Somerville, MA '
+  - attribute: Size
+    value: 20' x 8' x 25.5' (WxDxH)
   - attribute: Medium
     value: 'Acrylic paint on Shipping Containers '
   - attribute: Client

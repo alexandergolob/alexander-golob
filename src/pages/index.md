@@ -54,13 +54,13 @@ carouselImages:
 heroStatement: We create art for community.
 CTAs:
   leftCTA:
-    content: Art and Merchandise for Sale
-    external: false
-    path: /for-sale
-  offCenterCTA:
     content: See Our Portfolio Here
     external: false
     path: /portfolio
+  offCenterCTA:
+    content: Golob Art Blog
+    external: false
+    path: /blog
   rightCTA:
     content: Support our work with Patreon
     external: true

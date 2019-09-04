@@ -36,6 +36,6 @@ items:
       - path: /projects/venezia
         subitem: venezia
       - path: 'https://alexandergolobart.wixsite.com/around-the-table '
-        subitem: Around the Table
+        subitem: around the table
 ---
 

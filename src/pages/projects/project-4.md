@@ -3,7 +3,7 @@ templateKey: project-page
 title: BU Site-Specific Artist in Residency
 description: ''
 ogImage: ''
-date: 2019-04-02T04:34:23.774Z
+date: 2015-08-01T04:34:23.774Z
 path: /bu-artist-in-residency
 category: Art
 subcategories:
@@ -11,7 +11,7 @@ subcategories:
 isFeatured: true
 details:
   - attribute: Date
-    value: July 2017
+    value: August 2015
   - attribute: Location
     value: >-
       College of General Studies and Department of Political Science, Boston

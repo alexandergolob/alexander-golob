@@ -13,22 +13,27 @@ subcategorySections:
     linkContent: Speaking
     linkPath: /projects/speaking
     md_description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+      Golob Art has experience engaging with communities, conducting research,
+      and developing and implementing art and placemaking policy, strategy, and
+      integration. The studio has worked with city governments on policy and
+      implementation, non-profits embarking upon art initiative, and early stage
+      start-ups looking for guidance.
+
+
+      Art provides benefits for sense of community, business, marketing, and
+      health. Sometimes, it helps to have an artist to integrate that
+      perspective into a community, business, or project.
     subcategory: Speaking
   - alt: c
     image: /assets/img-20190220-wa0005-1-.jpg
     linkContent: Events
     linkPath: /projects/events
     md_description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+      These range from presentations on the values of public art and placemaking
+      to the Braintree City Council, to presentations to 400 6th and 7th grade
+      Wellesley Middle School students on what being an artist means, to judging
+      and offering constructive criticism for a Boston University’s creative
+      start-up pitch-off.
     subcategory: Events
 ---
 

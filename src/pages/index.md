@@ -33,7 +33,7 @@ carouselImages:
     description: >-
       Honoring the Past, Celebrating the Future - South Middlesex Opportunity
       Center, Framingham, MA
-    image: /assets/20150808_173849.jpg
+    image: /assets/1439070650671.jpg
     link:
       external: false
       path: /projects

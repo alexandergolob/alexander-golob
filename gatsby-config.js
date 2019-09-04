@@ -2,6 +2,8 @@ require('dotenv').config({
   path: `.env.${process.env.NODE_ENV}`
 });
 
+console.log('MAILCHIMP ENDPOINT:', process.env.MAILCHIMP_ENDPOINT);
+
 module.exports = {
   siteMetadata: {
     siteUrl: 'https://alexander-golob.netlify.com',

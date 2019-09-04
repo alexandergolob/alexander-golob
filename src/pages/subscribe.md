@@ -10,6 +10,7 @@ links:
     path: /contact
   - content: CV
     path: /cv
-statement: Subscribe To Stay Up To Date On What We're Doing!
+statement: Subscribe to stay up to date on what we're doing!
 image: /assets/pokecity.webp
 ---
+

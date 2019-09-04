@@ -9,7 +9,7 @@ subcategorySections:
   - alt: a
     image: /assets/screen-shot-2019-08-16-at-6.18.01-pm.png
     linkContent: Post Cubicle Gallery
-    linkPath: /projects/post-cubicle-gallery
+    linkPath: 'https://www.alexandergolob.com/postcubiclegallery'
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -31,7 +31,7 @@ subcategorySections:
   - alt: c
     image: /assets/10.-venetian-lanterns.jpg
     linkContent: Venezia
-    linkPath: /projects/venezia
+    linkPath: 'https://www.alexandergolob.com/venice'
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -42,7 +42,7 @@ subcategorySections:
   - alt: d
     image: /assets/the-snap-gallery.webp
     linkContent: '#TheSnapGallery - Series'
-    linkPath: '/projects/#thesnapgallery-series'
+    linkPath: 'https://www.alexandergolob.com/thesnapgallery'
     md_description: >-
       Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim

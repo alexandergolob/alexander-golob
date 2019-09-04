@@ -1,7 +1,7 @@
 ---
 templateKey: project-subcategory
 title: Post-Cubicle Gallery
-path: /post-cubicle-gallery
+path: 'https://www.alexandergolob.com/postcubiclegallery'
 category: Special Projects
 hero: >-
   Golob art offers a wide array of fine art and creative services to help lift

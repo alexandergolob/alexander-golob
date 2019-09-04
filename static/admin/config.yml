@@ -494,8 +494,8 @@ collections:
             label: Support Link
             widget: object
             fields:
-              { name: external, label: external, widget: string }
-              { name: path, label: path, widget: string }
+              - { name: external, label: external, widget: string }
+              - { name: path, label: path, widget: string }
           - {
               name: boldLeftStatement,
               label: Bold Left Statement,

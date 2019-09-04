@@ -63,7 +63,7 @@ CTAs:
     path: /portfolio
   rightCTA:
     content: Support our work with Patreon
-    external: false
-    path: /patreon
+    external: true
+    path: 'https://www.patreon.com/golobart'
 ---
 

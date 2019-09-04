@@ -29,5 +29,19 @@ subcategorySections:
       community members. Golob Art offers the unique artist’s touch to
       developing character and uniqueness in a community and space.
     subcategory: Commissioned
+  - alt: c
+    image: /assets/screen-shot-2019-08-30-at-10.46.00-am.png
+    linkContent: Public Art
+    linkPath: /projects/public-art
+    md_description: >-
+      Along with helping to form organizations, Golob Art has deep experience
+      with engaging and organizing communities. This includes respectfully
+      listening to, learning from, and partnering with local community members
+      and leaders, fundraising and identifying sponsors for critical arts
+      projects, organizing community round-tables, planning arts events, and
+      developing longer term arts initiatives. Because Golob Art deeply believes
+      in the value of this type of engagement in the public art process, this
+      service is a critical component to many of the studio’s art projects.
+    subcategory: Public Art
 ---
 

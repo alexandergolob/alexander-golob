@@ -35,5 +35,7 @@ items:
         subitem: through the looking glass
       - path: /projects/venezia
         subitem: venezia
+      - path: 'https://alexandergolobart.wixsite.com/around-the-table '
+        subitem: Around the Table
 ---
 

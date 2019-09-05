@@ -1,7 +1,7 @@
 ---
 templateKey: project-subcategory
-title: Private
-path: /private
+title: Private Sector
+path: /private-sector
 category: Engagements
 hero: >-
   Art and creative placemaking provide benefits for sense of community, business

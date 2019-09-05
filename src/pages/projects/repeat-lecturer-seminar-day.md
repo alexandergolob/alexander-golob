@@ -15,7 +15,13 @@ details:
   - attribute: Client
     value: Wellesley High School
 descriptions:
-  - md_content: Lorem Ipsum
+  - md_content: >-
+      Guest lecturer for multiple years at Wellesley Public High School's annual
+      Seminar Day. Gave a 50 minute presentation, with 20 minutes included for
+      Q&A, to highschoolers of all ages. The presentation was about the
+      challenges I faced growing up and my choice to become an artist. I offered
+      insight into the value of an arts education and the challenges and
+      opportunities associated with it.
     startingRow: 2
 images:
   - alt: a

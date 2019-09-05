@@ -17,7 +17,11 @@ details:
   - attribute: Client
     value: 'Community and Economic Development Committee, Massachusetts State Senate'
 descriptions:
-  - md_content: Lorem Ipsum
+  - md_content: >-
+      Represented the creative industries for a panel discussion with regional
+      business and community leaders that kicked-off the Massachusetts'
+      Legislature's Community and Small Business Committee. The event was
+      attended by 80 Merrimack Valley community and business members.
     startingRow: 2
 images:
   - alt: a

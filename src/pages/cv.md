@@ -27,17 +27,17 @@ CV:
     - items:
         - bulletPoints:
             - 'BFA, College of Fine Arts, Boston University, Boston, MjA'
-          year: 2016
+          year: '2016'
       title: Education
     - items:
         - bulletPoints:
             - 'Tales from the Gut, Post-Cubicle Gallery, Boston, MA'
-          year: 2018
+          year: '2018'
         - bulletPoints:
             - 'Through the Looking Glass, Wellesley, MA'
             - 'Together Boston Festival, Cambridge, MA'
             - 'theGalleryEvent Show, Dorchest, MA'
-          year: 2017
+          year: '2017'
         - bulletPoints:
             - >-
               Medicine Wheel's World AIDS Day Vigil Installation, Boston
@@ -46,10 +46,10 @@ CV:
             - 'College of Fine Arts Thesis Show, Boston, MA'
             - 'FUEL show, Boston, MA'
             - 'Rhett the Destroyer, Boston, MA'
-          year: 2016
+          year: '2016'
         - bulletPoints:
             - 'Insider''s Guide to Venezia, Venice, Italy'
-          year: 2015
+          year: '2015'
       title: Group Exhibitions
     - items:
         - bulletPoints:

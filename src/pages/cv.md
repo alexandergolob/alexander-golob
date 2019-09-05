@@ -159,8 +159,10 @@ CV:
             - >-
               Guest Speaker, International Seminar on Intersection of Art,
               Politics, and Science Lecturer, Seminar Day, Wellesley Highschool
-            - s
           year: '2016'
+        - bulletPoints:
+            - 'Fair-Labor Site-Specific Artist Residency, Boston University'
+          year: '2015'
       title: 'Residencies / Engagements:'
   title: Golob Art
 ---

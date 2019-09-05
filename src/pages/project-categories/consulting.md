@@ -20,10 +20,9 @@ subcategorySections:
       and creating artworks.
 
 
-      We merge our experience conducting critical community engagement and
-      innovative problem solving with a deep expertise in the Arts to
-      confidently and effectively foster the Arts in your community or
-      organization.
+      We merge our experience in community engagement and problem solving with
+      our expertise in the Arts to confidently and effectively foster the Arts
+      in your community or organization.
     subcategory: Government
   - alt: b
     image: /assets/starry-night.jpg

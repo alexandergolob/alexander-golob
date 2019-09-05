@@ -20,7 +20,5 @@ descriptions:
 images:
   - alt: a
     image: /assets/img-20190220-wa0005-1-.jpg
-  - alt: b
-    image: /assets/imagejpeg_1.jpg
 ---
 

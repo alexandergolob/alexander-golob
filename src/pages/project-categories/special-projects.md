@@ -11,44 +11,50 @@ subcategorySections:
     linkContent: Post Cubicle Gallery
     linkPath: 'https://www.alexandergolob.com/postcubiclegallery'
     md_description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+      Located in Boston's busy Kenmore Square, in collaboration with Hotel
+      Buckminster, Post-Cubicle Gallery is a space organized by local artists
+      Alexander Golob, Edie Côté and Danielle Pratt. Formerly an abandoned cat
+      hospital, Post-Cubicle Gallery has transformed over 2000 sq feet into a
+      welcoming place for all artists and visitors alike to express themselves.
     subcategory: Post-Cubicle Gallery
   - alt: b
     image: /assets/screen-shot-2019-08-21-at-2.54.28-pm.png
     linkContent: Through the Looking Glass
     linkPath: 'https://www.alexandergolob.com/through-the-looking-glass'
     md_description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+      This multi-artist show, held Friday, May 19th, 2017, featured works that
+      create a surreal, dissonance-inducing, and awe-inspiring space that focus
+      on the Wellesley community and its context in society. The show takes
+      inspiration from Joseph Campbell's The Hero With a Thousand Faces to
+      organize itself in a manner that evokes a journey of self-realization.
     subcategory: Through the Looking Glass
-  - alt: c
-    image: /assets/10.-venetian-lanterns.jpg
-    linkContent: Venezia
-    linkPath: 'https://www.alexandergolob.com/venice'
-    md_description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
-    subcategory: Venezia
   - alt: d
     image: /assets/the-snap-gallery.webp
     linkContent: '#TheSnapGallery - Series'
     linkPath: 'https://www.alexandergolob.com/thesnapgallery'
     md_description: >-
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-      veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-      commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-      velit esse cillum dolore eu fugiat nulla pariatur.
+      \#theSnapGallery is an artistic investigation into the growing influence
+      of the internet and social media on how we form interpersonal
+      relationships, express ourselves, and form communities.
     subcategory: '#theSnapGallery Series'
+  - alt: c
+    image: /assets/10.-venetian-lanterns.jpg
+    linkContent: Venezia
+    linkPath: 'https://www.alexandergolob.com/venice'
+    md_description: >-
+      Since its onset, Venice has always occupied a unique position - in
+      history, in commerce, and in culture. Caught on the edges of many worlds,
+      Venice has always taken bits and pieces of other civilizations to create
+      and cultivate its own unique identity.
+
+
+      This installation aims to confuse, to blur, and to elaborate upon Venice’s
+      many -  sometimes - conflicting identities.  As both a citizen of the
+      United States and Veneto, Italy, I feel myself caught distinctly between
+      these identities, confronting Venice as both a visitor and a citizen. My
+      work draws on the Venetian tradition of creating an immediate visual
+      effect while also establishing several overlapping and sometimes
+      contradicting meanings.
+    subcategory: Venezia
 ---
 

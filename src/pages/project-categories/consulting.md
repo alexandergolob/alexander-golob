@@ -11,8 +11,8 @@ hero: >-
 subcategorySections:
   - alt: a
     image: /assets/starry-night.jpg
-    linkContent: Government
-    linkPath: /projects/government
+    linkContent: Public Sector
+    linkPath: /projects/public-sector
     md_description: >-
       Public art and creative placemaking has a unique capacity to transform a
       community for the better - from engaging communities, conducting research
@@ -23,11 +23,11 @@ subcategorySections:
       We merge our experience in community engagement and problem solving with
       our expertise in the Arts to confidently and effectively foster the Arts
       in your community or organization.
-    subcategory: Government
+    subcategory: Public sector
   - alt: b
     image: /assets/starry-night.jpg
-    linkContent: Private
-    linkPath: /projects/private
+    linkContent: Private Sector
+    linkPath: /projects/private-sector
     md_description: >-
       Art and creative placemaking provide benefits for sense of community,
       business activity, marketing, and health. Let us help make your project
@@ -35,6 +35,6 @@ subcategorySections:
       placemaking - from creating custom artwork and arts events to community
       engagement and integration of creative placemaking into architectural
       plans.
-    subcategory: Private
+    subcategory: Private Sector
 ---
 

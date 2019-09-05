@@ -10,7 +10,7 @@ hero: >-
   early stage start-ups looking for guidance.
 subcategorySections:
   - alt: a
-    image: /assets/starry-night.jpg
+    image: /assets/western-avenue-artist-lofts.jpeg
     linkContent: Public Sector
     linkPath: /projects/public-sector
     md_description: >-
@@ -25,7 +25,7 @@ subcategorySections:
       in your community or organization.
     subcategory: Public sector
   - alt: b
-    image: /assets/starry-night.jpg
+    image: /assets/haverhill-the-heights.jpg
     linkContent: Private Sector
     linkPath: /projects/private-sector
     md_description: >-

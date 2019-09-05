@@ -23,7 +23,6 @@ CV:
     - www.AlexanderGolobArt.com
     - 'instagram and facebook:'
     - '@alexandergolobart'
-    - +1 617-755-6522
   sections:
     - items:
         - bulletPoints:

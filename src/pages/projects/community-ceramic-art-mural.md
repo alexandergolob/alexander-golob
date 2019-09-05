@@ -101,6 +101,14 @@ descriptions:
     startingRow: 3
 images:
   - alt: a
-    image: /assets/starry-night.jpg
+    image: /assets/20181010_081000.jpg
+  - alt: b
+    image: /assets/20181010_080322.jpg
+  - alt: c
+    image: /assets/20181010_081124.jpg
+  - alt: d
+    image: /assets/dsc_0004.jpg
+  - alt: e
+    image: /assets/20181010_081400.jpg
 ---
 

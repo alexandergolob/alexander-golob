@@ -147,8 +147,20 @@ CV:
             - 'Artist-in-Residence, Wellesley Middle School'
             - 'Co-Founder and Director, Post-Cubicle Gallery, Boston'
             - Public Art and Placemaking Consultant for the City of Methuen
-            - s
           year: '2018'
+        - bulletPoints:
+            - 'Judge, Art Startup Pitch Contest'
+            - Public Art and Placemaking Consultant for the City of Methuen
+            - 'Guest, Prospect Cities Roundtable'
+            - 'Honorary Speaker, Wellesley Parents Supporting Art Students'
+            - 'Lecturer, Seminar Day, Wellesley Highschool'
+          year: '2017'
+        - bulletPoints:
+            - >-
+              Guest Speaker, International Seminar on Intersection of Art,
+              Politics, and Science Lecturer, Seminar Day, Wellesley Highschool
+            - s
+          year: '2016'
       title: 'Residencies / Engagements:'
   title: Golob Art
 ---

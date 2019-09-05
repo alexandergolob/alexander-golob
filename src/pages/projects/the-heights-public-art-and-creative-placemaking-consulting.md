@@ -2,7 +2,7 @@
 templateKey: project-page
 title: The Heights - Public Art and Creative Placemaking Consulting
 date: 2019-01-01T05:00:00.000Z
-path: /plan-nh
+path: /lupoli-the-heights
 category: Consulting
 subcategories:
   - Private Sector

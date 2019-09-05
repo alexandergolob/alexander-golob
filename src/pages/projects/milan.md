@@ -1,7 +1,7 @@
 ---
 templateKey: project-page
 title: Milan
-date: 2017-01-01T19:31:09.194Z
+date: 2019-02-02T19:31:09.194Z
 path: /milan
 category: Engagements
 subcategories:

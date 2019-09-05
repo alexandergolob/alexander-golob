@@ -51,6 +51,80 @@ CV:
             - 'Insider''s Guide to Venezia, Venice, Italy'
           year: 2015
       title: Group Exhibitions
+    - items:
+        - bulletPoints:
+            - 'Triumph of the People and Prosperity on the Mystic, Somerville, MA'
+            - >-
+              A Living Monument to the Pursuit of Higher Education, College of
+              General Studies, Boston University, Boston, MA
+            - >-
+              Coloring Book Mural, Federal Realty Investment Trust, Wellesley,
+              MA
+            - 'Community Ceramic Art Mural, Wellesley, MA'
+          year: '2019'
+        - bulletPoints:
+            - >-
+              Miles to Go Before We Sleep – An Immigrant and Origin Story Mural,
+              Haverhill, MA
+            - >-
+              Coloring Book Mural, Federal Realty Investment Trust, Wellesley,
+              MA
+            - 'Community Ceramic Art Mural, Wellesley, MA'
+            - >-
+              The Joy of Entering the Forest, Federal Realty Investment Trust,
+              Wellesley, MA
+            - >-
+              Fighting for Our Planet (mural series), Northeast Energy
+              Efficiency Partnership, Lexington, MA
+          year: '2018'
+        - bulletPoints:
+            - >-
+              Shining Strong, Shining Bright, Codman Square Community
+              Development Corporation, Dorchester, Boston, MA
+            - >-
+              #theSnapGallery: Exposing New Realities, North Hampton Film
+              Festival, North Hampton, MA
+            - >-
+              Pan Mass Challenge Live Mural Painting – Stronger Together,
+              PhotoButler, Wellesley, MA
+            - '#theSnapGallery@PEM, Peabody Essex Museum, Salem, MA'
+            - 'History of a Vibrant Community, George’s Pizza, Natick, MA'
+            - >-
+              Blue Clouds Up Ahead, Let’s Rest a Little While, Poke City,
+              Cambridge, MA
+            - >-
+              Everybody Matters, South Middlesex Opportunity Council,
+              Framingham, MA
+          year: '2017'
+        - bulletPoints:
+            - >-
+              A Meditation on Community and Nature, South Middlesex Opportunity
+              Council, Framingham, MA
+            - 'Community Doodle, Boston University Arts Initiative, Boston, MA'
+            - 'Tales of the Voyage, Sunset Cantina, Boston, MA'
+            - 'Venetian Lantern, Kickstarter Campaign'
+          year: '2016'
+        - bulletPoints:
+            - >-
+              Honoring the Past, Celebrating the Future, South Middlesex
+              Opportunity Council, Framingham, MA
+            - '#theSnapGallery, College of General Studies, Boston University'
+            - 'The Wave, College of General Studies, Boston University'
+            - 'Boston Peace, Department of Political Science, Boston University'
+            - 'Ivy, Department of Political Science, Boston University 2014'
+            - 'Expanse, BUzz Lab for Entrepreneurship, Boston University'
+            - 'Cookin’Café Mural, Cookin’Cafe, Boston, MA'
+            - >-
+              Sunrise, Center for English Learning and Orientation Programs,
+              Boston University
+          year: '2015'
+        - bulletPoints:
+            - >-
+              Boston Strong–Wellesley Strong, Celebrations Committee, Wellesley,
+              MA
+            - 'Kaleidoscope, College of Fine Arts, Boston University'
+          year: '2013'
+      title: Public Art Projects
   title: Golob Art
 ---
 

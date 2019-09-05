@@ -9,7 +9,7 @@ subcategories:
 isFeatured: true
 details:
   - attribute: Date
-    value: January 2017
+    value: February 2019
   - attribute: Location
     value: 'Milan, Italy'
   - attribute: Client

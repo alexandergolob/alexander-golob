@@ -2,7 +2,7 @@
 templateKey: project-page
 title: 'Repeat Lecturer, Seminar Day'
 date: 2015-01-01T19:31:09.194Z
-path: /wpsas-winter-dinner
+path: /whs-lecturer
 category: Engagements
 subcategories:
   - Speaking

@@ -22,10 +22,10 @@ items:
   - category: Consulting
     path: /projects/consulting
     subitems:
-      - path: /projects/government
-        subitem: government
-      - path: /projects/private
-        subitem: private
+      - path: /projects/public-sector
+        subitem: public sector
+      - path: /projects/private-sector
+        subitem: private sector
   - category: Special Projects
     path: /projects/special-projects
     subitems:

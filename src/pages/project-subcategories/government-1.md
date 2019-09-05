@@ -4,12 +4,17 @@ title: Government
 path: /government
 category: Engagements
 hero: >-
-  Golob Art has experience engaging with communities, conducting research, and
-  developing and implementing art and placemaking policy, strategy, and
-  integration.
+  Art and creative placemaking are critical for thriving communities, economies,
+  families, and downtowns. Let us help make your community more vibrant. 
 CTA:
   path: /contact
   statement: Get In Touch
   statementAbove: Interested? Got Questions?
 ---
-Understanding how to move forward with creative endeavors and what initiatives should be taken on can be difficult. Golob Art offers critical research, innovative problem solving, and a deep expertise in the arts to confidently and effectively foster the arts in your community or organization. We have helped a number of organizations explore their options and write grants or short-papers on the value of the arts in a community.
+At Golob Art, we have a deep belief that public art and creative placemaking has a unique capacity to transform a community for the better - from engaging communities, conducting research and grant-writing, developing and implementing art and placemaking policy, and creating artworks.
+
+We merge our experience conducting critical community engagement and innovative problem solving with a deep expertise in the Arts to confidently and effectively foster the Arts in your community or organization. 
+
+Notable clients include:
+
+The Department of Economic and Community Development, City of Methuen; Plan NH.

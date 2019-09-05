@@ -12,15 +12,15 @@ links:
     path: /cv
 CVButton:
   content: DOWNLOAD C.V.
-  filename: /assets/kaz-baig-resume.pdf
+  filename: /assets/alexander-golob-cv-website.pdf
 CV:
-  image: /assets/pokecity.webp
   alt: Alexander
+  image: /assets/48365444_10216094366626294_3813282689369243648_o.jpg
   name: Alexander Golob
   personalDetails:
     - President and Artist
-    - AlexanderGolobArt@gmail.com
-    - www.AlexanderGolob.com
+    - Alexander@AlexanderGolobArt.com
+    - www.AlexanderGolobArt.com
     - 'instagram and facebook:'
     - '@alexandergolobart'
     - +1 617-755-6522
@@ -49,8 +49,9 @@ CV:
             - 'Rhett the Destroyer, Boston, MA'
           year: 2016
         - bulletPoints:
-            - "Insider's Guide to Venezia, Venice, Italy"
+            - 'Insider''s Guide to Venezia, Venice, Italy'
           year: 2015
       title: Group Exhibitions
   title: Golob Art
 ---
+

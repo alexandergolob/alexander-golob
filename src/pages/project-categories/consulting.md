@@ -5,8 +5,8 @@ path: /consulting
 hero: >-
   Art provides benefits for sense of community, business, marketing, and health.
   Sometimes, it helps to have an artist to integrate that perspective into a
-  community, business, or project. The studio has worked with city governments
-  on policy and implementation, non-profits embarking upon art initiative, and
+  community, business, or project. Our studio has worked with city governments
+  on policy and implementation, non-profits embarking upon art initiatives, and
   early stage start-ups looking for guidance.
 subcategorySections:
   - alt: a
@@ -14,22 +14,28 @@ subcategorySections:
     linkContent: Government
     linkPath: /projects/government
     md_description: >-
-      Understanding how to move forward with creative endeavors and what
-      initiatives should be taken on can be difficult. Golob Art offers critical
-      research, innovative problem solving, and a deep expertise in the arts to
-      confidently and effectively foster the arts in your community or
-      organization. We have helped a number of organizations explore their
-      options and write grants or short-papers on the value of the arts in a
-      community.
+      Public art and creative placemaking has a unique capacity to transform a
+      community for the better - from engaging communities, conducting research
+      and grant-writing, developing and implementing art and placemaking policy,
+      and creating artworks.
+
+
+      We merge our experience conducting critical community engagement and
+      innovative problem solving with a deep expertise in the Arts to
+      confidently and effectively foster the Arts in your community or
+      organization.
     subcategory: Government
   - alt: b
     image: /assets/starry-night.jpg
     linkContent: Private
     linkPath: /projects/private
     md_description: >-
-      Art provides benefits for sense of community, business, marketing, and
-      health. Sometimes, it helps to have an artist to integrate that
-      perspective into a community, business, or project.
+      Art and creative placemaking provide benefits for sense of community,
+      business activity, marketing, and health. Let us help make your project
+      special. At Golob Art, we have a passion for public art and creative
+      placemaking - from creating custom artwork and arts events to community
+      engagement and integration of creative placemaking into architectural
+      plans.
     subcategory: Private
 ---
 

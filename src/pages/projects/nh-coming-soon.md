@@ -25,6 +25,6 @@ descriptions:
     startingRow: 2
 images:
   - alt: a
-    image: /assets/secondary-logo.png
+    image: /assets/screen-shot-2019-09-05-at-1.11.48-am.png
 ---
 

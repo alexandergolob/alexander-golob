@@ -30,6 +30,6 @@ descriptions:
     startingRow: 2
 images:
   - alt: a
-    image: /assets/methuen-40r-map.jpg
+    image: /assets/haverhill-the-heights.jpg
 ---
 

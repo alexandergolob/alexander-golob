@@ -125,6 +125,31 @@ CV:
             - 'Kaleidoscope, College of Fine Arts, Boston University'
           year: '2013'
       title: Public Art Projects
+    - items:
+        - bulletPoints:
+            - >-
+              Public Art and Placemaking Consultant, The Heights, Lupoli
+              Company, Haverhill
+            - >-
+              Public Art and Placemaking Consultant, Cobalt Development, The
+              Michaels Organization, Allston, Boston
+            - 'Public Art and Placemaking Consultant, City of Methuen, Mehtuen'
+          year: '2019'
+        - bulletPoints:
+            - National Arts Strategies Creative Community Fellow
+            - >-
+              Public Art and Placemaking Consultant, Cobalt Development, The
+              Michaels Organization, Allston, Boston
+            - >-
+              Public Art and Placemaking Consultant, Tailby Lot Comprehensive
+              Art Plan, Federal Realty Investment Trust, Wellesley
+            - 'Judge, Creative Entrepreneurship Pitch Contest'
+            - 'Artist-in-Residence, Wellesley Middle School'
+            - 'Co-Founder and Director, Post-Cubicle Gallery, Boston'
+            - Public Art and Placemaking Consultant for the City of Methuen
+            - s
+          year: '2018'
+      title: 'Residencies / Engagements:'
   title: Golob Art
 ---
 

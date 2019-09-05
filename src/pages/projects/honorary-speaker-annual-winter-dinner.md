@@ -15,7 +15,12 @@ details:
   - attribute: Client
     value: Wellesley Parents Supporting Arts Students
 descriptions:
-  - md_content: Lorem Ipsum
+  - md_content: >-
+      Honorary speaker at the 2nd Annual Wellesley Parents Supporting Arts
+      Students (W-PSAS) Dinner. Gave a short talk about life and career
+      experience to gathering of parents and community members. Offered insight
+      into the value of an arts education and the challenges and opportunities
+      associated with it.
     startingRow: 2
 images:
   - alt: a

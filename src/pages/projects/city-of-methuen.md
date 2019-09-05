@@ -44,7 +44,10 @@ descriptions:
       of a major former factory space, the creation of a self-sustaining artist
       residency program. The project attracted 14 artists from across
       Northeastern Massachusetts. Now, a vacant factory space is a hub for
-      artists who host events both within the building and in city center.
+      artists who host events both within the building and in city center. In
+      the five months since its inception, the residency program has created
+      permanent works of public art, and developed a series of performances and
+      events.
     startingRow: 6
 images:
   - alt: a

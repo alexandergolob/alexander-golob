@@ -18,11 +18,6 @@ subcategorySections:
       integration. The studio has worked with city governments on policy and
       implementation, non-profits embarking upon art initiative, and early stage
       start-ups looking for guidance.
-
-
-      Art provides benefits for sense of community, business, marketing, and
-      health. Sometimes, it helps to have an artist to integrate that
-      perspective into a community, business, or project.
     subcategory: Speaking
   - alt: c
     image: /assets/img-20190220-wa0005-1-.jpg

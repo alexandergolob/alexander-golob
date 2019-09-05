@@ -1,7 +1,7 @@
 ---
 templateKey: project-subcategory
-title: Government
-path: /government
+title: Public Sector
+path: /public-sector
 category: Engagements
 hero: >-
   Art and creative placemaking are critical for thriving communities, economies,

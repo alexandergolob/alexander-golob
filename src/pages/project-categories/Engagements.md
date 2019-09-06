@@ -11,6 +11,7 @@ subcategorySections:
   - alt: a
     image: /assets/kaleidoscope.webp
     linkContent: Speaking
+    external: false
     linkPath: /projects/speaking
     md_description: >-
       Golob Art has experience engaging with communities, conducting research,
@@ -22,6 +23,7 @@ subcategorySections:
   - alt: c
     image: /assets/img-20190220-wa0005-1-.jpg
     linkContent: Events
+    external: false
     linkPath: /projects/events
     md_description: >-
       These range from presentations on the values of public art and placemaking

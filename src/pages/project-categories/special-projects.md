@@ -9,6 +9,7 @@ subcategorySections:
   - alt: a
     image: /assets/screen-shot-2019-08-16-at-6.18.01-pm.png
     linkContent: Post Cubicle Gallery
+    external: true
     linkPath: 'https://www.alexandergolob.com/postcubiclegallery'
     md_description: >-
       Located in Boston's busy Kenmore Square, in collaboration with Hotel
@@ -20,6 +21,7 @@ subcategorySections:
   - alt: b
     image: /assets/screen-shot-2019-08-21-at-2.54.28-pm.png
     linkContent: Through the Looking Glass
+    external: true
     linkPath: 'https://www.alexandergolob.com/through-the-looking-glass'
     md_description: >-
       This multi-artist show, held Friday, May 19th, 2017, featured works that
@@ -31,6 +33,7 @@ subcategorySections:
   - alt: d
     image: /assets/the-snap-gallery.webp
     linkContent: '#TheSnapGallery - Series'
+    external: true
     linkPath: 'https://www.alexandergolob.com/thesnapgallery'
     md_description: >-
       \#theSnapGallery is an artistic investigation into the growing influence
@@ -40,6 +43,7 @@ subcategorySections:
   - alt: c
     image: /assets/10.-venetian-lanterns.jpg
     linkContent: Venezia
+    external: true
     linkPath: 'https://www.alexandergolob.com/venice'
     md_description: >-
       Since its onset, Venice has always occupied a unique position - in

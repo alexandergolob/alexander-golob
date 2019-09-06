@@ -9,6 +9,7 @@ subcategorySections:
   - alt: a
     image: /assets/10.-venetian-lanterns.jpg
     linkContent: Personal
+    external: false
     linkPath: /projects/personal
     md_description: >-
       As an aspiring leader in the future of the artistic fields, Golob Art is
@@ -20,6 +21,7 @@ subcategorySections:
   - alt: b
     image: /assets/20180702_083819-1-.jpg
     linkContent: Commissioned
+    external: false
     linkPath: /projects/commissioned
     md_description: >-
       It is our studio’s opinion that people need creativity and art. Having art
@@ -32,6 +34,7 @@ subcategorySections:
   - alt: c
     image: /assets/screen-shot-2019-08-30-at-10.46.00-am.png
     linkContent: Public Art
+    external: false
     linkPath: /projects/public-art
     md_description: >-
       Along with helping to form organizations, Golob Art has deep experience

@@ -12,6 +12,7 @@ subcategorySections:
   - alt: a
     image: /assets/western-avenue-artist-lofts.jpeg
     linkContent: Public Sector
+    external: false
     linkPath: /projects/public-sector
     md_description: >-
       Public art and creative placemaking has a unique capacity to transform a
@@ -27,6 +28,7 @@ subcategorySections:
   - alt: b
     image: /assets/haverhill-the-heights.jpg
     linkContent: Private Sector
+    external: false
     linkPath: /projects/private-sector
     md_description: >-
       Art and creative placemaking provide benefits for sense of community,

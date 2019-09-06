@@ -6,7 +6,7 @@ import Image from 'gatsby-image';
 import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import PageHeading from '../components/PageHeading';
-import InternalLink from '../components/InternalLink';
+import Link from '../components/Link';
 import Projects from '../components/Projects';
 
 import LightMarble from '../components/LightMarble';
@@ -99,7 +99,7 @@ const SubcategoryDescription = styled.div`
   }
 `;
 
-const SubcategoryLink = styled(InternalLink)`
+const SubcategoryLink = styled(Link)`
   margin-top: 1em;
   min-width: 200px;
   border: 1px solid ${props => props.theme.colors.dark};
@@ -107,6 +107,9 @@ const SubcategoryLink = styled(InternalLink)`
   padding: 6px 12px;
   text-align: center;
   font-family: ${props => props.theme.fonts.serif};
+
+  color: inherit;
+  text-decoration: none;
 
   ${media.mobile`min-width: auto; width: 100%;`}
 `;
@@ -167,7 +170,15 @@ export const Template = ({
     >
       {subcategorySections.map(
         (
-          { subcategory, description, image, alt, linkContent, linkPath },
+          {
+            subcategory,
+            description,
+            image,
+            alt,
+            linkContent,
+            external,
+            linkPath
+          },
           i
         ) => (
           <React.Fragment key={i}>
@@ -180,7 +191,9 @@ export const Template = ({
                 <SubcategoryDescription
                   dangerouslySetInnerHTML={{ __html: description }}
                 />
-                <SubcategoryLink to={linkPath}>{linkContent}</SubcategoryLink>
+                <SubcategoryLink external={external} path={linkPath}>
+                  {linkContent}
+                </SubcategoryLink>
               </SubcategoryDescriptionContainer>
             </SubcategoryTitleAndDescription>
             <SubcategoryImage
@@ -240,6 +253,7 @@ export const query = graphql`
         subcategorySections {
           subcategory
           linkContent
+          external
           linkPath
           image {
             childImageSharp {

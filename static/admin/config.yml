@@ -369,6 +369,7 @@ collections:
           - { name: subcategory, label: Subcategory, widget: string }
           - { name: md_description, label: Description, widget: markdown }
           - { name: linkContent, label: Link Content, widget: string }
+          - { name: external, label: External, widget: string }
           - { name: linkPath, label: LinkPath, widget: string }
           - { name: image, label: Image, widget: image }
           - { name: alt, label: alt, widget: string }

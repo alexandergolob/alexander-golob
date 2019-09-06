@@ -22,6 +22,9 @@ const InternalLink = styled(UnstyledInternalLink)`
 `;
 
 const ExternalLink = styled(UnstyledExternalLink)`
+  color: inherit;
+  font: inherit;
+  text-decoration: none;
   ${linkStyles};
 `;
 const CTA = ({ external, path, content, ...rest }) =>

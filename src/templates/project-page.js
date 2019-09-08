@@ -94,6 +94,7 @@ const Value = styled.div`
 
 const Image = styled(GatsbyImage)`
   height: 250px;
+  border: 1px solid black;
   ${media.mobile`height: 200px;`}
 `;
 

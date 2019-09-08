@@ -6,6 +6,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import { media } from './ThemeProvider';
 import UnstyledSocialIcons from './SocialIcons';
 import Link from './Link';
+import InternalLink from './InternalLink';
 
 import LightMarble from './LightMarble';
 
@@ -58,7 +59,7 @@ const DevLink = styled(Link)`
   font-weight: 600;
 `;
 
-const Logo = styled.div`
+const Logo = styled(InternalLink)`
   grid-area: Logo;
   display: flex;
   justify-content: center;
@@ -133,7 +134,7 @@ const Footer = ({
         Kaz Baig
       </DevLink>
     </DevCredit>
-    <Logo>
+    <Logo to='/'>
       <LogoImg fluid={middleStatement.img} alt='logo' />
       {middleStatement.text}
     </Logo>

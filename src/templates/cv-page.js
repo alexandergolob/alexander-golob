@@ -27,6 +27,9 @@ const CVDownloadButton = styled(PageHeading).attrs({
   display: inline-block;
   font-size: 1.25em;
 
+  color: inherit;
+  text-decoration: none;
+
   ${media.tablet`width: 100%; padding: 5px 30px; font-size: 1.25em;`}
 `;
 

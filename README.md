@@ -1,8 +1,12 @@
 [Dev site](https://alexander-golob.netlify.com)
 
-- scroll component fix 
+- Right nav - tighten space between buttons
+- Need to be able to change order of featured projects
+- Navs positioning
+- Year squares--- there’s a slight gap btw marble photo and button.
+- Photo next to descr on project pages needs to extend to match the descr box length
 - review all pages for responsiveness after dimension change
-- /tags/blog link workaround
+- Consider where to show full image, if possible
 
 # Page Types
 

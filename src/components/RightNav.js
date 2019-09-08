@@ -27,7 +27,7 @@ const NavList = styled.ul`
 `;
 
 const NavListItemLink = styled(Link)`
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   &:last-of-type {
     margin-bottom: 0;
   }
@@ -51,12 +51,13 @@ const SocialIcons = styled(UnstyledSocialIcons)`
 `;
 
 const SocialIconsBox = styled(NavListItem)`
-  margin-bottom: 15px;
+  margin-bottom: 7px;
   border: ${props => props.theme.misc.frameBorder};
   background: ${props => props.theme.colors.offLight};
 `;
 
 const ContactLink = styled(NavListItemLink)`
+  margin-top: 18px;
   position: relative;
   background: none;
 `;

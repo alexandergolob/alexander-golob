@@ -69,7 +69,7 @@ export default ({ projects, refs }) => {
     );
 
     let restOfRefs = {};
-    if (refs && i !== 0 && currentYear > nextYear) {
+    if (refs && currentYear > nextYear) {
       restOfRefs.ref = refs[nextRef];
       nextRef++;
     }

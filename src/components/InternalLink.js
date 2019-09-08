@@ -7,13 +7,6 @@ const InternalLink = styled(Link)`
   text-decoration: none;
 `;
 
-export default ({ to, ...rest }) => (
-  <InternalLink
-    to={
-      to.replace('[workaround]', '')
-      // to && to.replace('../pages', '')
-      // .replace(/^((blog)|(about)|(projects))/, str => `/tags/${str}`)
-    }
-    {...rest}
-  />
-);
+export default React.forwardRef(({ to, ...rest }, ref) => (
+  <InternalLink to={to.replace('[workaround]', '')} {...rest} ref={ref} />
+));

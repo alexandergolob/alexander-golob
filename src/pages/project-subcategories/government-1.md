@@ -15,6 +15,4 @@ At Golob Art, we have a deep belief that public art and creative placemaking has
 
 We merge our experience conducting critical community engagement and innovative problem solving with a deep expertise in the Arts to confidently and effectively foster the Arts in your community or organization. 
 
-Notable clients include:
-
-The Department of Economic and Community Development, City of Methuen; Plan NH.
+Notable clients include: The Department of Economic and Community Development, City of Methuen; Plan NH.

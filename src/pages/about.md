@@ -18,14 +18,14 @@ companyDescription:
 
     Golob Art has worked on community-led art projects since 2013, and, since
     2017, it has worked in partnership with multiple communities in- and outside
-    of Massachusetts. These partnerships have resulted projects deeply involved
-    in equity work. The pieces are created with extensive community engagement,
-    from the technique and theme, to the designs. 
+    of Massachusetts. These partnerships have resulted in projects deeply
+    involved in equity work. The pieces are created with extensive community
+    engagement, from the technique and theme, to the designs. 
 
 
     Most recently, the studio completed a mural in Haverhill titled Miles to Go
     Before We Sleep. It was comprised of 46 brightly-painted panels, each with
-    the image of a community member based of images submitted by their family
+    the image of a community member based off images submitted by their family
     members and friends, surrounded by an abstract iteration of the Haverhill
     skyline. This mural praises and shines a light on Haverhill’s varied
     immigrant and minority community members and families.  

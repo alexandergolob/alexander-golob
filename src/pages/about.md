@@ -56,11 +56,11 @@ teamSection:
       has experience engaging with communities, conducting research, and
       developing and implementing art and placemaking policy, strategy, and
       integration. His studio has worked with city governments on policy and
-      implementation, non-profits embarking upon art initiatives, and
-      early-stage start-ups looking for guidance. Golob Art has opened a 2,500
-      sq. ft art show in Boston, has held an interactive snapchat art
-      installation at the Peabody Essex Museum, and worked with the City of
-      Methuen on a public art initiative.
+      implementation, nonprofits embarking upon art initiatives, and early-stage
+      start-ups looking for guidance. Golob Art has opened a 2,500 sq. ft art
+      show in Boston, has held an interactive snapchat art installation at the
+      Peabody Essex Museum, and worked with the City of Methuen on a public art
+      initiative.
 
 
       Alexander loves everything about food. Learning its historical origins,

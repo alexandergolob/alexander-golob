@@ -8,8 +8,6 @@ subcategories:
   - Through the Looking Glass
   - Personal
 isFeatured: true
-images:
-  - alt: a
-    image: /assets/screen-shot-2019-08-30-at-10.33.20-am.png
+image: /assets/screen-shot-2019-08-30-at-10.33.20-am.png
 ---
 

@@ -7,7 +7,7 @@ import { media } from '../components/ThemeProvider';
 import Layout from '../components/Layout';
 import PageHeading from '../components/PageHeading';
 import Carousel from '../components/Carousel';
-import InternalLink from '../components/InternalLink';
+import Link from '../components/Link';
 
 const HeadingContainer = styled.div`
   margin-bottom: 2em;
@@ -34,9 +34,11 @@ const ProjectsContainer = styled.div`
   ${media.mobile`grid-template-columns: 1fr; grid-auto-rows: auto; `}
 `;
 
-const Project = styled(InternalLink)`
+const Project = styled(Link)`
   display: flex;
   flex-direction: column;
+  color: inherit;
+  text-decoration: none;
 `;
 
 const ProjectImage = styled(Image)`
@@ -80,8 +82,8 @@ export const Template = ({
       }))}
     />
     <ProjectsContainer>
-      {featuredProjects.map(({ path, image, title }, i) => (
-        <Project to={path} key={i}>
+      {featuredProjects.map(({ external, path, image, title }, i) => (
+        <Project external={external} path={path} key={i}>
           <ProjectImage alt='' fluid={image} />
           <ProjectTitle>{title}</ProjectTitle>
         </Project>
@@ -99,9 +101,16 @@ export default ({ data: { portfolio, featuredProjects } }) => (
     }
     featuredProjects={featuredProjects.edges.map(({ node }) => ({
       ...node.frontmatter,
-      image: node.frontmatter.images[0].image.childImageSharp.fluid,
+      image: (node.frontmatter.templateKey === 'external-project'
+        ? node.frontmatter.image
+        : node.frontmatter.images[0].image
+      ).childImageSharp.fluid,
       alt: '',
-      path: node.fields.slug
+      external: node.frontmatter.templateKey === 'external-project',
+      path:
+        node.frontmatter.templateKey === 'project-page'
+          ? node.fields.slug
+          : node.frontmatter.path
     }))}
   />
 );
@@ -125,7 +134,7 @@ export const query = graphql`
     featuredProjects: allMarkdownRemark(
       filter: {
         frontmatter: {
-          templateKey: { eq: "project-page" }
+          templateKey: { in: ["project-page", "external-project"] }
           isFeatured: { eq: true }
         }
       }
@@ -134,8 +143,17 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            templateKey
             title
+            path
             date(formatString: "YYYY")
+            image {
+              childImageSharp {
+                fluid(maxWidth: 1050) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             images {
               image {
                 childImageSharp {

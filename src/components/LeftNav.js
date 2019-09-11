@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { useStaticQuery, graphql } from 'gatsby';
 
 import UnstyledHomeLogo from './HomeLogo';
-import Link from './InternalLink';
+import Link from './Link';
 
 const HomeLogo = styled(UnstyledHomeLogo)`
   margin-bottom: 0.5em;
@@ -24,6 +24,9 @@ const NavList = styled.ul`
 `;
 
 const NavItemTitleLink = styled(Link)`
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
   margin-bottom: 5px;
   display: block;
 `;
@@ -38,6 +41,9 @@ const SubList = styled.ul`
 `;
 
 const SubListItemLink = styled(Link)`
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
   margin-bottom: 2px;
   &:last-of-type {
     margin-bottom: 0;
@@ -48,15 +54,15 @@ const SubListItemLink = styled(Link)`
 
 const SubListItem = styled.li``;
 
-const UnstyledNavItem = ({ category, path, subitems, ...rest }) => (
+const UnstyledNavItem = ({ category, external, path, subitems, ...rest }) => (
   <li {...rest}>
-    <NavItemTitleLink to={path}>
+    <NavItemTitleLink external={external} path={path}>
       <NavItemTitle>{category}</NavItemTitle>
     </NavItemTitleLink>
 
     <SubList>
-      {subitems.map(({ subitem, path }, i) => (
-        <SubListItemLink to={path} key={i}>
+      {subitems.map(({ subitem, external, path }, i) => (
+        <SubListItemLink external={external} path={path} key={i}>
           <SubListItem>{subitem}</SubListItem>
         </SubListItemLink>
       ))}
@@ -105,8 +111,10 @@ const query = graphql`
           }
           items {
             category
+            external
             path
             subitems {
+              external
               path
               subitem
             }

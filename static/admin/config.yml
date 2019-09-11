@@ -544,12 +544,14 @@ collections:
             widget: list
             fields:
               - { name: category, label: Category, widget: string }
+              - { name: external, label: external, widget: string }
               - { name: path, label: Path, widget: string }
               - name: subitems
                 label: Subitems
                 widget: list
                 fields:
                   - { name: subitem, label: Subitem, widget: string }
+                  - { name: external, label: external, widget: string }
                   - { name: path, label: Path, widget: string }
 
       - name: rightNav
@@ -562,6 +564,7 @@ collections:
             widget: list
             fields:
               - { name: category, label: Category, widget: string }
+              - { name: external, label: external, widget: string }
               - { name: path, label: Path, widget: string }
 
       - name: finalCta

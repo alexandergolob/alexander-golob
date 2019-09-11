@@ -4,7 +4,7 @@ import { useStaticQuery, graphql } from 'gatsby';
 import GatsbyImage from 'gatsby-image';
 
 import UnstyledSocialIcons from './SocialIcons';
-import Link from './InternalLink';
+import Link from './Link';
 
 import GreenMarble from './GreenMarble';
 
@@ -27,6 +27,9 @@ const NavList = styled.ul`
 `;
 
 const NavListItemLink = styled(Link)`
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
   margin-bottom: 7px;
   &:last-of-type {
     margin-bottom: 0;
@@ -93,12 +96,12 @@ const RightNav = ({
         <SocialIconsBox>
           <SocialIcons />
         </SocialIconsBox>
-        {items.map(({ category, path }, i) => (
-          <NavListItemLink key={i} to={path}>
+        {items.map(({ external, category, path }, i) => (
+          <NavListItemLink key={i} external={external} path={path}>
             <NavListItem>{category}</NavListItem>
           </NavListItemLink>
         ))}
-        <ContactLink to='/contact'>
+        <ContactLink path='/contact'>
           <GreenMarble />
           <ContactItem>Contact</ContactItem>
         </ContactLink>
@@ -127,6 +130,7 @@ const query = graphql`
           }
           items {
             category
+            external
             path
           }
         }

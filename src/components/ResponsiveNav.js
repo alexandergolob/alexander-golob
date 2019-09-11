@@ -13,6 +13,7 @@ import {
 import { media } from './ThemeProvider';
 import UnstyledSocialIcons from './SocialIcons';
 import InternalLink from './InternalLink';
+import Link from './Link';
 
 import LightMarble from './LightMarble';
 
@@ -97,7 +98,10 @@ const MenuItemContainer = styled.li`
   align-items: center;
 `;
 
-const MenuItemLink = styled(InternalLink)`
+const MenuItemLink = styled(Link)`
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
   height: 40px;
   flex: 1;
   padding: 0px 15px;
@@ -133,7 +137,10 @@ const SubItem = styled.li`
   align-items: center;
 `;
 
-const SubItemLink = styled(InternalLink)`
+const SubItemLink = styled(Link)`
+  font: inherit;
+  color: inherit;
+  text-decoration: none;
   width: 100%;
 `;
 
@@ -157,8 +164,10 @@ const query = graphql`
           }
           items {
             category
+            external
             path
             subitems {
+              external
               path
               subitem
             }
@@ -174,6 +183,7 @@ const query = graphql`
       childMarkdownRemark {
         frontmatter {
           items {
+            external
             category
             path
           }
@@ -183,12 +193,14 @@ const query = graphql`
   }
 `;
 
-const MenuItem = ({ expandable, category, path, subitems }) => {
+const MenuItem = ({ expandable, category, external, path, subitems }) => {
   const [isExpanded, setIsExpanded] = React.useState(false);
 
   return (
     <MenuItemContainer>
-      <MenuItemLink to={path}>{category}</MenuItemLink>
+      <MenuItemLink external={external} path={path}>
+        {category}
+      </MenuItemLink>
       {expandable && (
         <ArrowButton onClick={() => setIsExpanded(!isExpanded)}>
           <Arrow icon={isExpanded ? faAngleUp : faAngleDown} />
@@ -196,9 +208,11 @@ const MenuItem = ({ expandable, category, path, subitems }) => {
       )}
       {subitems && (
         <SubItems show={isExpanded}>
-          {subitems.map(({ subitem, path }, i) => (
+          {subitems.map(({ subitem, external, path }, i) => (
             <SubItem key={i}>
-              <SubItemLink to={path}>{subitem}</SubItemLink>
+              <SubItemLink external={external} path={path}>
+                {subitem}
+              </SubItemLink>
             </SubItem>
           ))}
         </SubItems>

@@ -4,38 +4,53 @@ homeLogo:
   text: Golob Art
 items:
   - category: Art
+    external: false
     path: /projects/art
     subitems:
-      - path: /projects/personal
+      - external: false
+        path: /projects/personal
         subitem: personal
-      - path: /projects/commissioned
+      - external: false
+        path: /projects/commissioned
         subitem: commissioned
-      - path: /projects/public-art
+      - external: false
+        path: /projects/public-art
         subitem: public art
   - category: Engagements
+    external: false
     path: /projects/engagements
     subitems:
-      - path: /projects/speaking
+      - external: false
+        path: /projects/speaking
         subitem: speaking
-      - path: /projects/events
+      - external: false
+        path: /projects/events
         subitem: events
   - category: Consulting
+    external: false
     path: /projects/consulting
     subitems:
-      - path: /projects/public-sector
+      - external: false
+        path: /projects/public-sector
         subitem: public sector
-      - path: /projects/private-sector
+      - external: false
+        path: /projects/private-sector
         subitem: private sector
   - category: Special Projects
+    external: false
     path: /projects/special-projects
     subitems:
-      - path: /projects/post-cubicle-gallery
+      - external: false
+        path: /projects/post-cubicle-gallery
         subitem: post-cubicle gallery
-      - path: 'https://www.alexandergolob.com/through-the-looking-glass'
+      - external: true
+        path: 'https://www.alexandergolob.com/through-the-looking-glass'
         subitem: through the looking glass
-      - path: /projects/venezia
+      - external: false
+        path: /projects/venezia
         subitem: venezia
-      - path: 'https://alexandergolobart.wixsite.com/around-the-table '
+      - external: true
+        path: 'https://alexandergolobart.wixsite.com/around-the-table '
         subitem: around the table
 ---
 

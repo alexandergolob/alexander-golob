@@ -369,7 +369,7 @@ collections:
           - { name: subcategory, label: Subcategory, widget: string }
           - { name: md_description, label: Description, widget: markdown }
           - { name: linkContent, label: Link Content, widget: string }
-          - { name: external, label: External, widget: string }
+          - { name: external, label: External, widget: boolean }
           - { name: linkPath, label: LinkPath, widget: string }
           - { name: image, label: Image, widget: image }
           - { name: alt, label: alt, widget: string }
@@ -515,7 +515,7 @@ collections:
             label: Support Link
             widget: object
             fields:
-              - { name: external, label: external, widget: string }
+              - { name: external, label: External, widget: boolean }
               - { name: path, label: path, widget: string }
           - {
               name: boldLeftStatement,
@@ -544,14 +544,14 @@ collections:
             widget: list
             fields:
               - { name: category, label: Category, widget: string }
-              - { name: external, label: external, widget: string }
+              - { name: external, label: External, widget: boolean }
               - { name: path, label: Path, widget: string }
               - name: subitems
                 label: Subitems
                 widget: list
                 fields:
                   - { name: subitem, label: Subitem, widget: string }
-                  - { name: external, label: external, widget: string }
+                  - { name: external, label: External, widget: boolean }
                   - { name: path, label: Path, widget: string }
 
       - name: rightNav
@@ -564,7 +564,7 @@ collections:
             widget: list
             fields:
               - { name: category, label: Category, widget: string }
-              - { name: external, label: external, widget: string }
+              - { name: external, label: External, widget: boolean }
               - { name: path, label: Path, widget: string }
 
       - name: finalCta

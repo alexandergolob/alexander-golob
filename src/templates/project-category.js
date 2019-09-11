@@ -229,7 +229,10 @@ export default ({ data: { category, projects } }) => {
       )}
       projects={projects.edges.map(({ node }) => ({
         ...node.frontmatter,
-        image: node.frontmatter.images[0].image.childImageSharp.fluid,
+        image: (node.frontmatter.templateKey === 'external-project'
+          ? node.frontmatter.image
+          : node.frontmatter.images[0].image
+        ).childImageSharp.fluid,
         external: node.frontmatter.templateKey === 'external-project',
         path:
           node.frontmatter.templateKey === 'project-page'
@@ -291,6 +294,13 @@ export const query = graphql`
             path
             title
             date
+            image {
+              childImageSharp {
+                fluid(maxWidth: 225) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             images {
               image {
                 childImageSharp {

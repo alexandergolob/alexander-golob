@@ -164,7 +164,10 @@ export default ({ data: { subcategory, projects } }) => (
     subcategoryDescription={subcategory.html}
     projects={projects.edges.map(({ node }) => ({
       ...node.frontmatter,
-      image: node.frontmatter.images[0].image.childImageSharp.fluid,
+      image: (node.frontmatter.templateKey === 'external-project'
+        ? node.frontmatter.image
+        : node.frontmatter.images[0].image
+      ).childImageSharp.fluid,
       external: node.frontmatter.templateKey === 'external-project',
       path:
         node.frontmatter.templateKey === 'project-page'
@@ -212,6 +215,13 @@ export const query = graphql`
             title
             path
             date
+            image {
+              childImageSharp {
+                fluid(maxWidth: 225) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
+            }
             images {
               image {
                 childImageSharp {

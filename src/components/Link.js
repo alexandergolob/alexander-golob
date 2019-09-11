@@ -3,9 +3,10 @@ import React from 'react';
 import InternalLink from './InternalLink';
 import ExternalLink from './ExternalLink';
 
-export default ({ external, path, ...rest }) =>
+export default React.forwardRef(({ external, path, ...rest }, ref) =>
   external ? (
-    <ExternalLink href={path} {...rest} />
+    <ExternalLink href={path} ref={ref} {...rest} />
   ) : (
-    <InternalLink to={path} {...rest} />
-  );
+    <InternalLink to={path} ref={ref} {...rest} />
+  )
+);

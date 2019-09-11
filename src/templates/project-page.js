@@ -190,12 +190,12 @@ export const Template = ({
             {category}
           </Category>
           {subcategories.map((subcategory, i) => (
-            <>
+            <React.Fragment key={i}>
               {' - '}
-              <InternalLink key={i} to={`/projects/${kebabCase(subcategory)}`}>
+              <InternalLink to={`/projects/${kebabCase(subcategory)}`}>
                 {subcategory}
               </InternalLink>
-            </>
+            </React.Fragment>
           ))}
         </Categories>
         <FirstImage fluid={firstImage.image} alt={firstImage.alt} />

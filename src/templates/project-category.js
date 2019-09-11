@@ -230,14 +230,18 @@ export default ({ data: { category, projects } }) => {
       projects={projects.edges.map(({ node }) => ({
         ...node.frontmatter,
         image: node.frontmatter.images[0].image.childImageSharp.fluid,
-        path: node.fields.slug
+        external: node.frontmatter.templateKey === 'external-project',
+        path:
+          node.frontmatter.templateKey === 'project-page'
+            ? node.fields.slug
+            : node.frontmatter.path
       }))}
     />
   );
 };
 
 export const query = graphql`
-  query($id: String!, $category: String!, $subcategories: [String!]!) {
+  query($id: String!, $category: String!) {
     category: markdownRemark(id: { eq: $id }) {
       frontmatter {
         title
@@ -271,29 +275,10 @@ export const query = graphql`
         }
       }
     }
-    subcategories: allMarkdownRemark(
-      filter: {
-        frontmatter: {
-          templateKey: { eq: "project-subcategory" }
-          title: { in: $subcategories }
-        }
-      }
-    ) {
-      edges {
-        node {
-          frontmatter {
-            title
-          }
-          fields {
-            slug
-          }
-        }
-      }
-    }
     projects: allMarkdownRemark(
       filter: {
         frontmatter: {
-          templateKey: { eq: "project-page" }
+          templateKey: { in: ["project-page", "external-project"] }
           category: { eq: $category }
         }
       }
@@ -302,6 +287,8 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            templateKey
+            path
             title
             date
             images {

@@ -3,13 +3,15 @@ import styled from 'styled-components';
 import GatsbyImage from 'gatsby-image';
 
 import { media } from './ThemeProvider';
-import InternalLink from './InternalLink';
+import Link from './Link';
 
 import LightMarble from '../components/LightMarble';
 
-const Project = styled(InternalLink)`
+const Project = styled(Link)`
   display: flex;
   flex-direction: column;
+  color: inherit;
+  text-decoration: none;
 `;
 
 const Image = styled(GatsbyImage)`
@@ -54,7 +56,7 @@ const YearTitle = styled(Title)`
 
 export default ({ projects, refs }) => {
   let nextRef = 1;
-  return projects.reduce((acc, { date, path, image, title }, i) => {
+  return projects.reduce((acc, { date, external, path, image, title }, i) => {
     const currentYear = new Date(date).getFullYear();
     const nextYear =
       i < projects.length - 1
@@ -62,7 +64,12 @@ export default ({ projects, refs }) => {
         : currentYear;
 
     const markup = (
-      <Project to={path} key={i} {...(refs && i === 0 ? { ref: refs[0] } : {})}>
+      <Project
+        external={external}
+        path={path}
+        key={i}
+        {...(refs && i === 0 ? { ref: refs[0] } : {})}
+      >
         <Image alt='' fluid={image} />
         <Title>{title}</Title>
       </Project>

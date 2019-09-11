@@ -165,7 +165,11 @@ export default ({ data: { subcategory, projects } }) => (
     projects={projects.edges.map(({ node }) => ({
       ...node.frontmatter,
       image: node.frontmatter.images[0].image.childImageSharp.fluid,
-      path: node.fields.slug
+      external: node.frontmatter.templateKey === 'external-project',
+      path:
+        node.frontmatter.templateKey === 'project-page'
+          ? node.fields.slug
+          : node.frontmatter.path
     }))}
   />
 );
@@ -195,7 +199,7 @@ export const query = graphql`
     projects: allMarkdownRemark(
       filter: {
         frontmatter: {
-          templateKey: { eq: "project-page" }
+          templateKey: { in: ["project-page", "external-project"] }
           subcategories: { in: [$subcategory] }
         }
       }
@@ -204,7 +208,9 @@ export const query = graphql`
       edges {
         node {
           frontmatter {
+            templateKey
             title
+            path
             date
             images {
               image {

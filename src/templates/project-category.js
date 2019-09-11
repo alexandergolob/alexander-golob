@@ -124,7 +124,7 @@ const SubcategoryImage = styled(Image)`
   ${media.tablet`
     order: ${props => props.sectionNumber * 2 + 1};
     height: 300px;
-    border-bottom: none;
+    border-bottom: 1px solid black;
   `}
 `;
 

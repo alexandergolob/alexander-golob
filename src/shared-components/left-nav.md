@@ -40,14 +40,14 @@ items:
     external: false
     path: /projects/special-projects
     subitems:
-      - external: false
-        path: /projects/post-cubicle-gallery
+      - external: true
+        path: 'https://www.alexandergolob.com/postcubiclegallery'
         subitem: post-cubicle gallery
       - external: true
         path: 'https://www.alexandergolob.com/through-the-looking-glass'
         subitem: through the looking glass
-      - external: false
-        path: /projects/venezia
+      - external: true
+        path: 'https://www.alexandergolob.com/venice'
         subitem: venezia
       - external: true
         path: 'https://alexandergolobart.wixsite.com/around-the-table '

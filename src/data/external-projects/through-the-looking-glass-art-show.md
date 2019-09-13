@@ -6,7 +6,6 @@ path: 'https://www.alexandergolob.com/through-the-looking-glass'
 category: Special Projects
 subcategories:
   - Through the Looking Glass
-  - Personal
 isFeatured: true
 image: /assets/screen-shot-2019-08-30-at-10.33.20-am.png
 ---

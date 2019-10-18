@@ -13,7 +13,7 @@ links:
 companyDescription:
   heading: About Golob Art - Meet the Team!
   md_content: >-
-    We make create art for community. 
+    We create art for community. 
 
 
     Golob Art has worked on community-led art projects since 2013, and, since

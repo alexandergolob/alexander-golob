@@ -22,7 +22,7 @@ carouselImages:
     image: /assets/20190522_121539.jpg
     link:
       external: false
-      path: projects/assembly-square
+      path: /projects/assembly-square
   - alt: d
     description: 'Golobology - Stored in Studio, Wellesley, MA'
     image: /assets/golobology-2-edit.jpg

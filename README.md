@@ -1,12 +1,4 @@
-[Dev site](https://alexander-golob.netlify.com)
-
-- Right nav - tighten space between buttons
-- Need to be able to change order of featured projects
-- Navs positioning
-- Year squares--- there’s a slight gap btw marble photo and button.
-- Photo next to descr on project pages needs to extend to match the descr box length
-- review all pages for responsiveness after dimension change
-- Consider where to show full image, if possible
+[Live site](https://alexandergolobart.com)
 
 # Page Types
 
@@ -42,36 +34,5 @@
 - [x] CMS interface
 - [x] sitemap
 - [x] robots.txt
-- [ ] PWA functionality
 
-# Questions
 
-## Will there always be exactly 3 links on the headers that have 3 in the design?
-
-Yes
-
-## Will CV links on the about page be external or internal?
-
-Need option for either
-
-## Should the final CTA be a shared component?
-
-Yes
-
-## How many images can there be for projects?
-
-Unlimited
-
-## Is the header image in projects special, or just the first?
-
-Just the first
-
-## Where do the carousel images on the portfolio page come from?
-
-first image from each featured project
-
-## Where does one set the featured projects to show on the portfolio? In the portfolio settings or the project settings?
-
-cheeckbox on project page
-
-# Client todo

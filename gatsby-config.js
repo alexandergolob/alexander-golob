@@ -8,6 +8,8 @@ module.exports = {
     pathPrefix: '/'
   },
   plugins: [
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-plugin-netlify-cms',
       options: {
@@ -65,8 +67,6 @@ module.exports = {
         path: `${__dirname}/src/texture-images`
       }
     },
-    'gatsby-plugin-sharp',
-    'gatsby-transformer-sharp',
     {
       resolve: 'gatsby-transformer-remark',
       options: {

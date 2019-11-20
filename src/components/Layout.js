@@ -14,11 +14,16 @@ import GraffitiImg from '../texture-images/logo-white.png';
 
 const LeftNav = styled(UnstyledLeftNav)`
   position: fixed;
+
   z-index: 3;
   width: 150px;
   top: 50%;
-  left: calc(50% - (50% - 100px));
+  left: calc(50% - (1200px / 2) - 50px);
   transform: translate(-50%, -50%);
+
+  @media (max-width: 1500px) {
+    left: calc(50% - (50% - 100px));
+  }
 
   ${media.laptop`display: none;`}
 `;
@@ -28,8 +33,12 @@ const RightNav = styled(UnstyledRightNav)`
   z-index: 3;
   width: 150px;
   top: calc(50% + 10px);
-  left: calc(50% + (50% - 100px));
+  left: calc(50% + (1200px / 2) + 50px);
   transform: translate(-50%, -50%);
+
+  @media (max-width: 1500px) {
+    left: calc(50% + (50% - 100px));
+  }
 
   ${media.laptop`display: none;`}
 `;
@@ -114,9 +123,9 @@ export default ({ head, rightNavReplacementComponent, children }) => (
     <>
       <GlobalStyle />
       <Helmet {...head} />
-      <LeftNav />
       <RightNav replacementComponent={rightNavReplacementComponent} />
       <BackgroundWrapper>
+        <LeftNav />
         <ResponsiveNav />
         <ZWrapper>{children}</ZWrapper>
         <GraffitiContainer>

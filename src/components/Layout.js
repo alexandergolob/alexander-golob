@@ -123,9 +123,9 @@ export default ({ head, rightNavReplacementComponent, children }) => (
     <>
       <GlobalStyle />
       <Helmet {...head} />
+      <LeftNav />
       <RightNav replacementComponent={rightNavReplacementComponent} />
       <BackgroundWrapper>
-        <LeftNav />
         <ResponsiveNav />
         <ZWrapper>{children}</ZWrapper>
         <GraffitiContainer>

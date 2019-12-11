@@ -20,4 +20,4 @@ Nestled between Nordstrom Rack and Target, University Station has gained a piece
 
 "Diverging Paths" has a large center circle with train tracks in its center. Golob explains that the train tracks can either be viewed as them merging or them splitting apart. "Each corner panel in 'Diverging Paths' has a vista of place where the train system can take you, including Boston, New York City, and Hartford. I used a technique that lets each corner panel able to be changed in the future with the changing energy of University Station."
 
-For the rest of the article, click here: [https://patch.com/massachusetts/westwood/alexander-golob-makes-mural-divergent-paths-westwood ](https://patch.com/massachusetts/westwood/alexander-golob-makes-mural-divergent-paths-westwood)
+_For the whole article,_ [_click here_](https://patch.com/massachusetts/westwood/alexander-golob-makes-mural-divergent-paths-westwood)_._

@@ -4,9 +4,9 @@ title: Alexander Golob Makes Mural "Divergent Paths" In Westwood
 ogImage: ''
 date: 2019-12-02T21:48:41.227Z
 headerImage: /assets/img_0356.jpg
-alt: z
+alt: o
 author: Heather T. Ford
-path: /divergent-paths-westwood
+path: /post-15
 tags:
   - Public Art
   - Interchanging Mural

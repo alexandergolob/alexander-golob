@@ -28,9 +28,11 @@ _Stephanie Benenson is guided by inquiries into the power of exploring personal 
 
 _Through her work, participants deepen their understanding of the immigrant experience, celebrate cultural identity, experience enhanced empathy and acceptance by discovering shared experience, and gain confidence that their voices can be a vehicle for social change. Each project is a collaborative experience between artist and community voices, with at least one educator partnership in a local public school or postsecondary school._
 
-__[_Learn more about Harbor Voices_](harborvoices.com)__
+**[_Learn more about Harbor Voices_](harborvoices.com)**
 
 \--
+
+****
 
 **What kind of art did you do? How did you get into public art/this kind of art? Tell me a little about your educational background.** 
 
@@ -43,6 +45,8 @@ So my undergraduate experience was geared more towards marketing and branding, a
 I got a master's in art at RISD, through their Teaching and Learning through Art and Design department. Through my master's degree, I was studying ways in which social practice can situate itself in different communities and a lot of the social projects practice projects that I had studied were social sculpture projects that were very specific to a geographic location. 
 
 And then also, you know, when I started going into this, via my marketing and advertising background I knew how to get to the meaning behind someone's experience of a product or a life experience, that also has helped to feed some of the research that I did about collecting stories and working in new communities. 
+
+****
 
 ****
 
@@ -68,7 +72,7 @@ So it came out of this funding opportunity that allowed me to put this kind of c
 
 ![a](/assets/benenson_1-1-.jpg)
 
-
+****
 
 **Where did that food storytelling component morph into light art? And how did the mayor and his office come into the mix?** 
 
@@ -86,7 +90,9 @@ I want to say I spent six weeks collecting stories, three weeks working on creat
 
 ![b](/assets/benenson_3.jpg)
 
+****
 
+****
 
 **A lot of people helped you grow Harbor Voices- it sounds like the mayor of Gloucester’s office helped too. I was curious if you could first tell us how that connection happened, and then maybe a little more broadly about how public officials or government agencies have played a part in your project.**
 
@@ -102,13 +108,17 @@ I had known from my research and from studying creative place making and social 
 
 ![c](/assets/benenson_7.jpg)
 
+****
 
+****
 
 **Have you ever experienced pushback from public entities?**
 
 So far, not that I know of! 
 
+****
 
+****
 
 **It’s interesting -- I spend a lot of my time just trying to make ends meet in terms of finances, and it's quite difficult sometimes to also be able to spend a lot of time really tweaking and perfecting technical aspects of the artistic aspects of the work. How did you support yourself during that period? Who do you go to initially for money and resources? Have there ever been public entities that have funded and supported you (commission)? And finally, what would you say are like the pros and cons to that process?**
 
@@ -122,7 +132,9 @@ And so that's something, as an artist, I made some assumptions about after I lau
 
 Especially with social practice, I think that a lot of this is new to a lot of organizations. Particularly, I'm finding that my wheelhouse, the sweet spot that I found for my practice is that a lot of smaller cities are very, very approachable for my kind of work. So, for a lot of them, they've hosted a lot of public art projects, but not all of them have done social practice-based public art projects. 
 
+****
 
+****
 
 **This project has been around since 2017. How has the experience evolved in terms of fears like finances? Where does the money and anxiety come from, and how has that may be impacted your work? Do you feel like that's impacted your life?**
 
@@ -130,7 +142,9 @@ I'm trying to figure out exactly how to answer this question. For me, having com
 
 One of the things I always insist with every project that I create is that every artist that touches the work gets paid- and that includes myself. I think it's extremely important I never ask any of the contributing artists in Harbor Voices to do anything for free, because artists’ time needs to be valued. I think it's incredibly culturally important that artists and arts organizations stand for that. Additionally, knowing that I have to continue to be very mindful of grant cycles, be very mindful of the projects that I'm participating in, because it's important for the work to come from a community of support of the people who are very interested and invested in the work.
 
+****
 
+****
 
 **How do you balance trying to be in the "here and now" with the art that you're doing, while also looking forward and planning for those grant cycles? I feel like that can be a pretty daunting task, especially since a lot of public art projects can last, from the onset of the concept to the actual creation, a year, two years - it can be a little while.** 
 
@@ -142,7 +156,9 @@ For example, when I created the work with the Gloucester community, I had a litt
 
 I do social practice art a lot, but with commission projects I can't tell you how many times I come up with ideas that I think are fantastic, and sometimes they don't always get selected or chosen or to move forward. So I say screw it, and I just try  it anyway. And also, whenever you have a gap in your schedule, try to do an artist residency, to create opportunities for learning, or for isolating yourself with a particular idea that you've been kind of ruminating over in the back of your head--  I think that's always a positive way to spend what we might call “downtime.”
 
+****
 
+****
 
 **Well, so that brings up another interesting point I'm curious about. Public practice and private practice are very linked. I feel like there is sometimes a difference between life in public-facing, social practice work, public art work and the work that you might do in the studio to practice and experiment. Sometimes one can get quite busy, unable to focus on that private kind of ruminations. I know you put a lot of time into Harbor Voices. Do you feel like you've been able to pursue, or do you feel a need to pursue another avenue of creation?** 
 
@@ -152,7 +168,9 @@ Right. I mean, finding the balance is always really hard. I also think there’s
 
 ![d](/assets/harbor-voices.jpg)
 
+****
 
+****
 
 **You're a one person show, right? I know that's a debate - some artists, even muralists or public artists, want to remain their own thing, though they might have an agent or a gallerist to manage them. As you \[and Harbor Voices] are moving forward, do you feel like you need to scale up at some point? Or are you going to try to keep it one woman strong? If things keep on growing, would you feel comfortable with giving away some of your decision making instances? Would you be comfortable with that? How do you think that would impact your work?** 
 
@@ -160,7 +178,9 @@ Yeah, so I have actually a good friend of mine from RISD, Colleen Andrews, that 
 
 I do think that the work will grow. And I think, as it grows, the potential for creating deeper, more intensive relationships with other artists is very strong and it would serve the work well. So I think that the answer to that is that I am so open to collaboration, and seeking new partners, and growing Harbor Voices. I love working with people, and I'm a very collaborative person. Part of the reason why I went into public art was because I did not enjoy the isolation of studio practice and independent studio practice. With regards to growing my team “locally,” I don't know, I because my work moves from community to community. We don't really have a home base, it fluctuates - when I created the work in Salem, I was in Salem. 
 
+****
 
+****
 
 **\[For the interview, for people who are wondering, we're in a restaurant on a boat right now in Gloucester harbor, and a beautiful Mahi Mahi that was caught a little while ago was just brought to the window.]** 
 
@@ -168,13 +188,17 @@ I do think that the work will grow. And I think, as it grows, the potential for 
 
 This restaurant. So when I did the Gloucester exhibition, one of my storytellers at Gloucester High School was a student in his sophomore year, who told me that his mother had immigrated from Lebanon. He told me she had a food truck, a Lebanese food truck, and was trying to open her own business in Gloucester. He told me how proud he was of her, to come to a new country, and to start her own business. He said her dream was to own a restaurant, and a year later she opened this. And now he's a senior! I just love that - it was one of those things, to see the story that we collected and the story coming to life in the community.
 
+****
 
+****
 
 **Oh yeah, I mean, that's what motivated me to have my work focusing more and more on storytelling and immigrant stories- it's really powerful to hear the common thread of humanity in all of these different experiences and they've all been threaded together by certain themes.** 
 
 Right- the notion that, at Gloucester High School, there could be a history class, or social studies class of students together, and thinking that they're all coming from wildly different places and backgrounds. And then, when students start to explore their own immigration history or their own migration history or origin stories, then all of a sudden you realize that there are similarities in their familial experiences, whether it was their themselves their parents or grandparents or great grandparents.
 
+****
 
+****
 
 **Absolutely. What's your process? What is your timeline for project completion? I know it can be pretty long and extensive.** 
 
@@ -186,7 +210,9 @@ Another example is my collaboration with Punto Urban Art Museum, where we create
 
 I also think that, when you're working in a community, I hate to leave anyone out. Any voices, or any languages, or any demographic representation. The more time I spent in Salem, the more I realized that, oh, there's an Albanian population here that I really want to get to know. I've come to realize, the more time you spend with the community, it's important to spend that time and think about who you want to talk to, and who you don't want to miss, before the artwork is actually created.
 
+****
 
+****
 
 **Beyond the actual process of creation, do you feel art can be really stressful to make, and sometimes can be pretty consuming? How do you deal with it emotionally? How do you manage that balance of living and also creating?**
 
@@ -202,19 +228,25 @@ So sometimes when I get to a point where I'm overworking myself and making mysel
 
 ![e](/assets/benenson_10-1-.jpg)
 
+****
 
+****
 
 **Totally. I think it's interesting- what I'm trying to do is ask artists about their process, because I've always felt that it wasn't being talked about enough. Whether it’s art students going into the profession, people trying to live and work as artists; whether it's Allston-Brighton, or in a more rural area- there's a lot of expectations about how \[being an artist] should lead to really unhealthy choices that are harmful to the artist, that can lead to unhappiness or burnout. How do you avoid burnout? Or have you experienced it?**
 
 Of course! I think that we all have experienced it. And I think that sometimes when I get frustrated and I want to just completely abandon something, I have to step back and and try one of the other three things that we were talking about- the balance between social practice, studio practice, and getting out of the studio to see other people’s art. Just going out, going to some museums. I feel like experiencing other people's public work always reinvigorates you. Fuels the tank. But I've always been pretty good at making sure I get the sleep that I need.
 
+****
 
+****
 
 **Do you typically just strategize your time? Like, "if I don't finish this by five or six, or whatever it is, I'm going to go make dinner, or I'm gonna spend time with my family or friends, and then go to sleep?" And then the next day I'll just go back to it? What do you try to do?**
 
 Yeah. When I'm working with a very strict timeline or deadline, some things creep into late at night, but I'm more of an early morning worker than a late at night worker, so I will wake up early. When I was studying at RISD, I got up at 4 or 4:30 every morning, drove down an hour and a half to Providence while I was living here on the North Shore. I would occasionally spend a night or two there. And that was fine- I'd get to campus even before the library opened, and I would sit in a coffee shop and get some work done. I've always been pretty good at carving out that time. I think it's really important and healthy for artists to do that.
 
+****
 
+****
 
 **Oh, totally. I think it's really dangerous to not do that. Otherwise, burnout is pretty severe. Moving beyond burnout, I think what I'm interested in, personally, because I experienced this: when I finish a big project, I experience like a weird dip. It's almost like a high when you work on these big projects and then you come off of them. Do you have this experience?** 
 
@@ -222,13 +254,13 @@ Right, it's like coming off of a really great week. I read an article about that
 
 But I definitely feel those dips. And, when you're in the middle of a project, you feel there's so much appreciation for the work. Then, when you finish a project and you start getting either rejections for future projects or things don't work out, you can fall into the trap of feeling like you're not good enough, this work isn’t good enough. You can hit those ruts, but you just gotta keep on keeping on.
 
+****
 
+****
 
 **When you do experience rejection, how do you how do you take it? How do you deal with it?** 
 
 I think I almost always apply to more than one thing simultaneously. So, I haven't yet found myself in a position where I have five proposals, or five grant applications, that are all out there and all of them have fallen through completely. Diversifying the portfolio, what you're putting out there, helps a lot. There's always something on which you can fall back. And if all of those things do fall through, you think to yourself, "well, what am I going to create because I want to create it, not because somebody else wants me to create it?"
-
-
 
 _The text of this interview was edited for accuracy and concision._ 
 

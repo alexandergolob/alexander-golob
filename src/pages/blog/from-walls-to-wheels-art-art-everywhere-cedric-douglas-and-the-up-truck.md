@@ -151,6 +151,8 @@ While I was interning, I had a friend who worked there, and he showed me a bunch
 
 Also at that time, my uncle Des passed away, the one who taught me how to do graffiti. So when he died, it made me reflect about what do I want to be remembered for, what do I want to be known for when I die? I’m going to die some day - do I want to be known for doing Panasonic's commercial backdrop? Or do I want to be known for helping 10 people get off opiates, or I helped save 10 kids from getting shot in the street? I rather be known for that. And the money thing’s going to even out.
 
+****
+
 **You called it social impact, a clear subcategory to public art, but how did you become a social impact artist? Can you tell me about a project(s) that were really defining for you?**
 
 Two projects come to mind. First, I started doing a socially conscious project about Hurricane Katrina. I created a motion graphics piece that showed the process of what happened, and how the levees broke. 

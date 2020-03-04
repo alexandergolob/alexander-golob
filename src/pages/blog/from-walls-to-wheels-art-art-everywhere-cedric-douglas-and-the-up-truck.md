@@ -251,6 +251,10 @@ My[ Street Memorials](https://cedricdouglas.carbonmade.com/projects/7189527) pro
 
 ![e](/assets/cd-roses-real.png)
 
+From Douglas' project, "Street Memorials"
+
+
+
 ![f](/assets/cd-roses-2.png)
 
 From Douglas' project, "Street Memorials"

@@ -43,6 +43,8 @@ _One of his many public art projects, Douglas is the Creative Director of The Up
 
 __
 
+****
+
 **How did you start off with doing art, whether it's social intervention art or some other medium or intention? How did it evolve into what you are doing now?** 
 
 I would say my journey started when I was first introduced to graffiti, back in the 90s, when I was an adolescent - I was 13, 14 at the time. \[I had two uncles, both of whom were graffiti writers, though I learned primarily from one uncle.] My uncle, the one that \[primarily] taught me, his name was Des, and my other uncle, the one who is older, was named Vex. \[Des] kind of gave me my first graffiti name, and taught me \[all the way through High School]. 
@@ -89,9 +91,13 @@ Since the beginning of MassArt, my work started having social impact. I did a po
 
 But when I was at MassArt, I didn't want to do anything \[with or] about graffiti, because it’s kind of a crutch. Black kid is doing graffiti stuff - kind of cliché. So I was like, I'm gonna step out of my comfort zone and not do any graffiti, no design products. I tried to stay away from it but for my degree project I was able to bring in the philosophy and ideology of graffiti into the process because in researching places, you got to know where to put things - which, you could say, is street art. 
 
+****
+
 **How old were you when you finished the MassArt program?**
 
 I don’t remember exactly, I think it was like 2011? I was in my early 30s or late, 20s, I forget.
+
+****
 
 **So, when you graduated MassArt, what did your life look like? How did you make that transition to doing art stuff full time?** 
 
@@ -107,7 +113,11 @@ Of late, I really haven't focused on the gallery world so much. I wish I did mor
 
 I mean, I identify with all of the above- I call myself a social intervention\[ist] \[artist], because all my work is designed to make you think differently about things that are going on in society. They’re interventions. And I don't just like painting the walls. There's other things that go beyond painting a wall. I wouldn’t consider myself _just_ a mural artist or a street artist. But I'll do it to play the game, because it's gonna sell. So yeah, I’m a street artist. I mean I guess I mean, ‘street artist’ is not even really a thing, because it's really graffiti artist, it's just the evolution of graffiti and street art. People wanted to do \[paint] things, not just do letters. 
 
+
+
 ![b](/assets/cedric-douglas-2.jpg)
+
+****
 
 **How did you get into doing what you're doing now? How did you realize you wanted to do this very specific type of art, socially conscious art? Was there a defining moment or experience?**
 
@@ -121,7 +131,15 @@ And _then_, the guy who started Arnold passed away. His name was Arnold Rosoff. 
 
 I said yes - And I'm glad I did. I painted a portrait of Arnold Rosoff, the founder of Arnold!  Keep in mind, this is all happening while I'm doing all this design stuff, doing gallery shows. All I could think was, this is gonna get me a job at Arnold’s. The awards were at the JFK Museum, it was my first time going there, and I had to suit up for that. The president of Arnolds gave the portrait to the family. I don't even know if they still have it, but it was one of my best portraits. To this day, I'm like that was a good portrait. _And_ I got it done in the nick of time, because I had to study for classes. 
 
+
+
 ![c](/assets/cedric-douglass-a-worldwide-portrait.jpg "Douglas and his portrait of Arnold Rosoff")
+
+Douglas and his portrait of Arnold Rosoff
+
+
+
+
 
 A year later, the next summer, I got an internship. It was so because I did that, of course. While I was working on that portrait, I met this guy Maurice, who works for Arnold's, who said “if you want to get you a job here someday, we'll get you an internship.” I submitted some stuff and I got an internship \[\*snaps\*] like  that. 
 
@@ -147,9 +165,19 @@ It \[was intended to] lead kids to these creative places where they can delve in
 
 That project changed everything because, while it was a lot of failure, when it worked I was like, this is it.
 
+
+
 **Could you tell me a little about a role model in your career?**
 
+****
+
 ![d](/assets/chaz-maviyane-davies_0_0.jpg "Chaz Maviyane-Davies")
+
+Chaz Maviyane-Davies
+
+
+
+
 
 It was while I was at MassArt that I met \[and was taught by] Chaz. \[Chaz [Maviyane-Davies]](https://boston.aiga.org/event/and-still-i-rise-chaz-maviyane-davies/) is an international poster designer from Zimbabwe. Just google his name, he’s world famous for doing socially active posters. He was trying to encourage us. He was the only teacher that would show us his work all these teachers we had they would just be like we did design, they would never show us what they did, although they were teaching it. On his first day, he said “I'm Chaz, this is my life story, and this is my work.”
 
@@ -162,6 +190,8 @@ When you're designing something, and you aren’t able to convey what you were t
 That connected me back, through my experiences, to thinking about graffiti, to the subway art book with the trains, to the “Stop the Bomb” and “Merry Christmas, New York” trains. Design doesn’t have to be about creating beautiful pamphlets and websites, it can be about, social causes and making people see the world differently. And that's what he \[Chaz] used it for. It was really good to have him. 
 
 I was stuck but Chaz helped me out because he could see what you were trying to do. 
+
+****
 
 **The tough part about working on my career is that I've pretty intense about not taking projects where I'm not paid, almost out of principle more than anything else. That being said, of course, I'm not made of money or infinite resources. It's tough though because I know for a fact that I've lost out on opportunities because I wanted to get paid. I always wonder if I missed out on an opportunity to get my name out there.**  
 
@@ -181,6 +211,8 @@ Then, of course, there are contexts in which I will price very high, because I k
 
 With Lynn (Massachusetts), I _knew_ that was going to blow up. I lived in Salem for a short period of time, and I was always struck by how amazing the place would be to paint. And Lynn is right next door. It's a city-type area, it has these beautiful walls, a lot of cool restaurants - I knew if anyone ever did anything here, it was going to be successful. So it's just, you know, there's certain areas of design where it's going to be successful. And the walls, they just had the walls, too. 
 
+****
+
 **Now in terms of your current practice, what's the blend of work that do you are doing? 30, 40% murals or public art stuff, and then like another portion is social intervention, or community engagement work, and the other part of that is education? Also, how do you usually get your work?**
 
 I do a little bit of everything, but right now it’s mostly murals. 
@@ -193,6 +225,8 @@ I don’t even have a real website - I used a host site, something called Carbon
 
 I don't think \[social media] is sustainable. I'm trying to figure out something else to add to that it's more sustainable because it’s going to die soon. So a lot of my interest is through street art. You gotta have something else going on. So I might try to find something that's more stable, just to balance out.
 
+****
+
 **Do you feel like you know about your mural project or projects in advance?** 
 
 **Are you calendared all the way up through like a year, or six months or so?** 
@@ -200,6 +234,8 @@ I don't think \[social media] is sustainable. I'm trying to figure out something
 I know friends that are like that, not me. 
 
 I have some things that are lined up for 2020, a couple projects, potentially some international stuff. But I'm working on setting up projects for the future now. Before I came here, I was trying to work on going to Morocco to do a festival; I’m also working on trying to go to Greece. I don’t know if they’re gonna work out, but I'm trying to work on those for next year. 
+
+****
 
 **I think a lot of artists struggle with balancing the idea of being their own boss and trying to make a living, versus spending time on being with their ideas and creativity. How do you feel the impact of the ebb and flow and uncertainty of the next project impacts the art you make, or the creative process in general? Can you tell the blog a bit about your plans for The Up Truck, your personal work, and maybe a project that you are working on currently?** 
 
@@ -209,9 +245,17 @@ I'm doing stuff that I like doing, to a certain degree, but I'm not spending all
 
 My[ Street Memorials](https://cedricdouglas.carbonmade.com/projects/7189527) project is a big one that I’m really passionate about, but this year I haven't done anything for it. This idea actually came from my time with the [Up Truck ](https://cedricdouglas.carbonmade.com/projects/6726973/31464461)Mother's Day project. We thought, what if we gave mothers roses, a simple gesture. And then, when we did that, I saw some guys giving out roses at the red light, and _we actually gave them a rose!_ I thought it was hilarious that we gave them Mother's Day roses. That idea kind of lingered and, I think I was just like walking down the street or something, when it hit me: what if the rose wasn't just a beautiful rose with a beautiful message, but a beautiful rose with a _serious_ message, in juxtaposition? What if the roses had tags with statistics on them? What would that look like?  \[It’s projects like this that make me] wish I could do more of that work, and gallery shows. I think that work needs to be seen, it needs to be in our faces and now it’s just sitting in my studio. If only I could dedicate more time…
 
+
+
 ![e](/assets/cd-roses-real.png)
 
 ![f](/assets/cd-roses-2.png)
+
+From Douglas' project, "Street Memorials"
+
+
+
+
 
 So for the[ NAS](https://www.artstrategies.org/) [Creative Community Fellowship program](https://www.artstrategies.org/programs/creative-community-fellows/), I've been trying to find ways to merge all that, so that it’s all part of the Up Truck, my mural’s a part of the Up Truck. I'm trying to find ways to connect everything and have the Up Truck be a moving vehicle that talks about all these different things. And that's the next level of what I want to do with Up Truck.
 
@@ -222,6 +266,8 @@ I just want to be creative. I'm not good at replying to emails and contacting pe
 I saw the evidence of it recently when I was in New Bedford. I was there to do a bunch of intervention before the mural that I did, and I did it without the truck. I set up a table and I was doing stuff, and it was really difficult. I think if the truck was there it would be a lot easier. It has presence, and it has music, and it's a sculpture in itself. It's inviting for fun and play and interaction, and it invites curiosity. “What is that thing? Who's doing that? What's that music?” 
 
 I think that’s something that I miss since I haven't been able to do my own personal work with the truck. The truck has so much potential and I have a lot of ideas around it, like doing an artist in residency involving the truck. An artist with a concept and initiative that they want to do, partners with a community partner, and they use the truck to do their initiative.
+
+****
 
 **What is one big way you feel the art world is changing? What do you think the future of the art world holds?**
 
@@ -236,6 +282,8 @@ There’s that saying, “Jack of all trades, master of none.” I think that th
 These worlds share with one another, and steal from each other. I see ads stealing from street art concepts all the time. And now advertising is creating meaningful work to connect \[with customers] to sell a Samsung phone, or creating meaningful work to sell an idea to help people think. In fact, in the advertising world there's a thing called “brand experience,” which is very similar to community engagement or social intervention, to make the experience of the brand more personal. 
 
 An example that comes to mind, from a project at Arnold’s, was to advertise Carnival cruises. They had kids tell their stories about how they thought the future of the world looked, and took these stories and put them into the world’s largest children’s book. They put the book open, for people to flip through it, in Central Park in Manhattan, but it was all stories from those kids from the boat cruises to promote Carnival Cruises, to promote the brand experience through community building. It's selling Carnival Cruises, but you wouldn't think about it, you would go and experience: “look at this amazing book! This is so cool!” So advertisers are actually trying to employ community engagement and empathy. 
+
+****
 
 **One last question I want to ask: If you could make a change in policy, or attitudes or something, that you think would be really helpful to your practice, what would that be?**
 

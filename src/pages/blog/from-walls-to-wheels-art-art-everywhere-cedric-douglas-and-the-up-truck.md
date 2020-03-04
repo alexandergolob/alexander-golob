@@ -23,9 +23,13 @@ Enjoy!
 
 \- Alexander Golob
 
+****
+
 **FOLLOW US (**[**@AlexanderGolobArt**](https://www.instagram.com/alexandergolobart/)**) and Cedric (**[**@Vise_1_Boston**](https://www.instagram.com/vise_1_boston/)**) on Instagram!**
 
 _This interview is the result of a conversation between Alexander Golob and Cedric Douglas on October 22nd, 2019 in Westwood, MA. The interview is primarily edited by Rachael Schwartz._ __
+
+__
 
 _About Cedric Douglas:_
 
@@ -63,7 +67,15 @@ I didn't really believe him, I used to joke “You’re going to school for graf
 
 Eventually, I decided to go to college \[at MassArt] for \[graphic design,] the same thing \[as my friend George], because I liked what he was doing. The irony of the situation is that one of the first big murals I did in Boston was at Northeastern, and he was the head of design at the time. While I was doing \[the mural], we had a big meeting, and he was there. It was so weird because he is  the reason why I went into design, even though I'm not even doing design right now. I don't think he knew - I actually told him recently that he inspired me to go to college for design. 
 
+
+
 ![a](/assets/cedric-douglas-northeastern-mural-one-i-used-.jpg "Douglas' mural at Northeastern University, \\"World of Innocent Wonder\\"")
+
+Douglas' mural at Northeastern University, "World of Innocent Wonder"
+
+
+
+
 
 After community college, I actually moved to Savannah, Georgia to go to SCAD (it’s like a Harvard for art school, and I hated it, it is the worst school ever). I ended up going there for motion graphics - animation, like in commercials or in sports, video game graphics - I just love letters, form, and color, and shape, and so on.
 
@@ -119,11 +131,7 @@ While I was interning, I had a friend who worked there, and he showed me a bunch
 
 \[Something else that was unappealing about the job was that] all the people I knew that worked in ad agencies had to constantly be jumping around from place to place, because if you lost an account, you lost your job. It was really cutthroat. If you worked on McDonald's account, and McDonald's said “we want to go to a different ad agency.” -- They cut all those people. Or, if you lose Rockland Trust, McDonald's, and Dunkin' Donuts, it’s your time to go, because those are like billion dollar accounts. 
 
-Also at that time, my uncle Des passed away, the one who taught me how to do graffiti. So when he died, it made me reflect about what do I want to be remembered for, what do I want to be known for when I die? 
-
-> I’m going to die some day - do I want to be known for doing Panasonic's commercial backdrop? Or do I want to be known for helping 10 people get off opiates, or I helped save 10 kids from getting shot in the street? I rather be known for that. 
-
-And the money thing’s going to even out.
+Also at that time, my uncle Des passed away, the one who taught me how to do graffiti. So when he died, it made me reflect about what do I want to be remembered for, what do I want to be known for when I die? I’m going to die some day - do I want to be known for doing Panasonic's commercial backdrop? Or do I want to be known for helping 10 people get off opiates, or I helped save 10 kids from getting shot in the street? I rather be known for that. And the money thing’s going to even out.
 
 **You called it social impact, a clear subcategory to public art, but how did you become a social impact artist? Can you tell me about a project(s) that were really defining for you?**
 
@@ -209,11 +217,7 @@ So for the[ NAS](https://www.artstrategies.org/) [Creative Community Fellowship 
 
 I'm trying to figure that out. I mean, the biggest challenge for the work that I do is that sure, I can do stuff as an independent artist, but I feel like having a business to run things through, like Up Truck, is the best way to do it, but you need a team to help you do that, like a financial advisor and a project manager.
 
-I just want to be creative. 
-
-> I'm not good at replying to emails and contacting people. I'm terrible at that. I want to find someone that can do that stuff, and then I could do Up Truck work, and my own personal work, and combine it. 
-
-That's one of the biggest challenges right now: getting the team and the money to get it going again. Right now it’s stuck sitting in the shop. 
+I just want to be creative. I'm not good at replying to emails and contacting people. I'm terrible at that. I want to find someone that can do that stuff, and then I could do Up Truck work, and my own personal work, and combine it. That's one of the biggest challenges right now: getting the team and the money to get it going again. Right now it’s stuck sitting in the shop. 
 
 I saw the evidence of it recently when I was in New Bedford. I was there to do a bunch of intervention before the mural that I did, and I did it without the truck. I set up a table and I was doing stuff, and it was really difficult. I think if the truck was there it would be a lot easier. It has presence, and it has music, and it's a sculpture in itself. It's inviting for fun and play and interaction, and it invites curiosity. “What is that thing? Who's doing that? What's that music?” 
 

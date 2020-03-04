@@ -73,7 +73,9 @@ Eventually, I decided to go to college \[at MassArt] for \[graphic design,] the 
 
 ![a](/assets/cedric-douglas-northeastern-mural-one-i-used-.jpg "Douglas' mural at Northeastern University, \"World of Innocent Wonder\"")
 
-Douglas' mural at Northeastern University, "World of Innocent Wonder"
+_Douglas' mural at Northeastern University, "World of Innocent Wonder"_
+
+__
 
 After community college, I actually moved to Savannah, Georgia to go to SCAD (it’s like a Harvard for art school, and I hated it, it is the worst school ever). I ended up going there for motion graphics - animation, like in commercials or in sports, video game graphics - I just love letters, form, and color, and shape, and so on.
 
@@ -127,7 +129,9 @@ I said yes - And I'm glad I did. I painted a portrait of Arnold Rosoff, the foun
 
 ![c](/assets/cedric-douglass-a-worldwide-portrait.jpg "Douglas and his portrait of Arnold Rosoff")
 
-Douglas and his portrait of Arnold Rosoff
+_Douglas and his portrait of Arnold Rosoff_
+
+
 
 A year later, the next summer, I got an internship. It was so because I did that, of course. While I was working on that portrait, I met this guy Maurice, who works for Arnold's, who said “if you want to get you a job here someday, we'll get you an internship.” I submitted some stuff and I got an internship \[\*snaps\*] like  that. 
 
@@ -155,13 +159,17 @@ It \[was intended to] lead kids to these creative places where they can delve in
 
 That project changed everything because, while it was a lot of failure, when it worked I was like, this is it.
 
+
+
 **Could you tell me a little about a role model in your career?**
 
 - - -
 
 ![d](/assets/chaz-maviyane-davies_0_0.jpg "Chaz Maviyane-Davies")
 
-Chaz Maviyane-Davies
+_Chaz Maviyane-Davies_
+
+
 
 It was while I was at MassArt that I met \[and was taught by] Chaz. \[Chaz [Maviyane-Davies]](https://boston.aiga.org/event/and-still-i-rise-chaz-maviyane-davies/) is an international poster designer from Zimbabwe. Just google his name, he’s world famous for doing socially active posters. He was trying to encourage us. He was the only teacher that would show us his work all these teachers we had they would just be like we did design, they would never show us what they did, although they were teaching it. On his first day, he said “I'm Chaz, this is my life story, and this is my work.”
 
@@ -231,11 +239,13 @@ My[ Street Memorials](https://cedricdouglas.carbonmade.com/projects/7189527) pro
 
 ![e](/assets/cd-roses-real.png)
 
-From Douglas' project, "Street Memorials"
+_From Douglas' project, "Street Memorials"_
 
 ![f](/assets/cd-roses-2.png)
 
-From Douglas' project, "Street Memorials"
+_From Douglas' project, "Street Memorials"_
+
+
 
 So for the[ NAS](https://www.artstrategies.org/) [Creative Community Fellowship program](https://www.artstrategies.org/programs/creative-community-fellows/), I've been trying to find ways to merge all that, so that it’s all part of the Up Truck, my mural’s a part of the Up Truck. I'm trying to find ways to connect everything and have the Up Truck be a moving vehicle that talks about all these different things. And that's the next level of what I want to do with Up Truck.
 
@@ -285,11 +295,15 @@ And in Philadelphia! This lady came all the way to Boston to consult me to start
 
 That’s another one: spaces for artists is a huge thing. Right now, I happen to have space, so I’m not thinking that it’s something I need, but artists are gonna leave Boston. My studio is in South Shore for that reason. The rent is going to go up soon, and people are going to move to Rhode Island, to Detroit, and it sucks for Boston. So that’s a policy that needs to happen soon. Or yesterday. They’ve talked about it a lot, the mayor’s talked about it, but… who knows if and when it will happen.
 
+__
+
 _The text of this interview was edited for accuracy and concision._ 
 
 **Editor’s Notes:**
 
 1 (found under question 1) Subway Art Magazine is either now defunct or its name was misremembered. While no trace of it was found on the internet, similar magazines are linked here, for visual reference: StyleFile, Flashbacks, as well as a book by the same title, new edition released in 2016: Subway Art. 
+
+****
 
 **To connect with Cedric:**
 

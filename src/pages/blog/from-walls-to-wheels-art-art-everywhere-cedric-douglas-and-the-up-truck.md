@@ -25,7 +25,9 @@ Enjoy!
 
 _This interview is the result of a conversation between Alexander Golob and Cedric Douglas on October 22nd, 2019 in Westwood, MA. The interview is primarily edited by Rachael Schwartz._ __
 
-****
+
+
+- - -
 
 **FOLLOW US (**[**@AlexanderGolobArt**](https://www.instagram.com/alexandergolobart/)**) and Cedric (**[**@Vise_1_Boston**](https://www.instagram.com/vise_1_boston/)**) on Instagram!**
 
@@ -43,7 +45,7 @@ _One of his many public art projects, Douglas is the Creative Director of The Up
 
 __
 
-****
+- - -
 
 **How did you start off with doing art, whether it's social intervention art or some other medium or intention? How did it evolve into what you are doing now?** 
 
@@ -69,15 +71,9 @@ I didn't really believe him, I used to joke “You’re going to school for graf
 
 Eventually, I decided to go to college \[at MassArt] for \[graphic design,] the same thing \[as my friend George], because I liked what he was doing. The irony of the situation is that one of the first big murals I did in Boston was at Northeastern, and he was the head of design at the time. While I was doing \[the mural], we had a big meeting, and he was there. It was so weird because he is  the reason why I went into design, even though I'm not even doing design right now. I don't think he knew - I actually told him recently that he inspired me to go to college for design. 
 
-
-
-![a](/assets/cedric-douglas-northeastern-mural-one-i-used-.jpg "Douglas' mural at Northeastern University, \\"World of Innocent Wonder\\"")
+![a](/assets/cedric-douglas-northeastern-mural-one-i-used-.jpg "Douglas' mural at Northeastern University, \\\"World of Innocent Wonder\\\"")
 
 Douglas' mural at Northeastern University, "World of Innocent Wonder"
-
-
-
-
 
 After community college, I actually moved to Savannah, Georgia to go to SCAD (it’s like a Harvard for art school, and I hated it, it is the worst school ever). I ended up going there for motion graphics - animation, like in commercials or in sports, video game graphics - I just love letters, form, and color, and shape, and so on.
 
@@ -91,13 +87,13 @@ Since the beginning of MassArt, my work started having social impact. I did a po
 
 But when I was at MassArt, I didn't want to do anything \[with or] about graffiti, because it’s kind of a crutch. Black kid is doing graffiti stuff - kind of cliché. So I was like, I'm gonna step out of my comfort zone and not do any graffiti, no design products. I tried to stay away from it but for my degree project I was able to bring in the philosophy and ideology of graffiti into the process because in researching places, you got to know where to put things - which, you could say, is street art. 
 
-****
+- - -
 
 **How old were you when you finished the MassArt program?**
 
 I don’t remember exactly, I think it was like 2011? I was in my early 30s or late, 20s, I forget.
 
-****
+- - -
 
 **So, when you graduated MassArt, what did your life look like? How did you make that transition to doing art stuff full time?** 
 
@@ -113,11 +109,9 @@ Of late, I really haven't focused on the gallery world so much. I wish I did mor
 
 I mean, I identify with all of the above- I call myself a social intervention\[ist] \[artist], because all my work is designed to make you think differently about things that are going on in society. They’re interventions. And I don't just like painting the walls. There's other things that go beyond painting a wall. I wouldn’t consider myself _just_ a mural artist or a street artist. But I'll do it to play the game, because it's gonna sell. So yeah, I’m a street artist. I mean I guess I mean, ‘street artist’ is not even really a thing, because it's really graffiti artist, it's just the evolution of graffiti and street art. People wanted to do \[paint] things, not just do letters. 
 
-
-
 ![b](/assets/cedric-douglas-2.jpg)
 
-****
+- - -
 
 **How did you get into doing what you're doing now? How did you realize you wanted to do this very specific type of art, socially conscious art? Was there a defining moment or experience?**
 
@@ -131,15 +125,9 @@ And _then_, the guy who started Arnold passed away. His name was Arnold Rosoff. 
 
 I said yes - And I'm glad I did. I painted a portrait of Arnold Rosoff, the founder of Arnold!  Keep in mind, this is all happening while I'm doing all this design stuff, doing gallery shows. All I could think was, this is gonna get me a job at Arnold’s. The awards were at the JFK Museum, it was my first time going there, and I had to suit up for that. The president of Arnolds gave the portrait to the family. I don't even know if they still have it, but it was one of my best portraits. To this day, I'm like that was a good portrait. _And_ I got it done in the nick of time, because I had to study for classes. 
 
-
-
 ![c](/assets/cedric-douglass-a-worldwide-portrait.jpg "Douglas and his portrait of Arnold Rosoff")
 
 Douglas and his portrait of Arnold Rosoff
-
-
-
-
 
 A year later, the next summer, I got an internship. It was so because I did that, of course. While I was working on that portrait, I met this guy Maurice, who works for Arnold's, who said “if you want to get you a job here someday, we'll get you an internship.” I submitted some stuff and I got an internship \[\*snaps\*] like  that. 
 
@@ -151,7 +139,7 @@ While I was interning, I had a friend who worked there, and he showed me a bunch
 
 Also at that time, my uncle Des passed away, the one who taught me how to do graffiti. So when he died, it made me reflect about what do I want to be remembered for, what do I want to be known for when I die? I’m going to die some day - do I want to be known for doing Panasonic's commercial backdrop? Or do I want to be known for helping 10 people get off opiates, or I helped save 10 kids from getting shot in the street? I rather be known for that. And the money thing’s going to even out.
 
-****
+- - -
 
 **You called it social impact, a clear subcategory to public art, but how did you become a social impact artist? Can you tell me about a project(s) that were really defining for you?**
 
@@ -167,19 +155,13 @@ It \[was intended to] lead kids to these creative places where they can delve in
 
 That project changed everything because, while it was a lot of failure, when it worked I was like, this is it.
 
-
-
 **Could you tell me a little about a role model in your career?**
 
-****
+- - -
 
 ![d](/assets/chaz-maviyane-davies_0_0.jpg "Chaz Maviyane-Davies")
 
 Chaz Maviyane-Davies
-
-
-
-
 
 It was while I was at MassArt that I met \[and was taught by] Chaz. \[Chaz [Maviyane-Davies]](https://boston.aiga.org/event/and-still-i-rise-chaz-maviyane-davies/) is an international poster designer from Zimbabwe. Just google his name, he’s world famous for doing socially active posters. He was trying to encourage us. He was the only teacher that would show us his work all these teachers we had they would just be like we did design, they would never show us what they did, although they were teaching it. On his first day, he said “I'm Chaz, this is my life story, and this is my work.”
 
@@ -193,7 +175,7 @@ That connected me back, through my experiences, to thinking about graffiti, to t
 
 I was stuck but Chaz helped me out because he could see what you were trying to do. 
 
-****
+- - -
 
 **The tough part about working on my career is that I've pretty intense about not taking projects where I'm not paid, almost out of principle more than anything else. That being said, of course, I'm not made of money or infinite resources. It's tough though because I know for a fact that I've lost out on opportunities because I wanted to get paid. I always wonder if I missed out on an opportunity to get my name out there.**  
 
@@ -213,7 +195,7 @@ Then, of course, there are contexts in which I will price very high, because I k
 
 With Lynn (Massachusetts), I _knew_ that was going to blow up. I lived in Salem for a short period of time, and I was always struck by how amazing the place would be to paint. And Lynn is right next door. It's a city-type area, it has these beautiful walls, a lot of cool restaurants - I knew if anyone ever did anything here, it was going to be successful. So it's just, you know, there's certain areas of design where it's going to be successful. And the walls, they just had the walls, too. 
 
-****
+- - -
 
 **Now in terms of your current practice, what's the blend of work that do you are doing? 30, 40% murals or public art stuff, and then like another portion is social intervention, or community engagement work, and the other part of that is education? Also, how do you usually get your work?**
 
@@ -227,7 +209,7 @@ I don’t even have a real website - I used a host site, something called Carbon
 
 I don't think \[social media] is sustainable. I'm trying to figure out something else to add to that it's more sustainable because it’s going to die soon. So a lot of my interest is through street art. You gotta have something else going on. So I might try to find something that's more stable, just to balance out.
 
-****
+- - -
 
 **Do you feel like you know about your mural project or projects in advance?** 
 
@@ -237,7 +219,7 @@ I know friends that are like that, not me.
 
 I have some things that are lined up for 2020, a couple projects, potentially some international stuff. But I'm working on setting up projects for the future now. Before I came here, I was trying to work on going to Morocco to do a festival; I’m also working on trying to go to Greece. I don’t know if they’re gonna work out, but I'm trying to work on those for next year. 
 
-****
+- - -
 
 **I think a lot of artists struggle with balancing the idea of being their own boss and trying to make a living, versus spending time on being with their ideas and creativity. How do you feel the impact of the ebb and flow and uncertainty of the next project impacts the art you make, or the creative process in general? Can you tell the blog a bit about your plans for The Up Truck, your personal work, and maybe a project that you are working on currently?** 
 
@@ -247,21 +229,13 @@ I'm doing stuff that I like doing, to a certain degree, but I'm not spending all
 
 My[ Street Memorials](https://cedricdouglas.carbonmade.com/projects/7189527) project is a big one that I’m really passionate about, but this year I haven't done anything for it. This idea actually came from my time with the [Up Truck ](https://cedricdouglas.carbonmade.com/projects/6726973/31464461)Mother's Day project. We thought, what if we gave mothers roses, a simple gesture. And then, when we did that, I saw some guys giving out roses at the red light, and _we actually gave them a rose!_ I thought it was hilarious that we gave them Mother's Day roses. That idea kind of lingered and, I think I was just like walking down the street or something, when it hit me: what if the rose wasn't just a beautiful rose with a beautiful message, but a beautiful rose with a _serious_ message, in juxtaposition? What if the roses had tags with statistics on them? What would that look like?  \[It’s projects like this that make me] wish I could do more of that work, and gallery shows. I think that work needs to be seen, it needs to be in our faces and now it’s just sitting in my studio. If only I could dedicate more time…
 
-
-
 ![e](/assets/cd-roses-real.png)
 
 From Douglas' project, "Street Memorials"
 
-
-
 ![f](/assets/cd-roses-2.png)
 
 From Douglas' project, "Street Memorials"
-
-
-
-
 
 So for the[ NAS](https://www.artstrategies.org/) [Creative Community Fellowship program](https://www.artstrategies.org/programs/creative-community-fellows/), I've been trying to find ways to merge all that, so that it’s all part of the Up Truck, my mural’s a part of the Up Truck. I'm trying to find ways to connect everything and have the Up Truck be a moving vehicle that talks about all these different things. And that's the next level of what I want to do with Up Truck.
 
@@ -273,7 +247,7 @@ I saw the evidence of it recently when I was in New Bedford. I was there to do a
 
 I think that’s something that I miss since I haven't been able to do my own personal work with the truck. The truck has so much potential and I have a lot of ideas around it, like doing an artist in residency involving the truck. An artist with a concept and initiative that they want to do, partners with a community partner, and they use the truck to do their initiative.
 
-****
+- - -
 
 **What is one big way you feel the art world is changing? What do you think the future of the art world holds?**
 
@@ -289,7 +263,7 @@ These worlds share with one another, and steal from each other. I see ads steali
 
 An example that comes to mind, from a project at Arnold’s, was to advertise Carnival cruises. They had kids tell their stories about how they thought the future of the world looked, and took these stories and put them into the world’s largest children’s book. They put the book open, for people to flip through it, in Central Park in Manhattan, but it was all stories from those kids from the boat cruises to promote Carnival Cruises, to promote the brand experience through community building. It's selling Carnival Cruises, but you wouldn't think about it, you would go and experience: “look at this amazing book! This is so cool!” So advertisers are actually trying to employ community engagement and empathy. 
 
-****
+- - -
 
 **One last question I want to ask: If you could make a change in policy, or attitudes or something, that you think would be really helpful to your practice, what would that be?**
 
@@ -311,19 +285,11 @@ And in Philadelphia! This lady came all the way to Boston to consult me to start
 
 That’s another one: spaces for artists is a huge thing. Right now, I happen to have space, so I’m not thinking that it’s something I need, but artists are gonna leave Boston. My studio is in South Shore for that reason. The rent is going to go up soon, and people are going to move to Rhode Island, to Detroit, and it sucks for Boston. So that’s a policy that needs to happen soon. Or yesterday. They’ve talked about it a lot, the mayor’s talked about it, but… who knows if and when it will happen.
 
-
-
-
-
 _The text of this interview was edited for accuracy and concision._ 
-
-
 
 **Editor’s Notes:**
 
 1 (found under question 1) Subway Art Magazine is either now defunct or its name was misremembered. While no trace of it was found on the internet, similar magazines are linked here, for visual reference: StyleFile, Flashbacks, as well as a book by the same title, new edition released in 2016: Subway Art. 
-
-
 
 **To connect with Cedric:**
 

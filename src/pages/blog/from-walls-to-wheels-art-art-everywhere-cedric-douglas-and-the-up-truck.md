@@ -23,11 +23,11 @@ Enjoy!
 
 \- Alexander Golob
 
+_This interview is the result of a conversation between Alexander Golob and Cedric Douglas on October 22nd, 2019 in Westwood, MA. The interview is primarily edited by Rachael Schwartz._ __
+
 ****
 
 **FOLLOW US (**[**@AlexanderGolobArt**](https://www.instagram.com/alexandergolobart/)**) and Cedric (**[**@Vise_1_Boston**](https://www.instagram.com/vise_1_boston/)**) on Instagram!**
-
-_This interview is the result of a conversation between Alexander Golob and Cedric Douglas on October 22nd, 2019 in Westwood, MA. The interview is primarily edited by Rachael Schwartz._ __
 
 __
 

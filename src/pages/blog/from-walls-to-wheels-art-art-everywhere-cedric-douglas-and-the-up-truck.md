@@ -71,7 +71,7 @@ I didn't really believe him, I used to joke “You’re going to school for graf
 
 Eventually, I decided to go to college \[at MassArt] for \[graphic design,] the same thing \[as my friend George], because I liked what he was doing. The irony of the situation is that one of the first big murals I did in Boston was at Northeastern, and he was the head of design at the time. While I was doing \[the mural], we had a big meeting, and he was there. It was so weird because he is  the reason why I went into design, even though I'm not even doing design right now. I don't think he knew - I actually told him recently that he inspired me to go to college for design. 
 
-![a](/assets/cedric-douglas-northeastern-mural-one-i-used-.jpg "Douglas' mural at Northeastern University, \\\"World of Innocent Wonder\\\"")
+![a](/assets/cedric-douglas-northeastern-mural-one-i-used-.jpg "Douglas' mural at Northeastern University, \"World of Innocent Wonder\"")
 
 Douglas' mural at Northeastern University, "World of Innocent Wonder"
 

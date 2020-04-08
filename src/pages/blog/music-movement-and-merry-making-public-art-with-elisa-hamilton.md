@@ -77,7 +77,7 @@ And I have to say, you know, that I wouldn't change going to school for theater 
 
 ![b](/assets/elisa-parents-2.jpg "elisa parents")
 
-_The artist holds the mic up for her parents as part of "Sound Lab." Photo by Leo March._
+_The artist holds the mic up for her parents as part of "Sound Lab," 2017. Photo by Leo March._
 
 **How has being biracial, having these artist parents, and being exposed to this \[art] - being like almost an outsider, as you described before, in a handful of ways - impacted how you were thinking about your art experience, maybe your shift away from theater? What were the next steps?**
 
@@ -343,11 +343,11 @@ __
 
 **The question has two parts. Now that we have been affected in some capacity by COVID-19 for a month or so, how are you personally feeling, responding to, and coping with the new (hopefully temporary!) reality? Secondly, what does your artistic/creative work process look like now? How have you had to change it to cope professionally with the situation?**
 
-You know, it's been really hard.  This is my fourth week sheltering in place - the first few weeks were honestly really tough, but I think it's getting better.  I'm at my best as an artist, and as a person, when I can bring people together by creating spaces that spark joy and connection.  Much of my work is participatory, so it is literally incomplete without the hands, minds and hearts of the public.  I'm grateful that we have virtual spaces to gather in, but they don't hold a candle to, say, being able to gather around a record player together and have a shared experience of listening to the sounds of our community together with the record spinning in front of us.  The internet is still a place of privilege, and online gatherings leave a lot of people out.  Being in isolation, has also made me realize how much pleasure I receive in my "normal" life from simply running into people by chance.  Running into a friend the hallway of my studio building, or across the street at the coffee shop.  It's not just the planned interactions I miss, but the unplanned, delightful encounters that yield a smile, a connection, or a moment of commune. We don't have that in the same way online.  But I did attend a really wonderful virtual recipe share on Saturday night.  The artist who hosted it created the most wonderful shared, generous space which was so energizing, and also hopeful to me as a creator.  It was the loveliest virtual space that I've experienced so far.  Today I mustered up enough creativity to make some notes of love that I'm going to put in the mail to friends to let them know that I'm thinking about them.  So I'm just taking it day by day, and trying to lead with love.
+You know, it's been really hard.  This is my fourth week sheltering in place - the first few weeks were honestly really tough, but I think it's getting better.  I'm at my best as an artist, and as a person, when I can bring people together by creating spaces that spark joy and connection.  Much of my work is participatory, so it is literally incomplete without the hands, minds and hearts of the public.  I'm grateful that we have virtual spaces to gather in, but they don't hold a candle to, say, being able to gather around a record player together and have a shared experience of listening to the sounds of our community together with the record spinning in front of us.  The internet is still a place of privilege, and online gatherings leave a lot of people out.  Being in isolation has also made me realize how much pleasure I receive in my "normal" life from simply running into people by chance.  Running into a friend in the hallway of my studio building, or across the street at the coffee shop.  It's not just the planned interactions I miss, but the unplanned, delightful encounters that yield a smile, a connection, or a moment of commune. We don't have that in the same way online.  But I did attend a really wonderful virtual recipe share on Saturday night.  The artist who hosted it created the most wonderful shared, generous space which was so energizing, and also hopeful to me as a creator.  It was the loveliest virtual space that I've experienced so far.  Today I mustered up enough creativity to make some notes of love that I'm going to put in the mail to friends to let them know that I'm thinking about them.  So I'm just taking it day by day, and trying to lead with love.
 
-****
+- - -
 
-****
+- - -
 
 **To connect with Elisa:**
 

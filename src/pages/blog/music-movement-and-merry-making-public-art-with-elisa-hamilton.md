@@ -39,15 +39,9 @@ Projects include [_Sound Lab_](http://www.wbur.org/artery/2017/03/09/sound-lab-g
 
 Hamilton continues her creative practice at her studio at Boston Center for the Arts.
 
-
-
-
-
 **Would you like to introduce yourself and your art a bit? Give us a bit of background.** 
 
 Yeah! So my name is Elisa Hamilton, and I’m a socially engaged multimedia artist. I began as a painter, and as a maker of drawings and other things. I also have a background in performance, and music, and theater. And then, over time, my work transitioned away from just handmade, two-dimensional pieces, and kind of broke off the wall into experiences that bring people together.  
-
-
 
 **I'm really interested in learning about your process in terms of how you got to where you are now, and hearing about the thought process along the way, any hurdles or points of inflection. your social practice artists. So, can you start us at the beginning? Let's start with education - where did it all begin?** 
 
@@ -57,13 +51,9 @@ My father is a musician. My mother is a creator, she is a potter - she's doing i
 
 My parents, as separate people and as a couple, have had just a tremendous influence on the way I think about the world and what I make. They always show up, they’re at every single thing I do. 
 
-
-
 ![a](/assets/elisa-family-img.png "parents")
 
 _The artist with her parents and sister. Photo courtesy of the artist - circa 1990._
-
-
 
 Growing up, it felt like a little bit over the top, but as an adult… it's wonderful. And at some point I had that moment where you realize that all the things that drive you crazy about your parents are actually like the things that are like the most wonderful things about them. So I had this moment in my early adulthood, where I was like “Oh, it’s actually _amazing_ that they always show up.” 
 
@@ -72,8 +62,6 @@ So, \[I’ve] always been drawing, always been singing. My sister also is musica
 In junior high and high school, eventually I found my theater friends, which helped a lot but there was a pretty strong pressure, for me anyways, to still want to fit in with everybody else. Looking in the mirror and knowing that I looked different than everybody else, internalizing that… You know it, it's complex - being a person is complex, and being a person growing up with everybody else around you growing up and trying to figure out their own identities and places of belonging can be a really challenging time of life.  
 
 There was a lot happening inside me during that time, but I know now that all of the amazing art exhibits and performances I saw with my family really informed the work I do today. 
-
-
 
 **Did you end up going to college after?** 
 
@@ -87,13 +75,9 @@ I went to MassArt for the full four years, because I wanted the whole program ex
 
 And I have to say, you know, that I wouldn't change going to school for theater first, because the work I make now is directly impacted by that experience I got as a theatre artist, and I think about my theater training all the time. 
 
-
-
 ![b](/assets/elisa-parents-2.jpg "elisa parents")
 
 _The artist holds the mic up for her parents as part of "Sound Lab." Photo by Leo March._
-
-
 
 **How has being biracial, having these artist parents, and being exposed to this \[art] - being like almost an outsider, as you described before, in a handful of ways - impacted how you were thinking about your art experience, maybe your shift away from theater? What were the next steps?**
 
@@ -103,13 +87,9 @@ Now, you know, we use the word “biracial” like it's a word we all understand
 
 So, you know, there are a lot of reasons that I decided not to go into theater. But feeling like I didn’t have a “type” that people could understand  was definitely one of them - I can't see myself in this industry, it's hard enough to be a theatre artist, and I don't think I'm prepared to fight this battle every day. 
 
-
-
 **So how did you end up choosing to go into the the \*famously diverse\* visual arts?**
 
 Well, I mean, I knew I was gonna be an artist. I've always known, whether it was as a visual artist or a theater artist, and my parents knew that too. And I think that, one good thing about going to school is that I didn’t have to have it all figured out yet. And I didn't have it figured out - I didn't know what I was going to do, I just knew that I wanted to make art, and that I had potential, but beyond that I didn't really have a plan. It’s only when you get into junior and senior year in college that \[you have to figure out] “what is the plan?” But, for the majority of my time at  MassArt, my goal was really to just push myself, and to learn, and to really hone my craft. 
-
-
 
 **What was the aspect, the thing that appealed to you more to prefer visual art than theater?** 
 
@@ -123,15 +103,11 @@ So that kind of coupled with the misgivings I had about having a type, knowing t
 
 I am very grateful that in my career \[as a visual artist] I do get some external validation, which is deeply heartening, and has become important to me, but being an artist isn't about anybody else telling you like “great job!” It's something that you're doing because it feels good to you, and you know that it's the right thing - and at its foundational level that  has to be validation enough. And so, if we're getting to the heart of it, I think that's a big part of it for me. 
 
-
-
 **Totally. So what did you study at MassArt? And what year was that when you graduated MassArt?**
 
 I studied painting. I was actually originally a double major in photography and painting, but I dropped the photography, because there just wasn't enough time in the day to be in the studio and the darkroom as much as I needed to be.
 
 I graduated from MassArt in ‘07. 
-
-
 
 **How did you get from painting and photography to where you are now \[socially engaged multimedia art]? It feels very honestly far removed. I feel like there are some steps in between. What was your first step into, we’ll say, a social practice?**
 
@@ -139,13 +115,9 @@ Yeah, there were some steps in between, there were discoveries. I'm really grate
 
 \[In terms of first steps,] I would say that I feel like I kind of have to take it back to my parents. So, my father is a very community oriented person. He's served on the board of the Boys and Girls Club in Arlington; he isn't anymore, but he did for years and years. He used to videotape all of the high school musical productions, and he did it so much that it became like a job for him. When we were growing up he used to audio record church services and duplicate them on cassette and CD and deliver the copies to people who for whatever reason weren’t able to come to the services.  Now he works for the public cable television station in Worcester. He is that kind of person. He's also an incredibly optimistic person, especially when it comes to the power of individuals to activate change, and create community. And so I feel like it's really important to mention that because I didn't know, until I started doing this work, that that has been like such an important fiber that's been woven into my character.
 
-
-
 ![c](/assets/elisa-dad.jpg "elisa dad")
 
 _The artist and her father. Photo courtesy of the artist - circa 2008._
-
-
 
 And I \[know] I will never give as much to the community as he has, but it's just something that as you're forming as a person, you’re taking in all this information. And growing up, I remember that he was always somebody who was doing something for somebody else. 
 
@@ -154,8 +126,6 @@ And I \[know] I will never give as much to the community as he has, but it's jus
 It was then that I started to get to know artists in that community, and I started to volunteer, like all the community members did, and \[I saw that] they had opportunities for funding - public art funding. I never really saw myself as a public artist, but I watched these artists around me do these projects that, I was like, “Oh, I could do something like that.” One of the first public art projects that I ever did was called _Dance Spot_. I love that project, and that was the project that changed everything for me. 
 
 I used to (and I still do!) love that Boston as a walkable city. To get to work at that time, I would walk over the Summer Street Bridge that goes over the channel, with headphones in, and I just wanted to dance as I was walking around the city. I would be listening to my music and going to work, and I'd be looking around all these people that looked grouchy and going to work, and in my mind I would be saying “We should be dancing!” 
-
-
 
 ![d](/assets/dancespot-img-1.png "dancespot 1")
 
@@ -171,11 +141,7 @@ I did a residency at [Vermont Studio Center](< https://vermontstudiocenter.org/>
 
 “Oh wow. Tell me what's happening? You love color. What else? Tell me more, show me what you're thinking about.” I showed her _Dance Spot_, and I was like, “I'm trying to figure out what I'm doing and I feel like I've had to kind of have to choose between fine art and public art but I don't know what is happening with me right now” She drew me this axis, on a piece of paper, and Joy was at the top, it had Performance, Form, and there was like one other thing. And she said to me, “You can do all of these things.” She charted a dot on the axis, and that was _Dance Spot_ - at the top of Performance and Joy with a little bit of Form - she, like, mapped it with that dot. And she was like, “Your projects can be all over this axis, and still be grounded in who you are.” That was a huge “Aha!” moment for me. It was amazing to be told that I didn’t have to be just one kind of artist - that I could make all kinds of art and the umbrella that my project fit under doesn’t have to be just one medium, the umbrella could just be me!
 
-
-
 > Your projects can be all over this axis, and still be grounded in who you are.
-
-
 
 So I kept on making things and experimenting. Some of them were guerrilla-style projects. My Valentine's project called [_Spreading the Love_](http://ehhaglow.blogspot.com/2013/02/spreading-love.html) was like this. I've been making Valentines with my mom for as long as I can remember, and I saw that as an opportunity. Valentine's Day is one of those days where we have permission to tell people that we care about them in a way that we don’t always have. So I saw that as an opportunity to share gratitude with other people. So I started doing my experiments where it was like giving things away to people. 
 
@@ -189,17 +155,11 @@ I was just talking to another artist about this, but there can be something real
 
 Not to mention, having a steady paycheck allowed me to explore my work. When you know that you're making money from something else, you have the freedom to make work that you want to make and not feel like you have to make the work that's going to make you money.   At that formative creative time for me, that was huge. I feel like there's this stigma where you graduate from art school, and some people try to downplay your worthiness as an artist if you have a day job. Like, I’d be having a show, and people would ask me “Oh, do you do this full-time?”, and I would respond “Well, yes, and I have a day job.” As if having a day job somehow made me less of an artist. So when I'm talking to young artists \[I tell them that] there's no shame in having a day job. None. It's a hustle, and it can be rough. But I think finding that right day job can really provide an amazing opportunity to find your voice, and to take the pressure off paying your rent. Because Boston is expensive and it's a fight just to _survive_ in this city with the way rents are. 
 
-
-
 > I’d be having a show, and people would ask me “Oh, do you do this full-time?”, and I would respond “Well, yes, and I have a day job.” As if having a day job somehow made me less of an artist. So when I'm talking to young artists \[I tell them that] there's no shame in having a day job. None. It's a hustle, and it can be rough. But I think finding that right day job can really provide an amazing opportunity to find your voice, and to take the pressure off paying your rent. Because Boston is expensive and it's a fight just to 
 >
 > _survive_
 >
->  
->
 > in this city with the way rents are. 
-
-
 
 **Did you live in the city during this whole period?**
 
@@ -207,13 +167,11 @@ I lived in a few different places. When I first graduated from MassArt, I was li
 
 After that, we moved out to Watertown Square, with another friend of mine. Three years after that, we broke up, and I moved into a great place in East Watertown with two other young professional women who were the best roommates. That's when I made the museum show in my bedroom, because at that point I didn't have a proper studio space. When I was looking for a place, I looked for a bedroom that could fit my work table.  I stored all of my art and paper under the bed, my dresser was covered in paint brushes and art supplies.  Our apartment walls were a rotating gallery of my artwork depending on what work I had in shows and what work I had to store at home.
 
-****
+- - -
 
 **So, during this whole period, were you selling art? What were you selling?**
 
 I was selling art - I was selling originals and was starting to sell some prints. I was showing a lot because I was really aggressive about looking for opportunities. But yeah, I was selling art, and I had a show at a gallery just outside LA, in South Pasadena, which was really exciting, and I sold a bunch of work out there, which felt great!
-
-
 
 **How did you find opportunities? Were you looking online, or did you meet people?**
 
@@ -221,25 +179,17 @@ It was both of those things, and more. The artist community in Fort Point used t
 
 It's like we're talking about earlier, when you asked what my process is. My biggest takeaway, just from looking back then, and being where I am now, is just that it's a marathon, it's not a sprint. It takes a long time. For years and years, I was like this is it, this is gonna be my year! And it never was. And it wasn't until I gave up that sort of wish, that I really was able to just like focus on the work and do the thing. And, my perspective is that, if you do enough good work, and you offer yourself with gratitude and humility, and if you show up, and you listen, and you support, and you work really hard- eventually you're going to build a real network. Not just a surface network. And then the opportunities become more plentiful, because you've invested yourself in the right ways; in hard work and authentic relationships.
 
-
-
 **This is your current space - How did you end up in this space? Tell me a little bit about what we're looking at here.**
 
 This is my studio. I love it here. It's tiny (it's 112 square feet) - I think it’s the smallest studio in the building.  This is the artist on a budget. This is success! I was in the waiting pool for years before I got this studio space. I actually came to the [BCA ](https://bostonarts.org/)as an artist in residence. The space they give you for the residency is on the fourth floor, and it’s this really big luxurious space that you get with all this beautiful light. For the residency, you apply with a project, and they give workspace and an intern. There are actually three \[artist in residence project cycles per year]; mine was in the spring, spring 2016. But I got done for the residency, which was a few months long, and when I left some spaces opened up and they asked if I wanted one, and I was like [_sings_] “Yes!” I had been in the waiting pool for this building, to get a studio here, for two years at that point. This was the first one I looked at, and I was like, “Oh, this is way too small.” And then I saw the other spaces, which were bigger, but this space just really spoke to me. It’s a corner, it has the double windows, and it's actually three floors directly below the studio that I started in. So I just felt really connected to this corner. 
 
 You see a lot of my art pieces in here, many of them are drawings, because I still really consider myself to be a creator of things as well as shared spaces. All of the things that I do really inform everything else. It's like a whole package. A lot of \[these drawings] are connected to interactive pieces that I did. For example, this one is a map of Boston neighborhoods. 
 
-
-
 This is a map I made for a project I did called [_Sound Lab_](https://www.wbur.org/artery/2017/03/09/sound-lab-gardner-museum) with the[ Isabella Stewart Gardner Museum](https://www.gardnermuseum.org/).
-
-
 
 ![e](/assets/elisa-photo-by-alexander.jpg "alexander selfie elisa")
 
 _Elisa with the model of her "Sound Lab" floor piece. Photo by Alexander Golob._
-
-
 
 ![f](/assets/soundlab-elisa.png "soundlab overhead")
 
@@ -248,8 +198,6 @@ _Overhead shot of "Sound Lab." Photo by Leo March._
 __
 
 Along with the Museum, I worked with four community partners on that project, and the neighborhoods of all of those partners are located on this map. To create this, I looked at  Google Maps, but then I free drew this piece with crayon, and layered other media on top of that - you can see this is actually the Green Line, here’s the Orange Line. The Gardner Museum is up here, one of the community partners is located right over here, and all of this is Roxbury. This whole piece was then blown up to a 20 foot by 20 foot floor piece that was the foundation of the project, because the project was about, listening to the sounds of our community, together, on vinyl recordings. I actually have some of them here, and I have lots of other objects here that are also remnants of past projects. So this is all you can see, the track. This is the track. I didn't make the records, I had them made by this amazing company in Austin, Texas called [Austin Signal](http://austinsignal.com/). And I'm friendly with the owner now, who is a lovely person.
-
-
 
 ![g](/assets/elisa-supermarket-.png)
 
@@ -271,25 +219,13 @@ __
 
 This was actually from my artist in residency here at the BCA, where I did a project called [_Supermarket_](https://www.improper.com/arts-culture/spring-into-action-visual-art/4/), where I created this store that sold superpowers. It was actually more of an exchange - to purchase a superpower, you needed to offer the supermarket a superpower that you already possessed. You even got a receipt. 
 
-
-
-
-
 ![j](/assets/pack-our-bags-elisa-.jpg)
 
 _"Pack Our Bags," 2018. Photo courtesy of the artist._
 
-
-
-
-
 ![k](/assets/pack-our-bags-elisa-2.jpg)
 
 _"Pack Our Bags," 2018. Photo courtesy of the artist._
-
-
-
-
 
 ![l](/assets/pack-our-bags-elisa-3.jpg)
 
@@ -299,9 +235,9 @@ __
 
 This is from a project I did called [_Pack Our Bags_](https://forfreedoms.org/activations/pack-our-bags-an-installationperformance-by-elisa/), which actually debuted here at Boston Center for the Arts, and then was shown at the[ Cooper Gallery](https://coopergallery.fas.harvard.edu/) at Harvard, and at the [International Center of Photography](https://www.icp.org/) \[in New York City] in collaboration with an incredible organization called For Freedoms. This project asked folks to literally pack these bags for a mysterious traveler who kind of represents all of us. This traveler is leaving to seek out a new world, and there are all these physical representations of conventions that we've created, some of them are values, concepts, music, and so on, and I asked people to decide what to take and what to leave behind. So it's a project that uses physical objects that were placed in the traveler’s suitcase. It was intended as an activator of conversations, because people were invited to rethink things. So there were a lot of conversations about “so do we prioritize organized education? or are we better \[off] without it? How about masculinity?”. It was very interesting, in the suitcase marriage went back and forth a lot. And these are just a few of them, there were like 75 different concepts.
 
+****
 
-
-**Not to not to use the cliché, but are you working now full-time only with your art?**
+**Not to not to use the cliché, but are you working now full-time _only_ with your art?**
 
 Yeah, so I’m a professional creative. That’s sort of what I say, I'm a professional creative. I’ve come to terms with the fact that I will never really have “a normal job,” my career is always going to be a bit of a hustle. 
 
@@ -309,14 +245,142 @@ I’ve been teaching at Emerson, in a graduate program there, just one course a 
 
 I also volunteer at MassArt, and I have since I graduated. I started volunteering at MassArt soon after I graduated because I had such an impactful experience there, and I knew that I wouldn't be able to give financially in the way that I would ideally want to, but I felt like I could offer my time, and I’ve continued to make that community service a priority. That's how I got involved in volunteering, and I didn't know I would end up being on the Board of Trustees, but eventually that’s what happened. I really believe in MassArt, and the MassArt community, and that's fed my soul as well.
 
+****
 
-
-That is a perfect segue to the next question. Let’s talk about feeding the soul and finding balance. I think that some of the things that you pointed to - having a day job, having secure paychecks, the sustainability of the career - all those things can create different dynamics for a work life balance. Tell me about your work life balance, or art life balance.
-
-
+**That is a perfect segue to the next question. Let’s talk about feeding the soul and finding balance. I think that some of the things that you pointed to - having a day job, having secure paychecks, the sustainability of the career - all those things can create different dynamics for a work life balance. Tell me about your work life balance, or art life balance.**
 
 So I'm married now, and I can tell you that, before I met my spouse Bill, I was just working all the time. Like all the time. If I could possibly be working, I was. Weekends? What's that? I would just be working, because I felt like that was the only way I was gonna succeed. And I think that in the early earlier stages of my career that was a necessity. I needed to make a lot of work. So if you make 50 drawings, and somebody wants to buy some of your work, then it's more likely that they're going to find one they like in 50 rather than if you just made one. So it felt like out of an economic necessity, and it was also a way to get better at my craft. Every drawing I make is an opportunity to become a better artist.
 
 When you’re making art, you're figuring things out - what's working for you, what materials are doing, you're discovering the things that you want to be investigating the process of creation. And I really felt like it starts and ends with the work. If you're not making good work, then what are you going to promote? You can’t just make one piece and expect that like everybody's gonna be like “Whoa!”, you know, it takes 50 pieces to get to that one good piece - it does for me, anyway! So that's why I feel like it was a necessity.  And when I started doing socially engaged art, there's a lot of care and energy that really needs to go into any project where you're working with community.
 
-Anyway, so before I met Bill, I was just working all the time. All the time, all the time. And my former boyfriend (before Bill) was also a workaholic, so it was just constant work. Now we live in Malden, and we live near my sister and her family. It's just like something clicked and I needed to reassess what's happening, because I can't give myself to other people if I'm not taking care of myself. We work way too f*cking fucking much, and if we’re burnt out we can’t make good work. But Bill taught me how to relax, and it's just in the past year that I've started actually taking weekends. It's not like I won't work on a weekend, but I don’t plan my schedule anymore like I will be. I still do a little bit of work on the weekend, but it used to just be like, I will work all weekends and if I'm able to and if I’m able to accomplish as much as I feel I possibly can, I will take Sunday night off. But now it's kind of like, no. hat is not sustainable. It's just not sustainable!
+Anyway, so before I met Bill, I was just working all the time. All the time, all the time. And my former boyfriend (before Bill) was also a workaholic, so it was just constant work. Now we live in Malden, and we live near my sister and her family. It's just like something clicked and I needed to reassess what's happening, because I can't give myself to other people if I'm not taking care of myself. We work way too f*cking much, and if we’re burnt out we can’t make good work. But Bill taught me how to relax, and it's just in the past year that I've started actually taking weekends. It's not like I won't work on a weekend, but I don’t plan my schedule anymore like I will be. I still do a little bit of work on the weekend, but it used to just be like, I will work all weekends and if I'm able to and if I’m able to accomplish as much as I feel I possibly can, I will take Sunday night off. But now it's kind of like, no. hat is not sustainable. It's just not sustainable!
+
+
+
+**Did you start feeling frayed at the edges?**
+
+Yes, for sure. I was just exhausted all the time, and I just wasn't at my best, and I was stressed, and I just felt like I wasn't ever having fun. 
+
+When I was in grad school and working, I was working like every day, every day, every day, and I was exhausted. We did fall semester, and then we got into spring semester. I had been working all through the break on a public art proposal, which I did get, so it was worth it. But when we got back to school for Spring semester, I was just exhausted already, and I was like I need to start taking a day off. And you know what? I took Sundays days off, and I still got all A’s!
+
+I realized that part of the reason that I was working all the time is that I was afraid. I was afraid that if I wasn't operating at like 150% every single day, then like I wasn’t good enough. But that's not sustainable. Sometimes it's okay to just give like 98%. It's okay. You’ve got to be able to get back up to 150% when necessary, and I can do it at the turn of a dime if I need to, but to operate on that level every day… It's just not possible for a human to do! And we’re only human. Something that Bill says is “Don't let best get in the way of better.” Don’t keep yourself from taking that first step in the right direction because you can’t make it perfect. It doesn’t have to be perfect all the time - sometimes just “good” really is enough!
+
+
+
+**If I were a young artist reading or listening to this, I'd be like, well, screw you, you’re a “successful artist.” You are doing this full-time. Was there something that clicked for you?**
+
+Well, let me just say, like I mentioned early in the conversation, I'm so glad that I worked my ass off for the first, you know, eight years in my career. I pushed it to the limit. I graduated in ‘07, and it’s 2020 - yeah, that's how long it takes. There are times where I'm like doing you know three projects at once, and I'm at the studio until super late, and I'm stressed. But that's not my everyday, the way it was before, and I don't try to plan to do that. I try to plan against that. So, I wouldn't say work less hard, what I would say is be honest with yourself about what you can sustain, and when you have the opportunity to take a break, take it. Take it, and know that the break is going to contribute to your success.
+
+
+
+> So, I wouldn't say work less hard, what I would say is be honest with yourself about what you can sustain, and when you have the opportunity to take a break, take it. Take it, and know that the break is going to contribute to your success.
+
+
+
+**How do you set those limits? Do you just step away, or is there a specific I like the mental intention?**
+
+Some of it is just looking at my friends. I have a core group of girlfriend artists, and I feel like watching them take time for themselves, or not, has really helped me think about how I want to take care of myself.
+
+I have one friend who's really good at planning getaways \[with her partner]. They plan them in advance. They'll go someplace really cool, and they plan those markers for themselves. This was something Bill and I were not doing - we didn't have a proper vacation together for like over a year. When we finally took one (we went to Quebec), the stakes were so high, like _oh my god this has to be a great vacation_. So, that's something I've learned, to plan those breaks in advance so you can look forward to them, get that deep breath, and not feel guilty. 
+
+Another thing that I've learned, from another artist friend, is that vacation doesn't have to be going somewhere else. You can make that space for yourself in your home, with your family. A lot of it is just like releasing yourself, forgiving yourself for not working. 
+
+Another lesson is something I learned in the [Creative Community Fellows Program](https://www.artstrategies.org/programs/creative-community-fellows/) that I was recently a part of, I realized that I couldn't keep doing this work if I kept on depleting myself that way. But I wanted to keep doing this work! So if I'm going to burn out, and not be able to do it, then I need to take some serious preventative measures. So I would say, for the artists reading, check in with yourself about how you’re feeling. If you feel like you can push it a little bit more and that's going to be okay for you, do it, but make sure that you're planning to come up for a breath of air, when you can.
+
+Also, this is like a new thing for me. I started trying to not look at emails on weekends. On Saturday, I got an email about this artist talk that I'm doing next week, and I was like, I'm not looking at that until Monday. But I am also aware of folks who have day jobs and need to pursue their own work on the weekends because I’ve been there! It's all the things; it's setting boundaries, but also, having worked a day job and been an artist, having had that experience you can remember like, “Okay, this artist has a day job, they obviously need to meet to discuss our work together on the weekend. Let's do that.”
+
+Additionally, I think that work life balance in our digital age is kind of a mess. I just don't know if it's called “balance” - I feel like “balance” indicates that it's equal amounts. I don't think my “balance” is quite consistent, and that's okay! I think it's about checking in with yourself and  asking “How does this feel right now?” and “What do I need?”.
+
+
+
+**How do you deal with managing the ups and downs of the craziness of a single project, and then having nothing?** 
+
+I think pacing is really important. I think setting expectations is really important, expectations for oneself, and then, if you're working with a community group or multiple stakeholders, setting expectations in advance. For example, saying that I am going to be available for this amount of time, \[these days in the week]. 
+
+I also think that resilience, and creative problem solving are important, because every project is going to have a moment where something unexpected happens, you can’t plan for everything. The more projects I've done, the more I've been able to plan for failures, but there's always going to be something unexpected that happens, and I think acknowledging that up front \[is crucial]. I can plan for everything, and still not plan for the thing that happens, but knowing that when it happens I'm going to be able to figure it out is critical. So, I think that resilience and a can-do attitude are super important for this work. If you think that you're gonna fail, then you probably are, but if you do your due diligence and approach projects with optimism, you’re way more likely to succeed, no matter the curves the universe throws at you. There’s a quote: “Whether you think you can, or you think you can’t, you're right.”
+
+\[It’s also important to keep in mind that] I still apply to grants and shows and don't get them, and there have been some major disappointments. But, I think what's changed for me over the course of 13 years is that I bounce back a little bit quicker now. That's what changes. The hurt doesn't necessarily change, it's not like it's any less disappointing, but that bounce back time goes from like two weeks, to one week, to a couple of days. And you just get back on the horse and try to find other opportunities. So I think those are attitudes and the sort of skill set that I find really helpful as a professional artist. 
+
+
+
+**Tell me about what you feel like are some of the most ambitious, or exciting, or challenging projects you’ve done.**
+
+****
+
+![m](/assets/soundlab-elisa.png)
+
+_"Sound Lab," 2017. Photo by Leo March._
+
+__
+
+Every project challenges me to different capacities. I think that [_Sound Lab_](https://www.wbur.org/artery/2017/03/09/sound-lab-gardner-museum), which I did with the Gardner Museum, was a project that really challenged me, and I think that it was an ambitious project for the Museum to take on. That is still one of the projects that I'm most proud of, and I think one of the things that made it challenging is (because we were talking about things going wrong or things shifting) the timeline totally changed, there were several key changes in leadership from when I was first signed on to the project to when it happened. Originally I had another artist I was working with on the project and then the project became just mine. There were so many changes that happened throughout that project, it really just challenged the hell out of me: working with four community partner organizations, making sure that those relationships were honored and authentic, and then having the responsibility to create a piece that really celebrated those organizations in a way that felt like them, in a museum space, working with sound (which I'd never done before) \[, the list goes on]. 
+
+I think that the project as a whole was very ambitious, and it challenged me tremendously. I was working closely with the Director of Engagement, who is amazing, and she's still at the museum. She was doing a lot of organizing and communication stuff, but so was I. And that was one of the first projects that I did that really was asking me to be a lot of different things: the artist, doing the admin stuff, the creative stuff, the relationship stuff, the designing of workshops, the sourcing of the materials, designing a space, designing art, designing installations and programming and how people are going to experience this... I wore so many hats in that project. More than I'd ever worn in a single project. 
+
+But when I say things happen, _things happen_! For example, that giant 20 foot x 20 foot floor map that I mentioned earlier got _lost_ in shipping two days before installation. Luckily, they found it at the very last minute, but we didn't know that they were going to find it! The manufacturing company didn’t know where it was. It was coming from Minnesota - they were like it could be in California, it could be in Texas, it could be in New York, we don't know. Which was shocking, it was huge. But again, resilience and creative problem solving. We had to come up with a Plan B, and that that piece was the major \[physical and conceptual] focal point. And we were just kind of like, “Okay, well, if it doesn’t come, here are some things that we can do, because the project is gonna happen.” Thankfully, they did find it, it was in New York, and it arrived in time for its install, but like, wow. It was also a huge piece of my budget, so… there were just so many things. But that's when you become the resilient, creative problem solver and \[figure it out], because we have to. But I’m really glad that they found that map!!
+
+It's super stressful, but also, that's a moment, like when we look back and think about how we handled a stressful situation, where I am so glad that I had the presence of mind to be forgiving and kind to the people  at the other end of the phone. Because it's so easy to  get angry or frustrated and take that out on somebody else. We've all been on the receiving end of that, but I'm really grateful that in that moment, I'm really proud of how we all handled that situation. To be able to look at your past self with pride feels good, and it makes me want to make honorable decisions now so that my future self can do the same thing.
+
+
+
+**You do a lot of social practice. Can you just tell me your thought process and what your goals are, in terms of how you engage people?** 
+
+I think the most important thing to do is to show up and listen. That's how I like to start every project. I'm getting ready to launch my project, [_Jukebox_](https://www.cambridgema.gov/arts/publicart/thefoundry) (1), and we're having our kickoff party next month, and I think it is going to be fun. I don't know what the date is going to be, but that first program is really about bringing people together, sharing info about the project, asking folks what they want to hear on the jukebox, and creating opportunities for connection. And there will be food, and refreshments and stuff, but my goal and that is to really create a space of both possibility and structure, because I find that a mix of structure and openness allows people to connect with the project and with each other. For any long term project where you're working with community stakeholders, my job is to test my own assumptions by directly asking community members what they think. 
+
+With _Jukebox_, I think I know, from research and from chatting with people, what some of the themes on the jukebox are going to be. But there are lots of different perspectives in Cambridge, so my first goal is to just show up and listen, and hear what people want to talk about, hear what stories they want to hear, what stories they want to tell, and go from there. Additionally, for me, \[the social engagement research] provides a really authentic foundation to the work that I'm doing. I'm actually learning from my conversations with people who are eventually going to be the owners of this jukebox. _Jukebox_ isn't for me, it's for them. It's really important that the community feels like they’re being heard, and that they're invested in the project. 
+
+
+
+**Where do you draw the line between yourself, listening to the community, and your own artistic inclinations? I'm not saying it's like a hard separation, but I'm curious as to how you see your role as an artist within that role of listening and responding and engaging.** 
+
+Yeah, I mean I think part of being an artist is being able to take in that information, and trying to figure out what that looks like as an art object. And already I've made some artistic decisions. It's gonna be a jukebox that plays community stories. You know there are a whole lot of aspects \[where I’ve made decisions]: I've made technical decisions about the computer that will go inside the jukebox, I’m meeting with the engineer tomorrow, and I met with my graphic designer yesterday. There are already a lot of creative decisions that are happening, but the meat of the project, the stories themselves,  those will come from the community. My job as the artist is to provide the creative framework that lets the community shine in all of its richness. 
+
+
+
+**Do you have any artistic influences, or influences in terms of how you practice your work?**
+
+This is always a tricky question for me, because I'm sure there are like a million that I'm not even registering consciously. I'm grateful that the work I'm doing evolved in a very organic way. I was making drawings about joy, I wanted to make people feel joy,  I love to dance; so I'm happy that I wasn't looking at somebody else and being like, I'm gonna do that thing. I love [Candy Chang](http://candychang.com/)’s work. I think that her activations are really engaging and  imaginative, and that they are simultaneously individual and collective. But I didn't know about her work until after I was doing what I was doing. I'm also really inspired by 2D experiences. I love the work of [Romare Bearden](https://www.wikiart.org/en/romare-bearden), and the way he creates so many different planes for the eye to travel on within his work.  So when I'm thinking about creating an experience, I think about it in that way. When we make a work of 2D art, it's like, well, where does the eye go first? How does it travel through the space?  In a lot of ways, I really think about spatial design through the lens of creating an art piece, a 2D art piece. 
+
+
+
+**Last question! So, we both live in Massachusetts, we live in the Greater Boston area. Are there policies, on any level, that you think could be supportive of the work that you do?**
+
+Well, the project that I'm about to launch, _Jukebox (1)_, is being funded through the Percent for Art program in Cambridge, so that's a program that I think that could be hugely beneficial to communities. That has been in practice in Cambridge since the 80's, which is why they have such a rich collection of public art. I also think the [Cambridge Arts Council ](https://www.cambridgema.gov/arts)is just amazing. Jason Weeks and Lillian Hsu over there are just amazing. Lillian is so thoughtful about the way she puts together the calls for art, and basically for each Percent for Art public art call they have, there's an  individualized process that she creates based on the site and the community. And so, when you're looking at the [Foundry](https://www.cambridgeredevelopment.org/foundry/) project, which is where the jukebox is going to go - it’s such a unique project, and the community was really hungry for not just art, but for programming. 
+
+So I think that the Cambridge Arts Council is a really visionary in that way, where they really are thinking about public art, and especially within the framework of the Percent for Art program is not just, like, a sculpture (which are great!), but I really appreciate that Cambridge Arts Council is saying ‘Let's make sure that we're reaching out to a broad group of artists, who maybe don't see themselves as candidates for this  funding, but we're looking for them.’ They want public artists who create work in many media to know that this funding isn't necessarily just for a sculpture, it can be for programming, too. 
+
+So I think that I think that more cities should have a Percent for Art program, and I think that reimagining the way we think about public art, helping folks see \[its value], collectively, is something that I think cities can have a real hand in.  The transition from imagining public art as exclusively a mural or a sculpture in a park, to interactive work, to multimedia art, and letting folks know that it’s something that’s for them. It's on the artistic level, where artists see their work as being valued by our city organizations, and then it's on the participant level, where community members see that they can receive tremendous benefit from arts programming that's beyond something that we look at, and can be something that we make and experience together.
+
+
+
+
+
+_This interview was conducted before the COVID-19 outbreak and subsequent lockdown of Massachusetts in March of 2020. To address the situation, we have added a question that addresses the pandemic and its effects on the artists._ 
+
+__
+
+**The question has two parts. Now that we have been affected in some capacity by COVID-19 for a month or so, how are you personally feeling, responding to, and coping with the new (hopefully temporary!) reality? Secondly, what does your artistic/creative work process look like now? How have you had to change it to cope professionally with the situation?**
+
+You know, it's been really hard.  This is my fourth week sheltering in place - the first few weeks were honestly really tough, but I think it's getting better.  I'm at my best as an artist, and as a person, when I can bring people together by creating spaces that spark joy and connection.  Much of my work is participatory, so it is literally incomplete without the hands, minds and hearts of the public.  I'm grateful that we have virtual spaces to gather in, but they don't hold a candle to, say, being able to gather around a record player together and have a shared experience of listening to the sounds of our community together with the record spinning in front of us.  The internet is still a place of privilege, and online gatherings leave a lot of people out.  Being in isolation, has also made me realize how much pleasure I receive in my "normal" life from simply running into people by chance.  Running into a friend the hallway of my studio building, or across the street at the coffee shop.  It's not just the planned interactions I miss, but the unplanned, delightful encounters that yield a smile, a connection, or a moment of commune. We don't have that in the same way online.  But I did attend a really wonderful virtual recipe share on Saturday night.  The artist who hosted it created the most wonderful shared, generous space which was so energizing, and also hopeful to me as a creator.  It was the loveliest virtual space that I've experienced so far.  Today I mustered up enough creativity to make some notes of love that I'm going to put in the mail to friends to let them know that I'm thinking about them.  So I'm just taking it day by day, and trying to lead with love.
+
+
+
+**To connect with Elisa:**
+
+Instagram: [@ElisaHHamilton](https://www.instagram.com/elisahhamilton/)
+
+Twitter: [@ElisaHHamilton](https://twitter.com/ElisaHHamilton)
+
+Email: <mailto:Elisa.Hamilton@gmail.com>
+
+Website: <https://www.elisahhamilton.com/>
+
+
+
+_The text of this interview was edited for accuracy and concision._ 
+
+__
+
+**Editor’s Notes:**
+
+(1) _Jukebox_ has been put on hold due to the COVID-19 outbreak and subsequent social distancing, stay-at-home, shelter-in-place, and quarantining in response. The public kick off party was supposed to be on 3/25, and the public launch has been postponed. This will be updated with the new date and information.

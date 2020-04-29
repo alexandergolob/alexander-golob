@@ -43,5 +43,13 @@ descriptions:
 images:
   - alt: a
     image: /assets/a-meditation-on-community-and-nature-01.jpg
+  - alt: b
+    image: /assets/screen-shot-2020-04-29-at-4.36.58-pm.png
+  - alt: c
+    image: /assets/screen-shot-2020-04-29-at-4.34.43-pm.png
+  - alt: d
+    image: /assets/screen-shot-2020-04-29-at-4.34.56-pm.png
+  - alt: e
+    image: /assets/screen-shot-2020-04-29-at-4.34.21-pm.png
 ---
 

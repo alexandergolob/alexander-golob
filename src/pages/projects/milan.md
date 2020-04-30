@@ -15,7 +15,12 @@ details:
   - attribute: Client
     value: International University of Languages and Media
 descriptions:
-  - md_content: Lorem Ipsum
+  - md_content: >-
+      I was invited to give a lecture at the International University of
+      Language and Communication in Milan, Italy, thanks to the amazing Culture
+      and Business Professor, Annamaria Esposito. I talked about what public art
+      can encompass, my path (so far!), and strategies and hurdles for making a
+      creative idea come to fruition.
     startingRow: 2
 images:
   - alt: a

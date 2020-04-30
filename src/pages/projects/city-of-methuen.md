@@ -50,6 +50,8 @@ descriptions:
       events.
     startingRow: 6
 images:
+  - alt: g
+    image: /assets/screen-shot-2020-04-30-at-1.22.40-pm.png
   - alt: a
     image: /assets/western-avenue-artist-lofts.jpeg
   - alt: b

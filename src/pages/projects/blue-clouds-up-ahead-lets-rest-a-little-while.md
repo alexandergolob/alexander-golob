@@ -32,11 +32,15 @@ descriptions:
       vacation feel.
     startingRow: 1
 images:
+  - alt: d
+    image: /assets/20170315_100803.jpg
+  - alt: c
+    image: /assets/20170315_100654.jpg
   - alt: a
     image: /assets/17.-blue-clouds-up-ahead-let-s-rest-a-little-while.jpg
   - alt: b
     image: /assets/20170223_112914.jpg
-  - alt: c
-    image: /assets/hawaii-beach.jpg
+  - alt: e
+    image: /assets/20170315_075506.jpg
 ---
 

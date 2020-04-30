@@ -59,7 +59,10 @@ descriptions:
       including state legislators, business executives, and community activists.
       The project hosted youth storytelling workshops, interactive art projects,
       poetry performances, community listening sessions, potlucks, and a large
-      story-gathering initiative.
+      story-gathering initiative. One of the groups we engaged was the Boys and
+      Girls Club of Haverhill (pictured above), who visited my studio to talk
+      about the mural and what it means be an immigrant. Then, they're showed
+      off their own art at the opening!!
 
 
       The mural and associated programming have had a long term impact,

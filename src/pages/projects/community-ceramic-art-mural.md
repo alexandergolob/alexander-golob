@@ -27,85 +27,77 @@ details:
     value: Wellesley Middle School
 descriptions:
   - md_content: >-
-      This project 
+      **About the Project**
 
 
-      AG was artist in residence for it, gave artist talk to 900
-      middle-schoolers in groups of 40-50 at a time, organized and led 100+
-      person ceramic activity with teachers and staff. also helped create the
-      art itself >>>>>>
+      Golob Art's lead artist, Alexander, worked with his old middle school art
+      teachers to have all of Wellesley Middle School's 160-plus faculty and
+      staff make tiles that went into a large art installation featuring over
+      900 tiles. "What a humbling and incredible experience it is to be able to
+      use what I have learned to contribute to my middle school." - Alexander
 
 
-      Roles and Responsibilities of the Artist-in-Residence
+      Alexander was artist in residence for it, gave artist talk to 900
+      middle-schoolers in groups of 40-50 at a time, and organized and led 100+
+      person ceramic activity with teachers and staff, in addition to helping to
+      create the art itself.
 
 
+      **Roles and Responsibilities of the Artist-in-Residence**
 
 
-      Project Preparation:
+      In preparation, he visited the site to determine measurements, appropriate
+      methods of construction, and possible complications. He determined the 
+      appropriate steps to make artwork a reality, wrote content and prepared
+      documents to aid in the approval of the artwork.
 
 
-      Site Visits and Preparation: Visit site to determine measurements,
-      appropriate methods of construction, and possible complications. 
+      **Student Engagement**
 
 
-      Preparatory Planning: Determine appropriate steps to make artwork a
-      reality. Write content and prepare documents to aid in approval of
-      artwork.
+      Alexander developed and presented a talk about his career and practice as
+      an artist and WMS alumni to the middle school art classes.
 
 
+      In developing the artwork, he worked with students in their classrooms
+      throughout January and February to provide instruction, support, and
+      feedback on their artwork and to answer questions about his personal and
+      professional experience. 
 
 
-      Student Engagement
+      He also worked with the faculty to create their art tiles. 
 
 
-      Presentation: Develop and present a talk about my career and practice as
-      an artist and WMS alumni. Present to WMS art classes.
+      **Artwork Creation and Installation**
 
 
-      Work with Students: Will work with students in classroom in January and
-      February to provide instruction, support, and feedback on their artwork
-      and to answer questions about my personal and professional experience. 
+      The tiles for the project were created and required firing in a kiln. This
+      process  required careful preparation, cutting, firing, and glazing of
+      over 900 tiles. This portion was possible thanks to the assistance of the
+      WMS art staff.
 
 
-      Work with Faculty: Will work with faculty to create faculty art tiles. 
+      Artistic Design: 
 
 
+      The arrangement for the tile artworks totaled around 3,200 sq.ft, and was
+      created with feedback from WMS to modify design to both parties’ liking. 
 
 
-      Artwork Creation and Installation
-
-
-      Tile Creation and Firing: This will require careful preparation, cutting,
-      firing, and glazing of 910 or 1,280 tiles. This portion will be assisted
-      by the art staff.
-
-
-      Artistic Design: Design the arrangement for 910 to 1,280 tile artworks
-      totaling between 250 and 350 sq.ft in size. Will include back and forth
-      between artist and WMS to modify design to both groups’ liking. 
-
-
-      Mark and Prepare Tiles: Mark the tiles in an organized grid system (A-1,
-      A-2 etc.) for proper layout and then wrap and box tiles for craftsperson
-      to install. 
-
-
-
-
-
-
-      AG was artist in residence for it, gave artist talk to 900
-      middle-schoolers in groups of 40-50 at a time, organized and led 100+
-      person ceramic activity with teachers and staff. also helped create the
-      art itself >>>>>>
+      He marked the tiles in an organized grid system (A-1, A-2 etc.) for proper
+      layout, and then wrapped and boxed tiles for a craftsperson to install.
     startingRow: 3
 images:
-  - alt: a
-    image: /assets/20181010_081000.jpg
-  - alt: b
-    image: /assets/20181010_080322.jpg
   - alt: c
     image: /assets/20181010_081124.jpg
+  - alt: a
+    image: /assets/20181010_081000.jpg
+  - alt: g
+    image: /assets/20181010_081039.jpg
+  - alt: f
+    image: /assets/20181010_080925.jpg
+  - alt: b
+    image: /assets/screen-shot-2020-04-30-at-10.38.53-am.png
   - alt: d
     image: /assets/dsc_0004.jpg
   - alt: e

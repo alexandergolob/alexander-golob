@@ -74,6 +74,8 @@ images:
     image: /assets/20190531_120305.jpg
   - alt: d
     image: /assets/mural-unveiling-18.jpg
+  - alt: i
+    image: /assets/screen-shot-2020-04-30-at-1.25.34-pm.png
   - alt: e
     image: /assets/20180927_193644.jpg
   - alt: f

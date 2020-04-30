@@ -46,11 +46,13 @@ descriptions:
       some people having a picnic.
     startingRow: 2
 images:
+  - alt: c
+    image: /assets/screen-shot-2019-08-31-at-12.25.32-am.png
   - alt: a
     image: /assets/screen-shot-2019-08-31-at-12.25.04-am.png
   - alt: b
     image: /assets/screen-shot-2019-08-31-at-12.24.52-am.png
-  - alt: c
-    image: /assets/screen-shot-2019-08-31-at-12.25.32-am.png
+  - alt: d
+    image: /assets/screen-shot-2020-04-29-at-4.39.10-pm.png
 ---
 

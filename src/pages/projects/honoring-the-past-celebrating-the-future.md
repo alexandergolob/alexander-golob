@@ -27,12 +27,23 @@ descriptions:
       the Greater Boston Community!
 
 
+      I combined artistic efforts with Haitian tin artists to create _Honoring
+      the Past, Celebrating the Future_, a mixed media mural at the South
+      Middlesex Opportunity Council. This piece demonstrates the power of
+      collaboration through its very execution: 
+
+
+      > Together we are able to achieve what we never could alone.
+
+
       Haitian tin artists of the Cite Soleil Opportunity Council created 25
       pieces for the mural.
     startingRow: 2
 images:
   - alt: a
     image: /assets/1439070650671.jpg
+  - alt: f
+    image: /assets/screen-shot-2020-05-01-at-7.37.44-am.png
   - alt: b
     image: /assets/20150808_174013.jpg
   - alt: c

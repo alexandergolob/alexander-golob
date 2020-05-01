@@ -52,6 +52,8 @@ descriptions:
       [_Kaleidoscope_](https://alexander-golob.netlify.com/projects/kaleidoscope/).
     startingRow: 2
 images:
+  - alt: b
+    image: /assets/screen-shot-2020-05-01-at-5.47.45-pm.png
   - alt: a
     image: /assets/dscn3098.jpg
 ---

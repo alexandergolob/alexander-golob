@@ -53,7 +53,7 @@
     "test": "echo \"Write tests! -> https://gatsby.app/unit-testing\""
   },
   "engines": {
-    "node": "10.13"
+    "node": "8.17"
   },
   "repository": {
     "type": "git",

@@ -63,5 +63,9 @@ images:
     image: /assets/screen-shot-2020-04-30-at-3.34.47-pm.png
   - alt: f
     image: /assets/screen-shot-2020-04-30-at-3.33.47-pm.png
+  - alt: g
+    image: /assets/screen-shot-2020-04-29-at-4.39.39-pm.png
+  - alt: h
+    image: /assets/screen-shot-2020-04-30-at-3.34.34-pm.png
 ---
 

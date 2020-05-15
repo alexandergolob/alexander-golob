@@ -62,11 +62,11 @@ images:
     image: /assets/dscn3116.jpg
   - alt: g
     image: /assets/dscn3117.jpg
-  - alt: h
-    image: /assets/dscn3119.jpg
   - alt: i
     image: /assets/screen-shot-2020-04-29-at-4.40.00-pm.png
   - alt: j
     image: /assets/screen-shot-2020-04-29-at-4.40.13-pm.png
+  - alt: k
+    image: /assets/screen-shot-2020-05-15-at-8.58.57-am.png
 ---
 

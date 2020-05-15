@@ -42,8 +42,6 @@ descriptions:
 images:
   - alt: a
     image: /assets/1439070650671.jpg
-  - alt: f
-    image: /assets/screen-shot-2020-05-01-at-7.37.44-am.png
   - alt: b
     image: /assets/20150808_174013.jpg
   - alt: c
@@ -52,5 +50,11 @@ images:
     image: /assets/20150808_173925.jpg
   - alt: e
     image: /assets/20150808_173936.jpg
+  - alt: f
+    image: /assets/screen-shot-2020-04-29-at-11.57.43-am.png
+  - alt: g
+    image: /assets/screen-shot-2020-04-29-at-11.59.28-am.png
+  - alt: h
+    image: /assets/screen-shot-2020-04-29-at-11.59.40-am.png
 ---
 

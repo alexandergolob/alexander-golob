@@ -27,5 +27,11 @@ descriptions:
 images:
   - alt: a
     image: /assets/tales-of-the-voyage.jpg
+  - alt: b
+    image: /assets/screen-shot-2020-04-29-at-4.35.47-pm.png
+  - alt: c
+    image: /assets/screen-shot-2020-04-29-at-4.36.34-pm.png
+  - alt: d
+    image: /assets/screen-shot-2020-04-29-at-4.37.20-pm.png
 ---
 

@@ -122,7 +122,7 @@ descriptions:
     startingRow: 8
 images:
   - alt: a
-    image: /assets/mural-unveiling-24-2.jpg
+    image: /assets/img-1-imop-proj-820x390-.jpg
   - alt: b
     image: /assets/mural-unveiling-13-1-.jpg
   - alt: c

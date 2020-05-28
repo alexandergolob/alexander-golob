@@ -14,31 +14,57 @@ subcategories:
 isFeatured: false
 details: []
 descriptions:
-  - md_content: "**About the Project**\n\nThe Immigrant and Origin Story Mural Project is a multifaceted mural and creative placemaking project celebrating the tapestry of local immigrant and origin stories in neighborhoods across this country. The project centers on a public mural along with a host of related events that activate the space - engaging the community at every step of the process. \n\n_This project aims to address three aspects of a community: 1. beautification of an area with a powerful, stunning artwork that offers a sense of identity; 2. elevation of underrepresented immigrant and origin stories and the strengthening of the entire area’s sense of community; 3. stimulation of economic activity and self-initiated community initiatives._ \n\n**Creative Placemaking\t Immigrant and Origin Stories\t Economic Development**\n\n**_\\*why “and Origin?”_** _to acknowledge the stories of 1. people who found themselves here against their free will and 2. indigenous peoples who have always called this land their home._\n\n__"
+  - md_content: >-
+      The Immigrant and Origin Story Mural Project is a multifaceted mural and
+      creative placemaking project celebrating the tapestry of local immigrant
+      and origin stories in neighborhoods across this country. The project
+      centers on a public mural along with a host of related events that
+      activate the space - engaging the community at every step of the process. 
+
+
+      _This project aims to address three aspects of a community: 1.
+      beautification of an area with a powerful, stunning artwork that offers a
+      sense of identity; 2. elevation of underrepresented immigrant and origin
+      stories and the strengthening of the entire area’s sense of community; 3.
+      stimulation of economic activity and self-initiated community
+      initiatives._ 
+
+
+      **Creative Placemaking**
+
+
+      **Immigrant and Origin Stories**
+
+
+      **Economic Development**
+
+
+      _**\*why “and Origin?”**_ _to acknowledge the stories of 1. people who
+      found themselves here against their free will and 2. indigenous peoples
+      who have always called this land their home._
+
+
+      __
     startingRow: 2
   - md_content: >-
       **Process:**
 
 
-      **Work with community to develop specific concept, space -** identify
+      * **Work with community to develop specific concept, space -** identify
       space, research, community meetings on mural idea and local element input,
       develop programming
 
+      * **Gather stories -** work with community and partners to gather
+      immigrant and origin stories
 
-      **Gather stories -** work with community and partners to gather immigrant
-      and origin stories
-
-
-      **Create art and engage local orgs, host youth workshops -** create art,
+      * **Create art and engage local orgs, host youth workshops -** create art,
       ideally in a temporary store-front studio, conduct workshops and artist
       talks, prepare for unveiling
 
-
-      **Unveil artwork and host large community event -** invite local media,
+      * **Unveil artwork and host large community event -** invite local media,
       communities, and businesses, celebrate!
 
-
-      **Encourage community-initiated action -** work with community to
+      * **Encourage community-initiated action -** work with community to
       encourage mural-inspired spin-off events, festivals, and programming.
     startingRow: 4
   - md_content: >-
@@ -54,8 +80,10 @@ descriptions:
 
       [CLICK HERE](https://alexandergolobart.com/contact) to contact us, or send
       us an email at <mailto:info@alexandergolobart.com>.
-    startingRow: 6
-  - md_content: >-
+
+
+
+
       **Pilot - Haverhill, MA**
 
 
@@ -89,9 +117,9 @@ descriptions:
       enlivening the area’s sense of community, creating a representative
       expression of the city, and bringing economic improvements by increasing
       activity in the downtown and encouraging additional investment.
+    startingRow: 6
+  - md_content: "**Stats**\n\n_ca.150 portraits_\t\t\t\n\n_500 people engaged in process_\t\n\n_20+ Countries Represented_ \t\n\n_5 youth workshops_\t\n\n****\n\n**5 spin-off initiatives:** \n\n1. Immersive Immigrant-Story Opera\t            \n2. [Haverhill Multicultural Festival ](https://www.facebook.com/MCFHaverhill)\t\n3. Immigrant Community Cookbook          \n4. News Series on Underrepresented Voices  \n5. Rotating Public Art Project for Majority Latino-Neighborhood \\[Coming Summer 2020]\n\n****\\\n**Learn more about the Haverhill Immigrant Origin Mural Project** [**Here**](https://alexandergolobart.com/projects/miles-to-go-before-we-sleep/)**!**\n\n****\n\n**Interested in bringing this project to your community?**\n\n[CLICK HERE](https://alexandergolobart.com/contact) to contact us, or send us an email at <mailto:info@alexandergolobart.com>."
     startingRow: 8
-  - md_content: "\n\n**Stats**\n\n_ca.150 portraits_\t\t\t\n\n_500 people engaged in process_\t\n\n_20+ Countries Represented_ \t\n\n_5 youth workshops_\t\n\n\n\n**5 spin-off initiatives:** \n\n1. Immersive Immigrant-Story Opera\t            \n\n2. [Haverhill Multicultural Festival ](https://www.facebook.com/MCFHaverhill)\t\n\n3. Immigrant Community Cookbook          \n\n4. News Series on Underrepresented Voices  \n\n5. Rotating Public Art Project for Majority Latino-Neighborhood \\[Coming Summer 2020]\n\n\n\n**Learn more about the Haverhill Immigrant Origin Mural Project** [**Here**](https://alexandergolobart.com/projects/miles-to-go-before-we-sleep/)**!**\n\n\n\n**Interested in bringing this project to your community?**\n\n[CLICK HERE](https://alexandergolobart.com/contact) to contact us, or send us an email at <mailto:info@alexandergolobart.com>."
-    startingRow: 10
 images:
   - alt: a
     image: /assets/mural-unveiling-24-2.jpg

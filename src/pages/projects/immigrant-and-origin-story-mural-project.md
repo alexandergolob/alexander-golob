@@ -124,7 +124,7 @@ images:
   - alt: a
     image: /assets/img-1-imop-proj-820x390-2.jpg
   - alt: b
-    image: /assets/mural-unveiling-13-1-.jpg
+    image: /assets/iomp-pic-2-attempt-2.jpg
   - alt: c
     image: /assets/01.png
   - alt: d

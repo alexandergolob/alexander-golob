@@ -44,6 +44,6 @@ descriptions:
     startingRow: 2
 images:
   - alt: a
-    image: /assets/screen-shot-2020-05-15-at-3.33.43-pm.png
+    image: /assets/screen-shot-2019-08-16-at-5.36.41-pm.jpg
 ---
 

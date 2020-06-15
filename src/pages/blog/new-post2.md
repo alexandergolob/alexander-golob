@@ -4,7 +4,7 @@ title: >-
   Student Paints ‘Boston Strong’ Symbol at Boston Marathon’s Half-way Point in
   Wellesley
 date: 2013-05-23T04:00:00.000Z
-headerImage: /assets/screen-shot-2019-08-16-at-5.36.41-pm.png
+headerImage: /assets/screen-shot-2019-08-16-at-5.36.41-pm.jpg
 alt: f
 author: By Jordan Mayblum
 path: /post-6

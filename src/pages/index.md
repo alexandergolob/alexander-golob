@@ -23,6 +23,14 @@ carouselImages:
     link:
       external: false
       path: /projects/assembly-square
+  - alt: c
+    description: >-
+      Triumph of the People and Prosperity on the Mystic - Assembly Square,
+      Somerville, MA
+    image: /assets/assembly-row-slideshow-marble-background-black-lining.jpg
+    link:
+      external: true
+      path: /projects/assembly-square-2
   - alt: d
     description: 'Golobology - Stored in Studio, Wellesley, MA'
     image: /assets/golobology-2-edit.jpg

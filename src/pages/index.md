@@ -19,7 +19,7 @@ carouselImages:
     description: >-
       Triumph of the People and Prosperity on the Mystic - Assembly Square,
       Somerville, MA
-    image: /assets/20190522_121539.jpg
+    image: /assets/assembly-row-slideshow-marble-background-white-lining.jpg
     link:
       external: false
       path: /projects/assembly-square

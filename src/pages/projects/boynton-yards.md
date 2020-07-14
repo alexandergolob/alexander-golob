@@ -21,8 +21,11 @@ details:
     value: DLJ Real Estate
 descriptions:
   - md_content: >-
-      Mural completed for DLJ Real Estate at Boynton Yards, and features their
-      logo, complete with a bouncy line covering the whole mural. 
+      Two-piece mural completed for DLJ Real Estate at Boynton Yards, and
+      features their logo, complete with a bouncy line covering the whole
+      building. The second part of the mural is an asphalt mural, painting
+      bouncy lines as an extension of the lines on the building onto the
+      adjacent parking lot. 
 
 
       This mural was completed during the social distancing period of the
@@ -41,6 +44,10 @@ images:
     image: /assets/20200422_190641.jpg
   - alt: e
     image: /assets/img_3989.jpg
+  - alt: j
+    image: /assets/20200519_154524.jpg
+  - alt: k
+    image: /assets/20200519_154700.jpg
   - alt: f
     image: /assets/img_4039.jpg
   - alt: g

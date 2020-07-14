@@ -12,7 +12,9 @@ subcategories:
   - Public Art
   - Commissioned
 isFeatured: false
-details: []
+details:
+  - attribute: Date
+    value: Ongoing Project
 descriptions:
   - md_content: >-
       The Immigrant and Origin Story Mural Project is a multifaceted mural and
